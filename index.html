@@ -1,267 +1,2158 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavola Periodica & Stechiometria - Mercatorum</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #cbd5e1; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Allenamento a quiz per l'esame di Chimica: ripetizione spaziata sulle dispense, tavola periodica completa, generatore di nomenclatura.">
+<title>Chimica — allenamento</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23FAFAF7'/%3E%3Ctext x='50' y='72' font-family='Georgia, serif' font-size='60' text-anchor='middle' fill='%2314615A'%3E%E2%9A%97%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+
+<style>
+/* ============================================================
+   Etichetta di reagente — sistema visivo
+   carta da laboratorio, inchiostro verderame, fascia di colore
+   per blocco (s p d f). Parente stretto del quaderno di
+   Matematica-0, ma con la sua identita'.
+   ============================================================ */
+:root{
+  --carta:#FAFAF7;
+  --carta-alta:#FFFFFF;
+  --bordo:#E4E4DE;
+  --bordo-forte:#D3D3CB;
+  --grafite:#20272B;
+  --grafite-2:#59636A;
+  --grafite-3:#7C858B;
+  --inchiostro:#14615A;
+  --inchiostro-tenue:#E6F0EE;
+  --rossa:#AF3A2E;
+  --rossa-tenue:#FBEDEB;
+  --visto:#2C7048;
+  --visto-tenue:#E9F2EC;
+  --ambra:#8A6212;
+  --ambra-tenue:#FBF3E0;
+  --blocco-s:#B4532A;
+  --blocco-p:#14615A;
+  --blocco-d:#55499A;
+  --blocco-f:#8A6212;
+  --r:9px;
+  --ombra:0 1px 2px rgba(32,39,43,.05), 0 8px 24px -12px rgba(32,39,43,.2);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-tema="chiaro"]){
+    --carta:#1C2023; --carta-alta:#242A2E; --bordo:#363D42; --bordo-forte:#454D53;
+    --grafite:#ECEFF0; --grafite-2:#AEB6BB; --grafite-3:#8B9399;
+    --inchiostro:#63BFB0; --inchiostro-tenue:#153230;
+    --rossa:#E0857A; --rossa-tenue:#382423;
+    --visto:#6DC694; --visto-tenue:#1D3128;
+    --ambra:#DDAE5C; --ambra-tenue:#372C15;
+    --blocco-s:#E08A5F; --blocco-p:#63BFB0; --blocco-d:#9C90E0; --blocco-f:#DDAE5C;
+    --ombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-tema="scuro"]{
+  --carta:#1C2023; --carta-alta:#242A2E; --bordo:#363D42; --bordo-forte:#454D53;
+  --grafite:#ECEFF0; --grafite-2:#AEB6BB; --grafite-3:#8B9399;
+  --inchiostro:#63BFB0; --inchiostro-tenue:#153230;
+  --rossa:#E0857A; --rossa-tenue:#382423;
+  --visto:#6DC694; --visto-tenue:#1D3128;
+  --ambra:#DDAE5C; --ambra-tenue:#372C15;
+  --blocco-s:#E08A5F; --blocco-p:#63BFB0; --blocco-d:#9C90E0; --blocco-f:#DDAE5C;
+  --ombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--carta); color:var(--grafite);
+  font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:none}
+:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.etichetta{
+  font-family:"Archivo",system-ui,sans-serif; font-weight:600;
+  text-transform:uppercase; letter-spacing:.09em; font-size:11px;
+  color:var(--grafite-3);
+}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* -------------------------------------------------- testata */
+header{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb, var(--carta) 92%, transparent);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--bordo);
+}
+.testata{
+  max-width:1180px;margin:0 auto;padding:10px 18px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.marchio{display:flex;align-items:baseline;gap:9px;margin-right:auto}
+.marchio h1{
+  font-family:"Archivo",sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;
+}
+.marchio span{font-size:11px;color:var(--grafite-3)}
+.fiamma{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:4px 9px;border:1px solid var(--bordo);border-radius:99px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;
+}
+.fiamma.viva{border-color:var(--ambra);background:var(--ambra-tenue);color:var(--ambra)}
+.bottoncino{
+  padding:5px 10px;border:1px solid var(--bordo);border-radius:7px;
+  font-size:12.5px;color:var(--grafite-2);transition:border-color .15s,color .15s;
+}
+.bottoncino:hover{border-color:var(--bordo-forte);color:var(--grafite)}
+
+nav{max-width:1180px;margin:0 auto;padding:0 18px;display:flex;gap:2px;overflow-x:auto}
+nav button{
+  padding:9px 14px 11px;font-size:13.5px;font-weight:500;color:var(--grafite-3);
+  border-bottom:2px solid transparent;white-space:nowrap;
+}
+nav button:hover{color:var(--grafite)}
+nav button[aria-current="page"]{color:var(--inchiostro);border-bottom-color:var(--inchiostro);font-weight:600}
+
+main{max-width:1180px;margin:0 auto;padding:22px 18px 80px}
+.sezione[hidden]{display:none}
+
+/* -------------------------------------------------- schede generiche */
+.foglio{
+  background:var(--carta-alta);border:1px solid var(--bordo);border-radius:var(--r);
+  box-shadow:var(--ombra);
+}
+.vuoto{
+  border:1px dashed var(--bordo-forte);border-radius:var(--r);
+  padding:34px 22px;text-align:center;color:var(--grafite-2);
+}
+.vuoto strong{display:block;color:var(--grafite);margin-bottom:5px;font-size:15px}
+.primario{
+  background:var(--inchiostro);color:#fff;padding:10px 18px;border-radius:7px;
+  font-weight:600;font-size:14px;
+}
+.primario:hover{filter:brightness(1.08)}
+.primario:disabled{opacity:.45;cursor:default}
+.secondario{
+  border:1px solid var(--bordo-forte);padding:9px 15px;border-radius:7px;
+  font-weight:500;font-size:13.5px;color:var(--grafite-2);
+}
+.secondario:hover{border-color:var(--inchiostro);color:var(--inchiostro)}
+
+/* -------------------------------------------------- allenamento */
+.barra-sessione{
+  display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap;
+}
+.avanzamento{
+  flex:1;min-width:140px;height:4px;background:var(--bordo);border-radius:99px;overflow:hidden;
+}
+.avanzamento i{display:block;height:100%;background:var(--inchiostro);transition:width .3s}
+.cronometro{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--grafite-3)}
+
+.domanda{padding:24px 26px 22px}
+.domanda .fonte{
+  display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  margin-bottom:13px;flex-wrap:wrap;
+}
+.domanda h2{
+  font-family:"Archivo",sans-serif;font-weight:600;font-size:19px;line-height:1.4;
+  letter-spacing:-.01em;margin-bottom:18px;
+}
+.opzioni{display:flex;flex-direction:column;gap:8px}
+.opz{
+  display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;
+  padding:12px 14px;border:1px solid var(--bordo);border-radius:8px;
+  background:var(--carta-alta);transition:border-color .12s,background .12s;
+}
+.opz:not(:disabled):hover{border-color:var(--inchiostro);background:var(--inchiostro-tenue)}
+.opz kbd{
+  flex:none;width:21px;height:21px;display:grid;place-items:center;
+  border:1px solid var(--bordo-forte);border-radius:5px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--grafite-3);
+}
+.opz .testo{flex:1}
+.opz .motivo{
+  display:block;margin-top:7px;font-size:13px;line-height:1.5;color:var(--grafite-2);
+  padding-top:7px;border-top:1px dashed var(--bordo);
+}
+.opz.giusta{border-color:var(--visto);background:var(--visto-tenue)}
+.opz.giusta kbd{border-color:var(--visto);color:var(--visto)}
+.opz.sbagliata{border-color:var(--rossa);background:var(--rossa-tenue)}
+.opz.sbagliata kbd{border-color:var(--rossa);color:var(--rossa)}
+.opz.spenta{opacity:.72}
+.opz:disabled{cursor:default}
+
+.esito{
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--bordo);
+  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+}
+.esito .verdetto{font-weight:600;font-size:14px;margin-right:auto}
+.esito .verdetto.ok{color:var(--visto)}
+.esito .verdetto.ko{color:var(--rossa)}
+.spiegazione{
+  margin-top:14px;padding:15px 17px;border-radius:8px;
+  background:var(--inchiostro-tenue);border:1px solid var(--bordo);
+  font-size:14px;line-height:1.6;
+}
+.spiegazione p+p{margin-top:9px}
+.spiegazione code{font-family:"IBM Plex Mono",monospace;font-size:.92em}
+
+/* -------------------------------------------------- tavola periodica */
+.strumenti{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.strumenti select,.strumenti input{
+  padding:7px 10px;border:1px solid var(--bordo-forte);border-radius:7px;
+  background:var(--carta-alta);color:var(--grafite);font:inherit;font-size:13.5px;
+}
+.tavola-scorri{overflow-x:auto;padding-bottom:10px}
+.tavola{
+  display:grid;grid-template-columns:repeat(18,minmax(46px,1fr));
+  gap:3px;min-width:900px;
+}
+.cella{
+  position:relative;aspect-ratio:1;border:1px solid var(--bordo);border-radius:6px;
+  background:var(--carta-alta);overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transition:transform .12s,border-color .12s;
+}
+.cella:hover{transform:scale(1.12);z-index:5;border-color:var(--inchiostro)}
+.cella .riempi{
+  position:absolute;left:0;right:0;bottom:0;
+  background:currentColor;opacity:.16;transition:height .3s;
+}
+.cella .z{position:absolute;top:2px;left:4px;font-size:8.5px;opacity:.5;font-family:"IBM Plex Mono",monospace}
+.cella .sim{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;line-height:1;position:relative}
+.cella .nm{font-size:7px;text-transform:uppercase;letter-spacing:.03em;opacity:.65;
+  max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 2px;position:relative}
+.cella.b-s{color:var(--blocco-s)}
+.cella.b-p{color:var(--blocco-p)}
+.cella.b-d{color:var(--blocco-d)}
+.cella.b-f{color:var(--blocco-f)}
+.cella.fuori{opacity:.16;filter:grayscale(1)}
+.cella.evidenziata{border-color:currentColor;border-width:2px;transform:scale(1.1);z-index:4}
+
+.legenda{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--grafite-3)}
+.legenda i{display:inline-block;width:9px;height:9px;border-radius:2px;background:currentColor;margin-right:5px}
+
+.dettaglio{margin-top:18px;padding:20px 22px}
+.dettaglio .capo{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.dettaglio .simbolone{
+  font-family:"Archivo",sans-serif;font-weight:700;font-size:46px;line-height:.95;
+}
+.dati{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));
+  gap:12px 20px;margin-top:16px;
+}
+.dato dt{font-family:"Archivo",sans-serif;font-weight:600;text-transform:uppercase;
+  letter-spacing:.08em;font-size:10px;color:var(--grafite-3);margin-bottom:2px}
+.dato dd{font-family:"IBM Plex Mono",monospace;font-size:13.5px}
+
+/* -------------------------------------------------- nomenclatura */
+.nomen{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+@media (max-width:860px){.nomen{grid-template-columns:1fr}}
+.quesito-nom{
+  padding:26px;text-align:center;
+}
+.quesito-nom .richiesta{font-size:12px;color:var(--grafite-3);margin-bottom:12px}
+.formulona{
+  font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:34px;
+  letter-spacing:.01em;color:var(--inchiostro);margin-bottom:4px;
+}
+.formulona sub{font-size:.62em;vertical-align:-.22em;font-weight:500}
+.nomone{font-family:"Archivo",sans-serif;font-weight:600;font-size:26px;color:var(--inchiostro)}
+.albero{padding:18px 20px;font-size:13.5px}
+.albero h3{font-family:"Archivo",sans-serif;font-size:12px;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--grafite-3);margin-bottom:12px}
+.albero ol{list-style:none;counter-reset:passo}
+.albero li{
+  counter-increment:passo;position:relative;padding-left:26px;padding-bottom:13px;
+  border-left:1px solid var(--bordo);margin-left:8px;
+}
+.albero li:last-child{border-left-color:transparent;padding-bottom:0}
+.albero li::before{
+  content:counter(passo);position:absolute;left:-9px;top:0;
+  width:17px;height:17px;border-radius:99px;background:var(--carta-alta);
+  border:1px solid var(--bordo-forte);display:grid;place-items:center;
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--grafite-3);
+}
+.albero b{display:block;font-weight:600;font-size:13px;margin-bottom:2px}
+.albero span{color:var(--grafite-2);font-size:12.5px;line-height:1.45}
+
+/* -------------------------------------------------- scelta argomenti */
+.scelta-arg{margin-top:20px;text-align:left;border-top:1px solid var(--bordo);padding-top:14px}
+.scelta-arg summary{
+  cursor:pointer;font-family:"Archivo",sans-serif;font-weight:600;font-size:12px;
+  text-transform:uppercase;letter-spacing:.08em;color:var(--grafite-3);list-style:none;
+}
+.scelta-arg summary::-webkit-details-marker{display:none}
+.scelta-arg summary::before{content:"+ ";font-family:"IBM Plex Mono",monospace}
+.scelta-arg[open] summary::before{content:"\2212 "}
+.scelta-arg summary:hover{color:var(--inchiostro)}
+.voce-scelta{
+  display:flex;align-items:center;gap:10px;padding:5px 4px;border-radius:6px;
+  font-size:13.5px;cursor:pointer;
+}
+.voce-scelta:hover{background:var(--inchiostro-tenue)}
+.voce-scelta input{accent-color:var(--inchiostro);width:15px;height:15px;flex:none}
+.voce-scelta span{flex:1}
+.voce-scelta em{
+  font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:11.5px;
+  color:var(--grafite-3);
+}
+
+/* -------------------------------------------------- legami */
+.cursore-riga{display:flex;align-items:center;gap:12px;margin-top:8px}
+.cursore-riga input[type=range]{
+  flex:1;accent-color:var(--inchiostro);height:22px;cursor:ew-resize;
+}
+.lettura h3{
+  font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;margin-bottom:6px;
+}
+.lettura p{font-size:14px;color:var(--grafite-2);line-height:1.6}
+.lettura p+p{margin-top:9px}
+.lettura .zona{
+  display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;
+  font-family:"Archivo",sans-serif;font-weight:600;text-transform:uppercase;
+  letter-spacing:.07em;margin-bottom:9px;
+}
+.zona.lontano{background:var(--bordo);color:var(--grafite-2)}
+.zona.attrazione{background:var(--inchiostro-tenue);color:var(--inchiostro)}
+.zona.legame{background:var(--visto-tenue);color:var(--visto)}
+.zona.repulsione{background:var(--rossa-tenue);color:var(--rossa)}
+
+/* -------------------------------------------------- progressi */
+.griglia-arg{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px}
+.arg{padding:16px 18px}
+.arg h3{font-family:"Archivo",sans-serif;font-size:14.5px;font-weight:600;margin-bottom:3px}
+.arg .conta{font-size:12px;color:var(--grafite-3);margin-bottom:11px}
+.tacche{display:flex;gap:2px;margin-bottom:13px}
+.tacche i{flex:1;height:5px;border-radius:2px;background:var(--bordo)}
+.tacche i.v1{background:color-mix(in srgb,var(--inchiostro) 35%,var(--bordo))}
+.tacche i.v2{background:color-mix(in srgb,var(--inchiostro) 68%,var(--bordo))}
+.tacche i.v3{background:var(--inchiostro)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:22px}
+.kpi>div{padding:14px 16px}
+.kpi .n{font-family:"IBM Plex Mono",monospace;font-size:25px;font-weight:600;line-height:1.15}
+.kpi .e{font-size:11px;color:var(--grafite-3);text-transform:uppercase;letter-spacing:.07em;
+  font-family:"Archivo",sans-serif;font-weight:600}
+
+/* -------------------------------------------------- pannello impostazioni */
+.velo{
+  position:fixed;inset:0;background:rgba(20,26,29,.42);z-index:100;
+  display:grid;place-items:center;padding:20px;
+}
+.velo[hidden]{display:none}
+.pannello{
+  width:min(460px,100%);max-height:88vh;overflow:auto;padding:24px 26px;
+  background:var(--carta-alta);border:1px solid var(--bordo);border-radius:12px;
+}
+.pannello h2{font-family:"Archivo",sans-serif;font-size:17px;margin-bottom:5px}
+.pannello p.aiuto{font-size:13px;color:var(--grafite-2);margin-bottom:18px}
+.campo{margin-bottom:15px}
+.campo label{display:block;font-size:12px;font-weight:600;margin-bottom:5px;color:var(--grafite-2)}
+.campo input,.campo select{
+  width:100%;padding:9px 11px;border:1px solid var(--bordo-forte);border-radius:7px;
+  background:var(--carta);color:var(--grafite);font:inherit;font-size:13.5px;
+}
+.riga-bottoni{display:flex;gap:8px;justify-content:flex-end;margin-top:20px}
+
+.avvisi{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:200;
+  display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
+.avviso{
+  padding:9px 16px;border-radius:8px;background:var(--grafite);color:var(--carta);
+  font-size:13.5px;box-shadow:var(--ombra);max-width:420px;
+}
+.avviso.male{background:var(--rossa);color:#fff}
+
+@media (max-width:640px){
+  .domanda{padding:19px 17px}
+  .domanda h2{font-size:17px}
+  .tavola{grid-template-columns:repeat(18,38px);min-width:auto}
+}
+</style>
 </head>
-<body class="bg-slate-50">
-    <div id="root"></div>
+<body>
 
-    <script type="text/babel">
-        const { useState, useMemo, useEffect } = React;
-        
-        // Wrapper per icone Lucide
-        const Icon = ({ name, className }) => <i data-lucide={name} className={className}></i>;
+<header>
+  <div class="testata">
+    <div class="marchio">
+      <h1>Chimica</h1>
+      <span>allenamento per l'esame</span>
+    </div>
+    <div class="fiamma" id="fiamma" title="Giorni consecutivi di allenamento">🔥 <b id="fiammaN">0</b></div>
+    <button class="bottoncino" id="btnTema">Tema</button>
+    <button class="bottoncino" id="btnCfg">Impostazioni</button>
+  </div>
+  <nav>
+    <button data-vista="allenamento" aria-current="page">Allenamento</button>
+    <button data-vista="tavola">Tavola periodica</button>
+    <button data-vista="nomenclatura">Nomenclatura</button>
+    <button data-vista="legami">Legami</button>
+    <button data-vista="progressi">Progressi</button>
+  </nav>
+</header>
 
-        const ELEMENTS = [
-            { number: 1, symbol: 'H', name: 'Idrogeno', mass: 1.008, group: 'non-metal', x: 1, y: 1 },
-            { number: 2, symbol: 'He', name: 'Elio', mass: 4.0026, group: 'noble-gas', x: 18, y: 1 },
-            { number: 3, symbol: 'Li', name: 'Litio', mass: 6.94, group: 'alkali-metal', x: 1, y: 2 },
-            { number: 4, symbol: 'Be', name: 'Berillio', mass: 9.0122, group: 'alkaline-earth', x: 2, y: 2 },
-            { number: 5, symbol: 'B', name: 'Boro', mass: 10.81, group: 'metalloid', x: 13, y: 2 },
-            { number: 6, symbol: 'C', name: 'Carbonio', mass: 12.011, group: 'non-metal', x: 14, y: 2 },
-            { number: 7, symbol: 'N', name: 'Azoto', mass: 14.007, group: 'non-metal', x: 15, y: 2 },
-            { number: 8, symbol: 'O', name: 'Ossigeno', mass: 15.999, group: 'non-metal', x: 16, y: 2 },
-            { number: 9, symbol: 'F', name: 'Fluoro', mass: 18.998, group: 'halogen', x: 17, y: 2 },
-            { number: 10, symbol: 'Ne', name: 'Neon', mass: 20.180, group: 'noble-gas', x: 18, y: 2 },
-            { number: 11, symbol: 'Na', name: 'Sodio', mass: 22.990, group: 'alkali-metal', x: 1, y: 3 },
-            { number: 12, symbol: 'Mg', name: 'Magnesio', mass: 24.305, group: 'alkaline-earth', x: 2, y: 3 },
-            { number: 13, symbol: 'Al', name: 'Alluminio', mass: 26.982, group: 'post-transition', x: 13, y: 3 },
-            { number: 14, symbol: 'Si', name: 'Silicio', mass: 28.085, group: 'metalloid', x: 14, y: 3 },
-            { number: 15, symbol: 'P', name: 'Fosforo', mass: 30.974, group: 'non-metal', x: 15, y: 3 },
-            { number: 16, symbol: 'S', name: 'Zolfo', mass: 32.06, group: 'non-metal', x: 16, y: 3 },
-            { number: 17, symbol: 'Cl', name: 'Cloro', mass: 35.45, group: 'halogen', x: 17, y: 3 },
-            { number: 18, symbol: 'Ar', name: 'Argon', mass: 39.948, group: 'noble-gas', x: 18, y: 3 },
-            { number: 19, symbol: 'K', name: 'Potassio', mass: 39.098, group: 'alkali-metal', x: 1, y: 4 },
-            { number: 20, symbol: 'Ca', name: 'Calcio', mass: 40.078, group: 'alkaline-earth', x: 2, y: 4 },
-            { number: 21, symbol: 'Sc', name: 'Scandio', mass: 44.956, group: 'transition-metal', x: 3, y: 4 },
-            { number: 22, symbol: 'Ti', name: 'Titanio', mass: 47.867, group: 'transition-metal', x: 4, y: 4 },
-            { number: 23, symbol: 'V', name: 'Vanadio', mass: 50.942, group: 'transition-metal', x: 5, y: 4 },
-            { number: 24, symbol: 'Cr', name: 'Cromo', mass: 51.996, group: 'transition-metal', x: 6, y: 4 },
-            { number: 25, symbol: 'Mn', name: 'Manganese', mass: 54.938, group: 'transition-metal', x: 7, y: 4 },
-            { number: 26, symbol: 'Fe', name: 'Ferro', mass: 55.845, group: 'transition-metal', x: 8, y: 4 },
-            { number: 27, symbol: 'Co', name: 'Cobalto', mass: 58.933, group: 'transition-metal', x: 9, y: 4 },
-            { number: 28, symbol: 'Ni', name: 'Nichel', mass: 58.693, group: 'transition-metal', x: 10, y: 4 },
-            { number: 29, symbol: 'Cu', name: 'Rame', mass: 63.546, group: 'transition-metal', x: 11, y: 4 },
-            { number: 30, symbol: 'Zn', name: 'Zinco', mass: 65.38, group: 'transition-metal', x: 12, y: 4 },
-            { number: 31, symbol: 'Ga', name: 'Gallio', mass: 69.723, group: 'post-transition', x: 13, y: 4 },
-            { number: 32, symbol: 'Ge', name: 'Germanio', mass: 72.630, group: 'metalloid', x: 14, y: 4 },
-            { number: 33, symbol: 'As', name: 'Arsenico', mass: 74.922, group: 'metalloid', x: 15, y: 4 },
-            { number: 34, symbol: 'Se', name: 'Selenio', mass: 78.971, group: 'non-metal', x: 16, y: 4 },
-            { number: 35, symbol: 'Br', name: 'Bromo', mass: 79.904, group: 'halogen', x: 17, y: 4 },
-            { number: 36, symbol: 'Kr', name: 'Kripton', mass: 83.798, group: 'noble-gas', x: 18, y: 4 },
-            { number: 37, symbol: 'Rb', name: 'Rubidio', mass: 85.468, group: 'alkali-metal', x: 1, y: 5 },
-            { number: 38, symbol: 'Sr', name: 'Stronzio', mass: 87.62, group: 'alkaline-earth', x: 2, y: 5 },
-            { number: 47, symbol: 'Ag', name: 'Argento', mass: 107.87, group: 'transition-metal', x: 11, y: 5 },
-            { number: 79, symbol: 'Au', name: 'Oro', mass: 196.97, group: 'transition-metal', x: 11, y: 6 },
-            { number: 80, symbol: 'Hg', name: 'Mercurio', mass: 200.59, group: 'transition-metal', x: 12, y: 6 },
-            { number: 82, symbol: 'Pb', name: 'Piombo', mass: 207.2, group: 'post-transition', x: 14, y: 6 },
-        ];
+<main>
 
-        const GROUP_STYLES = {
-            'alkali-metal': 'bg-red-50 border-red-200 text-red-800',
-            'alkaline-earth': 'bg-orange-50 border-orange-200 text-orange-800',
-            'transition-metal': 'bg-yellow-50 border-yellow-200 text-yellow-800',
-            'post-transition': 'bg-green-50 border-green-200 text-green-800',
-            'metalloid': 'bg-teal-50 border-teal-200 text-teal-800',
-            'non-metal': 'bg-blue-50 border-blue-200 text-blue-800',
-            'halogen': 'bg-indigo-50 border-indigo-200 text-indigo-800',
-            'noble-gas': 'bg-purple-50 border-purple-200 text-purple-800',
-        };
+<!-- ============================================ ALLENAMENTO -->
+<section class="sezione" id="v-allenamento">
+  <div id="allHome">
+    <div class="barra-sessione">
+      <span class="etichetta" id="etichettaSess">Sessione</span>
+      <span class="cronometro" id="cronometro"></span>
+      <div class="avanzamento"><i id="avanzamento" style="width:0%"></i></div>
+    </div>
+    <div id="allCorpo"></div>
+  </div>
+</section>
 
-        const AVOGADRO = 6.022e23;
+<!-- ============================================ TAVOLA -->
+<section class="sezione" id="v-tavola" hidden>
+  <div class="strumenti">
+    <input type="search" id="cercaEl" placeholder="Cerca simbolo, nome o numero" style="min-width:210px">
+    <select id="filtroBlocco">
+      <option value="">Tutti i blocchi</option>
+      <option value="s">Blocco s</option>
+      <option value="p">Blocco p</option>
+      <option value="d">Blocco d</option>
+      <option value="f">Blocco f</option>
+    </select>
+    <select id="coloreTavola">
+      <option value="blocco">Colora per blocco</option>
+      <option value="padronanza">Colora per padronanza</option>
+    </select>
+    <button class="primario" id="btnSfida">Sfida sugli elementi</button>
+  </div>
+  <div class="tavola-scorri"><div class="tavola" id="tavola"></div></div>
+  <div class="legenda">
+    <span style="color:var(--blocco-s)"><i></i>blocco s</span>
+    <span style="color:var(--blocco-p)"><i></i>blocco p</span>
+    <span style="color:var(--blocco-d)"><i></i>blocco d</span>
+    <span style="color:var(--blocco-f)"><i></i>blocco f</span>
+    <span>Il riempimento di ogni casella cresce con le risposte esatte su quell'elemento.</span>
+  </div>
+  <div id="dettaglioEl"></div>
+</section>
 
-        function App() {
-            const [search, setSearch] = useState('');
-            const [selectedElement, setSelectedElement] = useState(null);
-            const [massInput, setMassInput] = useState('');
-            const [moleInput, setMoleInput] = useState('');
-            const [aiLoading, setAiLoading] = useState(false);
-            const [aiResponse, setAiResponse] = useState('');
-            const [aiError, setAiError] = useState('');
+<!-- ============================================ NOMENCLATURA -->
+<section class="sezione" id="v-nomenclatura" hidden>
+  <div class="strumenti">
+    <select id="versoNom">
+      <option value="misto">Formula ↔ nome (misto)</option>
+      <option value="f2n">Dalla formula al nome</option>
+      <option value="n2f">Dal nome alla formula</option>
+    </select>
+    <select id="classeNom">
+      <option value="">Tutte le classi</option>
+      <option value="ossido">Ossidi basici</option>
+      <option value="anidride">Anidridi</option>
+      <option value="idrossido">Idrossidi</option>
+      <option value="idracido">Idracidi</option>
+      <option value="ossiacido">Ossiacidi</option>
+      <option value="sale">Sali</option>
+    </select>
+    <span class="cronometro" id="punteggioNom"></span>
+  </div>
+  <div class="nomen">
+    <div id="nomCorpo"></div>
+    <div class="foglio albero">
+      <h3>Le quattro domande</h3>
+      <ol>
+        <li><b>C'è un metallo?</b><span>Sì e c'è ossigeno → ossido basico. Sì e c'è OH → idrossido. Sì con un non metallo → sale.</span></li>
+        <li><b>C'è idrogeno all'inizio?</b><span>Con ossigeno → ossiacido. Senza ossigeno → idracido, nome in <i>-idrico</i>.</span></li>
+        <li><b>Quanti numeri di ossidazione ha l'elemento?</b><span>Uno solo → «di + nome». Due → il minore fa <i>-oso</i>, il maggiore <i>-ico</i>. Quattro → <i>ipo- -oso</i>, <i>-oso</i>, <i>-ico</i>, <i>per- -ico</i>.</span></li>
+        <li><b>Se è un sale, da quale acido viene?</b><span><i>-oso</i> → <i>-ito</i>. <i>-ico</i> → <i>-ato</i>. <i>-idrico</i> → <i>-uro</i>.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
 
-            useEffect(() => { lucide.createIcons(); }, [selectedElement, aiResponse, search]);
+<!-- ============================================ LEGAMI -->
+<section class="sezione" id="v-legami" hidden>
+  <div class="strumenti">
+    <select id="tipoLegame">
+      <option value="covalente">Covalente puro — H + H</option>
+      <option value="polare">Covalente polare — H + Cl</option>
+      <option value="ionico">Ionico — Na + Cl</option>
+      <option value="metallico">Metallico — reticolo di Na</option>
+    </select>
+    <button class="secondario" id="btnAuto">Ferma il movimento</button>
+    <span class="cronometro" id="etichettaDist"></span>
+  </div>
 
-            const apiKey = ""; 
+  <div class="foglio" style="padding:16px 16px 10px">
+    <canvas id="scena" style="width:100%;display:block"></canvas>
+    <div class="cursore-riga">
+      <span class="etichetta">Vicini</span>
+      <input type="range" id="distanza" min="55" max="300" value="220" step="1"
+             aria-label="Distanza tra i nuclei">
+      <span class="etichetta">Lontani</span>
+    </div>
+  </div>
 
-            const callGemini = async (prompt) => {
-                setAiLoading(true); setAiError(''); setAiResponse('');
-                try {
-                    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ 
-                            contents: [{ parts: [{ text: prompt }] }],
-                            systemInstruction: { parts: [{ text: "Sei un tutor di chimica della Mercatorum. Rispondi in italiano. Se crei esercizi, non dare mai la soluzione numerica subito." }] }
-                        })
-                    });
-                    const data = await response.json();
-                    setAiResponse(data.candidates?.[0]?.content?.parts?.[0]?.text || "Nessuna risposta ricevuta.");
-                } catch (err) {
-                    setAiError("Connessione AI fallita.");
-                } finally {
-                    setAiLoading(false);
-                }
-            };
+  <div class="foglio" id="letturaLeg" style="padding:18px 20px;margin-top:14px"></div>
+</section>
 
-            const handleMassChange = (val) => {
-                setMassInput(val);
-                if (val && !isNaN(val) && selectedElement) {
-                    setMoleInput((parseFloat(val) / selectedElement.mass).toFixed(4));
-                } else if (!val) setMoleInput('');
-            };
+<!-- ============================================ PROGRESSI -->
+<section class="sezione" id="v-progressi" hidden>
+  <div class="kpi" id="kpi"></div>
+  <h2 class="etichetta" style="margin-bottom:11px">Argomenti</h2>
+  <div class="griglia-arg" id="griglia"></div>
+  <div style="margin-top:26px">
+    <button class="secondario" id="btnAzzera">Azzera i progressi</button>
+  </div>
+</section>
 
-            const handleMoleChange = (val) => {
-                setMoleInput(val);
-                if (val && !isNaN(val) && selectedElement) {
-                    setMassInput((parseFloat(val) * selectedElement.mass).toFixed(4));
-                } else if (!val) setMassInput('');
-            };
+</main>
 
-            const filteredElements = ELEMENTS.filter(el => 
-                el.name.toLowerCase().includes(search.toLowerCase()) || 
-                el.symbol.toLowerCase().includes(search.toLowerCase()) ||
-                el.number.toString() === search
-            );
+<div class="velo" id="velo" hidden>
+  <div class="pannello" role="dialog" aria-modal="true" aria-labelledby="tCfg">
+    <h2 id="tCfg">Impostazioni</h2>
+    <p class="aiuto">L'allenamento e la nomenclatura funzionano senza chiave. La chiave serve solo al pulsante «Spiegami meglio»: resta nel browser, non viene mai inviata altrove.</p>
+    <div class="campo">
+      <label for="inProvider">Motore</label>
+      <select id="inProvider">
+        <option value="gemini">Google Gemini</option>
+        <option value="anthropic">Anthropic Claude</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="inModello">Modello</label>
+      <select id="inModello"></select>
+    </div>
+    <div class="campo">
+      <label for="inChiave">Chiave API</label>
+      <input type="password" id="inChiave" placeholder="incolla qui" autocomplete="off">
+    </div>
+    <div class="campo">
+      <label for="inAnalogie">Stile delle spiegazioni</label>
+      <select id="inAnalogie">
+        <option value="si">Con analogie da cucina e rugby</option>
+        <option value="no">Spiegazione diretta</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="inDurata">Durata della sessione</label>
+      <select id="inDurata">
+        <option value="7">7 minuti (consigliata)</option>
+        <option value="12">12 minuti</option>
+        <option value="20">20 minuti</option>
+        <option value="0">Senza limite di tempo</option>
+      </select>
+    </div>
+    <div class="riga-bottoni">
+      <button class="secondario" id="btnChiudiCfg">Chiudi</button>
+      <button class="primario" id="btnSalvaCfg">Salva</button>
+    </div>
+  </div>
+</div>
 
-            return (
-                <div className="min-h-screen p-4 pb-32 flex flex-col">
-                    <header className="max-w-7xl mx-auto mb-12 text-center w-full">
-                        <h1 className="text-4xl font-black text-slate-800 flex items-center justify-center gap-3">
-                            <Icon name="sparkles" className="text-blue-500" /> Tavola Periodica & Stechiometria
-                        </h1>
-                        <p className="text-slate-500 mt-2 font-medium">Supporto Studio Ingegneria Gestionale - Mercatorum</p>
-                    </header>
+<div class="avvisi" id="avvisi"></div>
 
-                    <main className="flex-1">
-                        <div className="max-w-7xl mx-auto overflow-x-auto pb-8">
-                            <div className="grid gap-1 min-w-[1000px]" style={{ gridTemplateColumns: 'repeat(18, 1fr)' }}>
-                                {ELEMENTS.map(el => {
-                                    const active = filteredElements.includes(el);
-                                    return (
-                                        <button
-                                            key={el.number}
-                                            onClick={() => {
-                                                setSelectedElement(el);
-                                                setMassInput(el.mass.toString());
-                                                setMoleInput('1');
-                                            }}
-                                            style={{ gridColumn: el.x, gridRow: el.y }}
-                                            className={`relative flex flex-col items-center justify-center p-2 border-2 rounded-xl aspect-square transition-all duration-300 hover:scale-110 hover:shadow-lg hover:z-10 ${GROUP_STYLES[el.group] || 'bg-slate-50'} ${active ? 'opacity-100' : 'opacity-10 blur-[1px]'}`}
-                                        >
-                                            <span className="absolute top-1 left-1.5 text-[10px] font-bold opacity-40">#{el.number}</span>
-                                            <span className="text-xl font-black">{el.symbol}</span>
-                                            <span className="text-[8px] font-bold uppercase truncate w-full text-center px-1">{el.name}</span>
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    </main>
+<script>
+"use strict";
 
-                    {/* Firma e Barra di ricerca */}
-                    <div className="fixed bottom-0 left-0 right-0 p-6 flex flex-col items-center gap-4 bg-gradient-to-t from-slate-50 via-slate-50/90 to-transparent z-40">
-                        <div className="relative w-full max-w-lg group">
-                            <div className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400"><Icon name="search" /></div>
-                            <input
-                                type="text"
-                                placeholder="Cerca elemento o numero atomico..."
-                                value={search}
-                                onChange={(e) => setSearch(e.target.value)}
-                                className="w-full pl-14 pr-6 py-5 bg-white rounded-3xl shadow-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-blue-100 font-semibold text-slate-700 transition-all"
-                            />
-                        </div>
-                        <div className="text-slate-400 text-xs font-bold tracking-widest uppercase pb-2">
-                            by Andrea Lupetti
-                        </div>
-                    </div>
+/* ==========================================================================
+   1. Stato e memoria
+   ========================================================================== */
 
-                    {selectedElement && (
-                        <div className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-                            <div className="w-full max-w-4xl bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row h-[85vh]">
-                                <div className={`md:w-1/3 p-10 flex flex-col items-center justify-center text-center ${GROUP_STYLES[selectedElement.group] || 'bg-slate-100'}`}>
-                                    <span className="text-3xl font-bold opacity-30 mb-2">#{selectedElement.number}</span>
-                                    <div className="text-9xl font-black tracking-tighter mb-4">{selectedElement.symbol}</div>
-                                    <h2 className="text-3xl font-black uppercase tracking-widest">{selectedElement.name}</h2>
-                                    <div className="mt-6 bg-white/40 px-6 py-2 rounded-full font-bold text-sm">Massa: {selectedElement.mass} u</div>
-                                </div>
+const CHIAVI = {
+  progressi: "chimica.progressi",
+  elementi: "chimica.elementi",
+  cfg: "chimica.cfg",
+  serie: "chimica.serie",
+  selezione: "chimica.selezione"
+};
 
-                                <div className="md:w-2/3 p-10 overflow-y-auto flex flex-col bg-white">
-                                    <div className="flex justify-between items-center mb-8">
-                                        <h3 className="text-2xl font-black text-slate-800 flex items-center gap-3">
-                                            <Icon name="calculator" className="text-blue-500" /> Strumenti di Calcolo
-                                        </h3>
-                                        <button onClick={() => setSelectedElement(null)} className="p-2 bg-slate-100 hover:bg-slate-200 rounded-full transition-colors"><Icon name="x" /></button>
-                                    </div>
+const MODELLI = {
+  gemini: [
+    ["gemini-3.1-flash-lite", "Flash Lite — veloce ed economico"],
+    ["gemini-3.1-flash", "Flash — equilibrato"],
+    ["gemini-3.1-pro", "Pro — il più capace"]
+  ],
+  anthropic: [
+    ["claude-haiku-4-5-20251001", "Haiku 4.5 — veloce ed economico"],
+    ["claude-sonnet-5", "Sonnet 5 — equilibrato"],
+    ["claude-opus-5", "Opus 5 — il più capace"]
+  ]
+};
 
-                                    <div className="space-y-8">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                            <div className="space-y-2">
-                                                <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Massa Campione (g)</label>
-                                                <div className="relative">
-                                                    <input type="number" value={massInput} onChange={(e) => handleMassChange(e.target.value)} className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-400 outline-none font-bold text-lg" />
-                                                    <span className="absolute right-4 top-4 text-slate-300 font-bold">g</span>
-                                                </div>
-                                            </div>
-                                            <div className="space-y-2">
-                                                <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Quantità (mol)</label>
-                                                <div className="relative">
-                                                    <input type="number" value={moleInput} onChange={(e) => handleMoleChange(e.target.value)} className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-400 outline-none font-bold text-lg" />
-                                                    <span className="absolute right-4 top-4 text-slate-300 font-bold">mol</span>
-                                                </div>
-                                            </div>
-                                        </div>
+const S = {
+  elementi: [],
+  indice: null,
+  banche: {},          // id argomento -> array di domande
+  progressi: {},       // id domanda -> { r, ef, iv, next, viste, ko }
+  elprog: {},          // simbolo -> livello 0..3
+  serie: { giorni: 0, ultimo: null },
+  cfg: { provider: "gemini", modello: MODELLI.gemini[0][0], chiave: "", analogie: "si", durata: 7 },
+  sessione: null,
+  selezione: null,      // null = tutti gli argomenti
+  vista: "allenamento",
+  elSelezionato: null,
+  nomQuesito: null,
+  nomPunti: { giuste: 0, totali: 0 }
+};
 
-                                        <div className="bg-slate-900 text-white p-6 rounded-[2rem] flex flex-col items-center shadow-xl">
-                                            <Icon name="hash" className="text-blue-400 mb-2" />
-                                            <div className="text-3xl font-black text-blue-100">
-                                                {(parseFloat(moleInput || 0) * AVOGADRO).toExponential(3)}
-                                            </div>
-                                            <p className="text-[10px] uppercase font-bold text-slate-500 mt-2 tracking-widest">Atomi totali nel campione</p>
-                                        </div>
+function leggi(chiave, difetto) {
+  try {
+    const v = localStorage.getItem(chiave);
+    return v ? JSON.parse(v) : difetto;
+  } catch (e) { return difetto; }
+}
+function scrivi(chiave, valore) {
+  try { localStorage.setItem(chiave, JSON.stringify(valore)); }
+  catch (e) { avvisa("Memoria del browser piena: i progressi non sono stati salvati.", true); }
+}
 
-                                        <div className="pt-8 border-t border-slate-100">
-                                            <p className="text-sm font-black text-slate-800 mb-4 flex items-center gap-2">
-                                                <Icon name="sparkles" className="text-purple-500" /> Chiedi al Tutor Gemini
-                                            </p>
-                                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                                                <button onClick={() => callGemini(`Dimmi una curiosità tecnologica moderna sull'elemento ${selectedElement.name}.`)} className="py-3 px-4 bg-purple-50 text-purple-700 rounded-2xl font-bold text-xs hover:bg-purple-100 flex items-center justify-center gap-2"><Icon name="lightbulb" className="w-4 h-4" /> Curiosità</button>
-                                                <button onClick={() => callGemini(`Spiega cos'è una mole di ${selectedElement.name} usando un'analogia con oggetti comuni.`)} className="py-3 px-4 bg-indigo-50 text-indigo-700 rounded-2xl font-bold text-xs hover:bg-indigo-100 flex items-center justify-center gap-2"><Icon name="brain-circuit" className="w-4 h-4" /> Analogia</button>
-                                                <button onClick={() => callGemini(`Genera un esercizio di stechiometria per l'elemento ${selectedElement.name} (massa ${selectedElement.mass}). Non darmi il risultato, scrivimi solo il testo del problema. Metterò alla prova le mie conoscenze.`)} className="py-3 px-4 bg-emerald-50 text-emerald-700 rounded-2xl font-bold text-xs hover:bg-emerald-100 flex items-center justify-center gap-2"><Icon name="send" className="w-4 h-4" /> Esercizio</button>
-                                            </div>
-                                        </div>
+function oggiN() { return Math.floor(Date.now() / 86400000); }
 
-                                        <div className="relative min-h-[100px] bg-slate-50 rounded-3xl p-6 border border-slate-100 italic text-slate-600 text-sm">
-                                            {aiLoading ? "Gemini sta scrivendo..." : aiError ? <span className="text-red-500">{aiError}</span> : aiResponse || "Seleziona un'azione AI per approfondire..."}
-                                        </div>
-                                    </div>
-                                    <div className="mt-8 text-center text-slate-300 text-[10px] font-bold uppercase tracking-widest">
-                                        Progetto Didattico by Andrea Lupetti
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            );
-        }
+function avvisa(testo, male) {
+  const cont = document.getElementById("avvisi");
+  const d = document.createElement("div");
+  d.className = "avviso" + (male ? " male" : "");
+  d.textContent = testo;
+  cont.appendChild(d);
+  setTimeout(() => d.remove(), 4200);
+}
 
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
-    </script>
+function esc(t) {
+  return String(t).replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+/* Rende visibili gli indici numerici delle formule: H2SO4 -> H₂SO₄ */
+function formula(testo) {
+  return esc(testo).replace(/([A-Za-z\)\]])(\d+)/g, "$1<sub>$2</sub>");
+}
+
+/* ==========================================================================
+   2. Ripetizione spaziata (SM-2 semplificato)
+   ========================================================================== */
+
+function statoDi(id) {
+  return S.progressi[id] || { r: 0, ef: 2.5, iv: 0, next: 0, viste: 0, ko: 0 };
+}
+
+function pianifica(id, giusta) {
+  const p = statoDi(id);
+  p.viste++;
+  if (giusta) {
+    p.r++;
+    p.ef = Math.min(2.8, p.ef + 0.1);
+    p.iv = p.r === 1 ? 1 : p.r === 2 ? 3 : Math.max(1, Math.round(p.iv * p.ef));
+  } else {
+    p.r = 0;
+    p.ko++;
+    p.ef = Math.max(1.3, p.ef - 0.25);
+    p.iv = 0;
+  }
+  p.next = oggiN() + p.iv;
+  S.progressi[id] = p;
+  scrivi(CHIAVI.progressi, S.progressi);
+  return p;
+}
+
+/* Livello di padronanza 0..3, usato per le tacche e per colorare la tavola. */
+function livello(id) {
+  const p = S.progressi[id];
+  if (!p || !p.viste) return 0;
+  if (p.r >= 4) return 3;
+  if (p.r >= 2) return 2;
+  if (p.r >= 1) return 1;
+  return 0;
+}
+
+function tutteLeDomande() {
+  const fuori = [];
+  for (const idArg of Object.keys(S.banche)) {
+    for (const d of S.banche[idArg]) fuori.push(d);
+  }
+  return fuori;
+}
+
+function daRipassare() {
+  const o = oggiN();
+  return tutteLeDomande().filter(d => {
+    const p = S.progressi[d.id];
+    return p && p.viste > 0 && p.next <= o;
+  });
+}
+
+function maiViste() {
+  return tutteLeDomande().filter(d => !S.progressi[d.id] || !S.progressi[d.id].viste);
+}
+
+function mescola(a) {
+  const b = a.slice();
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+/* Alterna argomenti diversi: e' l'interleaving, scomodo ma efficace. */
+function intreccia(domande) {
+  const perArg = {};
+  for (const d of domande) (perArg[d.arg] = perArg[d.arg] || []).push(d);
+  const code = Object.values(perArg).map(mescola);
+  const fuori = [];
+  while (code.some(c => c.length)) {
+    for (const c of code) if (c.length) fuori.push(c.shift());
+  }
+  return fuori;
+}
+
+function nelFiltro(d, argomenti) {
+  return !argomenti || !argomenti.length || argomenti.includes(d.arg);
+}
+
+function costruisciSessione(argomenti, lunghezza) {
+  const max = lunghezza || 12;
+  let dovute = daRipassare().filter(d => nelFiltro(d, argomenti));
+  let nuove = maiViste().filter(d => nelFiltro(d, argomenti));
+  dovute.sort((a, b) => statoDi(a.id).next - statoDi(b.id).next);
+  const scelte = dovute.slice(0, max);
+  if (scelte.length < max) scelte.push(...mescola(nuove).slice(0, max - scelte.length));
+  /* Se non c'e' abbastanza materiale nuovo, si ripescano le piu' fragili. */
+  if (scelte.length < Math.min(5, max)) {
+    const resto = tutteLeDomande()
+      .filter(d => !scelte.includes(d) && nelFiltro(d, argomenti))
+      .sort((a, b) => statoDi(b.id).ko - statoDi(a.id).ko);
+    scelte.push(...resto.slice(0, max - scelte.length));
+  }
+  if (!scelte.length) return null;
+  return {
+    coda: intreccia(scelte),
+    i: 0,
+    giuste: 0,
+    risposto: false,
+    scelta: null,
+    inizio: Date.now(),
+    argomenti: argomenti || null,
+    ordineOpzioni: null
+  };
+}
+
+/* ==========================================================================
+   3. Vista Allenamento
+   ========================================================================== */
+
+let timerSessione = null;
+
+function contaArgomenti() {
+  return Object.keys(S.banche).filter(id => (S.banche[id] || []).length).length;
+}
+
+/* Pannello di scelta: chiuso di default, perche' la sessione mista e' quella
+   giusta quasi sempre. Si apre quando serve restringere il campo. */
+function scegliArgomentiHTML() {
+  if (!S.indice) return "";
+  const sel = S.selezione;
+  let righe = "";
+  for (const g of S.indice.gruppi) {
+    const voci = g.argomenti.filter(a => (S.banche[a.id] || []).length);
+    if (!voci.length) continue;
+    righe += `<p class="etichetta" style="margin:12px 0 6px">${esc(g.gruppo)}</p>`;
+    for (const a of voci) {
+      const n = S.banche[a.id].length;
+      const attivo = !sel || !sel.length || sel.includes(a.id);
+      righe += `<label class="voce-scelta">
+        <input type="checkbox" value="${esc(a.id)}" ${attivo ? "checked" : ""}>
+        <span>${esc(a.titolo)}</span>
+        <em>${n}</em></label>`;
+    }
+  }
+  return `<details class="scelta-arg" ${sel && sel.length ? "open" : ""}>
+    <summary>Scegli gli argomenti</summary>
+    <div style="display:flex;gap:8px;margin:4px 0 2px">
+      <button class="secondario" data-tutti="1">Tutti</button>
+      <button class="secondario" data-tutti="0">Nessuno</button>
+    </div>
+    ${righe}
+  </details>`;
+}
+
+function collegaScelta() {
+  const box = document.querySelector(".scelta-arg");
+  if (!box) return;
+  const caselle = () => [...box.querySelectorAll('input[type=checkbox]')];
+
+  function salva() {
+    const tutte = caselle();
+    const scelti = tutte.filter(c => c.checked).map(c => c.value);
+    S.selezione = scelti.length === tutte.length ? null : scelti;
+    scrivi(CHIAVI.selezione, S.selezione);
+    disegnaAllenamento();
+    const nuovo = document.querySelector(".scelta-arg");
+    if (nuovo) nuovo.open = true;
+  }
+
+  caselle().forEach(c => { c.onchange = salva; });
+  box.querySelectorAll("button[data-tutti]").forEach(b => {
+    b.onclick = e => {
+      e.preventDefault();
+      const acceso = b.dataset.tutti === "1";
+      caselle().forEach(c => { c.checked = acceso; });
+      salva();
+    };
+  });
+}
+
+function disegnaAllenamento() {
+  const corpo = document.getElementById("allCorpo");
+  const barra = document.getElementById("etichettaSess");
+  const crono = document.getElementById("cronometro");
+  const avanz = document.getElementById("avanzamento");
+
+  if (!S.sessione) {
+    const sel = S.selezione;
+    const dov = daRipassare().filter(d => nelFiltro(d, sel)).length;
+    const nuo = maiViste().filter(d => nelFiltro(d, sel)).length;
+    const tot = tutteLeDomande().length;
+    barra.textContent = "Sessione";
+    crono.textContent = "";
+    avanz.style.width = "0%";
+    if (!tot) {
+      corpo.innerHTML = `<div class="vuoto">
+        <strong>Nessuna domanda caricata</strong>
+        La banca è vuota o il file <span class="mono">domande/index.json</span> non è raggiungibile.
+        Apri l'app da un server (non da <span class="mono">file://</span>) oppure genera le domande dalle dispense
+        con <span class="mono">tools/genera_domande.py</span>.
+      </div>`;
+      return;
+    }
+    corpo.innerHTML = `<div class="foglio" style="padding:30px 26px;text-align:center">
+      <p class="etichetta" style="margin-bottom:9px">Oggi</p>
+      <p style="font-family:'Archivo',sans-serif;font-size:23px;font-weight:600;margin-bottom:6px">
+        ${dov} da ripassare, ${nuo} mai viste</p>
+      <p style="color:var(--grafite-2);font-size:14px;max-width:430px;margin:0 auto 20px">
+        ${sel && sel.length
+          ? `Stai allenando ${sel.length} argoment${sel.length === 1 ? "o" : "i"} su ${contaArgomenti()}.`
+          : "Una sessione mescola argomenti diversi: sembra più difficile del ripasso a blocchi, ed è esattamente per questo che funziona."}</p>
+      <button class="primario" id="btnVia">Inizia la sessione</button>
+      ${scegliArgomentiHTML()}
+    </div>`;
+    document.getElementById("btnVia").onclick = () => {
+      S.sessione = costruisciSessione(S.selezione, 12);
+      if (!S.sessione) { avvisa("Nessuna domanda per gli argomenti scelti."); return; }
+      avviaCrono();
+      disegnaAllenamento();
+    };
+    collegaScelta();
+    return;
+  }
+
+  const s = S.sessione;
+  if (s.i >= s.coda.length) return chiudiSessione();
+
+  const d = s.coda[s.i];
+  barra.textContent = `Domanda ${s.i + 1} di ${s.coda.length}`;
+  avanz.style.width = ((s.i + (s.risposto ? 1 : 0)) / s.coda.length * 100) + "%";
+
+  if (!s.ordineOpzioni) {
+    s.ordineOpzioni = mescola(d.opzioni.map((_, i) => i));
+  }
+  const ordine = s.ordineOpzioni;
+
+  const titoloArg = (S.titoli && S.titoli[d.arg]) || d.arg;
+  const p = S.progressi[d.id];
+  const stato = !p || !p.viste ? "nuova" :
+    p.r === 0 ? "da riprendere" : `vista ${p.viste} volte`;
+
+  let html = `<article class="foglio domanda">
+    <div class="fonte">
+      <span class="etichetta">${esc(titoloArg)}</span>
+      <span class="etichetta">${stato}</span>
+    </div>
+    <h2>${formula(d.testo)}</h2>
+    <div class="opzioni">`;
+
+  ordine.forEach((idx, pos) => {
+    const giusta = idx === d.giusta;
+    let classi = "opz";
+    if (s.risposto) {
+      if (giusta) classi += " giusta";
+      else if (idx === s.scelta) classi += " sbagliata";
+      else classi += " spenta";
+    }
+    html += `<button class="${classi}" data-idx="${idx}" ${s.risposto ? "disabled" : ""}>
+      <kbd>${pos + 1}</kbd>
+      <span class="testo">${formula(d.opzioni[idx])}
+      ${s.risposto && d.perche && d.perche[idx] ? `<span class="motivo">${formula(d.perche[idx])}</span>` : ""}
+      </span></button>`;
+  });
+
+  html += `</div>`;
+
+  if (s.risposto) {
+    const ok = s.scelta === d.giusta;
+    html += `<div class="esito">
+      <span class="verdetto ${ok ? "ok" : "ko"}">${ok ? "Esatta" : "Sbagliata"}</span>
+      <button class="secondario" id="btnSpiega">Spiegami meglio</button>
+      <button class="primario" id="btnAvanti">Avanti</button>
+    </div><div id="boxSpiega"></div>`;
+  } else {
+    html += `<p style="margin-top:15px;font-size:12px;color:var(--grafite-3)">
+      Puoi rispondere con i tasti 1–4.</p>`;
+  }
+
+  html += `</article>`;
+  corpo.innerHTML = html;
+
+  corpo.querySelectorAll(".opz").forEach(b => {
+    b.onclick = () => rispondi(parseInt(b.dataset.idx, 10));
+  });
+  const av = document.getElementById("btnAvanti");
+  if (av) av.onclick = avanti;
+  const sp = document.getElementById("btnSpiega");
+  if (sp) sp.onclick = () => spiegaConAI(d, s.scelta);
+}
+
+function rispondi(idx) {
+  const s = S.sessione;
+  if (!s || s.risposto) return;
+  const d = s.coda[s.i];
+  s.scelta = idx;
+  s.risposto = true;
+  const ok = idx === d.giusta;
+  if (ok) s.giuste++;
+  pianifica(d.id, ok);
+  registraGiornata();
+  disegnaAllenamento();
+}
+
+function avanti() {
+  const s = S.sessione;
+  s.i++;
+  s.risposto = false;
+  s.scelta = null;
+  s.ordineOpzioni = null;
+  disegnaAllenamento();
+}
+
+function chiudiSessione() {
+  const s = S.sessione;
+  const minuti = Math.max(1, Math.round((Date.now() - s.inizio) / 60000));
+  const pct = Math.round(s.giuste / s.coda.length * 100);
+  fermaCrono();
+  document.getElementById("etichettaSess").textContent = "Sessione conclusa";
+  document.getElementById("avanzamento").style.width = "100%";
+  document.getElementById("allCorpo").innerHTML = `<div class="foglio" style="padding:32px 26px;text-align:center">
+    <p class="etichetta" style="margin-bottom:9px">Fine</p>
+    <p style="font-family:'Archivo',sans-serif;font-size:30px;font-weight:700;margin-bottom:4px">
+      ${s.giuste} su ${s.coda.length}</p>
+    <p style="color:var(--grafite-2);font-size:14px;margin-bottom:20px">
+      ${pct}% in ${minuti} minut${minuti === 1 ? "o" : "i"}.
+      ${s.giuste < s.coda.length ? "Le sbagliate tornano domani." : "Tutte esatte: torneranno più avanti."}</p>
+    <button class="primario" id="btnAncora">Un'altra sessione</button>
+  </div>`;
+  document.getElementById("btnAncora").onclick = () => {
+    S.sessione = costruisciSessione(S.selezione, 12);
+    if (!S.sessione) { avvisa("Per oggi hai finito il materiale."); S.sessione = null; }
+    else avviaCrono();
+    disegnaAllenamento();
+  };
+  S.sessione = null;
+  disegnaProgressi();
+}
+
+function avviaCrono() {
+  fermaCrono();
+  if (!S.cfg.durata) { document.getElementById("cronometro").textContent = ""; return; }
+  const fine = Date.now() + S.cfg.durata * 60000;
+  timerSessione = setInterval(() => {
+    const resta = Math.max(0, fine - Date.now());
+    const m = Math.floor(resta / 60000), sec = Math.floor(resta % 60000 / 1000);
+    document.getElementById("cronometro").textContent =
+      `${m}:${String(sec).padStart(2, "0")}`;
+    if (resta <= 0 && S.sessione) {
+      /* Il tempo scaduto taglia la coda dopo la domanda in corso. */
+      S.sessione.coda = S.sessione.coda.slice(0, S.sessione.i + 1);
+      fermaCrono();
+      avvisa("Tempo: la sessione si chiude dopo questa domanda.");
+    }
+  }, 1000);
+}
+function fermaCrono() {
+  if (timerSessione) { clearInterval(timerSessione); timerSessione = null; }
+}
+
+function registraGiornata() {
+  const oggi = new Date().toISOString().slice(0, 10);
+  if (S.serie.ultimo === oggi) return;
+  const ieri = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  S.serie.giorni = S.serie.ultimo === ieri ? S.serie.giorni + 1 : 1;
+  S.serie.ultimo = oggi;
+  scrivi(CHIAVI.serie, S.serie);
+  disegnaFiamma();
+}
+
+function disegnaFiamma() {
+  const oggi = new Date().toISOString().slice(0, 10);
+  const ieri = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  const viva = S.serie.ultimo === oggi || S.serie.ultimo === ieri;
+  const n = viva ? S.serie.giorni : 0;
+  document.getElementById("fiammaN").textContent = n;
+  document.getElementById("fiamma").classList.toggle("viva", n > 0);
+}
+
+/* ==========================================================================
+   4. Chiamata AI (facoltativa)
+   ========================================================================== */
+
+async function chiamaAI(prompt, sistema) {
+  if (!S.cfg.chiave) throw new Error("Nessuna chiave impostata. Aprila da Impostazioni.");
+  if (S.cfg.provider === "anthropic") {
+    const r = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "x-api-key": S.cfg.chiave,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
+      },
+      body: JSON.stringify({
+        model: S.cfg.modello, max_tokens: 900, system: sistema,
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+    if (!r.ok) throw new Error(`Il servizio ha risposto ${r.status}. Controlla chiave e modello.`);
+    const d = await r.json();
+    return (d.content || []).filter(b => b.type === "text").map(b => b.text).join("\n");
+  }
+  const url = "https://generativelanguage.googleapis.com/v1beta/models/" +
+    encodeURIComponent(S.cfg.modello) + ":generateContent";
+  const r = await fetch(url, {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-goog-api-key": S.cfg.chiave },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      systemInstruction: { parts: [{ text: sistema }] }
+    })
+  });
+  if (!r.ok) throw new Error(`Il servizio ha risposto ${r.status}. Controlla chiave e modello.`);
+  const d = await r.json();
+  const parti = d.candidates && d.candidates[0] && d.candidates[0].content &&
+    d.candidates[0].content.parts;
+  return (parti || []).map(p => p.text || "").join("\n");
+}
+
+function rendi(markdown) {
+  const grezzo = window.marked ? marked.parse(markdown) : esc(markdown);
+  return window.DOMPurify ? DOMPurify.sanitize(grezzo) : grezzo;
+}
+
+async function spiegaConAI(d, scelta) {
+  const box = document.getElementById("boxSpiega");
+  if (!S.cfg.chiave) {
+    box.innerHTML = `<div class="spiegazione">Per le spiegazioni serve una chiave API.
+      Aprila da <b>Impostazioni</b>: l'allenamento funziona lo stesso senza.</div>`;
+    return;
+  }
+  box.innerHTML = `<div class="spiegazione">Sto scrivendo la spiegazione…</div>`;
+  const sistema = "Sei un tutor di chimica generale per un esame universitario a risposta multipla " +
+    "di Ingegneria gestionale. Rispondi in italiano, massimo 150 parole, senza preamboli. " +
+    "Vai al punto: perché la risposta corretta è corretta e dove porta l'errore commesso. " +
+    (S.cfg.analogie === "si"
+      ? "Chiudi con una analogia breve presa dalla cucina professionale o dal rugby, solo se calza davvero."
+      : "Niente analogie: spiegazione diretta.");
+  const prompt = `Domanda: ${d.testo}
+Opzioni: ${d.opzioni.map((o, i) => `${i + 1}) ${o}`).join("  ")}
+Risposta corretta: ${d.giusta + 1}
+Risposta data dallo studente: ${scelta === d.giusta ? "quella corretta" : (scelta + 1)}
+Spiegazioni già mostrate: ${(d.perche || []).join(" | ")}
+
+Aggiungi qualcosa che le spiegazioni sopra non dicono già.`;
+  try {
+    const testo = await chiamaAI(prompt, sistema);
+    box.innerHTML = `<div class="spiegazione">${rendi(testo)}</div>`;
+  } catch (e) {
+    box.innerHTML = `<div class="spiegazione" style="background:var(--rossa-tenue)">${esc(e.message)}</div>`;
+  }
+}
+
+/* ==========================================================================
+   5. Tavola periodica
+   ========================================================================== */
+
+const NOMI_CAT = {
+  "alcalino": "Metallo alcalino", "alcalino-terroso": "Metallo alcalino terroso",
+  "transizione": "Metallo di transizione", "metallo": "Metallo",
+  "semimetallo": "Semimetallo", "non-metallo": "Non metallo",
+  "alogeno": "Alogeno", "gas-nobile": "Gas nobile",
+  "lantanide": "Lantanide", "attinide": "Attinide"
+};
+
+function disegnaTavola() {
+  const cont = document.getElementById("tavola");
+  const cerca = document.getElementById("cercaEl").value.trim().toLowerCase();
+  const blocco = document.getElementById("filtroBlocco").value;
+  const colore = document.getElementById("coloreTavola").value;
+
+  cont.innerHTML = "";
+  for (const el of S.elementi) {
+    const dentro =
+      (!blocco || el.blocco === blocco) &&
+      (!cerca || el.nome.toLowerCase().includes(cerca) ||
+        el.sim.toLowerCase() === cerca || el.sim.toLowerCase().startsWith(cerca) ||
+        String(el.n) === cerca);
+
+    const b = document.createElement("button");
+    b.className = "cella b-" + el.blocco + (dentro ? "" : " fuori") +
+      (S.elSelezionato === el.sim ? " evidenziata" : "");
+    b.style.gridColumn = el.x;
+    b.style.gridRow = el.y;
+    b.title = `${el.nome} — ${NOMI_CAT[el.cat] || el.cat}`;
+
+    const liv = S.elprog[el.sim] || 0;
+    const altezza = colore === "padronanza" ? liv / 3 * 100 : 0;
+    b.innerHTML =
+      `<span class="riempi" style="height:${altezza}%"></span>` +
+      `<span class="z">${el.n}</span>` +
+      `<span class="sim">${el.sim}</span>` +
+      `<span class="nm">${esc(el.nome)}</span>`;
+    b.onclick = () => { S.elSelezionato = el.sim; disegnaTavola(); mostraElemento(el); };
+    cont.appendChild(b);
+  }
+}
+
+function mostraElemento(el) {
+  const c = document.getElementById("dettaglioEl");
+  const ox = el.ox && el.ox.length
+    ? el.ox.map(v => (v > 0 ? "+" : "") + v).join(", ")
+    : "non rilevanti nel corso";
+  c.innerHTML = `<div class="foglio dettaglio">
+    <div class="capo">
+      <div class="simbolone b-${el.blocco}" style="color:var(--blocco-${el.blocco})">${el.sim}</div>
+      <div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:20px">${esc(el.nome)}</div>
+        <div class="etichetta" style="margin-top:2px">${NOMI_CAT[el.cat] || el.cat} · blocco ${el.blocco}</div>
+      </div>
+    </div>
+    <dl class="dati">
+      <div class="dato"><dt>Numero atomico</dt><dd>${el.n}</dd></div>
+      <div class="dato"><dt>Massa atomica</dt><dd>${el.massa} u</dd></div>
+      <div class="dato"><dt>Gruppo</dt><dd>${el.gruppo || "— (blocco f)"}</dd></div>
+      <div class="dato"><dt>Periodo</dt><dd>${el.periodo}</dd></div>
+      <div class="dato"><dt>Configurazione</dt><dd>${formulaConfig(el.config)}</dd></div>
+      <div class="dato"><dt>Elettronegatività</dt><dd>${el.en != null ? el.en : "—"}</dd></div>
+      <div class="dato"><dt>Numeri di ossidazione</dt><dd>${ox}</dd></div>
+      <div class="dato"><dt>Padronanza</dt><dd>${"●".repeat(S.elprog[el.sim] || 0) + "○".repeat(3 - (S.elprog[el.sim] || 0))}</dd></div>
+    </dl>
+  </div>`;
+}
+
+function formulaConfig(c) {
+  return esc(c).replace(/([spdf])(\d+)/g, "$1<sup>$2</sup>");
+}
+
+/* --- Sfida sugli elementi: domande costruite dai dati, non scritte a mano --- */
+
+function generaSfidaElemento() {
+  const candidati = S.elementi.filter(e => e.n <= 56 || (e.n >= 72 && e.n <= 86));
+  const el = candidati[Math.floor(Math.random() * candidati.length)];
+  const tipi = ["gruppo", "periodo", "blocco", "categoria"];
+  if (el.ox && el.ox.length) tipi.push("ossidazione");
+  const tipo = tipi[Math.floor(Math.random() * tipi.length)];
+
+  function conDistrattori(giusta, insieme) {
+    const altri = mescola(insieme.filter(v => String(v) !== String(giusta))).slice(0, 3);
+    const opz = mescola([giusta, ...altri].map(String));
+    return { opzioni: opz, giusta: opz.indexOf(String(giusta)) };
+  }
+
+  let testo, dati;
+  if (tipo === "gruppo") {
+    testo = `A quale gruppo appartiene ${el.nome} (${el.sim})?`;
+    dati = conDistrattori(el.gruppo, [1, 2, 13, 14, 15, 16, 17, 18, 3, 6, 8, 11, 12]);
+    dati.opzioni = dati.opzioni.map(v => "Gruppo " + v);
+    dati.testo = testo;
+  } else if (tipo === "periodo") {
+    testo = `In quale periodo si trova ${el.nome} (${el.sim})?`;
+    dati = conDistrattori(el.periodo, [1, 2, 3, 4, 5, 6, 7]);
+    dati.opzioni = dati.opzioni.map(v => "Periodo " + v);
+    dati.testo = testo;
+  } else if (tipo === "blocco") {
+    testo = `A quale blocco appartiene ${el.nome} (${el.sim})?`;
+    dati = conDistrattori(el.blocco, ["s", "p", "d", "f"]);
+    dati.opzioni = dati.opzioni.map(v => "Blocco " + v);
+    dati.testo = testo;
+  } else if (tipo === "categoria") {
+    testo = `Come si classifica ${el.nome} (${el.sim})?`;
+    dati = conDistrattori(NOMI_CAT[el.cat], Object.values(NOMI_CAT));
+    dati.testo = testo;
+  } else {
+    testo = `Qual è il numero di ossidazione più comune di ${el.nome} (${el.sim})?`;
+    const g = (el.ox[0] > 0 ? "+" : "") + el.ox[0];
+    dati = conDistrattori(g, ["+1", "+2", "+3", "+4", "-1", "-2", "-3", "+5", "+6", "+7"]);
+    dati.testo = testo;
+  }
+  return { el, tipo, ...dati };
+}
+
+function mostraSfida() {
+  const q = generaSfidaElemento();
+  const c = document.getElementById("dettaglioEl");
+  S.elSelezionato = null;
+  disegnaTavola();
+  c.innerHTML = `<div class="foglio domanda" style="margin-top:18px">
+    <div class="fonte"><span class="etichetta">Sfida sugli elementi</span>
+      <span class="etichetta">${(S.elprog[q.el.sim] || 0)}/3 su questo elemento</span></div>
+    <h2>${esc(q.testo)}</h2>
+    <div class="opzioni" id="opzSfida">
+      ${q.opzioni.map((o, i) => `<button class="opz" data-i="${i}">
+        <kbd>${i + 1}</kbd><span class="testo">${esc(o)}</span></button>`).join("")}
+    </div>
+    <div id="esitoSfida"></div>
+  </div>`;
+
+  c.querySelectorAll("#opzSfida .opz").forEach(b => {
+    b.onclick = () => {
+      const i = parseInt(b.dataset.i, 10);
+      const ok = i === q.giusta;
+      c.querySelectorAll("#opzSfida .opz").forEach((x, j) => {
+        x.disabled = true;
+        if (j === q.giusta) x.classList.add("giusta");
+        else if (j === i) x.classList.add("sbagliata");
+        else x.classList.add("spenta");
+      });
+      const liv = S.elprog[q.el.sim] || 0;
+      S.elprog[q.el.sim] = ok ? Math.min(3, liv + 1) : Math.max(0, liv - 1);
+      scrivi(CHIAVI.elementi, S.elprog);
+      registraGiornata();
+      disegnaTavola();
+      document.getElementById("esitoSfida").innerHTML = `<div class="esito">
+        <span class="verdetto ${ok ? "ok" : "ko"}">${ok ? "Esatta" : "Sbagliata"}</span>
+        <button class="secondario" id="btnVediEl">Scheda di ${esc(q.el.sim)}</button>
+        <button class="primario" id="btnAltraSfida">Un'altra</button></div>`;
+      document.getElementById("btnAltraSfida").onclick = mostraSfida;
+      document.getElementById("btnVediEl").onclick = () => {
+        S.elSelezionato = q.el.sim; disegnaTavola(); mostraElemento(q.el);
+      };
+    };
+  });
+}
+
+/* ==========================================================================
+   6. Nomenclatura — generatore deterministico
+   ========================================================================== */
+
+/* I metalli con i loro numeri di ossidazione e gli aggettivi tradizionali.
+   agg vuoto = un solo n.o., si usa la forma "di <nome>". */
+const METALLI = [
+  { sim: "Na", nome: "sodio", ox: [1], agg: {} },
+  { sim: "K", nome: "potassio", ox: [1], agg: {} },
+  { sim: "Li", nome: "litio", ox: [1], agg: {} },
+  { sim: "Ag", nome: "argento", ox: [1], agg: {} },
+  { sim: "Ca", nome: "calcio", ox: [2], agg: {} },
+  { sim: "Mg", nome: "magnesio", ox: [2], agg: {} },
+  { sim: "Ba", nome: "bario", ox: [2], agg: {} },
+  { sim: "Zn", nome: "zinco", ox: [2], agg: {} },
+  { sim: "Al", nome: "alluminio", ox: [3], agg: {} },
+  { sim: "Fe", nome: "ferro", ox: [2, 3], agg: { 2: "ferroso", 3: "ferrico" } },
+  { sim: "Cu", nome: "rame", ox: [1, 2], agg: { 1: "rameoso", 2: "rameico" } },
+  { sim: "Hg", nome: "mercurio", ox: [1, 2], agg: { 1: "mercuroso", 2: "mercurico" } },
+  { sim: "Pb", nome: "piombo", ox: [2, 4], agg: { 2: "piomboso", 4: "piombico" } },
+  { sim: "Sn", nome: "stagno", ox: [2, 4], agg: { 2: "stannoso", 4: "stannico" } },
+  { sim: "Cr", nome: "cromo", ox: [2, 3], agg: { 2: "cromoso", 3: "cromico" } },
+  { sim: "Mn", nome: "manganese", ox: [2, 3], agg: { 2: "manganoso", 3: "manganico" } },
+  { sim: "Ni", nome: "nichel", ox: [2, 3], agg: { 2: "nicheloso", 3: "nichelico" } },
+  { sim: "Co", nome: "cobalto", ox: [2, 3], agg: { 2: "cobaltoso", 3: "cobaltico" } },
+  { sim: "Au", nome: "oro", ox: [1, 3], agg: { 1: "auroso", 3: "aurico" } }
+];
+
+/* Anioni: la spina dorsale di sali e acidi. */
+const ANIONI = [
+  { f: "F", c: 1, sale: "fluoruro", acido: "HF", nomeAcido: "acido fluoridrico", poli: false, classe: "idracido" },
+  { f: "Cl", c: 1, sale: "cloruro", acido: "HCl", nomeAcido: "acido cloridrico", poli: false, classe: "idracido" },
+  { f: "Br", c: 1, sale: "bromuro", acido: "HBr", nomeAcido: "acido bromidrico", poli: false, classe: "idracido" },
+  { f: "I", c: 1, sale: "ioduro", acido: "HI", nomeAcido: "acido iodidrico", poli: false, classe: "idracido" },
+  { f: "S", c: 2, sale: "solfuro", acido: "H2S", nomeAcido: "acido solfidrico", poli: false, classe: "idracido" },
+  { f: "NO2", c: 1, sale: "nitrito", acido: "HNO2", nomeAcido: "acido nitroso", poli: true, classe: "ossiacido" },
+  { f: "NO3", c: 1, sale: "nitrato", acido: "HNO3", nomeAcido: "acido nitrico", poli: true, classe: "ossiacido" },
+  { f: "SO3", c: 2, sale: "solfito", acido: "H2SO3", nomeAcido: "acido solforoso", poli: true, classe: "ossiacido" },
+  { f: "SO4", c: 2, sale: "solfato", acido: "H2SO4", nomeAcido: "acido solforico", poli: true, classe: "ossiacido" },
+  { f: "CO3", c: 2, sale: "carbonato", acido: "H2CO3", nomeAcido: "acido carbonico", poli: true, classe: "ossiacido" },
+  { f: "PO4", c: 3, sale: "fosfato", acido: "H3PO4", nomeAcido: "acido fosforico", poli: true, classe: "ossiacido" },
+  { f: "PO3", c: 3, sale: "fosfito", acido: "H3PO3", nomeAcido: "acido fosforoso", poli: true, classe: "ossiacido" },
+  { f: "ClO", c: 1, sale: "ipoclorito", acido: "HClO", nomeAcido: "acido ipocloroso", poli: true, classe: "ossiacido" },
+  { f: "ClO2", c: 1, sale: "clorito", acido: "HClO2", nomeAcido: "acido cloroso", poli: true, classe: "ossiacido" },
+  { f: "ClO3", c: 1, sale: "clorato", acido: "HClO3", nomeAcido: "acido clorico", poli: true, classe: "ossiacido" },
+  { f: "ClO4", c: 1, sale: "perclorato", acido: "HClO4", nomeAcido: "acido perclorico", poli: true, classe: "ossiacido" },
+  { f: "MnO4", c: 1, sale: "permanganato", acido: "HMnO4", nomeAcido: "acido permanganico", poli: true, classe: "ossiacido" },
+  { f: "CrO4", c: 2, sale: "cromato", acido: "H2CrO4", nomeAcido: "acido cromico", poli: true, classe: "ossiacido" }
+];
+
+/* Anidridi: nomi irregolari, quindi elencate. */
+const ANIDRIDI = [
+  { f: "CO2", nome: "anidride carbonica" },
+  { f: "SO2", nome: "anidride solforosa" },
+  { f: "SO3", nome: "anidride solforica" },
+  { f: "N2O3", nome: "anidride nitrosa" },
+  { f: "N2O5", nome: "anidride nitrica" },
+  { f: "P2O3", nome: "anidride fosforosa" },
+  { f: "P2O5", nome: "anidride fosforica" },
+  { f: "Cl2O", nome: "anidride ipoclorosa" },
+  { f: "Cl2O3", nome: "anidride clorosa" },
+  { f: "Cl2O5", nome: "anidride clorica" },
+  { f: "Cl2O7", nome: "anidride perclorica" },
+  { f: "SiO2", nome: "anidride silicica" }
+];
+
+function mcd(a, b) { return b ? mcd(b, a % b) : a; }
+
+/* Incrocia le cariche e restituisce la formula del composto. */
+function componi(catSim, catCar, anF, anCar, anPoli) {
+  const g = mcd(catCar, anCar);
+  const iCat = anCar / g, iAn = catCar / g;
+  const parteCat = catSim + (iCat > 1 ? iCat : "");
+  let parteAn;
+  if (iAn > 1) parteAn = anPoli ? `(${anF})${iAn}` : anF + iAn;
+  else parteAn = anF;
+  return parteCat + parteAn;
+}
+
+/* "anidride solforosa" e "ossido solforoso" sono lo stesso aggettivo con
+   genere diverso: senza questo accordo i distrattori escono sgrammaticati
+   e si riconoscono a colpo d'occhio, il che li rende inutili. */
+function alMaschile(t) { return t.replace(/osa$/, "oso").replace(/ica$/, "ico"); }
+function alFemminile(t) { return t.replace(/oso$/, "osa").replace(/ico$/, "ica"); }
+function cambiaTesta(nome, nuovaTesta, genere) {
+  const parti = nome.split(" ");
+  const resto = parti.slice(1).join(" ");
+  const accordato = genere === "f" ? alFemminile(resto) : alMaschile(resto);
+  return `${nuovaTesta} ${accordato}`;
+}
+
+function coda(m, ox) {
+  /* Coda tradizionale del nome: "ferrico" oppure "di sodio". */
+  return m.agg[ox] ? m.agg[ox] : "di " + m.nome;
+}
+function scegli(a) { return a[Math.floor(Math.random() * a.length)]; }
+
+function generaComposto(classe) {
+  const classi = classe ? [classe]
+    : ["ossido", "anidride", "idrossido", "idracido", "ossiacido", "sale"];
+  const c = scegli(classi);
+
+  if (c === "anidride") {
+    const a = scegli(ANIDRIDI);
+    return { classe: c, formula: a.f, nome: a.nome, chiave: a.f };
+  }
+  if (c === "idracido") {
+    const a = scegli(ANIONI.filter(x => x.classe === "idracido"));
+    return { classe: c, formula: a.acido, nome: a.nomeAcido, chiave: a.acido };
+  }
+  if (c === "ossiacido") {
+    const a = scegli(ANIONI.filter(x => x.classe === "ossiacido"));
+    return { classe: c, formula: a.acido, nome: a.nomeAcido, chiave: a.acido };
+  }
+  const m = scegli(METALLI);
+  const ox = scegli(m.ox);
+  if (c === "ossido") {
+    return {
+      classe: c, formula: componi(m.sim, ox, "O", 2, false),
+      nome: `ossido ${coda(m, ox)}`, metallo: m, ox
+    };
+  }
+  if (c === "idrossido") {
+    return {
+      classe: c, formula: componi(m.sim, ox, "OH", 1, true),
+      nome: `idrossido ${coda(m, ox)}`, metallo: m, ox
+    };
+  }
+  const a = scegli(ANIONI);
+  return {
+    classe: c, formula: componi(m.sim, ox, a.f, a.c, a.poli),
+    nome: `${a.sale} ${coda(m, ox)}`, metallo: m, ox, anione: a
+  };
+}
+
+/* I distrattori sono gli errori tipici, non alternative a caso. */
+function distrattoriNome(comp) {
+  const out = new Set();
+  const m = comp.metallo;
+  if (m && m.ox.length > 1) {
+    const altro = m.ox.find(v => v !== comp.ox);
+    const base = comp.nome.split(" ").slice(0, -1).join(" ");
+    out.add(`${base} ${coda(m, altro)}`);
+  }
+  if (comp.anione) {
+    /* Il gemello e' l'anione con la stessa radice e un ossigeno di differenza:
+       solfato/solfito, nitrato/nitrito. E' l'errore piu' frequente in assoluto. */
+    const gemello = ANIONI.find(x =>
+      x !== comp.anione && x.sale.slice(0, 4) === comp.anione.sale.slice(0, 4));
+    if (gemello) out.add(comp.nome.replace(comp.anione.sale, gemello.sale));
+    const s = comp.anione.sale;
+    let scambiato = null;
+    if (/ato$/.test(s)) scambiato = s.replace(/ato$/, "ito");
+    else if (/ito$/.test(s)) scambiato = s.replace(/ito$/, "ato");
+    else if (/uro$/.test(s)) scambiato = s.replace(/uro$/, "ato");
+    if (scambiato) out.add(comp.nome.replace(s, scambiato));
+  }
+  if (comp.classe === "ossido") out.add(cambiaTesta(comp.nome, "anidride", "f"));
+  if (comp.classe === "anidride") out.add(cambiaTesta(comp.nome, "ossido", "m"));
+  if (comp.classe === "idracido") out.add(comp.nome.replace(/idrico$/, "ico"));
+  if (comp.classe === "ossiacido") {
+    if (/oso$/.test(comp.nome)) out.add(comp.nome.replace(/oso$/, "ico"));
+    else if (/ico$/.test(comp.nome)) out.add(comp.nome.replace(/ico$/, "oso"));
+    out.add(cambiaTesta(comp.nome, "anidride", "f"));
+  }
+  if (comp.classe === "idrossido") out.add(comp.nome.replace("idrossido", "ossido"));
+  out.delete(comp.nome);
+  const lista = [...out].filter(Boolean);
+  while (lista.length < 3) {
+    const altro = generaComposto(comp.classe);
+    if (altro.nome !== comp.nome && !lista.includes(altro.nome)) lista.push(altro.nome);
+  }
+  return lista.slice(0, 3);
+}
+
+function distrattoriFormula(comp) {
+  const out = new Set();
+  const m = comp.metallo;
+  if (m && m.ox.length > 1) {
+    const altro = m.ox.find(v => v !== comp.ox);
+    if (comp.classe === "ossido") out.add(componi(m.sim, altro, "O", 2, false));
+    else if (comp.classe === "idrossido") out.add(componi(m.sim, altro, "OH", 1, true));
+    else if (comp.anione) out.add(componi(m.sim, altro, comp.anione.f, comp.anione.c, comp.anione.poli));
+  }
+  /* Indici scambiati: l'errore di chi incrocia le cariche al contrario. */
+  if (m && comp.anione) {
+    out.add(componi(m.sim, comp.anione.c, comp.anione.f, comp.ox, comp.anione.poli));
+  }
+  if (comp.classe === "ossido" && m) out.add(m.sim + "O");
+  if (comp.classe === "idrossido" && m) out.add(m.sim + "OH");
+  out.delete(comp.formula);
+  const lista = [...out].filter(Boolean);
+  while (lista.length < 3) {
+    const altro = generaComposto(comp.classe);
+    if (altro.formula !== comp.formula && !lista.includes(altro.formula)) lista.push(altro.formula);
+  }
+  return lista.slice(0, 3);
+}
+
+function nuovoQuesitoNom() {
+  const classe = document.getElementById("classeNom").value || null;
+  const verso = document.getElementById("versoNom").value;
+  const comp = generaComposto(classe);
+  const v = verso === "misto" ? (Math.random() < 0.5 ? "f2n" : "n2f") : verso;
+  const distr = v === "f2n" ? distrattoriNome(comp) : distrattoriFormula(comp);
+  const giusto = v === "f2n" ? comp.nome : comp.formula;
+  const opz = mescola([giusto, ...distr]);
+  S.nomQuesito = { comp, verso: v, opzioni: opz, giusta: opz.indexOf(giusto), risposto: false, scelta: null };
+  disegnaNomenclatura();
+}
+
+function disegnaNomenclatura() {
+  const c = document.getElementById("nomCorpo");
+  const q = S.nomQuesito;
+  if (!q) { c.innerHTML = ""; return; }
+
+  const prompt = q.verso === "f2n" ? "Come si chiama questo composto?" : "Qual è la formula?";
+  const capo = q.verso === "f2n"
+    ? `<div class="formulona">${formula(q.comp.formula)}</div>`
+    : `<div class="nomone">${esc(q.comp.nome)}</div>`;
+
+  c.innerHTML = `<div class="foglio quesito-nom">
+      <p class="richiesta etichetta">${esc(prompt)}</p>
+      ${capo}
+    </div>
+    <div class="foglio domanda" style="margin-top:12px">
+      <div class="opzioni" id="opzNom">
+        ${q.opzioni.map((o, i) => {
+          let cl = "opz";
+          if (q.risposto) {
+            if (i === q.giusta) cl += " giusta";
+            else if (i === q.scelta) cl += " sbagliata";
+            else cl += " spenta";
+          }
+          const testo = q.verso === "f2n" ? esc(o) : formula(o);
+          return `<button class="${cl}" data-i="${i}" ${q.risposto ? "disabled" : ""}>
+            <kbd>${i + 1}</kbd><span class="testo">${testo}</span></button>`;
+        }).join("")}
+      </div>
+      ${q.risposto ? `<div class="esito">
+        <span class="verdetto ${q.scelta === q.giusta ? "ok" : "ko"}">
+          ${q.scelta === q.giusta ? "Esatta" : "Sbagliata"}</span>
+        <button class="primario" id="btnNomAvanti">Un altro</button>
+      </div>
+      <div class="spiegazione">${esc(ragionamento(q.comp))}</div>` : ""}
+    </div>`;
+
+  c.querySelectorAll("#opzNom .opz").forEach(b => {
+    b.onclick = () => {
+      if (q.risposto) return;
+      q.scelta = parseInt(b.dataset.i, 10);
+      q.risposto = true;
+      S.nomPunti.totali++;
+      if (q.scelta === q.giusta) S.nomPunti.giuste++;
+      document.getElementById("punteggioNom").textContent =
+        `${S.nomPunti.giuste}/${S.nomPunti.totali}`;
+      registraGiornata();
+      disegnaNomenclatura();
+    };
+  });
+  const av = document.getElementById("btnNomAvanti");
+  if (av) av.onclick = nuovoQuesitoNom;
+}
+
+function ragionamento(comp) {
+  const m = comp.metallo;
+  if (comp.classe === "ossido")
+    return `${m.nome} con numero di ossidazione +${comp.ox} e ossigeno −2: si incrociano le cariche. ` +
+      (m.ox.length > 1
+        ? `Il ${m.nome} ha due numeri di ossidazione, ${m.ox.join(" e ")}: il minore dà -oso, il maggiore -ico.`
+        : `Il ${m.nome} ne ha uno solo, quindi si dice semplicemente «di ${m.nome}».`);
+  if (comp.classe === "idrossido")
+    return `Metallo più gruppo OH, che vale −1: servono ${comp.ox} idrossidi per bilanciare il +${comp.ox} del ${m.nome}. ` +
+      `Con più di un OH ci vogliono le parentesi.`;
+  if (comp.classe === "anidride")
+    return `Ossido di un non metallo: nella nomenclatura tradizionale si chiama anidride, non ossido. ` +
+      `Aggiungendo acqua diventa l'ossiacido corrispondente.`;
+  if (comp.classe === "idracido")
+    return `Idrogeno più un non metallo, senza ossigeno: il nome finisce sempre in -idrico. ` +
+      `Il sale che ne deriva finisce in -uro.`;
+  if (comp.classe === "ossiacido") {
+    const a = ANIONI.find(x => x.acido === comp.formula);
+    return `Ossiacido: idrogeno, non metallo e ossigeno. ` +
+      (a ? `Il sale che ne deriva è il ${a.sale}: ${a.nomeAcido.endsWith("oso") ? "-oso dà -ito" : "-ico dà -ato"}.` : "");
+  }
+  const a = comp.anione;
+  return `Sale: ${m.nome} +${comp.ox} con lo ione ${a.sale} (${a.f}, carica −${a.c}). ` +
+    `Viene da ${a.nomeAcido}: ${a.classe === "idracido" ? "-idrico dà -uro" :
+      a.nomeAcido.endsWith("oso") ? "-oso dà -ito" : "-ico dà -ato"}.`;
+}
+
+/* ==========================================================================
+   6bis. Legami — scena interattiva
+   Due pannelli su un solo canvas: sopra gli atomi, sotto la curva di energia.
+   L'idea da portare a casa e' che il legame non e' una colla: e' il punto in
+   cui attrazione e repulsione si pareggiano, cioe' il minimo della curva.
+   ========================================================================== */
+
+const ATOMI_LEG = {
+  covalente: {
+    a: { sim: "H", ve: 1, raggio: 19, col: "p" },
+    b: { sim: "H", ve: 1, raggio: 19, col: "p" },
+    sbilancio: 0.5, nome: "Covalente puro",
+    frase: "Due atomi identici: nessuno dei due tira più forte, la coppia di elettroni sta esattamente in mezzo."
+  },
+  polare: {
+    a: { sim: "H", ve: 1, raggio: 19, col: "p" },
+    b: { sim: "Cl", ve: 7, raggio: 29, col: "p" },
+    sbilancio: 0.72, nome: "Covalente polare",
+    frase: "Il cloro è più elettronegativo (3,16 contro 2,20): la coppia resta condivisa ma si sposta verso di lui. Da qui le cariche parziali."
+  },
+  ionico: {
+    a: { sim: "Na", ve: 1, raggio: 31, col: "s" },
+    b: { sim: "Cl", ve: 7, raggio: 27, col: "p" },
+    sbilancio: 1, nome: "Ionico",
+    frase: "La differenza di elettronegatività è così grande (oltre 1,7) che l'elettrone non è più condiviso: passa proprio dall'altra parte."
+  },
+  metallico: {
+    nome: "Metallico",
+    frase: "Nessuna coppia definita: i cationi stanno fermi in un reticolo e gli elettroni di valenza appartengono a tutti. È il motivo per cui i metalli conducono."
+  }
+};
+
+const LEG = { tipo: "covalente", r: 2.2, auto: true, t: 0, raf: null, verso: -1, elettroni: null };
+
+function coloreVar(nome) {
+  return getComputedStyle(document.documentElement).getPropertyValue(nome).trim();
+}
+
+/* Lennard-Jones normalizzato: minimo esattamente in r = 1, profondita' 1. */
+function energia(r) {
+  const s = 1 / r;
+  return Math.pow(s, 12) - 2 * Math.pow(s, 6);
+}
+
+function zonaLegame(r) {
+  if (r > 1.9) return "lontano";
+  if (r > 1.18) return "attrazione";
+  if (r >= 0.88) return "legame";
+  return "repulsione";
+}
+
+function preparaCanvas() {
+  const c = document.getElementById("scena");
+  const dpr = window.devicePixelRatio || 1;
+  const largh = c.clientWidth || 700;
+  const alt = Math.max(360, Math.min(470, largh * 0.55));
+  c.style.height = alt + "px";
+  c.width = largh * dpr;
+  c.height = alt * dpr;
+  const ctx = c.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return { ctx, W: largh, H: alt };
+}
+
+function disegnaScena() {
+  const { ctx, W, H } = preparaCanvas();
+  const C = {
+    carta: coloreVar("--carta-alta"), bordo: coloreVar("--bordo"),
+    grafite: coloreVar("--grafite"), grafite2: coloreVar("--grafite-2"),
+    grafite3: coloreVar("--grafite-3"), ink: coloreVar("--inchiostro"),
+    rossa: coloreVar("--rossa"), visto: coloreVar("--visto"),
+    ambra: coloreVar("--ambra"),
+    s: coloreVar("--blocco-s"), p: coloreVar("--blocco-p")
+  };
+  ctx.clearRect(0, 0, W, H);
+
+  const Hscena = H * 0.60;
+  const Hcurva = H - Hscena;
+
+  if (LEG.tipo === "metallico") disegnaMetallico(ctx, W, Hscena, C);
+  else disegnaCoppia(ctx, W, Hscena, C);
+
+  disegnaCurva(ctx, W, Hscena, Hcurva, C);
+}
+
+function disegnaCoppia(ctx, W, H, C) {
+  const cfg = ATOMI_LEG[LEG.tipo];
+  const cx = W / 2, cy = H / 2;
+  const scala = Math.min(105, W / 7);
+  const mezzo = LEG.r * scala / 2;
+  const xa = cx - mezzo, xb = cx + mezzo;
+
+  /* Quanto sono "in legame": 0 lontani, 1 legati. */
+  const lega = Math.max(0, Math.min(1, (1.9 - LEG.r) / 0.7));
+  const colA = C[cfg.a.col], colB = C[cfg.b.col];
+
+  /* Nube elettronica: sfuma e si deforma verso l'altro atomo. */
+  function nube(x, y, raggio, col, verso) {
+    const g = ctx.createRadialGradient(x + verso * lega * raggio * 0.22, y, raggio * 0.2,
+      x, y, raggio * 2.1);
+    g.addColorStop(0, col + "44");
+    g.addColorStop(1, col + "00");
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.ellipse(x + verso * lega * raggio * 0.18, y, raggio * 2.1 * (1 + lega * 0.14),
+      raggio * 2.1, 0, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  const ionizzato = LEG.tipo === "ionico" && lega > 0.62;
+  const rA = cfg.a.raggio * (ionizzato ? 0.62 : 1);
+  const rB = cfg.b.raggio * (ionizzato ? 1.22 : 1);
+
+  nube(xa, cy, rA, colA, +1);
+  nube(xb, cy, rB, colB, -1);
+
+  /* Elettroni di valenza sugli anelli, meno quelli impegnati nel legame. */
+  const impegnatiA = LEG.tipo === "metallico" ? 0 : 1;
+  const impegnatiB = 1;
+
+  function anello(x, y, raggio, quanti, col, fase) {
+    ctx.fillStyle = col;
+    for (let i = 0; i < quanti; i++) {
+      const a = fase + i / Math.max(1, quanti) * Math.PI * 2;
+      const px = x + Math.cos(a) * (raggio + 13);
+      const py = y + Math.sin(a) * (raggio + 13) * 0.82;
+      ctx.beginPath();
+      ctx.arc(px, py, 3.4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  const veA = cfg.a.ve - (ionizzato ? 1 : Math.round(lega * impegnatiA));
+  const veB = cfg.b.ve + (ionizzato ? 1 : 0) - (ionizzato ? 0 : Math.round(lega * impegnatiB));
+  anello(xa, cy, rA, Math.max(0, veA), colA, LEG.t * 0.6);
+  anello(xb, cy, rB, Math.max(0, veB), colB, -LEG.t * 0.5 + 1);
+
+  /* La coppia condivisa: appare avvicinandosi, e si sposta se il legame e' polare. */
+  if (lega > 0.05 && !ionizzato) {
+    const peso = cfg.sbilancio;
+    const xm = xa + (xb - xa) * peso;
+    ctx.globalAlpha = lega;
+    ctx.fillStyle = C.ambra;
+    for (let i = 0; i < 2; i++) {
+      const a = LEG.t * 1.6 + i * Math.PI;
+      ctx.beginPath();
+      ctx.arc(xm + Math.cos(a) * 13, cy + Math.sin(a) * 9, 4.2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  /* Nel legame ionico l'elettrone parte e non torna. */
+  if (LEG.tipo === "ionico" && lega > 0.05) {
+    const avanti = Math.min(1, lega / 0.62);
+    ctx.fillStyle = C.ambra;
+    ctx.globalAlpha = ionizzato ? 0 : 1;
+    ctx.beginPath();
+    ctx.arc(xa + (xb - xa) * avanti, cy - 34 * Math.sin(avanti * Math.PI), 4.2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  /* Nuclei */
+  function nucleo(x, y, raggio, col, testo, carica) {
+    ctx.fillStyle = C.carta;
+    ctx.strokeStyle = col;
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(x, y, raggio, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = col;
+    ctx.font = `700 ${Math.round(raggio * 0.82)}px Archivo, sans-serif`;
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText(testo, x, y + 1);
+    if (carica) {
+      ctx.font = "600 13px 'IBM Plex Mono', monospace";
+      ctx.fillStyle = carica.startsWith("δ+") || carica === "+" ? C.rossa : C.ink;
+      ctx.fillText(carica, x, y - raggio - 15);
+    }
+  }
+
+  let cA = "", cB = "";
+  if (ionizzato) { cA = "+"; cB = "−"; }
+  else if (LEG.tipo === "polare" && lega > 0.45) { cA = "δ+"; cB = "δ−"; }
+
+  nucleo(xa, cy, rA, colA, cfg.a.sim, cA);
+  nucleo(xb, cy, rB, colB, cfg.b.sim, cB);
+
+  /* Quota della distanza tra i nuclei */
+  ctx.strokeStyle = C.bordo;
+  ctx.lineWidth = 1;
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath();
+  ctx.moveTo(xa, cy + Math.max(rA, rB) + 34);
+  ctx.lineTo(xb, cy + Math.max(rA, rB) + 34);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = C.grafite3;
+  ctx.font = "500 11px 'IBM Plex Mono', monospace";
+  ctx.textAlign = "center";
+  ctx.fillText("distanza tra i nuclei", cx, cy + Math.max(rA, rB) + 50);
+}
+
+function disegnaMetallico(ctx, W, H, C) {
+  const passo = 38 + (LEG.r - 0.55) * 26;
+  const cols = 5, righe = 3;
+  const x0 = W / 2 - (cols - 1) * passo / 2;
+  const y0 = H / 2 - (righe - 1) * passo / 2;
+
+  if (!LEG.elettroni) {
+    LEG.elettroni = Array.from({ length: 22 }, () => ({
+      x: Math.random(), y: Math.random(),
+      vx: (Math.random() - .5) * .006, vy: (Math.random() - .5) * .006
+    }));
+  }
+  /* Mare di elettroni: si muovono liberi, non appartengono a nessun catione. */
+  const larghMare = (cols - 1) * passo + 70, altMare = (righe - 1) * passo + 70;
+  ctx.fillStyle = C.p + "1A";
+  ctx.beginPath();
+  ctx.roundRect(W / 2 - larghMare / 2, H / 2 - altMare / 2, larghMare, altMare, 14);
+  ctx.fill();
+
+  ctx.fillStyle = C.ambra;
+  for (const e of LEG.elettroni) {
+    if (LEG.auto) {
+      e.x += e.vx; e.y += e.vy;
+      if (e.x < 0 || e.x > 1) e.vx *= -1;
+      if (e.y < 0 || e.y > 1) e.vy *= -1;
+      e.x = Math.max(0, Math.min(1, e.x));
+      e.y = Math.max(0, Math.min(1, e.y));
+    }
+    ctx.beginPath();
+    ctx.arc(W / 2 - larghMare / 2 + e.x * larghMare,
+      H / 2 - altMare / 2 + e.y * altMare, 3.4, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < righe; j++) {
+      const x = x0 + i * passo, y = y0 + j * passo;
+      ctx.fillStyle = C.carta;
+      ctx.strokeStyle = C.s;
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(x, y, 16, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = C.s;
+      ctx.font = "700 12px Archivo, sans-serif";
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.fillText("Na", x, y + 1);
+      ctx.font = "600 10px 'IBM Plex Mono', monospace";
+      ctx.fillText("+", x + 15, y - 13);
+    }
+  }
+}
+
+function disegnaCurva(ctx, W, yTop, H, C) {
+  const marg = { s: 52, d: 18, a: 16, b: 30 };
+  const x0 = marg.s, x1 = W - marg.d;
+  const y0 = yTop + marg.a, y1 = yTop + H - marg.b;
+  const rMin = 0.78, rMax = 3.0;
+  const eMin = -1.35, eMax = 1.1;
+
+  const px = r => x0 + (r - rMin) / (rMax - rMin) * (x1 - x0);
+  const py = e => y1 - (e - eMin) / (eMax - eMin) * (y1 - y0);
+
+  /* Asse dell'energia zero */
+  ctx.strokeStyle = C.bordo;
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(x0, py(0)); ctx.lineTo(x1, py(0)); ctx.stroke();
+
+  ctx.fillStyle = C.grafite3;
+  ctx.font = "500 10px 'IBM Plex Mono', monospace";
+  ctx.textAlign = "right"; ctx.textBaseline = "middle";
+  ctx.fillText("0", x0 - 7, py(0));
+  ctx.textAlign = "left";
+  ctx.fillText("energia", x0 - 44, y0 + 6);
+  ctx.textAlign = "center";
+  ctx.fillText("distanza →", (x0 + x1) / 2, y1 + 19);
+
+  /* Curva */
+  ctx.strokeStyle = C.ink;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  let primo = true;
+  for (let r = rMin; r <= rMax; r += 0.01) {
+    const e = Math.max(eMin, Math.min(eMax, energia(r)));
+    const X = px(r), Y = py(e);
+    if (primo) { ctx.moveTo(X, Y); primo = false; } else ctx.lineTo(X, Y);
+  }
+  ctx.stroke();
+
+  /* Il minimo: e' la distanza di legame */
+  ctx.strokeStyle = C.visto;
+  ctx.setLineDash([3, 4]);
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(px(1), py(-1)); ctx.lineTo(px(1), y1);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = C.visto;
+  ctx.font = "600 10px Archivo, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText("distanza di legame", px(1), y1 + 19);
+
+  /* Dove sei adesso */
+  if (LEG.tipo !== "metallico") {
+    const r = Math.max(rMin, Math.min(rMax, LEG.r));
+    const e = Math.max(eMin, Math.min(eMax, energia(r)));
+    const zona = zonaLegame(LEG.r);
+    ctx.fillStyle = zona === "repulsione" ? C.rossa : zona === "legame" ? C.visto : C.ink;
+    ctx.beginPath(); ctx.arc(px(r), py(e), 6, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = C.carta; ctx.lineWidth = 2; ctx.stroke();
+  } else {
+    ctx.fillStyle = C.grafite3;
+    ctx.font = "500 11px 'IBM Plex Sans', sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText("Nel legame metallico la curva vale per l'intero reticolo, non per una coppia.",
+      (x0 + x1) / 2, y0 + 8);
+  }
+}
+
+const LETTURE = {
+  lontano: {
+    t: "Troppo lontani",
+    p: "A questa distanza i due atomi non si accorgono l'uno dell'altro. L'energia del sistema è praticamente zero: è il punto di partenza, quello da cui si misura tutto il resto."
+  },
+  attrazione: {
+    t: "Si attraggono",
+    p: "Il nucleo di ciascuno inizia a sentire gli elettroni dell'altro. L'attrazione vince sulla repulsione e l'energia scende: il sistema guadagna a stare più vicino, quindi si avvicina da solo."
+  },
+  legame: {
+    t: "Il legame è formato",
+    p: "Attrazione e repulsione si pareggiano. Il sistema è nel minimo di energia: qualsiasi spostamento, in avanti o indietro, costa energia. Questa distanza è la lunghezza di legame, e la profondità della buca è l'energia che serve per romperlo."
+  },
+  repulsione: {
+    t: "Troppo vicini",
+    p: "I due nuclei sono entrambi positivi e ora si vedono: la repulsione esplode e l'energia sale a picco. Per questo gli atomi non collassano l'uno dentro l'altro."
+  }
+};
+
+function aggiornaLettura() {
+  const box = document.getElementById("letturaLeg");
+  const cfg = ATOMI_LEG[LEG.tipo];
+  const zona = zonaLegame(LEG.r);
+  const l = LETTURE[zona];
+
+  document.getElementById("etichettaDist").textContent =
+    LEG.tipo === "metallico" ? "" : `d = ${LEG.r.toFixed(2)} · E = ${energia(LEG.r).toFixed(2)}`;
+
+  if (LEG.tipo === "metallico") {
+    box.className = "foglio lettura";
+    box.innerHTML = `<span class="zona attrazione">${esc(cfg.nome)}</span>
+      <h3>Gli elettroni non appartengono a nessuno</h3>
+      <p>${esc(cfg.frase)}</p>
+      <p>Il cursore allarga e stringe il reticolo. I pallini gialli non orbitano attorno a un
+      atomo: si muovono liberamente in tutto il metallo. Da qui vengono conducibilità elettrica,
+      conducibilità termica e malleabilità — i piani di cationi possono scorrere uno sull'altro
+      senza che il legame si rompa, perché il mare di elettroni li tiene insieme comunque.</p>`;
+    return;
+  }
+
+  box.className = "foglio lettura";
+  box.innerHTML = `<span class="zona ${zona}">${esc(l.t)}</span>
+    <h3>${esc(cfg.nome)}</h3>
+    <p>${esc(l.p)}</p>
+    <p>${esc(cfg.frase)}</p>`;
+}
+
+function cicloLegami() {
+  if (LEG.auto && LEG.tipo !== "metallico") {
+    LEG.r += LEG.verso * 0.006;
+    if (LEG.r <= 0.82) { LEG.r = 0.82; LEG.verso = 1; }
+    if (LEG.r >= 2.7) { LEG.r = 2.7; LEG.verso = -1; }
+    document.getElementById("distanza").value = Math.round(LEG.r * 100);
+    aggiornaLettura();
+  }
+  LEG.t += 0.035;
+  disegnaScena();
+  LEG.raf = requestAnimationFrame(cicloLegami);
+}
+
+function avviaLegami() {
+  if (LEG.raf) return;
+  aggiornaLettura();
+  LEG.raf = requestAnimationFrame(cicloLegami);
+}
+function fermaLegami() {
+  if (LEG.raf) { cancelAnimationFrame(LEG.raf); LEG.raf = null; }
+}
+
+function collegaLegami() {
+  const cursore = document.getElementById("distanza");
+  cursore.oninput = () => {
+    LEG.r = parseInt(cursore.value, 10) / 100;
+    LEG.auto = false;
+    document.getElementById("btnAuto").textContent = "Riprendi il movimento";
+    aggiornaLettura();
+  };
+  document.getElementById("tipoLegame").onchange = e => {
+    LEG.tipo = e.target.value;
+    aggiornaLettura();
+  };
+  document.getElementById("btnAuto").onclick = () => {
+    LEG.auto = !LEG.auto;
+    document.getElementById("btnAuto").textContent =
+      LEG.auto ? "Ferma il movimento" : "Riprendi il movimento";
+  };
+  window.addEventListener("resize", () => { if (S.vista === "legami") disegnaScena(); });
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    LEG.auto = false;
+    document.getElementById("btnAuto").textContent = "Riprendi il movimento";
+  }
+}
+
+/* ==========================================================================
+   7. Progressi
+   ========================================================================== */
+
+function disegnaProgressi() {
+  const tutte = tutteLeDomande();
+  const viste = tutte.filter(d => S.progressi[d.id] && S.progressi[d.id].viste);
+  const solide = tutte.filter(d => livello(d.id) >= 2);
+  let risp = 0, ko = 0;
+  for (const id of Object.keys(S.progressi)) {
+    risp += S.progressi[id].viste || 0;
+    ko += S.progressi[id].ko || 0;
+  }
+  const precisione = risp ? Math.round((risp - ko) / risp * 100) : 0;
+
+  document.getElementById("kpi").innerHTML = `
+    <div class="foglio"><div class="n">${daRipassare().length}</div><div class="e">da ripassare oggi</div></div>
+    <div class="foglio"><div class="n">${solide.length}<span style="font-size:15px;color:var(--grafite-3)">/${tutte.length}</span></div><div class="e">domande solide</div></div>
+    <div class="foglio"><div class="n">${precisione}%</div><div class="e">risposte esatte</div></div>
+    <div class="foglio"><div class="n">${S.serie.giorni}</div><div class="e">giorni di fila</div></div>
+    <div class="foglio"><div class="n">${viste.length ? Math.round(viste.length / tutte.length * 100) : 0}%</div><div class="e">banca incontrata</div></div>`;
+
+  const g = document.getElementById("griglia");
+  if (!S.indice) { g.innerHTML = ""; return; }
+  let html = "";
+  for (const gruppo of S.indice.gruppi) {
+    for (const arg of gruppo.argomenti) {
+      const dom = S.banche[arg.id] || [];
+      if (!dom.length) continue;
+      const mai = dom.filter(d => !S.progressi[d.id] || !S.progressi[d.id].viste).length;
+      const tacche = dom.map(d => `<i class="v${livello(d.id)}"></i>`).join("");
+      html += `<div class="foglio arg">
+        <h3>${esc(arg.titolo)}</h3>
+        <p class="conta">${dom.length} domande · ${mai} mai viste</p>
+        <div class="tacche">${tacche}</div>
+        <button class="secondario" data-arg="${esc(arg.id)}">
+          ${mai === dom.length ? "Pre-test" : "Allena questo"}</button>
+      </div>`;
+    }
+  }
+  g.innerHTML = html || `<div class="vuoto">Nessun argomento caricato.</div>`;
+  g.querySelectorAll("button[data-arg]").forEach(b => {
+    b.onclick = () => {
+      const s = costruisciSessione([b.dataset.arg], 8);
+      if (!s) { avvisa("Non ci sono domande per questo argomento."); return; }
+      S.sessione = s;
+      avviaCrono();
+      cambiaVista("allenamento");
+      disegnaAllenamento();
+    };
+  });
+}
+
+/* ==========================================================================
+   8. Impostazioni, navigazione, avvio
+   ========================================================================== */
+
+function aggiornaModelli() {
+  const p = document.getElementById("inProvider").value;
+  const sel = document.getElementById("inModello");
+  sel.innerHTML = MODELLI[p].map(([v, t]) => `<option value="${v}">${esc(t)}</option>`).join("");
+  if (MODELLI[p].some(([v]) => v === S.cfg.modello)) sel.value = S.cfg.modello;
+}
+
+function apriCfg() {
+  document.getElementById("inProvider").value = S.cfg.provider;
+  aggiornaModelli();
+  document.getElementById("inChiave").value = S.cfg.chiave;
+  document.getElementById("inAnalogie").value = S.cfg.analogie;
+  document.getElementById("inDurata").value = String(S.cfg.durata);
+  document.getElementById("velo").hidden = false;
+}
+
+function salvaCfg() {
+  S.cfg.provider = document.getElementById("inProvider").value;
+  S.cfg.modello = document.getElementById("inModello").value;
+  S.cfg.chiave = document.getElementById("inChiave").value.trim();
+  S.cfg.analogie = document.getElementById("inAnalogie").value;
+  S.cfg.durata = parseInt(document.getElementById("inDurata").value, 10);
+  scrivi(CHIAVI.cfg, S.cfg);
+  document.getElementById("velo").hidden = true;
+  avvisa("Impostazioni salvate.");
+}
+
+function cambiaVista(nome) {
+  S.vista = nome;
+  document.querySelectorAll("nav button").forEach(b => {
+    if (b.dataset.vista === nome) b.setAttribute("aria-current", "page");
+    else b.removeAttribute("aria-current");
+  });
+  document.querySelectorAll(".sezione").forEach(s => {
+    s.hidden = s.id !== "v-" + nome;
+  });
+  if (nome === "tavola") disegnaTavola();
+  if (nome === "progressi") disegnaProgressi();
+  if (nome === "nomenclatura" && !S.nomQuesito) nuovoQuesitoNom();
+  if (nome === "legami") avviaLegami(); else fermaLegami();
+}
+
+function tastiera(e) {
+  if (document.getElementById("velo").hidden === false) return;
+  if (e.target.matches("input,select,textarea")) return;
+  const n = parseInt(e.key, 10);
+
+  if (S.vista === "allenamento" && S.sessione) {
+    if (n >= 1 && n <= 4 && !S.sessione.risposto) {
+      const bottoni = document.querySelectorAll("#allCorpo .opz");
+      if (bottoni[n - 1]) { bottoni[n - 1].click(); e.preventDefault(); }
+    } else if ((e.key === " " || e.key === "Enter") && S.sessione.risposto) {
+      avanti(); e.preventDefault();
+    }
+  } else if (S.vista === "nomenclatura" && S.nomQuesito) {
+    if (n >= 1 && n <= 4 && !S.nomQuesito.risposto) {
+      const bottoni = document.querySelectorAll("#opzNom .opz");
+      if (bottoni[n - 1]) { bottoni[n - 1].click(); e.preventDefault(); }
+    } else if ((e.key === " " || e.key === "Enter") && S.nomQuesito.risposto) {
+      nuovoQuesitoNom(); e.preventDefault();
+    }
+  }
+}
+
+async function caricaBanca() {
+  try {
+    const r = await fetch("domande/index.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    S.indice = await r.json();
+  } catch (e) {
+    S.indice = null;
+    return;
+  }
+  S.titoli = {};
+  const attese = [];
+  for (const g of S.indice.gruppi) {
+    for (const a of g.argomenti) {
+      S.titoli[a.id] = a.titolo;
+      attese.push(
+        fetch(`domande/${a.id}.json`, { cache: "no-cache" })
+          .then(r => r.ok ? r.json() : null)
+          .then(b => {
+            if (!b || !Array.isArray(b.domande)) return;
+            S.banche[a.id] = b.domande
+              .filter(d => d && d.id && Array.isArray(d.opzioni) && d.opzioni.length >= 2)
+              .map(d => ({ ...d, arg: a.id }));
+          })
+          .catch(() => {})
+      );
+    }
+  }
+  await Promise.all(attese);
+}
+
+async function caricaElementi() {
+  try {
+    const r = await fetch("dati/elementi.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    S.elementi = await r.json();
+  } catch (e) {
+    S.elementi = [];
+    avvisa("Non riesco a caricare la tavola periodica. Serve un server locale.", true);
+  }
+}
+
+async function avvia() {
+  S.progressi = leggi(CHIAVI.progressi, {});
+  S.elprog = leggi(CHIAVI.elementi, {});
+  S.serie = leggi(CHIAVI.serie, { giorni: 0, ultimo: null });
+  S.selezione = leggi(CHIAVI.selezione, null);
+  S.cfg = Object.assign(S.cfg, leggi(CHIAVI.cfg, {}));
+  const tema = localStorage.getItem("chimica.tema");
+  if (tema) document.documentElement.dataset.tema = tema;
+
+  disegnaFiamma();
+
+  document.querySelectorAll("nav button").forEach(b => {
+    b.onclick = () => cambiaVista(b.dataset.vista);
+  });
+  document.getElementById("btnCfg").onclick = apriCfg;
+  document.getElementById("btnSalvaCfg").onclick = salvaCfg;
+  document.getElementById("btnChiudiCfg").onclick = () => document.getElementById("velo").hidden = true;
+  document.getElementById("inProvider").onchange = aggiornaModelli;
+  document.getElementById("velo").onclick = e => {
+    if (e.target.id === "velo") document.getElementById("velo").hidden = true;
+  };
+  document.getElementById("btnTema").onclick = () => {
+    const ora = document.documentElement.dataset.tema;
+    const nuovo = ora === "scuro" ? "chiaro" : "scuro";
+    document.documentElement.dataset.tema = nuovo;
+    localStorage.setItem("chimica.tema", nuovo);
+  };
+  document.getElementById("cercaEl").oninput = disegnaTavola;
+  document.getElementById("filtroBlocco").onchange = disegnaTavola;
+  document.getElementById("coloreTavola").onchange = disegnaTavola;
+  document.getElementById("btnSfida").onclick = mostraSfida;
+  document.getElementById("versoNom").onchange = nuovoQuesitoNom;
+  document.getElementById("classeNom").onchange = nuovoQuesitoNom;
+  document.getElementById("btnAzzera").onclick = () => {
+    if (!confirm("Cancella tutti i progressi, la serie di giorni e la padronanza sugli elementi. L'operazione non si annulla. Procedere?")) return;
+    S.progressi = {}; S.elprog = {}; S.serie = { giorni: 0, ultimo: null };
+    scrivi(CHIAVI.progressi, S.progressi);
+    scrivi(CHIAVI.elementi, S.elprog);
+    scrivi(CHIAVI.serie, S.serie);
+    disegnaFiamma(); disegnaProgressi(); disegnaTavola();
+    avvisa("Progressi azzerati.");
+  };
+  collegaLegami();
+  document.addEventListener("keydown", tastiera);
+
+  await Promise.all([caricaBanca(), caricaElementi()]);
+  disegnaAllenamento();
+}
+
+avvia();
+</script>
 </body>
 </html>
