@@ -1,278 +1,227 @@
 {
- "id": "C19",
- "titolo": "Nomenclatura e formule dei composti chimici",
- "gruppo": "Struttura della materia",
- "origine": "NomComp_Mercatorum.pdf",
- "domande": [
-  {
-   "id": "C19-1",
-   "testo": "Qual e' il numero di ossidazione del manganese nel permanganato di potassio (KMnO4)?",
-   "opzioni": [
-    "+7",
-    "+6",
-    "+4",
-    "+5"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Ponendo l'equazione di neutralita' 1*(+1) + 1*X + 4*(-2) = 0, si ottiene +1 + X - 8 = 0, da cui X = +7.",
-    "Errore dovuto a un calcolo algebrico errato, confondendo il manganese con lo stato di ossidazione presente nello ione manganato MnO4(2-).",
-    "Errore derivante dalla confusione con il biossido di manganese MnO2, in cui il Mn ha stato di ossidazione +4.",
-    "Errore di conteggio aritmetico, sottraendo in modo errato le cariche negative dell'ossigeno."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-2",
-   "testo": "Qual e' il numero di ossidazione del cloro nello ione clorato ClO3-?",
-   "opzioni": [
-    "+5",
-    "+7",
-    "+3",
-    "-1"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Impostando la somma delle cariche 1*X + 3*(-2) = -1, si ottiene X - 6 = -1, quindi X = +5.",
-    "Errore per aver calcolato il numero di ossidazione dello ione perclorato ClO4- anziche' del clorato.",
-    "Errore per aver calcolato il numero di ossidazione dello ione clorito ClO2-.",
-    "Errore per aver attribuito al cloro il suo numero di ossidazione tipico dei cloruri, ignorando la presenza dei tre atomi di ossigeno."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-3",
-   "testo": "Qual e' il numero di ossidazione dell'ossigeno nel difluoruro di ossigeno (OF2)?",
-   "opzioni": [
-    "+2",
-    "-2",
-    "-1",
-    "-1/2"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Il fluoro e' piu' elettronegativo dell'ossigeno (n.ox. -1), pertanto ciascun legame assegna cariche positive all'ossigeno, per un totale di +2.",
-    "Errore nell'applicare la regola generale dell'ossigeno (-2) senza considerare che con il fluoro, piu' elettronegativo, assume valore positivo.",
-    "Errore confondendo il comportamento dell'ossigeno in OF2 con quello nei perossidi, in cui l'ossigeno ha numero di ossidazione -1.",
-    "Errore confondendo il composto con un superossido, in cui l'ossigeno ha formalmente stato di ossidazione -1/2."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-4",
-   "testo": "Nel superossido di potassio (KO2), quale numero di ossidazione assume l'ossigeno?",
-   "opzioni": [
-    "-1/2",
-    "-1",
-    "-2",
-    "+1"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Nei superossidi e' presente l'anione O2-, in cui i due atomi di ossigeno condividono una carica netta di -1, corrispondente a -1/2 per atomo.",
-    "Errore attribuendo all'ossigeno il numero di ossidazione tipico dei perossidi contenenti l'anione O2(2-).",
-    "Errore applicando il valore standard degli ossidi ordinari anziche' quello specifico dei superossidi.",
-    "Errore di segno nell'equazione di bilancio di carica con il catione potassio K+."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-5",
-   "testo": "Qual e' il numero di ossidazione del ferro nel sale Fe2(SO3)3?",
-   "opzioni": [
-    "+3",
-    "+2",
-    "+6",
-    "+4"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Lo ione solfito ha carica complessiva 2- (SO3 2-); con tre anioni solfito la carica negativa totale e' -6, che bilanciata su due atomi di ferro da' +3 (stato ferrico).",
-    "Errore attribuendo al ferro lo stato di ossidazione ferroso (+2) tipico del solfito ferroso FeSO3.",
-    "Errore confondendo lo stato di ossidazione dello zolfo nei solfati con quello del metallo.",
-    "Errore associando il numero di ossidazione del ferro a quello dello zolfo presente nello ione solfito (+4)."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-6",
-   "testo": "Determinare il numero di ossidazione del cloro nello ione ipoclorito ClO-.",
-   "opzioni": [
-    "+1",
-    "-1",
-    "+3",
-    "+2"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Dall'equazione 1*X + 1*(-2) = -1 si ricava X = +1.",
-    "Errore per mancata considerazione del legame con l'ossigeno piu' elettronegativo, assegnando il n.ox. dell'alogenuro.",
-    "Errore associando al cloro il numero di ossidazione dello ione clorito ClO2- (+3).",
-    "Errore di calcolo algebrico dimenticando la carica negativa complessiva dello ione."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-7",
-   "testo": "Qual e' la formula molecolare e la formula minima del benzene secondo i criteri di rappresentazione chimica?",
-   "opzioni": [
-    "Formula molecolare C6H6 e formula minima CH",
-    "Formula molecolare CH e formula minima C6H6",
-    "Formula molecolare C6H6 e formula minima C3H3",
-    "Formula molecolare C6H6 e formula minima C6H6"
-   ],
-   "giusta": 0,
-   "perche": [
-    "La formula molecolare indica il numero reale di atomi nella molecola (C6H6), mentre la minima indica il rapporto numerico piu' semplice tra gli elementi (CH).",
-    "Errore di inversione completa tra la definizione di formula molecolare e formula minima.",
-    "Errore per mancata riduzione al minimo comune rapporto degli indici atomici (1:1 anziche' 3:3).",
-    "Errore nel ritenere che per tutte le molecole organiche la formula minima coincida necessariamente con quella molecolare."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-8",
-   "testo": "Secondo le regole IUPAC e di elettronegativita' per i composti binari tra non metalli, qual e' la corretta sequenza di scrittura tra boro e idrogeno?",
-   "opzioni": [
-    "BH3",
-    "H3B",
-    "B3H",
-    "HB3"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Nella sequenza convenzionale dei non metalli (B, Si, C, Sb, As, P, N, H...), il boro precede l'idrogeno, dando la formula BH3.",
-    "Errore invertendo l'ordine di scrittura stabilito dalla sequenza dei non metalli.",
-    "Errore nell'attribuzione degli indici stechiometrici scambiando la valenza del boro con quella dell'idrogeno.",
-    "Errore nella combinazione di ordine invertito e scambio errato degli indici numerici."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-9",
-   "testo": "Qual e' il nome tradizionale corretto del composto binario Cl2O7?",
-   "opzioni": [
-    "Anidride perclorica",
-    "Anidride clorica",
-    "Anidride clorosa",
-    "Anidride ipoclorosa"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Il cloro presenta stato di ossidazione +7, che corrisponde al prefisso per- e suffisso -ica nella nomenclatura tradizionale delle anidridi.",
-    "Errore associando il nome dell'anidride clorica, che corrisponde invece al n.ox. +5 (Cl2O5).",
-    "Errore associando il nome dell'anidride clorosa, che corrisponde al n.ox. +3 (Cl2O3).",
-    "Errore associando il nome dell'anidride ipoclorosa, che corrisponde al n.ox. piu' basso +1 (Cl2O)."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-10",
-   "testo": "Dalla reazione di anidride solforosa (SO2) con acqua si ottiene:",
-   "opzioni": [
-    "H2SO3 (acido solforoso)",
-    "H2SO4 (acido solforico)",
-    "H2S (acido solfidrico)",
-    "H2S2O7 (acido pirosolforico)"
-   ],
-   "giusta": 0,
-   "perche": [
-    "La reazione di addizione SO2 + H2O produce H2SO3, in cui lo zolfo conserva il numero di ossidazione +4 dell'anidride solforosa.",
-    "Errore derivante dalla confusione con l'anidride solforica (SO3), la cui idratazione porta ad acido solforico H2SO4.",
-    "Errore confondendo l'ossoacido con l'idracido binario dello zolfo (H2S), privo di atomi di ossigeno.",
-    "Errore considerando l'acido condensato ottenuto da due molecole di anidride solforica anziche' la semplice idratazione della solforosa."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-11",
-   "testo": "Come e' denominato il composto binario LiH e quale stato di ossidazione possiede l'idrogeno al suo interno?",
-   "opzioni": [
-    "Idruro di litio, con n.ox. di H pari a -1",
-    "Idracido di litio, con n.ox. di H pari a +1",
-    "Idrossido di litio, con n.ox. di H pari a -1",
-    "Idruro di litio, con n.ox. di H pari a +1"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Nei composti con i metalli l'idrogeno e' piu' elettronegativo e forma idruri metallici con stato di ossidazione -1.",
-    "Errore confondendo la classe degli idruri metallici con quella degli idracidi, dove l'idrogeno ha n.ox. +1 ed e' legato a non metalli.",
-    "Errore confondendo l'idruro binario con l'idrossido ternario (LiOH).",
-    "Errore nell'assegnazione del numero di ossidazione dell'idrogeno, applicando la regola generale +1 invece dell'eccezione degli idruri."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-12",
-   "testo": "Dalla perdita totale di ioni idrogeno da parte dell'acido nitroso (HNO2) si origina il radicale acido:",
-   "opzioni": [
-    "NO2- (ione nitrito)",
-    "NO3- (ione nitrato)",
-    "NO2- (ione nitrato)",
-    "N3- (ione nitruro)"
-   ],
-   "giusta": 0,
-   "perche": [
-    "La regola di nomenclatura stabilisce che al suffisso -oso dell'acido corrisponde il suffisso -ito dell'anione, dando l'anione nitrito NO2-.",
-    "Errore confondendo l'acido nitroso con l'acido nitrico (HNO3), che per deprotonazione genera lo ione nitrato NO3-.",
-    "Errore nell'attribuzione del suffisso, applicando la desinenza -ato ad un acido avente suffisso -oso.",
-    "Errore scambiando l'ossoanione nitrito con l'anione monoatomico nitruro N(3-)."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-13",
-   "testo": "Qual e' la formula corretta del sale fosfato di alluminio?",
-   "opzioni": [
-    "AlPO4",
-    "Al3(PO4)2",
-    "Al(PO4)3",
-    "Al2(PO4)3"
-   ],
-   "giusta": 0,
-   "perche": [
-    "L'alluminio forma il catione Al3+ e lo ione fosfato e' PO4 3-; avendo uguale carica in valore assoluto, il rapporto stechiometrico e' 1:1, ovvero AlPO4.",
-    "Errore di bilanciamento delle cariche, ipotizzando erroneamente un catione bivalente per l'alluminio.",
-    "Errore dimenticando che la carica 3+ dell'alluminio neutralizza direttamente la carica 3- di un singolo anione fosfato senza richiedere tre gruppi.",
-    "Errore derivante dalla confusione con il solfato di alluminio Al2(SO4)3, dove l'anione e' bivalente anziche' trivalente."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-14",
-   "testo": "Qual e' il nome sistematico IUPAC e il nome tradizionale del composto Fe2O3?",
-   "opzioni": [
-    "Triossido di diferro (IUPAC) e ossido ferrico (tradizionale)",
-    "Triossido di ferro (IUPAC) e ossido ferroso (tradizionale)",
-    "Diossido di triferro (IUPAC) e ossido ferrico (tradizionale)",
-    "Triossido di diferro (IUPAC) e ossido ferroso (tradizionale)"
-   ],
-   "giusta": 0,
-   "perche": [
-    "La IUPAC usa i prefissi numerici 'tri-' per tre ossigeni e 'di-' per due atomi di ferro; il ferro ha n.ox. +3, quindi nella tradizionale prende il suffisso -ico (ossido ferrico).",
-    "Errore nell'omissione del prefisso 'di-' per il ferro e nell'uso del suffisso '-oso' (che spetta invece a FeO con Fe a +2).",
-    "Errore di inversione dei prefissi numerici IUPAC tra ossigeno e ferro.",
-    "Errore nell'attribuzione del suffisso tradizionale, assegnando '-oso' (proprio del n.ox. +2) invece di '-ico' per il n.ox. +3."
-   ],
-   "tag": "legami"
-  },
-  {
-   "id": "C19-15",
-   "testo": "Quale delle seguenti sostanze contiene l'anione perossido (O2 2-)?",
-   "opzioni": [
-    "Na2O2",
-    "Na2O",
-    "KO2",
-    "OF2"
-   ],
-   "giusta": 0,
-   "perche": [
-    "Na2O2 e' il perossido di sodio e contiene il gruppo ionico perossido O2 2-, in cui ciascun ossigeno ha stato di ossidazione -1.",
-    "Errore: Na2O e' l'ossido di sodio standard contenente il comune anione ossido O2- (n.ox. -2).",
-    "Errore: KO2 e' un superossido contenente lo ione superossido O2- (n.ox. -1/2).",
-    "Errore: OF2 e' un difluoruro covalente in cui l'ossigeno ha stato di ossidazione positivo (+2)."
-   ],
-   "tag": "legami"
-  }
- ]
+"id": "C19",
+"titolo": "Leggi dei gas",
+"gruppo": "4. Stati della materia",
+"origine": "dispensa",
+"fonti": [
+"LegGas_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C19-1",
+"testo": "Nel modello del gas ideale le molecole sono considerate:",
+"opzioni": [
+"Punti con massa ma senza volume, senza forze reciproche, con urti elastici",
+"Sfere rigide che si attraggono fortemente",
+"Ferme e ordinate nello spazio",
+"Particelle che si respingono sempre"
+],
+"giusta": 0,
+"perche": [
+"I tre postulati del modello: volume proprio trascurabile, nessuna attrazione o repulsione, moto continuo e casuale con urti elastici tra loro e con le pareti.",
+"Le attrazioni forti sono proprio cio' che il modello trascura: quando contano, il gas devia dall'idealita' e puo' liquefare.",
+"Il moto continuo e disordinato e' l'essenza del gas: particelle ferme e ordinate descrivono un solido cristallino.",
+"Ne' attrazione ne' repulsione: le particelle si ignorano tra un urto e l'altro."
+],
+"tag": "gas"
+},
+{
+"id": "C19-2",
+"testo": "La legge di Boyle afferma che, a temperatura costante:",
+"opzioni": [
+"Il volume e' inversamente proporzionale alla pressione: PV = costante",
+"Il volume e' direttamente proporzionale alla pressione",
+"La pressione non influenza il volume",
+"Il prodotto PT resta costante"
+],
+"giusta": 0,
+"perche": [
+"Comprimere dimezza il volume raddoppiando la pressione: sul grafico P-V l'isoterma e' un ramo di iperbole equilatera con gli assi come asintoti.",
+"La proporzionalita' diretta direbbe che schiacciando il gas questo si espande: contro ogni esperienza con una siringa tappata.",
+"La pressione e' proprio la leva che comanda il volume, a T fissata.",
+"Il prodotto costante e' PV: la temperatura in Boyle e' bloccata per ipotesi."
+],
+"tag": "gas"
+},
+{
+"id": "C19-3",
+"testo": "Lo zero della scala Kelvin (-273,15 gradi C) corrisponde alla temperatura a cui:",
+"opzioni": [
+"Il volume di un gas ideale si annullerebbe",
+"L'acqua congela",
+"Tutti i gas diventano liquidi",
+"La pressione atmosferica e' zero"
+],
+"giusta": 0,
+"perche": [
+"Le rette della legge di Charles-Gay Lussac, prolungate, intersecano tutte l'asse delle temperature a -273,15 gradi C: Kelvin ne fece lo zero assoluto. L'ampiezza del kelvin e' identica a quella del grado Celsius.",
+"L'acqua congela a 0 gradi C, cioe' 273,15 K: e' l'origine della scala Celsius, non della Kelvin.",
+"I gas reali liquefano a temperature diverse tra loro, ben sopra lo zero assoluto: il volume nullo e' un'estrapolazione del modello ideale.",
+"La pressione atmosferica e' una proprieta' dell'aria intorno a noi, non della scala di temperatura."
+],
+"tag": "gas"
+},
+{
+"id": "C19-4",
+"testo": "A volume e quantita' di gas costanti, la seconda legge di Gay-Lussac dice che la pressione:",
+"opzioni": [
+"E' direttamente proporzionale alla temperatura assoluta",
+"E' inversamente proporzionale alla temperatura",
+"Non dipende dalla temperatura",
+"Dipende solo dalla natura del gas"
+],
+"giusta": 0,
+"perche": [
+"Scaldare un recipiente chiuso fa salire la pressione in proporzione ai kelvin: le molecole picchiano sulle pareti piu' spesso e piu' forte. E' il motivo per cui una bomboletta spray non va lasciata al sole.",
+"L'inversa proporzionalita' con la pressione riguarda il volume nella legge di Boyle, non questa.",
+"Dipende eccome: e' l'intera legge, P su T costante.",
+"Per un gas ideale la natura chimica non entra: contano moli, volume e temperatura."
+],
+"tag": "gas"
+},
+{
+"id": "C19-5",
+"testo": "La legge di Avogadro afferma che volumi uguali di gas diversi, a uguale T e P:",
+"opzioni": [
+"Contengono lo stesso numero di molecole",
+"Hanno la stessa massa",
+"Hanno la stessa densita'",
+"Contengono lo stesso numero di atomi"
+],
+"giusta": 0,
+"perche": [
+"E' il ponte tra volume e quantita': V proporzionale a n. Ne segue che a TPS una mole di qualsiasi gas ideale occupa 22,4 L, il volume molare.",
+"Stesse molecole in numero, masse diverse: un litro di idrogeno pesa molto meno di un litro di anidride carbonica.",
+"Se la massa cambia a parita' di volume, cambia anche la densita': e' cosi' che si confrontano i gas.",
+"Molecole, non atomi: una molecola di O2 porta due atomi, una di He uno solo."
+],
+"tag": "gas"
+},
+{
+"id": "C19-6",
+"testo": "Quale pressione esercitano 2,0 mol di gas ideale a 300 K in un volume di 24,6 L? (R = 0,0821 L atm/(mol K))",
+"opzioni": [
+"2,0 atm",
+"1,0 atm",
+"0,50 atm",
+"4,1 atm"
+],
+"giusta": 0,
+"perche": [
+"P = nRT/V = 2,0 x 0,0821 x 300 / 24,6 = 2,0 atm. Con l'equazione di stato, noti tre parametri il quarto e' determinato.",
+"1,0 atm verrebbe con una sola mole: qui le moli sono due e la pressione raddoppia.",
+"0,50 atm e' il risultato con il rapporto rovesciato: controllare sempre chi sta al numeratore.",
+"4,1 atm arriverebbe dimenticando di dividere per il volume completo: errore di calcolo, non di formula."
+],
+"tag": "gas"
+},
+{
+"id": "C19-7",
+"testo": "Usando R = 0,0821, le unita' corrette per l'equazione PV = nRT sono:",
+"opzioni": [
+"P in atm, V in litri, T in kelvin",
+"P in atm, V in litri, T in gradi C",
+"P in pascal, V in metri cubi, T in gradi C",
+"Qualsiasi unita', il risultato non cambia"
+],
+"giusta": 0,
+"perche": [
+"Quel valore di R vale L atm su mol K: pressioni in atmosfere, volumi in litri e temperature rigorosamente assolute. Con 8,314 J/(mol K) si lavora invece in unita' SI.",
+"I gradi Celsius sono l'errore piu' pagato agli esami: a 0 gradi C la formula con T = 0 darebbe volume nullo, assurdo. Si converte sempre in kelvin.",
+"Pascal e metri cubi vanno con l'altro valore di R, e comunque mai con i gradi Celsius.",
+"Le unita' devono essere coerenti con R: mescolarle cambia il risultato anche di ordini di grandezza."
+],
+"tag": "gas"
+},
+{
+"id": "C19-8",
+"testo": "Secondo la legge di Dalton, in una miscela di gas ideali la pressione totale e':",
+"opzioni": [
+"La somma delle pressioni parziali dei componenti",
+"La pressione del gas piu' abbondante",
+"La media delle pressioni parziali",
+"Il prodotto delle pressioni parziali"
+],
+"giusta": 0,
+"perche": [
+"Ogni gas preme come se fosse da solo nel volume: la pressione parziale. La totale e' la loro somma, e la parziale di ciascuno vale la totale per la sua frazione molare.",
+"Il piu' abbondante contribuisce di piu', ma anche gli altri spingono: si somma tutto.",
+"La media abbasserebbe il conto: le pressioni parziali si accumulano, non si mediano.",
+"Il prodotto non ha senso dimensionale: darebbe atmosfere al quadrato."
+],
+"tag": "gas"
+},
+{
+"id": "C19-9",
+"testo": "A parita' di temperatura, le molecole di un gas con massa molare minore si muovono in media:",
+"opzioni": [
+"Piu' velocemente",
+"Piu' lentamente",
+"Alla stessa velocita' di qualsiasi gas",
+"Non si muovono affatto"
+],
+"giusta": 0,
+"perche": [
+"L'energia cinetica media dipende solo dalla temperatura: a pari energia, chi pesa meno corre di piu'. L'idrogeno sfreccia, l'anidride carbonica arranca, come l'ala veloce e il pilone lanciati con la stessa spinta.",
+"Piu' lento e' il destino delle molecole pesanti: la velocita' quadratica media cala al crescere di M.",
+"La velocita' uguale varrebbe solo a masse uguali: cio' che e' uguale a pari T e' l'energia cinetica media.",
+"Il moto e' incessante a qualunque temperatura sopra lo zero assoluto."
+],
+"tag": "cinetica-gas"
+},
+{
+"id": "C19-10",
+"testo": "Un gas reale devia dal comportamento ideale soprattutto:",
+"opzioni": [
+"A basse temperature e alte pressioni",
+"Ad alte temperature e basse pressioni",
+"Solo se e' un gas nobile",
+"Mai: tutti i gas sono ideali"
+],
+"giusta": 0,
+"perche": [
+"Compresso e freddo, il gas ha molecole vicine e lente: le attrazioni intermolecolari e il volume proprio delle molecole non sono piu' trascurabili. La manifestazione estrema e' la liquefazione.",
+"Caldo e rarefatto e' proprio il regime in cui il modello ideale funziona meglio: distanze grandi e urti energici.",
+"I gas nobili sono semmai tra i piu' vicini all'idealita', avendo interazioni debolissime.",
+"Nessun gas e' perfettamente ideale: il modello e' un'approssimazione, ottima solo in certe condizioni."
+],
+"tag": "gas-reali"
+},
+{
+"id": "C19-11",
+"testo": "Nell'equazione di Van der Waals, il covolume b rappresenta:",
+"opzioni": [
+"Il volume fisico occupato da una mole di molecole, sottratto al volume disponibile",
+"La pressione aggiuntiva del gas",
+"Il numero di urti al secondo",
+"La temperatura di ebollizione"
+],
+"giusta": 0,
+"perche": [
+"Le molecole non sono punti: il volume davvero accessibile al gas e' V meno nb. L'altra correzione riguarda la pressione, ridotta dalle attrazioni tra molecole.",
+"La pressione viene corretta da un termine separato, legato alle forze attrattive che frenano gli urti sulle pareti.",
+"La frequenza degli urti entra nella spiegazione cinetica, ma b e' un volume, non un conteggio.",
+"L'ebollizione riguarda i passaggi di stato: b e' un parametro geometrico delle molecole."
+],
+"tag": "gas-reali"
+},
+{
+"id": "C19-12",
+"testo": "Secondo la legge di Charles-Gay Lussac, per ogni grado centigrado di aumento della temperatura un gas a pressione costante:",
+"opzioni": [
+"Aumenta il volume di 1/273,15 del volume che possiede a 0 gradi C",
+"Raddoppia il volume",
+"Aumenta il volume dell'1% del volume iniziale qualunque esso sia",
+"Non cambia volume"
+],
+"giusta": 0,
+"perche": [
+"L'incremento e' una frazione fissa del volume a 0 gradi C: e' proprio questa regolarita' che, estrapolata, porta al volume nullo a -273,15 gradi C e alla scala assoluta di Kelvin.",
+"Il raddoppio per grado farebbe esplodere qualsiasi palloncino al primo raggio di sole.",
+"La frazione e' riferita al volume a 0 gradi C, non al volume corrente, e vale 1/273,15, non 1/100.",
+"Il volume cambia eccome: e' l'essenza della legge isobara."
+],
+"tag": "gas"
+}
+]
 }

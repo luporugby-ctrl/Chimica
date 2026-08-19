@@ -1,0 +1,227 @@
+{
+"id": "C09",
+"titolo": "Proprieta' periodiche degli elementi",
+"gruppo": "2. Struttura della materia",
+"origine": "dispensa",
+"fonti": [
+"CarEperDegliEl_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C09-1",
+"testo": "Rispetto all'atomo neutro da cui derivano:",
+"opzioni": [
+"I cationi sono piu' piccoli e gli anioni piu' grandi",
+"I cationi sono piu' grandi e gli anioni piu' piccoli",
+"Cationi e anioni hanno lo stesso raggio dell'atomo",
+"Solo i cationi cambiano dimensione"
+],
+"giusta": 0,
+"perche": [
+"Togliere elettroni riduce le repulsioni tra elettroni e la nuvola si contrae; aggiungerne aumenta le repulsioni e la nuvola si gonfia.",
+"E' l'andamento invertito: la perdita di elettroni restringe, l'acquisto allarga.",
+"La variazione c'e' sempre: cambia il bilancio tra attrazione del nucleo e repulsioni tra elettroni.",
+"Anche gli anioni cambiano, e in direzione opposta: si espandono."
+],
+"tag": "periodicita"
+},
+{
+"id": "C09-2",
+"testo": "Affinita' elettronica ed elettronegativita' differiscono perche':",
+"opzioni": [
+"La prima riguarda l'acquisto di un elettrone libero da parte di un atomo isolato, la seconda l'attrazione sugli elettroni di legame",
+"Sono due nomi della stessa grandezza",
+"L'elettronegativita' si misura solo sui gas nobili",
+"L'affinita' elettronica riguarda i protoni"
+],
+"giusta": 0,
+"perche": [
+"Entrambe parlano di attrarre elettroni, ma su palcoscenici diversi: l'affinita' elettronica e' l'energia in gioco quando un atomo neutro cattura un elettrone libero, l'elettronegativita' e' la forza con cui un atomo in una molecola tira a se' gli elettroni condivisi.",
+"Vanno spesso di pari passo ma non coincidono: una e' un'energia misurabile su atomi isolati, l'altra una scala relativa dentro i legami.",
+"I gas nobili, poco reattivi, sono semmai il caso peggiore per parlarne: l'elettronegativita' descrive atomi impegnati in legami.",
+"I protoni non si spostano nelle reazioni chimiche ordinarie: entrambe le grandezze riguardano elettroni."
+],
+"tag": "periodicita"
+},
+{
+"id": "C09-3",
+"testo": "Dal punto di vista di ionizzazione e affinita' elettronica, i metalli sono elementi con:",
+"opzioni": [
+"Bassa energia di ionizzazione e bassa affinita' elettronica: formano solo ioni positivi",
+"Alta energia di ionizzazione e alta affinita' elettronica",
+"Alta energia di ionizzazione e bassa affinita' elettronica",
+"Nessuna tendenza a formare ioni"
+],
+"giusta": 0,
+"perche": [
+"Cedono elettroni con poca spesa e non hanno interesse ad acquistarne: per questo in natura formano solo cationi. Conducono bene calore ed elettricita', sono malleabili e duttili.",
+"Alta energia di ionizzazione e alta affinita' elettronica descrivono i non metalli, che formano facilmente ioni negativi.",
+"Questa combinazione non descrive i metalli: il loro tratto e' proprio la facilita' a perdere elettroni.",
+"I metalli formano ioni eccome, positivi: e' il cuore del loro comportamento chimico."
+],
+"tag": "periodicita"
+},
+{
+"id": "C09-4",
+"testo": "Per gli elementi dei gruppi principali, gli elettroni di valenza sono:",
+"opzioni": [
+"Gli elettroni esterni, quelli del livello con n piu' alto",
+"Tutti gli elettroni dell'atomo",
+"Solo quelli del primo guscio",
+"I neutroni del nucleo"
+],
+"giusta": 0,
+"perche": [
+"Per i gruppi principali valenza ed esterni coincidono; nei metalli di transizione entrano in gioco anche elettroni d piu' interni, annoverati tra quelli di valenza.",
+"Gli elettroni interni riempiono i livelli bassi e non partecipano ai legami.",
+"Il primo guscio e' il piu' interno di tutti: l'opposto della valenza.",
+"I neutroni stanno nel nucleo e non c'entrano con i legami chimici."
+],
+"tag": "valenza"
+},
+{
+"id": "C09-5",
+"testo": "Il principale criterio sperimentale che distingue un metallo da un non metallo e':",
+"opzioni": [
+"La conducibilita' elettrica: il metallo conduce, il non metallo no",
+"Il colore",
+"Lo stato fisico a temperatura ambiente",
+"La massa atomica"
+],
+"giusta": 0,
+"perche": [
+"Il tipico metallo e' lucente, malleabile, duttile e conduce calore ed elettricita'; il non metallo non conduce, ed e' questo il tratto distintivo principale.",
+"Il colore inganna: zolfo giallo e iodio violaceo sono non metalli, il rame rosato e' un metallo.",
+"I non metalli spaziano su tutti gli stati: diamante solido, bromo liquido, cloro gassoso.",
+"La massa non decide il carattere: il litio leggerissimo e' un metallo a tutti gli effetti."
+],
+"tag": "metalli"
+},
+{
+"id": "C09-6",
+"testo": "Le proprieta' metalliche nella tavola periodica:",
+"opzioni": [
+"Diminuiscono lungo il periodo e aumentano scendendo lungo il gruppo",
+"Aumentano lungo il periodo",
+"Sono distribuite a caso",
+"Diminuiscono scendendo nel gruppo"
+],
+"giusta": 0,
+"perche": [
+"I metalli tipici stanno a sinistra e in basso, i non metalli a destra in alto: la variazione e' graduale, e nel mezzo compaiono i semimetalli con carattere intermedio.",
+"Lungo il periodo, verso destra, il carattere metallico si spegne progressivamente.",
+"L'andamento e' regolarissimo: e' una delle periodicita' piu' evidenti.",
+"Scendendo il carattere metallico cresce: gli elementi pesanti dei gruppi sono piu' metallici dei leggeri."
+],
+"tag": "metalli"
+},
+{
+"id": "C09-7",
+"testo": "I semimetalli sono elementi che:",
+"opzioni": [
+"Presentano proprieta' intermedie tra metalli e non metalli",
+"Sono meta' solidi e meta' liquidi",
+"Non conducono mai in nessuna condizione",
+"Sono sempre gassosi"
+],
+"giusta": 0,
+"perche": [
+"Le proprieta' metalliche variano con gradualita' nella tavola: al confine tra le due regioni stanno elementi con comportamento intermedio, come il silicio.",
+"Il nome riguarda il carattere chimico-fisico, non lo stato di aggregazione.",
+"Conducono in modo intermedio: e' proprio questa via di mezzo a renderli preziosi in elettronica.",
+"Sono tipicamente solidi: il silicio e' l'esempio piu' noto."
+],
+"tag": "metalli"
+},
+{
+"id": "C09-8",
+"testo": "Il raggio atomico aumenta scendendo lungo un gruppo perche':",
+"opzioni": [
+"Gli elettroni di valenza occupano livelli con n crescente, piu' lontani dal nucleo",
+"Aumenta il numero di elettroni di valenza",
+"Diminuisce la carica del nucleo",
+"Gli atomi si gonfiano con la massa"
+],
+"giusta": 0,
+"perche": [
+"Il numero di elettroni di valenza resta lo stesso, ma il loro livello energetico sale: distanza media maggiore, atomo piu' grande.",
+"Lungo il gruppo gli elettroni di valenza sono in numero costante: e' la loro quota a cambiare.",
+"La carica nucleare cresce scendendo, ma il salto di livello domina.",
+"Non e' la massa a gonfiare: e' la geometria dei gusci elettronici."
+],
+"tag": "raggi"
+},
+{
+"id": "C09-9",
+"testo": "Il raggio atomico diminuisce da sinistra a destra lungo un periodo perche':",
+"opzioni": [
+"La carica nucleare aumenta a parita' di guscio, e attira di piu' gli elettroni di valenza",
+"Gli elettroni diminuiscono",
+"Il numero quantico principale cresce",
+"Gli atomi perdono neutroni"
+],
+"giusta": 0,
+"perche": [
+"Stesso guscio, nucleo sempre piu' carico: l'attrazione cresce e la nuvola si contrae. E' il tiro alla fune dove il nucleo guadagna corda a ogni casella.",
+"Gli elettroni aumentano insieme ai protoni: e' l'attrazione per elettrone a crescere.",
+"Lungo il periodo n resta costante: e' proprio questo a lasciare campo libero alla carica nucleare.",
+"I neutroni non governano le dimensioni della nuvola elettronica."
+],
+"tag": "raggi"
+},
+{
+"id": "C09-10",
+"testo": "L'energia di ionizzazione e' sempre positiva perche':",
+"opzioni": [
+"Strappare un elettrone a un atomo richiede sempre un apporto di energia",
+"Gli atomi cedono elettroni spontaneamente",
+"E' una convenzione senza significato fisico",
+"Il catione ha piu' energia cinetica"
+],
+"giusta": 0,
+"perche": [
+"L'elettrone e' legato al nucleo da attrazione elettrostatica: la formazione di un catione in fase gassosa e' sempre accompagnata da assorbimento di energia, mai da rilascio.",
+"Nessun atomo isolato perde elettroni gratis: anche il cesio, il piu' generoso, chiede un prezzo.",
+"Il segno riflette la fisica del legame elettrone-nucleo: e' tutto tranne che una convenzione.",
+"L'energia in gioco e' quella di legame, non il moto del catione risultante."
+],
+"tag": "ionizzazione"
+},
+{
+"id": "C09-11",
+"testo": "La seconda energia di ionizzazione di un atomo, rispetto alla prima, e':",
+"opzioni": [
+"Sempre maggiore",
+"Sempre minore",
+"Identica",
+"Negativa"
+],
+"giusta": 0,
+"perche": [
+"Il secondo elettrone va strappato a uno ione gia' positivo, che tiene i suoi elettroni piu' stretti: ogni ionizzazione successiva costa di piu' della precedente.",
+"Se costasse meno, gli atomi si spoglierebbero a cascata: non accade.",
+"L'identita' ignorerebbe la carica crescente dello ione che resta.",
+"Ogni ionizzazione assorbe energia: il segno resta positivo, e il valore cresce."
+],
+"tag": "ionizzazione"
+},
+{
+"id": "C09-12",
+"testo": "L'affinita' elettronica del cloro vale -394 kJ/mol: il segno negativo indica che:",
+"opzioni": [
+"Acquistando un elettrone il cloro libera energia, e lo fa quindi facilmente",
+"Il cloro rifiuta gli elettroni",
+"Il cloro e' un metallo",
+"Il valore e' stato misurato male"
+],
+"giusta": 0,
+"perche": [
+"Quanto piu' l'affinita' e' negativa, tanto piu' facile e' l'acquisto: il cloro e i suoi vicini alogeni sono i grandi incassatori di elettroni della tavola.",
+"Il rifiuto corrisponderebbe a valori positivi o quasi nulli, come nei gas nobili.",
+"E' un non metallo da manuale: alta energia di ionizzazione e alta affinita' elettronica.",
+"Il segno e' informazione, non errore: dice il verso del flusso di energia."
+],
+"tag": "affinita"
+}
+]
+}

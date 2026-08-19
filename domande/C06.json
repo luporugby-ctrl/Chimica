@@ -1,0 +1,227 @@
+{
+"id": "C06",
+"titolo": "Radiazione, quanti e modelli atomici",
+"gruppo": "2. Struttura della materia",
+"origine": "dispensa",
+"fonti": [
+"ModAtomEStrutt_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C06-1",
+"testo": "Secondo l'ipotesi di Planck, l'interazione tra radiazione e materia avviene:",
+"opzioni": [
+"Per trasferimento di quantita' discrete di energia, i quanti, con E = h per la frequenza",
+"Per scambio continuo di qualsiasi quantita' di energia",
+"Solo attraverso urti tra nuclei",
+"Solo a temperature elevate"
+],
+"giusta": 0,
+"perche": [
+"La materia emette o assorbe energia solo a pacchetti multipli interi di h per ni, dove h e' la costante di Planck: fu la chiave per spiegare lo spettro del corpo nero.",
+"Lo scambio continuo era l'idea della fisica classica: falliva proprio nel riprodurre l'emissione del corpo nero alle lunghezze d'onda corte.",
+"I quanti riguardano lo scambio di energia radiante con gli elettroni, non urti nucleari.",
+"La quantizzazione vale sempre: la temperatura cambia quanta energia viene emessa, non il fatto che viaggi a pacchetti."
+],
+"tag": "quanti"
+},
+{
+"id": "C06-2",
+"testo": "Einstein spiego' l'effetto fotoelettrico ipotizzando che:",
+"opzioni": [
+"La luce sia fatta di fotoni che urtando cedono energia agli elettroni del metallo",
+"La luce sia un'onda continua che scalda il metallo",
+"Gli elettroni escano dal metallo spontaneamente",
+"I nuclei del metallo assorbano la luce"
+],
+"giusta": 0,
+"perche": [
+"Natura corpuscolare della luce: se il fotone ha frequenza sufficiente, il suo quanto di energia estrae l'elettrone, e l'energia cinetica dell'elettrone emesso e' quella del fotone meno l'energia di estrazione.",
+"Il modello ondulatorio continuo non spiegava il fenomeno: e' proprio uno dei fallimenti che porto' alla teoria quantistica.",
+"Serve energia per l'estrazione: senza radiazione di frequenza adeguata non esce nessun elettrone.",
+"Sono gli elettroni del metallo a ricevere l'energia del fotone, non i nuclei."
+],
+"tag": "quanti"
+},
+{
+"id": "C06-3",
+"testo": "Un gas eccitato emette uno spettro a righe, e non continuo, perche':",
+"opzioni": [
+"I suoi atomi possiedono livelli energetici discreti tra cui gli elettroni saltano",
+"Il prisma taglia alcune lunghezze d'onda",
+"Il gas e' troppo rarefatto per emettere tutti i colori",
+"Gli atomi emettono solo luce bianca"
+],
+"giusta": 0,
+"perche": [
+"Ogni riga corrisponde al salto tra due stati con energia ben definita: se l'energia dell'atomo variasse con continuita', lo spettro sarebbe continuo. Le righe sono l'impronta digitale dell'elemento.",
+"Il prisma scompone soltanto: le stesse righe si vedono con qualunque strumento disperda la luce.",
+"La rarefazione serve solo alle condizioni sperimentali del tubo: la discontinuita' viene dagli atomi, non dalla pressione.",
+"Una lampadina comune emette uno spettro continuo con tutti i colori fusi: i gas eccitati fanno l'opposto, colori a lunghezze d'onda discrete."
+],
+"tag": "quanti"
+},
+{
+"id": "C06-4",
+"testo": "Lunghezza d'onda e frequenza di una radiazione elettromagnetica sono legate dalla relazione:",
+"opzioni": [
+"Lambda x frequenza = c, la velocita' della luce",
+"Lambda + frequenza = c",
+"Lambda / frequenza = h",
+"Non esiste alcuna relazione"
+],
+"giusta": 0,
+"perche": [
+"Il prodotto delle due grandezze da' la velocita' di propagazione: nel vuoto c vale circa 3 x 10^8 m/s. Onde piu' corte oscillano quindi piu' in fretta.",
+"Le due grandezze si moltiplicano, non si sommano: hanno unita' diverse e la somma non avrebbe senso.",
+"Il rapporto con h non descrive la propagazione: la costante di Planck entra nell'energia dei quanti, E = h per la frequenza.",
+"La relazione e' strettissima: fissata la velocita', una determina l'altra."
+],
+"tag": "radiazione"
+},
+{
+"id": "C06-5",
+"testo": "Nello spettro elettromagnetico, i raggi gamma e le onde radio si distinguono perche':",
+"opzioni": [
+"I gamma hanno lunghezze d'onda piccolissime, paragonabili ai nuclei atomici; le onde radio lunghissime",
+"I gamma hanno lunghezze d'onda maggiori delle onde radio",
+"Viaggiano a velocita' diverse nel vuoto",
+"Solo i gamma sono radiazione elettromagnetica"
+],
+"giusta": 0,
+"perche": [
+"L'intervallo dello spettro e' enorme: dalle dimensioni di un nucleo atomico a lunghezze d'onda piu' grandi di un campo da football, e la frequenza cresce in senso opposto.",
+"E' il contrario: i gamma stanno all'estremo delle lunghezze d'onda corte e delle frequenze altissime.",
+"Nel vuoto tutte le radiazioni elettromagnetiche viaggiano alla stessa velocita' c.",
+"Sono entrambi radiazione elettromagnetica: cambia solo la lunghezza d'onda."
+],
+"tag": "radiazione"
+},
+{
+"id": "C06-6",
+"testo": "Un corpo nero e' definito come un oggetto teorico che:",
+"opzioni": [
+"Assorbe il 100% della radiazione incidente, senza riflettere nulla",
+"Riflette tutta la luce che riceve",
+"Non emette mai radiazione",
+"Esiste solo a temperature bassissime"
+],
+"giusta": 0,
+"perche": [
+"Assorbitore perfetto, per questo appare nero: nessun materiale reale ci arriva, la grafite si ferma al 97% ed e' anche un ottimo emettitore.",
+"Il riflettore perfetto sarebbe uno specchio ideale: l'opposto esatto del corpo nero.",
+"Riscaldato, il corpo nero emette eccome: la sua radiazione di emissione e' proprio l'oggetto di studio.",
+"La definizione non pone limiti di temperatura: riguarda solo l'assorbimento."
+],
+"tag": "corponero"
+},
+{
+"id": "C06-7",
+"testo": "La radiazione emessa da un corpo nero riscaldato dipende:",
+"opzioni": [
+"Solo dalla sua temperatura, non dalla forma o dal materiale",
+"Dal materiale di cui e' fatto",
+"Dalla sua forma geometrica",
+"Dal colore della superficie"
+],
+"giusta": 0,
+"perche": [
+"E' il risultato chiave: l'emissione e' isotropa e universale, funzione della sola temperatura. Per questo lo spettro del corpo nero divento' un banco di prova per la fisica.",
+"L'indipendenza dal materiale e' proprio la caratteristica sorprendente del fenomeno.",
+"La forma non conta: due corpi neri alla stessa temperatura emettono lo stesso spettro.",
+"Un corpo nero ideale non ha colore: assorbe tutto, e cio' che emette dipende solo da T."
+],
+"tag": "corponero"
+},
+{
+"id": "C06-8",
+"testo": "Secondo la legge di Wien, aumentando la temperatura di un corpo nero:",
+"opzioni": [
+"La lunghezza d'onda del massimo di emissione diminuisce",
+"La lunghezza d'onda del massimo aumenta",
+"Il massimo di emissione scompare",
+"Lo spettro non cambia"
+],
+"giusta": 0,
+"perche": [
+"Il picco si sposta verso lunghezze d'onda piu' corte: e' il ferro che scaldandosi passa dal rosso cupo al bianco, con il massimo che migra verso il visibile.",
+"L'aumento della lunghezza d'onda del picco corrisponderebbe a un corpo che si raffredda.",
+"Il massimo resta ben definito a ogni temperatura: si sposta soltanto.",
+"Lo spettro cambia in intensita' e posizione del picco: la temperatura comanda entrambe."
+],
+"tag": "corponero"
+},
+{
+"id": "C06-9",
+"testo": "Il tentativo di Rayleigh e Jeans di spiegare il corpo nero con la fisica classica:",
+"opzioni": [
+"Funzionava alle grandi lunghezze d'onda ma falliva alle corte, senza massimo di emissione",
+"Riproduceva perfettamente tutto lo spettro",
+"Funzionava solo alle lunghezze d'onda corte",
+"Non produsse alcuna formula"
+],
+"giusta": 0,
+"perche": [
+"Il loro modello a onde stazionarie seguiva la curva sperimentale solo da un lato: alle lunghezze d'onda corte divergeva e non mostrava alcun picco. Fu una delle crepe che apri' la strada a Planck.",
+"Se avesse funzionato ovunque, la teoria dei quanti non sarebbe nata da questo problema.",
+"E' il lato sbagliato: l'accordo c'era proprio alle lunghezze d'onda grandi.",
+"La formula esisteva ed era rigorosa: era la fisica sottostante a essere insufficiente."
+],
+"tag": "corponero"
+},
+{
+"id": "C06-10",
+"testo": "La costante di Planck h vale circa:",
+"opzioni": [
+"6,626 x 10^-34 J s",
+"3 x 10^8 m/s",
+"6,022 x 10^23 1/mol",
+"9,81 m/s2"
+],
+"giusta": 0,
+"perche": [
+"Joule per secondo: e' il fattore che lega l'energia di un quanto alla sua frequenza, E = h per ni. Il valore minuscolo spiega perche' la quantizzazione non si nota nel mondo macroscopico.",
+"3 x 10^8 m/s e' la velocita' della luce nel vuoto: altra costante, altro ruolo.",
+"6,022 x 10^23 e' il numero di Avogadro: conta particelle, non energia.",
+"9,81 e' l'accelerazione di gravita' terrestre: fisica di tutt'altra scala."
+],
+"tag": "quanti"
+},
+{
+"id": "C06-11",
+"testo": "Un fotone con frequenza doppia rispetto a un altro trasporta:",
+"opzioni": [
+"Energia doppia, perche' E = h x frequenza",
+"La stessa energia",
+"Energia quadrupla",
+"Meta' dell'energia"
+],
+"giusta": 0,
+"perche": [
+"La proporzionalita' e' diretta: raddoppia la frequenza, raddoppia l'energia del quanto. E' il cuore dell'ipotesi di Planck.",
+"L'energia del fotone dipende proprio dalla frequenza: due frequenze diverse, due energie diverse.",
+"Il quadruplo richiederebbe una dipendenza quadratica che nella formula non c'e'.",
+"La meta' corrisponderebbe a frequenza dimezzata, non raddoppiata."
+],
+"tag": "quanti"
+},
+{
+"id": "C06-12",
+"testo": "Quali fenomeni NON riusciva a spiegare il modello puramente ondulatorio della luce?",
+"opzioni": [
+"Effetto fotoelettrico, radiazione del corpo nero e spettri di emissione a righe",
+"La riflessione su uno specchio",
+"La rifrazione in un prisma",
+"La propagazione nel vuoto"
+],
+"giusta": 0,
+"perche": [
+"Sono i tre fallimenti storici elencati dalla teoria: servivano i quanti di Planck e i fotoni di Einstein per darne conto.",
+"La riflessione era spiegata benissimo dalle onde: non fu mai un problema.",
+"La rifrazione e la scomposizione nel prisma sono successi del modello ondulatorio.",
+"La propagazione nel vuoto non metteva in crisi il modello: erano gli scambi di energia con la materia a farlo."
+],
+"tag": "quanti"
+}
+]
+}

@@ -1,0 +1,209 @@
+{
+"id": "C28",
+"titolo": "Equilibrio: impostazione dei calcoli",
+"gruppo": "7. Equilibrio chimico",
+"origine": "dispensa",
+"fonti": [
+"EsEquiChi_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C28-1",
+"testo": "Il valore della costante di equilibrio Kc di una reazione cambia soltanto se cambia:",
+"opzioni": [
+"La temperatura",
+"La concentrazione iniziale dei reagenti",
+"Il volume del recipiente",
+"La quantita' di catalizzatore"
+],
+"giusta": 0,
+"perche": [
+"Kc e' funzione della sola temperatura: partendo da qualunque miscela iniziale, a T fissata il rapporto all'equilibrio torna sempre allo stesso valore. E' cio' che rende K un'impronta della reazione.",
+"Le condizioni iniziali cambiano le concentrazioni finali delle singole specie, ma il loro rapporto secondo la legge di azione di massa resta identico.",
+"Volume e pressione spostano la posizione dell'equilibrio nei sistemi gassosi, ma il valore di Kc non si tocca.",
+"Il catalizzatore accorcia il viaggio verso l'equilibrio senza spostare la destinazione."
+],
+"tag": "costanti"
+},
+{
+"id": "C28-2",
+"testo": "Nel grafico delle concentrazioni in funzione del tempo, l'equilibrio e' raggiunto quando:",
+"opzioni": [
+"Le curve di reagenti e prodotti diventano orizzontali, su valori costanti",
+"Le curve si incrociano",
+"La concentrazione dei reagenti arriva a zero",
+"Le curve ripartono da capo"
+],
+"giusta": 0,
+"perche": [
+"I reagenti calano prima rapidamente e poi sempre piu' lentamente, i prodotti salgono in modo speculare: il plateau segna le condizioni di equilibrio. L'incrocio delle curve, se avviene, e' solo un punto di passaggio senza significato speciale.",
+"L'incrocio dipende dai valori iniziali e da K: non coincide con l'equilibrio.",
+"All'equilibrio i reagenti non si azzerano: convivono con i prodotti.",
+"Le concentrazioni non oscillano: raggiunto il plateau, restano li'."
+],
+"tag": "grafici"
+},
+{
+"id": "C28-3",
+"testo": "Nel grafico delle velocita' in funzione del tempo, avvicinandosi all'equilibrio:",
+"opzioni": [
+"La velocita' diretta diminuisce e quella inversa aumenta, finche' si eguagliano",
+"Entrambe aumentano all'infinito",
+"Entrambe si azzerano",
+"La diretta aumenta e l'inversa diminuisce"
+],
+"giusta": 0,
+"perche": [
+"I reagenti si consumano e la diretta rallenta; i prodotti si accumulano e l'inversa accelera: le due curve convergono sullo stesso valore, non nullo, e li' e' l'equilibrio.",
+"Le velocita' sono limitate dalle concentrazioni: nessuna crescita infinita.",
+"Se si azzerassero, l'equilibrio sarebbe statico: invece e' dinamico, con traffico uguale nei due sensi.",
+"Gli andamenti sono l'opposto: chi parte forte rallenta, chi parte da zero cresce."
+],
+"tag": "grafici"
+},
+{
+"id": "C28-4",
+"testo": "Per convenzione, il valore della costante di equilibrio si scrive:",
+"opzioni": [
+"Senza unita' di misura",
+"Sempre in mol/L",
+"Sempre in atmosfere",
+"In joule"
+],
+"giusta": 0,
+"perche": [
+"Nella formulazione rigorosa la K contiene le attivita' chimiche, che sono adimensionali: da qui l'abitudine di omettere le unita' anche lavorando con concentrazioni o pressioni.",
+"Le mol/L comparirebbero solo in certi casi e con esponenti variabili: per questo si lasciano fuori.",
+"Lo stesso vale per le atmosfere della Kp: convenzionalmente omesse.",
+"Il joule misura energia: la K e' un rapporto di concentrazioni o pressioni."
+],
+"tag": "convenzioni"
+},
+{
+"id": "C28-5",
+"testo": "A rigore nella costante di equilibrio andrebbero le attivita' chimiche; usare le concentrazioni molari e' accettabile perche':",
+"opzioni": [
+"Per soluzioni diluite il coefficiente di attivita' tende a 1 e attivita' e concentrazione quasi coincidono",
+"Le attivita' non esistono",
+"Le concentrazioni sono sempre esatte",
+"La legge vale solo per i solidi"
+],
+"giusta": 0,
+"perche": [
+"L'attivita' e' a = f x C: quanto piu' la soluzione e' diluita, tanto piu' f si avvicina a 1 e l'approssimazione regge. L'errore cresce con la concentrazione.",
+"Le attivita' esistono e sono la formulazione rigorosa: le concentrazioni ne sono l'approssimazione comoda.",
+"Proprio perche' l'approssimazione introduce un errore, va usata dove e' piccola.",
+"I solidi semmai escono dall'espressione: la legge vive in fase omogenea."
+],
+"tag": "convenzioni"
+},
+{
+"id": "C28-6",
+"testo": "Quando la costante K e' enormemente grande, la reazione si scrive spesso con la freccia singola perche':",
+"opzioni": [
+"La concentrazione residua dei reagenti e' trascurabile: l'equilibrio e' tutto spostato a destra",
+"La reazione diventa istantanea",
+"La reazione inversa e' vietata",
+"La K non si puo' calcolare"
+],
+"giusta": 0,
+"perche": [
+"Con K enormi il quoziente pretende prodotti abbondantissimi e reagenti in tracce: la doppia freccia si omette e la reazione si tratta come completa.",
+"K grande non parla di tempi: una reazione quasi completa puo' restare lentissima.",
+"L'inversa avviene comunque, ma in misura irrilevante sul bilancio.",
+"La K resta definita e misurabile: e' il suo valore a giustificare la scrittura semplificata."
+],
+"tag": "convenzioni"
+},
+{
+"id": "C28-7",
+"testo": "Per l'equilibrio A in equilibrio con B con K = 0,80, sciogliendo quantita' iniziali diverse di A (o partendo da solo B):",
+"opzioni": [
+"Il rapporto [B]/[A] all'equilibrio vale sempre 0,80, mentre le singole concentrazioni cambiano",
+"Il rapporto cambia a ogni esperimento",
+"Le singole concentrazioni sono sempre le stesse",
+"La K cambia con la partenza"
+],
+"giusta": 0,
+"perche": [
+"E' il senso profondo della costante: qualunque sia la miscela di partenza, e da qualunque lato si arrivi, il rapporto di equilibrio torna sempre a 0,80 a quella temperatura.",
+"Il rapporto e' l'invariante: cambiano solo i valori assoluti delle concentrazioni.",
+"Partendo con piu' materia si arriva a concentrazioni piu' alte: e' il rapporto a restare fisso.",
+"La K dipende solo dalla temperatura, mai dalla composizione iniziale."
+],
+"tag": "costanti"
+},
+{
+"id": "C28-8",
+"testo": "La tabella per impostare un calcolo di equilibrio ha tre righe che riportano:",
+"opzioni": [
+"Concentrazioni iniziali, variazioni con l'incognita x e concentrazioni all'equilibrio",
+"Massa, volume e densita'",
+"Reagenti, prodotti e catalizzatori",
+"Temperatura, pressione e volume"
+],
+"giusta": 0,
+"perche": [
+"Prima riga lo stato di partenza, seconda le variazioni (negative per i reagenti, positive per i prodotti, nei rapporti dei coefficienti), terza la somma: i valori della terza riga entrano nella K.",
+"Massa e densita' non compaiono nell'impostazione degli equilibri.",
+"I catalizzatori non entrano nella tabella: non compaiono nel bilancio.",
+"Le variabili di stato definiscono le condizioni, non le righe della tabella."
+],
+"tag": "impostazione"
+},
+{
+"id": "C28-9",
+"testo": "Risolvendo l'equazione dell'equilibrio, tra le due radici si sceglie quella che:",
+"opzioni": [
+"Da' concentrazioni positive e fisicamente sensate",
+"Ha il valore assoluto maggiore",
+"E' negativa",
+"Viene prima in ordine alfabetico"
+],
+"giusta": 0,
+"perche": [
+"La x rappresenta una concentrazione o una sua variazione: la radice accettabile deve lasciare tutte le concentrazioni di equilibrio positive e non superiori alle disponibilita' iniziali.",
+"Il valore piu' grande spesso produce concentrazioni negative: va scartato.",
+"Una concentrazione negativa non esiste in natura.",
+"La scelta e' fisica, non formale: si verifica la sensatezza del risultato."
+],
+"tag": "impostazione"
+},
+{
+"id": "C28-10",
+"testo": "Prima di calcolare la Kc, le moli delle specie all'equilibrio vanno:",
+"opzioni": [
+"Convertite in concentrazioni molari dividendo per il volume del recipiente",
+"Moltiplicate per il volume",
+"Convertite in grammi",
+"Lasciate come sono in ogni caso"
+],
+"giusta": 0,
+"perche": [
+"La Kc lavora con le molarita': 0,50 mol in 2,0 L sono 0,25 M. Solo con il volume di un litro esatto moli e concentrazioni coincidono numericamente.",
+"Moltiplicare per il volume produce unita' senza significato per la K.",
+"I grammi non entrano mai nella legge di azione di massa.",
+"Lasciarle in moli e' lecito solo nel caso particolare del recipiente da un litro."
+],
+"tag": "impostazione"
+},
+{
+"id": "C28-11",
+"testo": "Lo stesso stato di equilibrio si raggiunge partendo da soli reagenti oppure da soli prodotti:",
+"opzioni": [
+"Vero: l'equilibrio e' raggiungibile da entrambe le direzioni",
+"Falso: serve sempre partire dai reagenti",
+"Vero, ma solo con un catalizzatore",
+"Falso: dai prodotti non avviene nulla"
+],
+"giusta": 0,
+"perche": [
+"Sciogliendo solo B nell'equilibrio tra A e B, parte della B torna A finche' il rapporto raggiunge la K: la destinazione e' la stessa da qualunque lato la si avvicini.",
+"La direzione di partenza e' indifferente: la K non distingue da dove si arriva.",
+"Il catalizzatore accorcia il viaggio ma non e' necessario per arrivare.",
+"Dai prodotti parte la reazione inversa: e' esattamente cosi' che il sistema torna all'equilibrio."
+],
+"tag": "costanti"
+}
+]
+}

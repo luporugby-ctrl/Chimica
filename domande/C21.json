@@ -1,190 +1,227 @@
 {
 "id": "C21",
-"titolo": "Formule minime e molecolari",
-"gruppo": "3. Calcoli e stechiometria",
-"origine": "CalcFormMin_Mercatorum.pdf",
+"titolo": "Molalita', densita' e mescolamento",
+"gruppo": "5. Soluzioni",
+"origine": "dispensa",
+"fonti": [
+"MolDenMeSol_Mercatorum.pdf"
+],
 "domande": [
 {
 "id": "C21-1",
-"testo": "La formula minima (o empirica) di un composto indica:",
-"opzioni": ["Il rapporto più semplice fra il numero di atomi dei diversi elementi", "Il numero effettivo di atomi presenti in una molecola", "La massa di una mole del composto", "La percentuale in massa di ciascun elemento"],
+"testo": "Mescolando 500 mL di etanolo con 500 mL di acqua si ottengono circa 966 mL di soluzione: questo dimostra che:",
+"opzioni": [
+"Le masse si sommano ma i volumi non sono additivi",
+"I liquidi sono comprimibili",
+"Parte dell'etanolo e' evaporata",
+"La misura era sbagliata"
+],
 "giusta": 0,
 "perche": [
-"Si limita a dare il rapporto numerico di combinazione, espresso con i numeri interi più piccoli possibile.",
-"Il numero effettivo di atomi per molecola è dato dalla formula molecolare, che è un multiplo intero della minima.",
-"La massa di una mole è la massa molare: si calcola dalla formula, ma non è la formula.",
-"Le percentuali sono il dato di partenza dell'analisi: la formula minima è il risultato dell'elaborazione."
+"Le molecole dei due liquidi si incastrano occupando meglio lo spazio: la massa finale e' la somma esatta, il volume no. Per questo il volume di una miscela si calcola dalla somma solo se espressamente ammesso, e il risultato resta approssimato.",
+"I liquidi sono praticamente incomprimibili: la contrazione viene dall'impacchettamento molecolare, non dalla compressione.",
+"L'evaporazione non giustifica 34 mL spariti in un mescolamento: la massa infatti torna al grammo.",
+"Il fenomeno e' reale e riproducibile: e' un fatto sperimentale, non un errore."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-2",
-"testo": "Il primo passaggio per ricavare la formula minima dalle percentuali è:",
-"opzioni": ["Dividere ogni percentuale per la massa atomica dell'elemento", "Dividere ogni percentuale per 100", "Sommare tutte le percentuali", "Moltiplicare ogni percentuale per la massa atomica"],
+"testo": "La differenza tra molarita' M e molalita' m e' che:",
+"opzioni": [
+"La molarita' e' moli di soluto per litro di soluzione, la molalita' moli di soluto per kg di solvente",
+"Sono la stessa grandezza scritta diversamente",
+"La molalita' si riferisce al volume del solvente",
+"La molarita' usa i grammi di soluto"
+],
 "giusta": 0,
 "perche": [
-"Serve a convertire le proporzioni di massa in proporzioni di moli, cioè in numero di atomi: è il passaggio che rende confrontabili elementi con masse diverse.",
-"Dividere per 100 cambia solo la scala e lascia le proporzioni di massa: non porta alle moli.",
-"La somma delle percentuali fa 100 e non aggiunge informazione.",
-"Moltiplicare va nella direzione sbagliata: allontana dal numero di moli invece di avvicinarcisi."
+"Due denominatori diversi: litri di soluzione per la M, chilogrammi di solo solvente per la m. La molalita' non risente della temperatura, perche' la massa non si dilata; la molarita' si', perche' il volume cambia.",
+"Coincidono solo per caso in soluzioni acquose molto diluite: in generale sono numeri diversi.",
+"La molalita' usa la massa del solvente, non il volume: e' proprio la sua forza.",
+"Entrambe contano moli di soluto al numeratore: i grammi entrano solo per calcolare le moli."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-3",
-"testo": "Ottenute le moli di ciascun elemento, il passaggio successivo è:",
-"opzioni": ["Dividere tutti i valori per il più piccolo di essi", "Dividere tutti i valori per il più grande di essi", "Sommare i valori e dividere per il numero di elementi", "Arrotondare direttamente i valori all'intero più vicino"],
+"testo": "La molalita' di una soluzione con 34 g di ammoniaca NH3 (17 g/mol) in 500 g di acqua e':",
+"opzioni": [
+"4,0 mol/kg",
+"2,0 mol/kg",
+"0,068 mol/kg",
+"68 mol/kg"
+],
 "giusta": 0,
 "perche": [
-"Dividendo per il più piccolo, quell'elemento diventa 1 e gli altri si esprimono in rapporto a lui: da lì escono gli indici.",
-"Dividendo per il più grande si otterrebbero valori tutti minori di 1, non utilizzabili come indici.",
-"La media non ha significato: servono i rapporti, non un valore medio.",
-"Arrotondare prima di dividere fa perdere completamente i rapporti fra gli elementi."
+"Moli di NH3 = 34/17 = 2,0; molalita' = 2,0 mol / 0,500 kg = 4,0 mol/kg. Attenzione a convertire i grammi di solvente in chilogrammi.",
+"2,0 sono le moli di soluto: manca la divisione per i chilogrammi di solvente.",
+"0,068 verrebbe dividendo per 500 senza convertire in kg: errore di unita' da mille volte.",
+"68 mescola grammi e chilogrammi nell'altro verso: il controllo delle unita' salva sempre."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-4",
-"testo": "Dopo la divisione si ottengono i valori 1; 1,023; 3,518. Come si procede?",
-"opzioni": ["Si moltiplicano tutti i valori per 2, il più piccolo intero che li rende interi", "Si arrotonda 3,518 a 4 e si scrive la formula", "Si scarta il valore 3,518 perché non è approssimabile", "Si divide di nuovo tutto per 1,023"],
+"testo": "Per passare dal percento in peso alla molarita' di una soluzione serve conoscere anche:",
+"opzioni": [
+"La densita' della soluzione",
+"La temperatura di ebollizione",
+"Il colore della soluzione",
+"La pressione atmosferica"
+],
 "giusta": 0,
 "perche": [
-"1,023 si approssima a 1 senza errore apprezzabile, ma 3,518 no: moltiplicando tutto per 2 si ottengono 2, 2 e 7, cioè la formula del bicromato di potassio.",
-"3,518 è troppo lontano da 4 per essere arrotondato: l'errore sarebbe superiore a quello sperimentale ammissibile.",
-"Nessun valore si scarta: tutti gli elementi trovati fanno parte del composto.",
-"Dividere ancora non cambia il problema, perché i rapporti restano gli stessi."
+"Il percento parla di masse, la molarita' di volume: il ponte e' la densita'. Su 100 g di soluzione si contano le moli di soluto, poi V = m/d da' i litri, e infine M = moli/volume.",
+"L'ebollizione non lega massa e volume: serve proprio la densita'.",
+"Il colore e' un dato estetico: nessun ruolo nei conti di concentrazione.",
+"La pressione conta per i gas: qui si convertono masse in volumi di liquido."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-5",
-"testo": "Un composto contiene 40,0% di C, 6,7% di H e 53,3% di O. La sua formula minima è:",
-"opzioni": ["CH2O", "C2H4O2", "CH4O", "C2H6O"],
+"testo": "Mescolando 100 mL di HCl 0,20 M con 100 mL di HCl 0,40 M (volumi additivi), la molarita' finale e':",
+"opzioni": [
+"0,30 M",
+"0,60 M",
+"0,20 M",
+"0,080 M"
+],
 "giusta": 0,
 "perche": [
-"40/12 = 3,33; 6,7/1 = 6,7; 53,3/16 = 3,33. Dividendo per 3,33 si ottiene 1 : 2 : 1.",
-"È la formula molecolare dell'acido acetico, cioè il doppio della minima: la minima usa sempre i numeri interi più piccoli.",
-"Il rapporto fra carbonio e idrogeno sarebbe 1 : 4, mentre dai dati esce 1 : 2.",
-"Non torna nessun rapporto: contiene due carboni e un solo ossigeno, mentre qui carbonio e ossigeno sono in rapporto 1 : 1."
+"Le moli si sommano: 0,020 + 0,040 = 0,060 mol in 0,200 L, cioe' 0,30 M. Con volumi uguali la media delle concentrazioni funziona, ma il metodo generale e' sempre moli totali su volume totale.",
+"0,60 sarebbe sommare le molarita': si sommano le moli, non le concentrazioni.",
+"0,20 ignora il contributo della soluzione piu' concentrata.",
+"0,080 confonde moli e molarita' a meta' calcolo: tenere separate le due grandezze."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-6",
-"testo": "La formula molecolare rispetto alla formula minima:",
-"opzioni": ["È un suo multiplo intero, ricavabile conoscendo la massa molecolare", "È sempre identica alla formula minima", "Si ricava dalle sole percentuali degli elementi", "È sempre esattamente il doppio"],
+"testo": "Il percento in volume di una soluzione va usato con cautela perche':",
+"opzioni": [
+"I volumi dei componenti non sono additivi, quindi le percentuali in volume possono non sommare a 100",
+"I volumi non si possono misurare",
+"Vale solo per i solidi",
+"E' identico al percento in massa"
+],
 "giusta": 0,
 "perche": [
-"Se la minima è CaHbOc, la molecolare è CnaHnbOnc con n intero maggiore o uguale a 1: per trovare n serve la massa molecolare.",
-"Coincidono solo quando n vale 1, come nell'acqua. Nel benzene la minima è CH e la molecolare C6H6.",
-"Le sole percentuali non bastano: danno i rapporti, non il numero assoluto di atomi. Serve un dato in più.",
-"Il fattore può valere 1, 2, 6 o qualsiasi intero: dipende dalla massa molecolare."
+"Mescolando i liquidi il volume finale non e' la somma dei volumi usati: di conseguenza la somma delle percentuali in volume dei componenti puo' non fare 100. Le masse invece si sommano sempre esattamente.",
+"I volumi si misurano benissimo: e' la loro additivita' a mancare.",
+"Si usa soprattutto per liquidi e gas, non per i solidi.",
+"Massa e volume danno percentuali diverse: la densita' dei componenti li distingue."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-7",
-"testo": "Un composto ha formula minima CH2O e massa molecolare 180 u. La formula molecolare è:",
-"opzioni": ["C6H12O6", "C2H4O2", "CH2O", "C3H6O3"],
+"testo": "La concentrazione espressa come massa di soluto per volume di soluzione (g/L) dipende dalla temperatura perche':",
+"opzioni": [
+"Il volume della soluzione si dilata o si contrae con la temperatura",
+"La massa del soluto cambia con la temperatura",
+"Il soluto evapora sempre",
+"I grammi diventano chilogrammi"
+],
 "giusta": 0,
 "perche": [
-"La massa della formula minima è 12 + 2 + 16 = 30. Dividendo 180 per 30 si ottiene n = 6.",
-"Corrisponde a n = 2, cioè massa 60: sarebbe l'acido acetico, non un composto da 180.",
-"Sarebbe n = 1, con massa 30: molto lontano da 180.",
-"Corrisponde a n = 3, cioè massa 90: metà del valore richiesto. È l'errore di chi divide 180 per 60."
+"Scaldando, il volume cresce e la stessa massa di soluto risulta piu' diluita per litro: per questo molalita' e percento in massa, basati solo su masse, sono piu' robusti.",
+"La massa e' invariante con la temperatura: e' il denominatore a muoversi.",
+"L'evaporazione del soluto non e' la regola, e comunque non e' il motivo della dipendenza.",
+"Le unita' non si trasformano da sole: il punto e' la dilatazione termica del volume."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-8",
-"testo": "Per calcolare la percentuale in massa di un elemento a partire dalla formula molecolare si divide:",
-"opzioni": ["La massa di quell'elemento in una mole per la massa molare, per 100", "La massa molare per la massa dell'elemento, per 100", "Il numero di atomi dell'elemento per il numero totale di atomi, per 100", "La massa atomica dell'elemento per 100"],
+"testo": "La molalita' di una soluzione con 4,0 g di NaOH (40 g/mol) in 200 g di acqua e':",
+"opzioni": [
+"0,50 mol/kg",
+"0,10 mol/kg",
+"2,0 mol/kg",
+"20 mol/kg"
+],
 "giusta": 0,
 "perche": [
-"In una mole di C2H6S ci sono 32,064 g di zolfo su 62,134 g totali: il rapporto per 100 dà 51,6%.",
-"Il rapporto invertito darebbe valori maggiori di 100, che non hanno senso come percentuale in massa.",
-"Quello darebbe la percentuale in numero di atomi, non in massa: gli atomi pesano diversamente fra loro.",
-"La massa atomica da sola non dice nulla senza il confronto con la massa dell'intera molecola."
+"Moli = 4,0/40 = 0,10; molalita' = 0,10 mol / 0,200 kg = 0,50 mol/kg. Il denominatore e' la massa del solvente in chilogrammi.",
+"0,10 sono le moli di soluto: manca la divisione per i chilogrammi d'acqua.",
+"2,0 uscirebbe sbagliando la conversione dei grammi d'acqua.",
+"20 mescola le unita': controllare sempre grammi e chilogrammi."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-9",
-"testo": "Nella scrittura di una formula chimica, il pedice 1:",
-"opzioni": ["Viene sempre omesso per convenzione", "Va sempre scritto esplicitamente", "Si scrive solo per i non metalli", "Indica che l'elemento è assente"],
+"testo": "Nella diluizione di una soluzione, resta invariato:",
+"opzioni": [
+"Il numero di moli di soluto: vale M1 x V1 = M2 x V2",
+"Il volume della soluzione",
+"La molarita'",
+"Il rapporto tra soluto e solvente"
+],
 "giusta": 0,
 "perche": [
-"Per questo la formula dell'acqua si scrive H2O e non H2O1: due atomi di idrogeno e uno di ossigeno.",
-"Scriverlo non è errato dal punto di vista del significato, ma non è la scrittura convenzionale.",
-"La convenzione vale per tutti gli elementi, senza distinzione.",
-"Un elemento assente non compare affatto nella formula. Il pedice 1 significa un atomo presente."
+"Aggiungere solvente non tocca il soluto: le stesse moli si spalmano su piu' litri, e la relazione M1V1 = M2V2 permette di calcolare la nuova concentrazione. Da 100 mL di soluzione 2,0 M portati a 400 mL si ottiene 0,50 M.",
+"Il volume aumenta per definizione: e' la mossa stessa della diluizione.",
+"La molarita' scende: e' lo scopo dell'operazione.",
+"Il solvente aumenta mentre il soluto resta: il loro rapporto cambia eccome."
 ],
-"tag": "formule"
+"tag": "diluizione"
 },
 {
 "id": "C21-10",
-"testo": "Per i composti ionici come MgCl2, la formula rappresenta:",
-"opzioni": ["L'unità formula, cioè il rapporto di combinazione fra gli ioni", "Una molecola realmente esistente", "Il numero di coordinazione del catione", "La massa in grammi del composto"],
+"testo": "In 100 g di una soluzione al 20% in peso di zucchero ci sono:",
+"opzioni": [
+"20 g di zucchero e 80 g di acqua",
+"20 g di zucchero e 100 g di acqua",
+"80 g di zucchero",
+"2 g di zucchero"
+],
 "giusta": 0,
 "perche": [
-"I composti ionici non danno molecole discrete: sono reticoli, e la formula indica soltanto in che rapporto magnesio e cloro si combinano.",
-"Le molecole come unità realmente esistenti si trovano nei composti covalenti, per esempio nella CO2.",
-"Il numero di coordinazione riguarda quanti ioni circondano uno ione nel reticolo, ed è un'altra grandezza.",
-"La formula non esprime una massa: da essa si calcola la massa molare, ma non la contiene."
+"Il percento in peso e' riferito alla massa totale della soluzione: 20 su 100 al soluto, il resto al solvente.",
+"Con 100 g di acqua la soluzione peserebbe 120 g e la percentuale scenderebbe sotto il 17%.",
+"80 g e' la parte del solvente, non del soluto.",
+"2 g corrisponderebbero al 2%: virgola fuori posto."
 ],
-"tag": "formule"
+"tag": "concentrazione"
 },
 {
 "id": "C21-11",
-"testo": "Il simbolo Zn, oltre a indicare l'elemento zinco, rappresenta anche:",
-"opzioni": ["Un singolo atomo oppure una mole, cioè 65,37 g di zinco", "Soltanto una mole, mai un singolo atomo", "Il numero atomico dello zinco", "Un grammo di zinco"],
+"testo": "Quanto volume occupano 100 g di una soluzione con densita' 1,25 g/mL?",
+"opzioni": [
+"80 mL",
+"125 mL",
+"100 mL",
+"1250 mL"
+],
 "giusta": 0,
 "perche": [
-"I simboli hanno un significato sia qualitativo, il tipo di sostanza, sia quantitativo: un atomo o una mole di atomi.",
-"Vale per entrambi i livelli, microscopico e macroscopico: è proprio questo il doppio significato della simbologia chimica.",
-"Il numero atomico è 30 e non è contenuto nel simbolo: va letto sulla tavola periodica.",
-"Un grammo è una quantità arbitraria e non ha alcun legame con il simbolo dell'elemento."
+"V = m/d = 100/1,25 = 80 mL: e' il passaggio chiave per trasformare il percento in peso in molarita'. Una soluzione piu' densa dell'acqua occupa meno volume a parita' di massa.",
+"125 mL verrebbe moltiplicando: la densita' divide la massa, non la moltiplica.",
+"100 mL varrebbe solo con densita' 1,00, quella dell'acqua pura.",
+"1250 mL sbaglia di un fattore dieci e nel verso dell'operazione."
 ],
-"tag": "formule"
+"tag": "densita"
 },
 {
 "id": "C21-12",
-"testo": "L'analisi qualitativa di un campione serve a determinare:",
-"opzioni": ["Quali elementi sono presenti nel composto", "In che quantità è presente ciascun elemento", "La massa molecolare del composto", "La formula molecolare"],
+"testo": "Quante moli di K2Cr2O7 (peso formula 294) ci sono in 200 g di soluzione al 14,7% in peso?",
+"opzioni": [
+"0,10 mol",
+"0,68 mol",
+"29,4 mol",
+"0,050 mol"
+],
 "giusta": 0,
 "perche": [
-"È il primo passaggio: si stabilisce quali specie chimiche semplici ci sono, prima di misurarne le quantità.",
-"Le quantità si ricavano con l'analisi quantitativa, che viene dopo ed è un procedimento diverso.",
-"La massa molecolare richiede metodi separati e serve poi a passare dalla formula minima alla molecolare.",
-"La formula molecolare è il punto di arrivo di tutta la procedura, non l'esito di una singola analisi."
+"Soluto = 200 x 14,7/100 = 29,4 g; moli = 29,4/294 = 0,10 mol. Prima i grammi di soluto dalla percentuale, poi le moli con il peso formula.",
+"0,68 uscirebbe dividendo l'intera massa della soluzione per il peso formula: il solvente non va contato.",
+"29,4 sono i grammi di soluto, non le moli.",
+"0,050 dimezza senza motivo: i due passaggi corretti danno il doppio."
 ],
-"tag": "formule"
-},
-{
-"id": "C21-13",
-"testo": "L'analisi della cisteina dà i rapporti molari C 3,05 : H 7,12 : N 1 : O 2,07 : S 1,024. La formula minima è:",
-"opzioni": ["C3H7NO2S", "C3H7NO2S2", "C6H14N2O4S2", "CHNOS"],
-"giusta": 0,
-"perche": [
-"I valori si approssimano senza errore apprezzabile a 3, 7, 1, 2 e 1: sono già praticamente interi, quindi gli indici si leggono direttamente.",
-"Il rapporto dello zolfo è 1,024, che si approssima a 1 e non a 2: raddoppiarlo non è giustificato da nessun dato.",
-"È il doppio di tutti gli indici. La formula minima usa sempre i numeri interi più piccoli possibile.",
-"Ridurre tutto a 1 cancella i rapporti trovati: i valori 3, 7 e 2 sono significativi e vanno mantenuti."
-],
-"tag": "formule"
-},
-{
-"id": "C21-14",
-"testo": "Perché nella determinazione della formula minima si parte spesso da 100 g di composto?",
-"opzioni": ["Perché così le percentuali diventano direttamente grammi", "Perché 100 g corrispondono sempre a una mole", "Perché è la quantità minima analizzabile in laboratorio", "Perché la massa molare è sempre inferiore a 100"],
-"giusta": 0,
-"perche": [
-"Se il composto è al 55,81% di carbonio, in 100 g ci sono esattamente 55,81 g di carbonio: il numero si legge senza calcoli.",
-"Una mole pesa quanto la massa molare, che cambia da composto a composto: nessun legame con i 100 g.",
-"Le analisi si fanno su quantità molto minori: i 100 g sono una scelta di comodo nel calcolo, non un vincolo pratico.",
-"Moltissimi composti hanno massa molare ben superiore a 100 g/mol, a partire dal glucosio."
-],
-"tag": "formule"
+"tag": "concentrazione"
 }
 ]
 }

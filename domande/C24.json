@@ -1,0 +1,209 @@
+{
+"id": "C24",
+"titolo": "Pressione osmotica ed elettroliti",
+"gruppo": "5. Soluzioni",
+"origine": "dispensa",
+"fonti": [
+"EsPreOsm_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C24-1",
+"testo": "La pressione osmotica di una soluzione e':",
+"opzioni": [
+"La pressione da applicare alla soluzione piu' concentrata per fermare il flusso di solvente",
+"La pressione del vapore sopra la soluzione",
+"La pressione atmosferica sulla membrana",
+"La pressione del soluto solido"
+],
+"giusta": 0,
+"perche": [
+"E' definita operativamente: quanta pressione serve per raggiungere l'equilibrio osmotico. Obbedisce a una legge simile a quella dei gas ideali: pi greco per V uguale a nRT.",
+"La pressione del vapore e' un'altra proprieta', legata all'evaporazione: qui si parla di flusso attraverso una membrana.",
+"L'atmosfera preme su tutto allo stesso modo: non e' lei a fermare l'osmosi.",
+"Il soluto in soluzione non e' solido e non esercita una pressione meccanica propria."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-2",
+"testo": "Due soluzioni con la stessa pressione osmotica alla stessa temperatura si dicono:",
+"opzioni": [
+"Isotoniche",
+"Ipotoniche",
+"Ipertoniche",
+"Sature"
+],
+"giusta": 0,
+"perche": [
+"Isotonica significa stessa pressione osmotica: e' il requisito delle soluzioni fisiologiche, progettate per pareggiare il plasma sanguigno ed evitare flussi osmotici dannosi alle cellule.",
+"Ipotonica e' la soluzione con pressione osmotica minore rispetto a un'altra: un confronto, non una parita'.",
+"Ipertonica e' quella con pressione osmotica maggiore: l'altro estremo del confronto.",
+"Satura riguarda il limite di solubilita': un concetto del tutto diverso."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-3",
+"testo": "A parita' di molalita', una soluzione di NaCl produce un abbassamento crioscopico circa doppio rispetto al glucosio perche':",
+"opzioni": [
+"NaCl si dissocia in due ioni: il fattore di van't Hoff vale circa 2",
+"NaCl e' piu' pesante",
+"Il glucosio e' piu' dolce",
+"NaCl assorbe piu' calore"
+],
+"giusta": 0,
+"perche": [
+"Ogni unita' NaCl libera Na+ e Cl-: particelle doppie, effetto doppio. Il fattore i corregge le formule colligative, e per dissociazione parziale vale 1 + alfa per (ni - 1), con ni frammenti per unita' e alfa grado di dissociazione.",
+"La massa non conta nelle colligative: contano le particelle in soluzione.",
+"La dolcezza e' chimica del gusto: le colligative sono cieche alla natura del soluto.",
+"Nessun assorbimento speciale di calore: e' la conta delle particelle a raddoppiare l'effetto."
+],
+"tag": "colligative"
+},
+{
+"id": "C24-4",
+"testo": "La misura della pressione osmotica e' particolarmente adatta a determinare:",
+"opzioni": [
+"La massa molecolare di soluti ad alta massa, come le proteine",
+"Il colore delle macromolecole",
+"La temperatura di fusione del soluto",
+"La densita' del solvente"
+],
+"giusta": 0,
+"perche": [
+"Da pi greco V = nRT si ricavano le moli e quindi, nota la massa pesata, la massa molecolare. Poche particelle di macromolecola danno una pressione osmotica ancora misurabile dove le altre colligative diventano impercettibili.",
+"Il colore non entra in nessuna proprieta' colligativa.",
+"La temperatura di fusione del soluto e' irrilevante: il soluto resta disciolto.",
+"La densita' del solvente e' nota a priori: la misura punta al soluto misterioso."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-5",
+"testo": "Una soluzione acquosa di NaCl 0,50 molale (Kcr acqua = 1,86 gradi C kg/mol, dissociazione completa) congela a circa:",
+"opzioni": [
+"-1,86 gradi C",
+"-0,93 gradi C",
+"0 gradi C",
+"-3,72 gradi C"
+],
+"giusta": 0,
+"perche": [
+"Delta T = Kcr x i x m = 1,86 x 2 x 0,50 = 1,86 gradi C: la soluzione congela a -1,86. Il fattore 2 conta gli ioni Na+ e Cl-.",
+"-0,93 dimentica il fattore di van't Hoff: sarebbe il risultato per un soluto indissociato come il glucosio.",
+"Lo zero e' il solvente puro: il soluto abbassa sempre il punto di congelamento.",
+"-3,72 raddoppia due volte: o la molalita' o il fattore i sono stati contati due volte."
+],
+"tag": "colligative"
+},
+{
+"id": "C24-6",
+"testo": "La pressione osmotica obbedisce a una legge formalmente analoga a quella dei gas ideali:",
+"opzioni": [
+"Pi greco x V = n x R x T",
+"Pi greco = V x n",
+"Pi greco x T = n x R",
+"Pi greco = R / T"
+],
+"giusta": 0,
+"perche": [
+"Stessa struttura di PV = nRT, con la pressione osmotica al posto della pressione del gas e le moli di soluto indissociato: vale bene per soluzioni diluite e ideali.",
+"Il prodotto di volume e moli non ha le dimensioni di una pressione.",
+"La temperatura sta a moltiplicare le moli e R, non la pressione osmotica.",
+"R su T ignora moli e volume: la concentrazione e' il cuore della legge."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-7",
+"testo": "Rispetto a un'altra soluzione alla stessa temperatura, una soluzione ipertonica ha:",
+"opzioni": [
+"Pressione osmotica maggiore",
+"Pressione osmotica minore",
+"La stessa pressione osmotica",
+"Nessuna pressione osmotica"
+],
+"giusta": 0,
+"perche": [
+"Iper significa sopra: piu' particelle di soluto, pressione osmotica piu' alta. Ipotonica e' quella sotto, isotoniche quelle alla pari.",
+"La pressione minore definisce la soluzione ipotonica.",
+"La parita' e' l'isotonia: il prefisso iper dice il contrario.",
+"Ogni soluzione con soluto ha una pressione osmotica: la scala e' relativa, non assente."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-8",
+"testo": "Nel fattore di van't Hoff i = 1 + alfa x (ni - 1), alfa e ni rappresentano:",
+"opzioni": [
+"Il grado di dissociazione e il numero di ioni generati da ogni unita' di soluto",
+"La temperatura e la pressione",
+"La molalita' e la molarita'",
+"Due costanti universali"
+],
+"giusta": 0,
+"perche": [
+"Alfa dice quale frazione delle unita' si dissocia, ni in quanti pezzi si rompe ciascuna: con dissociazione completa (alfa = 1) di un sale binario, i vale 2.",
+"Temperatura e pressione non compaiono nella formula del fattore correttivo.",
+"Le concentrazioni entrano nelle formule colligative, ma non dentro i.",
+"Non sono costanti: variano da soluto a soluto e con le condizioni."
+],
+"tag": "vanthoff"
+},
+{
+"id": "C24-9",
+"testo": "Per un soluto che non si dissocia ne' si associa, come il glucosio, il fattore di van't Hoff vale:",
+"opzioni": [
+"1",
+"0",
+"2",
+"Dipende dalla temperatura"
+],
+"giusta": 0,
+"perche": [
+"Ogni molecola resta intera: una unita' disciolta, una particella in soluzione. Le formule colligative si usano senza correzione.",
+"Zero annullerebbe ogni effetto colligativo: anche il glucosio abbassa il punto di congelamento.",
+"Il 2 spetta agli elettroliti binari completamente dissociati come NaCl o NaOH.",
+"Per un non elettrolita i resta 1 nelle condizioni ordinarie."
+],
+"tag": "vanthoff"
+},
+{
+"id": "C24-10",
+"testo": "La pressione osmotica di una soluzione 0,10 M di soluto indissociato a 298 K (R = 0,0821) e' circa:",
+"opzioni": [
+"2,4 atm",
+"0,10 atm",
+"24 atm",
+"0,82 atm"
+],
+"giusta": 0,
+"perche": [
+"Pi greco = M x R x T = 0,10 x 0,0821 x 298 = 2,4 atm: una concentrazione modesta genera una pressione osmotica notevole, ed e' per questo che la misura e' cosi' sensibile.",
+"0,10 e' la molarita', non la pressione: mancano R e T.",
+"24 sbaglia di un fattore dieci: attenzione alla posizione della virgola.",
+"0,82 dimentica il fattore della temperatura quasi per intero."
+],
+"tag": "osmosi"
+},
+{
+"id": "C24-11",
+"testo": "Le soluzioni fisiologiche per uso medico devono essere isotoniche con il plasma sanguigno per:",
+"opzioni": [
+"Evitare flussi osmotici che danneggerebbero le cellule del sangue",
+"Avere lo stesso colore del sangue",
+"Contenere le stesse proteine del plasma",
+"Essere piu' dense del sangue"
+],
+"giusta": 0,
+"perche": [
+"Con pressioni osmotiche uguali non c'e' flusso netto d'acqua attraverso le membrane cellulari: una soluzione troppo diluita gonfierebbe le cellule, una troppo concentrata le raggrinzirebbe.",
+"Il colore e' irrilevante: conta la concentrazione di particelle.",
+"Non serve replicare la composizione, solo la pressione osmotica totale.",
+"La densita' non e' il criterio: l'isotonia si misura in pressione osmotica."
+],
+"tag": "osmosi"
+}
+]
+}

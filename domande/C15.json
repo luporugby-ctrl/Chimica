@@ -1,0 +1,227 @@
+{
+"id": "C15",
+"titolo": "Calcoli stechiometrici e resa",
+"gruppo": "3. Composti e reazioni",
+"origine": "dispensa",
+"fonti": [
+"RapPonCalStec_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C15-1",
+"testo": "L'ordine corretto per risolvere un problema stechiometrico e':",
+"opzioni": [
+"Bilanciare l'equazione, convertire i grammi in moli, applicare il rapporto molare, riconvertire in grammi",
+"Convertire subito i grammi del primo reagente in grammi del prodotto",
+"Applicare il rapporto molare direttamente sulle masse",
+"Bilanciare l'equazione solo alla fine per verifica"
+],
+"giusta": 0,
+"perche": [
+"E' la ricetta in quattro passi che risolve qualunque problema del genere: la reazione bilanciata e' l'ingrediente di partenza, e il ponte tra le sostanze e' sempre il rapporto tra moli.",
+"Non esiste un fattore diretto grammi-grammi: il rapporto vale tra moli, e ogni sostanza ha la sua massa molare.",
+"I coefficienti contano particelle, non pesano: applicarli alle masse mescola due grandezze diverse.",
+"Senza equazione bilanciata i rapporti molari sono sbagliati in partenza: e' il primo passo, non l'ultimo."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C15-2",
+"testo": "Nella reazione 2 Cu2S + 3 O2 che da' 2 Cu2O + 2 SO2, per far reagire 4 moli di Cu2S servono:",
+"opzioni": [
+"6 moli di O2",
+"4 moli di O2",
+"3 moli di O2",
+"12 moli di O2"
+],
+"giusta": 0,
+"perche": [
+"La proporzione e' 2 sta a 3: 4 moli di solfuro per 3/2 danno 6 moli di ossigeno. I coefficienti si usano come ricetta, raddoppi tutto insieme.",
+"Uno a uno ignorerebbe i coefficienti: la reazione ne chiede tre di O2 ogni due di Cu2S.",
+"Tre moli basterebbero per due sole moli di Cu2S: qui il carico e' doppio.",
+"Dodici verrebbe moltiplicando per 3 invece che per 3/2: la proporzione va impostata completa."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C15-3",
+"testo": "Con 0,040 mol di Zn e 0,050 mol di HCl nella reazione Zn + 2 HCl che da' ZnCl2 + H2, il reagente limitante e':",
+"opzioni": [
+"HCl, perche' per tutto lo zinco ne servirebbero 0,080 mol",
+"Zn, perche' ha meno moli",
+"Nessuno dei due, le quantita' bastano",
+"HCl, perche' e' un acido"
+],
+"giusta": 0,
+"perche": [
+"Il confronto va fatto con i coefficienti: ogni zinco vuole due HCl, quindi 0,040 mol di Zn chiedono 0,080 mol di acido. Ce ne sono solo 0,050: l'acido finisce prima e comanda lui i conti dei prodotti.",
+"Avere meno moli non basta a essere limitante: contano le moli rapportate ai coefficienti, e qui lo zinco chiede il doppio di acido.",
+"I conti dicono il contrario: mancano 0,030 mol di HCl per consumare tutto lo zinco, che in parte restera' li'.",
+"Essere acido non c'entra nulla: limitante e' un ruolo aritmetico, non chimico."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C15-4",
+"testo": "La resa effettiva di una reazione e' quasi sempre minore di quella teorica perche':",
+"opzioni": [
+"Parte dei reagenti non reagisce o forma sottoprodotti",
+"La bilancia sottostima sempre le masse",
+"La resa teorica e' calcolata per difetto",
+"I prodotti pesano meno dei reagenti"
+],
+"giusta": 0,
+"perche": [
+"La teorica e' il massimo ideale calcolato sul reagente limitante; nella pratica reazioni incomplete e reazioni collaterali si mangiano una parte del raccolto. La resa percentuale confronta le due.",
+"Gli errori di pesata vanno in entrambe le direzioni e non spiegano una perdita sistematica.",
+"La teorica e' un tetto, non una stima prudente: piu' di cosi' la stechiometria non permette.",
+"La massa totale si conserva: e' il prodotto desiderato a essere meno del previsto, non la materia a sparire."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C15-5",
+"testo": "Se da 75,0 g di reagenti la resa teorica era 217 g di prodotto e se ne ottengono 125 g, la resa percentuale e' circa:",
+"opzioni": [
+"58%",
+"174%",
+"42%",
+"125%"
+],
+"giusta": 0,
+"perche": [
+"Resa % = effettiva/teorica x 100 = 125/217 x 100 = 57,6%. Il numeratore e' cio' che hai in mano, il denominatore il massimo possibile.",
+"174% e' il rapporto invertito: una resa sopra il 100% e' fisicamente impossibile e segnala subito la frazione capovolta.",
+"42% e' il complemento, la parte persa: la resa misura cio' che si e' ottenuto.",
+"125 sono i grammi effettivi, non una percentuale: manca tutto il confronto con la teorica."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C15-6",
+"testo": "Il metodo per individuare il reagente limitante tra due quantita' note e':",
+"opzioni": [
+"Calcolare quanta parte del secondo servirebbe per consumare tutto il primo e confrontarla con la disponibilita'",
+"Scegliere quello con meno grammi",
+"Scegliere quello con meno moli",
+"Scegliere il primo scritto nell'equazione"
+],
+"giusta": 0,
+"perche": [
+"Il confronto va fatto attraverso i coefficienti: si ipotizza di consumare tutto un reagente, si calcola il fabbisogno dell'altro e si guarda se la scorta basta. Chi manca, limita.",
+"I grammi ingannano: un reagente pesante puo' avere pochissime moli.",
+"Anche le moli da sole ingannano: contano le moli rapportate ai coefficienti della reazione.",
+"L'ordine di scrittura e' pura convenzione: la matematica decide, non la posizione."
+],
+"tag": "limitante"
+},
+{
+"id": "C15-7",
+"testo": "Nella reazione 2 Al + 3 S che da' Al2S3, con 3,0 mol di Al e 3,0 mol di S il limitante e':",
+"opzioni": [
+"Lo zolfo: per 3,0 mol di Al ne servirebbero 4,5",
+"L'alluminio, perche' e' scritto per primo",
+"Nessuno: le moli sono uguali",
+"Lo zolfo, perche' pesa di piu'"
+],
+"giusta": 0,
+"perche": [
+"Il rapporto e' 2 a 3: ogni due alluminio servono tre zolfo, quindi 3,0 mol di Al chiedono 4,5 mol di S. In dispensa ce ne sono solo 3,0: lo zolfo finisce prima.",
+"La posizione nell'equazione non assegna ruoli: solo i numeri lo fanno.",
+"Moli uguali con coefficienti diversi significa squilibrio: e' l'inganno tipico di questi esercizi.",
+"Il peso non c'entra: il confronto corre sulle moli pesate con i coefficienti."
+],
+"tag": "limitante"
+},
+{
+"id": "C15-8",
+"testo": "Nella reazione N2 + 3 H2 che da' 2 NH3, partendo da 2,0 mol di N2 e 3,0 mol di H2, a fine reazione dell'azoto restano:",
+"opzioni": [
+"1,0 mol non reagita",
+"0 mol: si consuma tutto",
+"2,0 mol intatte",
+"3,0 mol"
+],
+"giusta": 0,
+"perche": [
+"L'idrogeno limita: 3,0 mol di H2 bastano per 1,0 mol di N2 (rapporto 1 a 3). Consumata quella, dell'azoto ne avanzano 2,0 - 1,0 = 1,0 mol. Il residuo dell'eccesso si calcola sempre cosi': disponibile meno consumato.",
+"Si consumerebbe tutto solo con 6,0 mol di idrogeno a disposizione.",
+"Intatto resterebbe solo senza idrogeno: qualcosa reagisce eccome.",
+"Piu' di quanto ce n'era all'inizio e' impossibile: la materia non si crea."
+],
+"tag": "limitante"
+},
+{
+"id": "C15-9",
+"testo": "Le moli di prodotto che si formano in una reazione si calcolano sempre a partire da:",
+"opzioni": [
+"Il reagente limitante",
+"Il reagente in eccesso",
+"La somma di tutti i reagenti",
+"Il reagente piu' costoso"
+],
+"giusta": 0,
+"perche": [
+"Finito il limitante, la reazione si ferma: e' lui a dettare quanta parte del resto reagisce e quanto prodotto nasce. Partire dall'eccesso gonfia il risultato.",
+"L'eccesso resta in parte a guardare: usarlo nei conti sovrastima il prodotto.",
+"Le quantita' non si sommano: passano tutte per il collo di bottiglia del limitante.",
+"Il costo e' contabilita' aziendale: la stechiometria guarda solo le moli."
+],
+"tag": "limitante"
+},
+{
+"id": "C15-10",
+"testo": "Se la resa teorica e' 50,0 g e la resa percentuale dell'esperimento e' dell'80%, il prodotto ottenuto e':",
+"opzioni": [
+"40,0 g",
+"62,5 g",
+"80,0 g",
+"30,0 g"
+],
+"giusta": 0,
+"perche": [
+"Effettiva = teorica x resa/100 = 50,0 x 0,80 = 40,0 g: e' la formula della resa letta al contrario.",
+"62,5 verrebbe dividendo per 0,80: cosi' l'effettiva supererebbe la teorica, impossibile.",
+"80,0 confonde la percentuale con i grammi.",
+"30,0 corrisponderebbe a una resa del 60%: fattore sbagliato."
+],
+"tag": "resa"
+},
+{
+"id": "C15-11",
+"testo": "Una resa percentuale superiore al 100% e':",
+"opzioni": [
+"Impossibile: segnala un errore o un prodotto impuro, ad esempio ancora umido",
+"Il segno di una reazione molto efficiente",
+"Normale per le reazioni esotermiche",
+"L'obiettivo di ogni sintesi"
+],
+"giusta": 0,
+"perche": [
+"La teorica e' il massimo assoluto concesso dalla stechiometria: superarla significa che sulla bilancia c'e' anche altro, tipicamente solvente residuo o sottoprodotti, oppure che i conti sono sbagliati.",
+"L'efficienza massima si ferma al 100%: oltre non e' bravura, e' contaminazione.",
+"Il calore non crea materia: il carattere esotermico non c'entra col bilancio di massa.",
+"L'obiettivo e' avvicinarsi al 100%, mai superarlo."
+],
+"tag": "resa"
+},
+{
+"id": "C15-12",
+"testo": "Nel passaggio finale, la massa di prodotto si ottiene moltiplicando le moli di prodotto per:",
+"opzioni": [
+"La massa molare del prodotto stesso",
+"La massa molare del reagente limitante",
+"Il coefficiente stechiometrico",
+"Il numero di Avogadro"
+],
+"giusta": 0,
+"perche": [
+"Ogni sostanza ha la sua massa molare: le moli di SO2 diventano grammi con i grammi per mole di SO2, non con quelli di chi l'ha generata.",
+"Usare la massa molare del reagente e' l'errore piu' comune di questo passaggio: sostanza sbagliata, grammi sbagliati.",
+"Il coefficiente e' gia' servito per trovare le moli: riusarlo qui duplicherebbe il rapporto.",
+"Avogadro converte in numero di particelle, non in grammi."
+],
+"tag": "calcoli"
+}
+]
+}

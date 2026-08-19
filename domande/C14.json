@@ -1,0 +1,227 @@
+{
+"id": "C14",
+"titolo": "Reazioni chimiche e stechiometria",
+"gruppo": "3. Composti e reazioni",
+"origine": "dispensa",
+"fonti": [
+"ReazChimEstech_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C14-1",
+"testo": "Nel bilanciare un'equazione scritta in forma ionica bisogna pareggiare:",
+"opzioni": [
+"Sia gli atomi di ogni specie sia la somma algebrica delle cariche",
+"Solo gli atomi",
+"Solo le cariche",
+"Solo le molecole d'acqua"
+],
+"giusta": 0,
+"perche": [
+"Due principi insieme: bilancio delle masse (stessi atomi a destra e a sinistra) e bilancio delle cariche (stessa somma algebrica ai due lati). Se uno dei due non torna, l'equazione e' sbagliata.",
+"Con gli ioni in gioco gli atomi non bastano: un'equazione puo' avere gli atomi a posto e le cariche sbilanciate.",
+"Le sole cariche possono tornare anche con atomi mancanti: servono entrambe le verifiche.",
+"L'acqua e' una specie come le altre: non esiste una regola speciale che la riguardi da sola."
+],
+"tag": "ionica"
+},
+{
+"id": "C14-2",
+"testo": "In un'equazione in forma ionica si scrivono dissociati:",
+"opzioni": [
+"Gli elettroliti forti come acidi forti, basi forti e sali solubili",
+"Tutte le specie presenti, acqua compresa",
+"Solo i gas",
+"Le sostanze organiche"
+],
+"giusta": 0,
+"perche": [
+"HCl, NaOH, i sali solubili: in acqua esistono come ioni ed e' cosi' che vanno scritti. Restano interi i non elettroliti e le specie non ioniche: acqua, Cl2, O2, sostanze organiche.",
+"L'acqua resta indissociata nella scrittura: e' il solvente, non un elettrolita forte.",
+"I gas molecolari come Cl2 restano scritti come molecole: non si dissociano in ioni.",
+"Le sostanze organiche sono il tipico esempio di non elettroliti: si scrivono intere."
+],
+"tag": "ionica"
+},
+{
+"id": "C14-3",
+"testo": "La reazione tra un acido e una base (neutralizzazione) produce:",
+"opzioni": [
+"Un sale e acqua",
+"Solo acqua",
+"Un nuovo acido piu' forte",
+"Idrogeno gassoso"
+],
+"giusta": 0,
+"perche": [
+"HCl piu' NaOH da' NaCl e H2O: il catione della base incontra l'anione dell'acido e nasce il sale, mentre H+ e OH- fanno acqua. Nessun numero di ossidazione cambia: non e' una redox.",
+"L'acqua c'e', ma senza il sale manca meta' del risultato: gli ioni del sale restano in soluzione o cristallizzano.",
+"La neutralizzazione spegne le due nature, acida e basica: non ne potenzia nessuna.",
+"L'idrogeno gassoso arriva dalla reazione tra metalli e acidi, un'altra storia."
+],
+"tag": "reazioni"
+},
+{
+"id": "C14-4",
+"testo": "Una trasformazione chimica, a differenza di una fisica:",
+"opzioni": [
+"Cambia la composizione della materia: si formano sostanze nuove",
+"Cambia solo la forma o lo stato di aggregazione",
+"Non produce mai calore",
+"E' sempre reversibile"
+],
+"giusta": 0,
+"perche": [
+"Le reazioni chimiche generano sostanze con proprieta' e composizione diverse da quelle di partenza; l'evaporazione dell'acqua, invece, cambia lo stato ma l'acqua resta acqua.",
+"Forma e stato sono il territorio delle trasformazioni fisiche.",
+"Molte reazioni liberano calore in abbondanza: la combustione ne e' l'emblema.",
+"Parecchie trasformazioni chimiche sono di fatto irreversibili: la bistecca cotta non torna cruda."
+],
+"tag": "reazioni"
+},
+{
+"id": "C14-5",
+"testo": "La stechiometria e' la parte della chimica che si occupa di:",
+"opzioni": [
+"Determinare le quantita' delle sostanze che partecipano alle reazioni",
+"Dare i nomi ai composti",
+"Studiare la velocita' delle reazioni",
+"Descrivere i colori delle sostanze"
+],
+"giusta": 0,
+"perche": [
+"Quanta materia entra, quanta esce: dalla quantita' di reagenti necessaria a una data quantita' di prodotti, tutto passa dai rapporti stechiometrici.",
+"I nomi sono affare della nomenclatura.",
+"La velocita' e' il campo della cinetica chimica.",
+"I colori appartengono alle proprieta' fisiche, non ai bilanci di reazione."
+],
+"tag": "reazioni"
+},
+{
+"id": "C14-6",
+"testo": "Un'equazione chimica bilanciata fornisce informazioni su:",
+"opzioni": [
+"Natura delle specie, rapporti tra le quantita' e stati di aggregazione",
+"Solo il colore dei prodotti",
+"Il costo dei reagenti",
+"La data della scoperta della reazione"
+],
+"giusta": 0,
+"perche": [
+"Chi reagisce e chi si forma, in che rapporto (i coefficienti, per la conservazione della massa) e in che stato: solido, liquido, gassoso o in soluzione acquosa.",
+"Il colore non compare nella scrittura dell'equazione.",
+"L'economia non entra nel formalismo chimico.",
+"L'equazione descrive il processo, non la sua storia."
+],
+"tag": "reazioni"
+},
+{
+"id": "C14-7",
+"testo": "Nella scrittura delle equazioni, i simboli (s), (l), (g) e (aq) indicano:",
+"opzioni": [
+"Solido, liquido, gassoso e in soluzione acquosa",
+"Sinistra, lato, giu' e alto",
+"Quattro diversi catalizzatori",
+"La velocita' della reazione"
+],
+"giusta": 0,
+"perche": [
+"Sono gli stati di aggregazione delle specie: un'informazione essenziale, perche' la stessa sostanza puo' comportarsi diversamente da gas o in soluzione.",
+"Non sono indicazioni di posizione: accompagnano ogni formula chimica.",
+"I catalizzatori si scrivono semmai sopra la freccia, non tra parentesi.",
+"La velocita' non compare nell'equazione: e' materia di cinetica."
+],
+"tag": "reazioni"
+},
+{
+"id": "C14-8",
+"testo": "Per bilanciare un'equazione chimica si possono modificare:",
+"opzioni": [
+"Solo i coefficienti stechiometrici, mai gli indici delle formule",
+"Gli indici delle formule",
+"Sia coefficienti che indici, a piacere",
+"I simboli degli elementi"
+],
+"giusta": 0,
+"perche": [
+"Cambiare un indice cambia la sostanza: H2O2 non e' acqua. Il bilanciamento gioca solo sui numeri davanti alle formule, che moltiplicano intere molecole.",
+"Toccare gli indici trasforma il composto in un altro: e' l'errore capitale del bilanciamento.",
+"La liberta' e' solo sui coefficienti: le formule sono intoccabili.",
+"I simboli identificano gli elementi: modificarli riscrive la chimica, non la bilancia."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C14-9",
+"testo": "Per bilanciare Ca + H2O che da' Ca(OH)2 + H2 occorre:",
+"opzioni": [
+"Mettere 2 davanti a H2O",
+"Mettere 2 davanti a Ca",
+"Cambiare Ca(OH)2 in CaOH",
+"Non serve bilanciare: e' gia' a posto"
+],
+"giusta": 0,
+"perche": [
+"A destra ci sono 4 idrogeni e 2 ossigeni: servono due molecole d'acqua a sinistra. Risultato: Ca + 2 H2O da' Ca(OH)2 + H2, tutto in pari.",
+"Il calcio e' gia' uno per parte: raddoppiarlo sbilancerebbe il metallo.",
+"Cambiare la formula dell'idrossido significa inventare un'altra sostanza.",
+"Cosi' com'e' mancano un ossigeno e due idrogeni a sinistra: il bilancio non torna."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C14-10",
+"testo": "Il metodo del bilanciamento si fonda sulla legge di Lavoisier, secondo cui:",
+"opzioni": [
+"Gli atomi non si creano ne' si distruggono: si ricombinano, e la massa totale si conserva",
+"La massa dei prodotti e' sempre maggiore",
+"L'energia si crea nelle reazioni",
+"Gli atomi cambiano elemento durante la reazione"
+],
+"giusta": 0,
+"perche": [
+"Stessa quantita' di ogni specie atomica prima e dopo: i coefficienti servono esattamente a garantirlo, ed e' per questo che la massa dei prodotti uguaglia quella dei reagenti.",
+"Nessun guadagno di massa: la contabilita' chiude sempre in pareggio.",
+"L'energia si trasforma e si scambia, non si crea: e comunque qui si parla di massa.",
+"L'identita' degli elementi e' sacra nelle reazioni chimiche: cambia solo chi sta legato con chi."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C14-11",
+"testo": "La solvatazione ionica e' il processo per cui:",
+"opzioni": [
+"Gli ioni in soluzione vengono circondati da molecole di solvente",
+"Gli ioni evaporano dalla soluzione",
+"Il solvente si trasforma in ioni",
+"I sali diventano insolubili"
+],
+"giusta": 0,
+"perche": [
+"Ogni ione si porta addosso un guscio di molecole d'acqua orientate: e' cio' che stabilizza gli ioni liberi e permette la dissociazione dei sali.",
+"Gli ioni restano in soluzione: e' proprio la solvatazione a trattenerli.",
+"Il solvente resta molecolare: avvolge gli ioni senza trasformarsi.",
+"E' l'opposto: la solvatazione e' il motore della solubilita' dei composti ionici."
+],
+"tag": "ionica"
+},
+{
+"id": "C14-12",
+"testo": "Le reazioni di spostamento sono quelle in cui:",
+"opzioni": [
+"Almeno un prodotto si allontana dal sistema, come un gas che sfugge o un solido che precipita",
+"Tutti i prodotti restano mescolati",
+"Si sposta il recipiente",
+"Non si formano prodotti"
+],
+"giusta": 0,
+"perche": [
+"L'ammoniaca che se ne va come gas o il cloruro d'argento che precipita: l'uscita di scena di un prodotto trascina la reazione. Possono anche essere reazioni acido-base.",
+"Se tutto resta mescolato e disciolto, il sistema non ha una spinta a procedere.",
+"Lo spostamento riguarda le specie chimiche, non la vetreria.",
+"I prodotti ci sono: uno di loro, semplicemente, abbandona la soluzione."
+],
+"tag": "reazioni"
+}
+]
+}

@@ -2,76 +2,76 @@
 "titolo": "Chimica (L-9)",
 "gruppi": [
 {
-"gruppo": "1. La materia e l'atomo",
+"gruppo": "1. Fondamenti",
 "argomenti": [
-{ "id": "C04", "num": "1", "titolo": "La materia: proprietà e composizione", "file": "MatProComp" },
-{ "id": "C05", "num": "2", "titolo": "La teoria atomica moderna", "file": "TeoAtoModer" },
-{ "id": "C06", "num": "3", "titolo": "Modelli atomici e struttura elettronica", "file": "ModAtomEStrutt" },
-{ "id": "C07", "num": "4", "titolo": "Configurazione elettronica e tavola periodica", "file": "ConfElett" },
-{ "id": "C08", "num": "5", "titolo": "Caratteristiche e periodicità degli elementi", "file": "CarEperDegliEl" },
-{ "id": "C01", "num": "6", "titolo": "Tavola periodica e struttura atomica — extra", "file": "—" }
+{ "id": "C01", "num": "1", "titolo": "Tavola periodica e struttura atomica" },
+{ "id": "C02", "num": "2", "titolo": "Nomenclatura dei composti inorganici" },
+{ "id": "C03", "num": "3", "titolo": "Mole, stechiometria e soluzioni" }
 ]
 },
 {
-"gruppo": "2. Legami e nomenclatura",
+"gruppo": "2. Struttura della materia",
 "argomenti": [
-{ "id": "C20", "num": "1", "titolo": "Legami chimici e ibridazione", "file": "LegChimEibrid" },
-{ "id": "C19", "num": "2", "titolo": "Nomenclatura dei composti", "file": "NomComp" },
-{ "id": "C02", "num": "3", "titolo": "Nomenclatura — extra", "file": "—" }
+{ "id": "C05", "num": "4", "titolo": "Materia, proprieta' e misura" },
+{ "id": "C06", "num": "5", "titolo": "Radiazione, quanti e modelli atomici" },
+{ "id": "C07", "num": "6", "titolo": "Teoria atomica moderna" },
+{ "id": "C08", "num": "7", "titolo": "Configurazione elettronica" },
+{ "id": "C09", "num": "8", "titolo": "Proprieta' periodiche degli elementi" },
+{ "id": "C04", "num": "9", "titolo": "Legami chimici e ibridazione" }
 ]
 },
 {
-"gruppo": "3. Mole e stechiometria",
+"gruppo": "3. Composti e reazioni",
 "argomenti": [
-{ "id": "C09", "num": "1", "titolo": "La mole: definizione e calcolo", "file": "LaMoleDefeCalc" },
-{ "id": "C21", "num": "2", "titolo": "Formule minime e molecolari", "file": "CalcFormMin" },
-{ "id": "C10", "num": "3", "titolo": "Le reazioni chimiche e la stechiometria", "file": "ReazChimEstech" },
-{ "id": "C11", "num": "4", "titolo": "Rapporti ponderali e calcoli stechiometrici", "file": "RapPonCalStec" },
-{ "id": "C12", "num": "5", "titolo": "Esercizi: rapporti ponderali nelle reazioni", "file": "RappPond" },
-{ "id": "C13", "num": "6", "titolo": "Reazioni redox", "file": "ReazRedox" },
-{ "id": "C03", "num": "7", "titolo": "Mole e soluzioni — extra", "file": "—" }
+{ "id": "C10", "num": "10", "titolo": "Nomenclatura dei composti" },
+{ "id": "C11", "num": "11", "titolo": "La mole: definizioni e calcoli" },
+{ "id": "C12", "num": "12", "titolo": "Formula minima e composizione" },
+{ "id": "C13", "num": "13", "titolo": "Tipi di reazione e rapporti ponderali" },
+{ "id": "C14", "num": "14", "titolo": "Reazioni chimiche e stechiometria" },
+{ "id": "C15", "num": "15", "titolo": "Calcoli stechiometrici e resa" },
+{ "id": "C16", "num": "16", "titolo": "Reazioni redox" }
 ]
 },
 {
 "gruppo": "4. Stati della materia",
 "argomenti": [
-{ "id": "C14", "num": "1", "titolo": "Stati di aggregazione liquido e gas", "file": "StaAggLiqGas" },
-{ "id": "C15", "num": "2", "titolo": "Leggi dei gas", "file": "LegGas" },
-{ "id": "C16", "num": "3", "titolo": "Stato di aggregazione solido", "file": "StaAggSoMat" },
-{ "id": "C17", "num": "4", "titolo": "Le fasi e le transizioni di fase", "file": "FasTranFas" }
+{ "id": "C17", "num": "17", "titolo": "Lo stato solido" },
+{ "id": "C18", "num": "18", "titolo": "Liquidi e gas" },
+{ "id": "C19", "num": "19", "titolo": "Leggi dei gas" },
+{ "id": "C20", "num": "20", "titolo": "Fasi e transizioni di fase" }
 ]
 },
 {
 "gruppo": "5. Soluzioni",
 "argomenti": [
-{ "id": "C18", "num": "1", "titolo": "Le soluzioni e le proprietà colligative", "file": "SolProColl" },
-{ "id": "C24", "num": "2", "titolo": "Esercizi: concentrazione delle soluzioni", "file": "EsConc" },
-{ "id": "C25", "num": "3", "titolo": "Esercizi: molalità, densità e mescolamento", "file": "MolDenMeSol" },
-{ "id": "C26", "num": "4", "titolo": "Esercizi: pressione osmotica e soluti elettrolitici", "file": "EsPreOsm" }
+{ "id": "C21", "num": "21", "titolo": "Molalita', densita' e mescolamento" },
+{ "id": "C22", "num": "22", "titolo": "Concentrazioni: esercizi" },
+{ "id": "C23", "num": "23", "titolo": "Soluzioni e proprieta' colligative" },
+{ "id": "C24", "num": "24", "titolo": "Pressione osmotica ed elettroliti" }
 ]
 },
 {
-"gruppo": "6. Equilibrio chimico",
+"gruppo": "6. Termodinamica e cinetica",
 "argomenti": [
-{ "id": "C27", "num": "1", "titolo": "Equilibrio chimico", "file": "EquChim" },
-{ "id": "C28", "num": "2", "titolo": "Esercizi: equilibrio chimico", "file": "EsEquiChi" },
-{ "id": "C29", "num": "3", "titolo": "Esercizi: equilibri in fase gassosa", "file": "EsEquFa" },
-{ "id": "C30", "num": "4", "titolo": "Il principio di Le Chatelier", "file": "PrincChatelier" },
-{ "id": "C31", "num": "5", "titolo": "Esercizi: spostamento dell'equilibrio", "file": "SpoEquEfVaCo" }
+{ "id": "C25", "num": "25", "titolo": "Termodinamica chimica" },
+{ "id": "C26", "num": "26", "titolo": "Cinetica chimica" }
 ]
 },
 {
-"gruppo": "7. Acidi, basi e pH",
+"gruppo": "7. Equilibrio chimico",
 "argomenti": [
-{ "id": "C22", "num": "1", "titolo": "pH di acidi e basi forti", "file": "CalSolAciBaFo" },
-{ "id": "C23", "num": "2", "titolo": "pH di acidi e basi deboli", "file": "CalSolAciBaDe" }
+{ "id": "C27", "num": "27", "titolo": "Equilibrio chimico e azione di massa" },
+{ "id": "C28", "num": "28", "titolo": "Equilibrio: impostazione dei calcoli" },
+{ "id": "C29", "num": "29", "titolo": "Equilibri in fase gassosa: Kp e Kx" },
+{ "id": "C30", "num": "30", "titolo": "Principio di Le Chatelier" },
+{ "id": "C31", "num": "31", "titolo": "Spostamento per variazioni di concentrazione" }
 ]
 },
 {
-"gruppo": "8. Termodinamica e cinetica",
+"gruppo": "8. Acidi e basi",
 "argomenti": [
-{ "id": "C32", "num": "1", "titolo": "Termodinamica", "file": "Termodinamica" },
-{ "id": "C33", "num": "2", "titolo": "Cinetica", "file": "Cinetica" }
+{ "id": "C32", "num": "32", "titolo": "pH di acidi e basi forti" },
+{ "id": "C33", "num": "33", "titolo": "pH di acidi e basi deboli" }
 ]
 }
 ]

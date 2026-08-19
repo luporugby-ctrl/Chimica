@@ -1,0 +1,209 @@
+{
+"id": "C33",
+"titolo": "pH di acidi e basi deboli",
+"gruppo": "8. Acidi e basi",
+"origine": "dispensa",
+"fonti": [
+"CalSolAciBaDe_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C33-1",
+"testo": "Per un acido debole HA in acqua, la costante di dissociazione acida Ka e':",
+"opzioni": [
+"[H3O+] x [A-] / [HA] all'equilibrio",
+"[HA] / [A-]",
+"Uguale a 1 per definizione",
+"[H3O+] x [OH-]"
+],
+"giusta": 0,
+"perche": [
+"L'acido debole si dissocia solo in parte: l'equilibrio HA piu' acqua verso H3O+ piu' A- ha la sua costante, prodotti su reagente indissociato. Piu' Ka e' piccola, piu' l'acido e' debole.",
+"Il rapporto rovesciato senza H3O+ non e' una costante d'equilibrio della reazione di dissociazione.",
+"Ka assume valori piccolissimi per gli acidi deboli, tipo 10^-5 per l'acido acetico: mai 1 per definizione.",
+"Il prodotto di H3O+ e OH- e' Kw, la costante dell'acqua: un'altra storia."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-2",
+"testo": "Nel calcolo del pH di un acido debole, l'incognita x nella tabella di equilibrio si puo' trascurare rispetto alla concentrazione iniziale quando:",
+"opzioni": [
+"L'acido e' molto debole e la concentrazione non troppo bassa, con verifica finale (sotto il 5%)",
+"Sempre, senza eccezioni",
+"Mai",
+"Solo se il pH e' maggiore di 7"
+],
+"giusta": 0,
+"perche": [
+"Se Ka e' piccola rispetto alla concentrazione iniziale, la frazione dissociata e' minima: Ca meno x diventa circa Ca e il conto si semplifica in una radice. La correttezza si verifica a posteriori: dissociazione sotto il cinque per cento, approssimazione valida.",
+"Con acidi non cosi' deboli o soluzioni molto diluite l'approssimazione salta: bisogna risolvere l'equazione di secondo grado completa.",
+"Negarla sempre significa complicare inutilmente la maggior parte degli esercizi d'esame.",
+"Un acido, per quanto debole, tiene il pH sotto 7: quel criterio non c'entra con l'approssimazione."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-3",
+"testo": "Il pH di una soluzione 0,10 M di acido acetico (Ka = 1,8 x 10^-5) e' circa:",
+"opzioni": [
+"2,9",
+"1,0",
+"4,7",
+"7,0"
+],
+"giusta": 0,
+"perche": [
+"Con l'approssimazione: [H3O+] = radice di (Ka x Ca) = radice di (1,8 x 10^-6) = 1,3 x 10^-3 M, quindi pH = 2,87. La dissociazione e' poco piu' dell'1%, approssimazione ampiamente valida.",
+"1,0 sarebbe il pH se l'acido fosse forte e tutto dissociato: la differenza tra 1,0 e 2,9 e' la firma della debolezza.",
+"4,7 e' il pKa dell'acido acetico: coincide col pH solo nel tampone equimolare, non nell'acido da solo.",
+"7,0 e' la neutralita': anche debole, un acido porta il pH sotto 7."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-4",
+"testo": "Per calcolare il pH di una base debole con costante Kb si procede cosi':",
+"opzioni": [
+"Si ricava [OH-] dall'equilibrio, si calcola il pOH e poi pH = 14,00 - pOH",
+"Si calcola direttamente pH = -log(Kb)",
+"Si assume la dissociazione completa",
+"Si usa la formula degli acidi forti"
+],
+"giusta": 0,
+"perche": [
+"La base debole produce OH-: dalla tabella di equilibrio esce x = [OH-] (spesso radice di Kb per Cb), da cui pOH = -log[OH-], e la relazione pH + pOH = 14 chiude il conto.",
+"Il logaritmo di Kb da solo ignora la concentrazione della base: due soluzioni diverse avrebbero lo stesso pH, assurdo.",
+"La dissociazione completa e' il privilegio delle basi forti: qui la parzialita' e' il punto.",
+"Le formule degli acidi forti danno un pH acido: per una base il risultato deve stare sopra 7."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-5",
+"testo": "La percentuale di deprotonazione di un acido debole si calcola come:",
+"opzioni": [
+"[H3O+] all'equilibrio diviso la concentrazione iniziale dell'acido, per 100",
+"Ka per 100",
+"[HA] diviso [A-] per 100",
+"pH diviso 14 per 100"
+],
+"giusta": 0,
+"perche": [
+"Misura quante molecole su cento hanno ceduto il protone: le moli di H3O+ formate coincidono con quelle di acido dissociato, e si confrontano con quelle di partenza. Percentuali piccole confermano che l'acido e' molto debole.",
+"Ka e' una costante d'equilibrio, non una frazione dissociata: le due cose sono legate ma non coincidono.",
+"Il rapporto indissociato su dissociato misura il contrario, e senza riferimento alla quantita' iniziale.",
+"Il pH su 14 non ha significato chimico: la scala del pH non e' una percentuale."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-6",
+"testo": "La concentrazione iniziale (o formale) di un acido debole e':",
+"opzioni": [
+"La molarita' con cui la soluzione e' stata preparata, come se nessuna molecola avesse ceduto protoni",
+"La concentrazione di H3O+ all'equilibrio",
+"La concentrazione dopo la dissociazione",
+"La costante Ka"
+],
+"giusta": 0,
+"perche": [
+"E' il punto di partenza della tabella di equilibrio: quanta sostanza e' stata messa nel matraccio. All'equilibrio la concentrazione di HA indissociato sara' di poco inferiore, di quel tanto che si e' dissociato.",
+"Gli H3O+ all'equilibrio sono l'incognita del problema, non il dato di preparazione.",
+"La concentrazione post-dissociazione e' quella di equilibrio, la terza riga della tabella.",
+"La Ka e' la costante dell'equilibrio, non una concentrazione."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-7",
+"testo": "In una soluzione di acido debole, rispetto alla concentrazione iniziale dell'acido, la [H3O+] e':",
+"opzioni": [
+"Molto minore, perche' solo una piccola frazione delle molecole si dissocia",
+"Uguale",
+"Maggiore",
+"Sempre pari a 10^-7"
+],
+"giusta": 0,
+"perche": [
+"E' la differenza chiave col forte: l'acido debole trattiene la maggior parte dei protoni, e la percentuale di deprotonazione resta tipicamente di pochi punti.",
+"L'uguaglianza vale per gli acidi forti, completamente dissociati.",
+"Piu' idronio dell'acido messo e' impossibile per un monoprotico: ogni ione viene da una molecola.",
+"10^-7 e' l'acqua neutra: un acido, anche debole, scende sotto quel valore di pH."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-8",
+"testo": "La formula approssimata [H3O+] = radice di (Ka x Ca) deriva da:",
+"opzioni": [
+"Ka = x^2 / (Ca - x), trascurando x rispetto a Ca",
+"Ka = x + Ca",
+"La legge di Raoult",
+"Il principio di Pauli"
+],
+"giusta": 0,
+"perche": [
+"Nella tabella di equilibrio l'incognita compare al quadrato sopra e sottratta sotto: se la dissociazione e' piccola, Ca - x diventa circa Ca e l'equazione si riduce a una radice quadrata.",
+"Costante e concentrazione non si sommano: la Ka e' un rapporto.",
+"Raoult governa le tensioni di vapore delle soluzioni: altro capitolo.",
+"Pauli vive negli orbitali atomici, lontanissimo dagli equilibri acido-base."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-9",
+"testo": "Se la verifica mostra una dissociazione superiore al 5%, per il pH dell'acido debole si deve:",
+"opzioni": [
+"Abbandonare l'approssimazione e risolvere l'equazione di secondo grado completa",
+"Ignorare il problema",
+"Usare la formula degli acidi forti",
+"Dichiarare il pH incalcolabile"
+],
+"giusta": 0,
+"perche": [
+"L'approssimazione regge solo se la x e' davvero piccola rispetto a Ca: oltre la soglia del cinque per cento, il termine Ca - x va tenuto per intero e l'equazione quadratica risolta fino in fondo.",
+"Ignorare la verifica lascia un errore sistematico nel risultato.",
+"L'acido resta debole: la dissociazione parziale non diventa completa solo perche' supera il 5%.",
+"Il pH si calcola benissimo: serve solo la strada piu' lunga."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-10",
+"testo": "Il pH di una soluzione 0,20 M di ammoniaca NH3 (Kb = 1,8 x 10^-5) e' circa:",
+"opzioni": [
+"11,3",
+"2,7",
+"7,0",
+"13,0"
+],
+"giusta": 0,
+"perche": [
+"[OH-] = radice di (Kb x Cb) = radice di (3,6 x 10^-6) = 1,9 x 10^-3, quindi pOH = 2,7 e pH = 14,0 - 2,7 = 11,3: basico, ma lontano dal 13 di una base forte pari concentrazione.",
+"2,7 e' il pOH: fermarsi li' e' l'errore piu' comune con le basi.",
+"7,0 e' la neutralita': una base, anche debole, sta sopra.",
+"13,0 spetterebbe a una base forte 0,10-0,20 M: la debolezza costa quasi due unita' di pH."
+],
+"tag": "deboli"
+},
+{
+"id": "C33-11",
+"testo": "Lo ione ammonio NH4+ (Ka = 5,5 x 10^-10) in soluzione 0,20 M da' un pH di circa 5,0: questo mostra che:",
+"opzioni": [
+"Un acido debolissimo produce una soluzione solo lievemente acida",
+"NH4+ e' un acido forte",
+"La soluzione e' basica",
+"Il pH non dipende dalla Ka"
+],
+"giusta": 0,
+"perche": [
+"[H3O+] = radice di (5,5 x 10^-10 x 0,20) = 1,0 x 10^-5: cinque unita' di pH sopra un acido forte pari concentrazione. Piu' piccola la Ka, piu' timido l'acido.",
+"Con Ka dell'ordine di 10^-10 siamo all'estremo opposto della forza.",
+"pH 5 sta sotto 7: acida, anche se di poco.",
+"La Ka e' proprio cio' che, insieme alla concentrazione, fissa il pH."
+],
+"tag": "deboli"
+}
+]
+}

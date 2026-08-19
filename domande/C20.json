@@ -1,242 +1,227 @@
 {
 "id": "C20",
-"titolo": "Legami chimici e ibridazione",
-"gruppo": "2. Struttura della materia",
-"origine": "LegChimEibrid_Mercatorum.pdf",
+"titolo": "Fasi e transizioni di fase",
+"gruppo": "4. Stati della materia",
+"origine": "dispensa",
+"fonti": [
+"FasTranFas_Mercatorum.pdf"
+],
 "domande": [
 {
 "id": "C20-1",
-"testo": "Alla formazione di un legame chimico contribuiscono:",
-"opzioni": ["Esclusivamente gli elettroni di valenza", "Tutti gli elettroni dell'atomo", "I protoni e i neutroni del nucleo", "Solo gli elettroni dei livelli interni"],
+"testo": "Acqua liquida e cubetti di ghiaccio nello stesso bicchiere costituiscono:",
+"opzioni": [
+"Due fasi della stessa sostanza",
+"Una sola fase",
+"Due sostanze diverse",
+"Una miscela eterogenea di due composti"
+],
 "giusta": 0,
 "perche": [
-"Sono gli elettroni in eccesso rispetto alla configurazione del gas nobile che precede l'atomo: gli unici disponibili a essere ceduti, acquistati o condivisi.",
-"Gli elettroni interni sono schermati e trattenuti dal nucleo: restano fuori dal gioco del legame.",
-"Il nucleo non partecipa al legame chimico. Se cambiassero i protoni cambierebbe l'elemento stesso.",
-"È l'esatto contrario: sono quelli esterni, non quelli interni, a formare i legami."
+"La fase e' una porzione omogenea e fisicamente distinta, separata dalle altre da superfici limite: liquido e solido dell'acqua sono la stessa sostanza in due fasi che possono coesistere in equilibrio.",
+"Le superfici di separazione tra ghiaccio e liquido sono ben visibili: le fasi sono due.",
+"La sostanza e' una sola, H2O: cambia solo lo stato di aggregazione.",
+"Il sistema e' eterogeneo, ma di un'unica sostanza: niente secondo composto in gioco."
 ],
-"tag": "legami"
+"tag": "fasi"
 },
 {
 "id": "C20-2",
-"testo": "La capacità di un atomo di cedere, acquistare o compartecipare elettroni è misurata da:",
-"opzioni": ["L'elettronegatività (χ)", "Il numero atomico", "La massa atomica", "Il numero di coordinazione"],
+"testo": "Durante la fusione del ghiaccio a pressione costante, la temperatura del sistema:",
+"opzioni": [
+"Resta costante finche' tutto il solido non e' fuso",
+"Aumenta gradualmente",
+"Diminuisce",
+"Oscilla in modo casuale"
+],
 "giusta": 0,
 "perche": [
-"È proprio la grandezza che stabilisce quale tipo di legame si formerà: χ simili danno covalente, χ molto diverse danno ionico.",
-"Il numero atomico dice quanti protoni ci sono, non quanto l'atomo attira gli elettroni di legame.",
-"La massa non ha alcun rapporto con la tendenza a cedere o acquistare elettroni.",
-"Il numero di coordinazione riguarda quanti ioni circondano uno ione in un solido, e viene dopo la formazione del legame."
+"Il calore fornito serve a smontare il reticolo, non a scaldare: il termometro resta inchiodato a 0 gradi C finche' convivono le due fasi. Stessa cosa a 100 gradi C durante l'ebollizione: e' la discontinuita' che si legge nelle curve di riscaldamento.",
+"L'aumento riprende solo a passaggio completato, quando il calore torna a far salire la temperatura del liquido.",
+"Il sistema riceve calore: non puo' raffreddarsi, semplicemente investe l'energia nel cambio di stato.",
+"Niente oscillazioni: il plateau a temperatura fissa e' uno dei comportamenti piu' riproducibili della materia."
 ],
-"tag": "legami"
+"tag": "passaggi"
 },
 {
 "id": "C20-3",
-"testo": "Perché si formi una molecola è necessario che:",
-"opzioni": ["La molecola sia più stabile degli elementi che la costituiscono", "La molecola sia meno stabile degli atomi isolati", "I due atomi abbiano la stessa massa", "I due atomi abbiano la stessa elettronegatività"],
+"testo": "Il calore di fusione di una sostanza e' la quantita' di calore necessaria per:",
+"opzioni": [
+"Fondere una mole di sostanza alla sua temperatura di fusione e alla pressione data",
+"Portare una mole di sostanza a 100 gradi C",
+"Scaldare un grammo di sostanza di un grado",
+"Vaporizzare tutta la sostanza"
+],
 "giusta": 0,
 "perche": [
-"L'energia dei due atomi legati deve essere minore di quando sono separati a distanza infinita: è la condizione che rende il legame conveniente.",
-"Se fosse meno stabile la molecola si romperebbe da sola: il sistema andrebbe verso l'energia più bassa, cioè gli atomi separati.",
-"La massa non entra nella condizione di stabilità.",
-"Elettronegatività uguali danno un legame covalente puro, ma il legame si forma anche fra atomi con χ diverse."
+"La definizione fissa tutto: una mole, alla temperatura del passaggio, alla pressione data. Le versioni per evaporazione e sublimazione sono analoghe, ciascuna alla propria temperatura.",
+"I 100 gradi C riguardano l'ebollizione dell'acqua a 1 atm: la fusione avviene alla temperatura di fusione, diversa per ogni sostanza.",
+"Il calore per grado e grammo e' il calore specifico: misura il riscaldamento, non il cambio di fase.",
+"La vaporizzazione ha il suo calore dedicato, tipicamente ben maggiore di quello di fusione."
 ],
-"tag": "legami"
+"tag": "passaggi"
 },
 {
 "id": "C20-4",
-"testo": "In una molecola biatomica, la lunghezza di legame è:",
-"opzioni": ["La distanza media fra i nuclei dei due atomi legati", "La somma dei due raggi atomici", "La distanza fra gli elettroni condivisi", "L'estensione della nube elettronica"],
+"testo": "L'ebollizione, a differenza dell'evaporazione:",
+"opzioni": [
+"Avviene quando la tensione di vapore eguaglia la pressione esterna e coinvolge tutta la massa del liquido",
+"Avviene solo in superficie",
+"Avviene a qualunque temperatura",
+"Non richiede calore"
+],
 "giusta": 0,
 "perche": [
-"È la distanza a cui l'energia potenziale è minima: il punto in cui attrazione e repulsione si pareggiano.",
-"I raggi atomici cambiano quando gli atomi si legano: sommarli dà un valore che non corrisponde alla distanza reale.",
-"Gli elettroni condivisi non hanno una posizione fissa: occupano una regione di alta densità fra i nuclei.",
-"La nube elettronica è una regione di probabilità, non ha un confine netto da cui misurare."
+"L'evaporazione e' la fuga silenziosa delle molecole superficiali piu' veloci, attiva a ogni temperatura; l'ebollizione scatta a una temperatura precisa, quando le bolle di vapore possono formarsi anche in profondita'.",
+"La superficie e' il regno dell'evaporazione: nell'ebollizione il vapore nasce in tutto il volume.",
+"L'attivita' a ogni temperatura e' la caratteristica dell'evaporazione, non dell'ebollizione.",
+"Il calore serve eccome: durante l'ebollizione tutta l'energia fornita va nel passaggio di stato."
 ],
-"tag": "legami"
+"tag": "passaggi"
 },
 {
 "id": "C20-5",
-"testo": "Per distanze internucleari molto piccole, l'energia potenziale del sistema:",
-"opzioni": ["Aumenta bruscamente, perché prevalgono le forze repulsive", "Continua a diminuire fino a zero", "Resta costante al valore minimo", "Diventa nulla come a distanza infinita"],
+"testo": "La pentola a pressione cuoce piu' in fretta perche':",
+"opzioni": [
+"A pressione maggiore l'acqua bolle sopra i 100 gradi C",
+"Elimina l'aria dal cibo",
+"L'acqua bolle a temperatura piu' bassa",
+"Il vapore e' piu' leggero dell'aria"
+],
 "giusta": 0,
 "perche": [
-"A distanze molto piccole vincono le repulsioni elettrone-elettrone e nucleo-nucleo: è il ramo che sale a picco nel grafico.",
-"L'energia diminuisce solo fino alla distanza di legame: oltre quel punto risale.",
-"Il minimo si trova alla distanza di legame, non a distanze inferiori.",
-"L'energia vale zero a distanza infinita, dove le forze di interazione sono nulle: la situazione opposta."
+"Il coperchio trattiene il vapore finche' la pressione interna supera quella atmosferica: la temperatura di ebollizione sale e il cibo cuoce a temperatura piu' alta. In alta quota succede l'opposto: pressione piu' bassa, acqua che bolle prima dei 100 gradi e tempi di cottura piu' lunghi.",
+"L'aria non c'entra con la velocita' di cottura: conta la temperatura raggiunta dall'acqua.",
+"E' il contrario: la temperatura di ebollizione aumenta con la pressione, ed e' proprio il vantaggio della pentola.",
+"La densita' del vapore non decide la cottura: decide la temperatura del liquido."
 ],
-"tag": "legami"
+"tag": "passaggi"
 },
 {
 "id": "C20-6",
-"testo": "L'energia di dissociazione del legame corrisponde:",
-"opzioni": ["Alla profondità della buca di energia potenziale", "Alla distanza di legame", "All'energia degli atomi separati", "Al momento di dipolo della molecola"],
+"testo": "Nel diagramma di stato, il punto triplo rappresenta le condizioni in cui:",
+"opzioni": [
+"Coesistono in equilibrio le tre fasi solida, liquida e gassosa",
+"La sostanza si decompone",
+"Esistono tre sostanze diverse",
+"La pressione e' tripla di quella atmosferica"
+],
 "giusta": 0,
 "perche": [
-"È l'energia che bisogna fornire per riportare i due atomi dal minimo fino a distanza infinita, dove l'energia vale zero.",
-"La distanza di legame è la posizione del minimo sull'asse orizzontale, non la sua profondità.",
-"L'energia degli atomi separati è lo zero di riferimento: è il punto di arrivo, non la differenza.",
-"Il momento di dipolo riguarda la separazione delle cariche, non l'energia del legame."
+"E' l'incrocio delle tre curve di equilibrio: un solo valore di temperatura e pressione dove solido, liquido e vapore convivono. Ogni punto delle curve rappresenta invece l'equilibrio tra due fasi.",
+"Nessuna reazione chimica: il diagramma di stato descrive solo trasformazioni fisiche.",
+"La sostanza e' sempre la stessa: a variare sono le sue fasi.",
+"Il nome conta le fasi in equilibrio, non i multipli di pressione."
 ],
-"tag": "legami"
+"tag": "diagrammi"
 },
 {
 "id": "C20-7",
-"testo": "Per formare un legame covalente è necessario che nel livello più esterno ci sia:",
-"opzioni": ["Un orbitale atomico occupato da un solo elettrone (spaiato)", "Un orbitale completamente pieno", "Un orbitale completamente vuoto", "Una carica netta positiva o negativa"],
+"testo": "Nel diagramma di stato dell'acqua, la curva solido-liquido pende all'indietro (pendenza negativa): questo significa che:",
+"opzioni": [
+"Aumentando la pressione il punto di fusione del ghiaccio si abbassa",
+"Il ghiaccio non fonde mai sotto pressione",
+"Aumentando la pressione il ghiaccio diventa piu' stabile",
+"L'acqua non ha punto triplo"
+],
 "giusta": 0,
 "perche": [
-"Il legame covalente nasce dalla sovrapposizione di due orbitali contenenti ciascuno un elettrone spaiato, che formano un unico orbitale di legame.",
-"Un orbitale pieno ha già la sua coppia: non ha nulla da condividere.",
-"Un orbitale vuoto non porta elettroni al legame covalente ordinario.",
-"La formazione di ioni caratterizza il legame ionico, non il covalente: nel covalente gli ioni non si formano."
+"L'acqua e' tra le pochissime sostanze con il liquido piu' compatto del solido: comprimere favorisce la fase a volume minore, il liquido, e la fusione avviene a temperatura piu' bassa. E' l'anomalia che fa galleggiare il ghiaccio.",
+"Fonde ancora piu' facilmente: la pressione lavora a favore del liquido.",
+"La stabilita' sotto pressione va alla fase piu' densa, che per l'acqua e' il liquido: il contrario delle sostanze normali.",
+"Il punto triplo c'e' eccome: la stranezza sta solo nell'inclinazione della curva di fusione."
 ],
-"tag": "covalente"
+"tag": "diagrammi"
 },
 {
 "id": "C20-8",
-"testo": "Il legame π si distingue dal legame σ perché:",
-"opzioni": ["La sovrapposizione avviene fuori dall'asse internucleare ed è più debole", "Ha simmetria cilindrica attorno all'asse internucleare", "È sempre più forte del legame σ", "Si forma solo fra orbitali di tipo s"],
+"testo": "Secondo l'equazione di Clapeyron, la pendenza dp/dT di una curva di equilibrio tra due fasi ha lo stesso segno di:",
+"opzioni": [
+"La variazione di volume del passaggio di stato",
+"La temperatura assoluta",
+"La massa molare della sostanza",
+"La pressione atmosferica"
+],
 "giusta": 0,
 "perche": [
-"I nuclei sono meno schermati e la sovrapposizione è minore: il legame π è più debole e i suoi elettroni sono più reattivi.",
-"La simmetria cilindrica attorno all'asse è la caratteristica del legame σ, non del π.",
-"È il contrario: il π è il più debole dei due, ed è quello che si rompe per primo nelle reazioni.",
-"I legami fra due orbitali s sono di tipo σ. Il π nasce da orbitali p affiancati."
+"dp/dT = calore del passaggio diviso T per la variazione di volume: calore e temperatura assoluta sono positivi, quindi il segno lo decide il delta V. Liquido-vapore espande e la curva sale; ghiaccio-liquido dell'acqua contrae e la curva pende indietro.",
+"La temperatura assoluta e' sempre positiva: non puo' cambiare il segno di niente.",
+"La massa molare non compare nell'equazione: e' una relazione tra calore, temperatura e volumi molari.",
+"La pressione atmosferica e' solo un punto del grafico, non un termine dell'equazione."
 ],
-"tag": "covalente"
+"tag": "diagrammi"
 },
 {
 "id": "C20-9",
-"testo": "Nell'ibridazione, il numero di orbitali ibridi che si ottengono è:",
-"opzioni": ["Pari al numero di orbitali atomici di partenza", "Sempre quattro", "Sempre uno in meno di quelli di partenza", "Pari al numero di legami che l'atomo deve formare"],
+"testo": "Sopra la temperatura critica (374 gradi C per l'acqua), comprimendo il gas:",
+"opzioni": [
+"Non si forma liquido per quanto si aumenti la pressione",
+"Il liquido si forma subito",
+"Si forma direttamente il solido",
+"Il gas si decompone"
+],
 "giusta": 0,
 "perche": [
-"È una combinazione lineare: n orbitali atomici danno n orbitali ibridi equivalenti. Da s + 2p si ottengono tre orbitali sp².",
-"Quattro è il caso specifico dell'sp³. Con sp² sono tre, con sp sono due.",
-"Il numero si conserva esattamente: nessun orbitale sparisce nel rimescolamento.",
-"È vero che spesso coincide, ma la regola è sul numero di orbitali combinati, non sui legami: l'ammoniaca è sp³ pur formando tre legami."
+"Oltre il punto critico la distinzione liquido-vapore svanisce: l'aumento di pressione comprime il fluido senza mai far comparire la superficie di separazione. Sotto quella temperatura, invece, comprimere il vapore lo condensa.",
+"La condensazione per compressione funziona solo sotto la temperatura critica: sopra, nessuna pressione basta.",
+"Il solido richiede condizioni completamente diverse di temperatura: non e' il destino di questa compressione.",
+"Nessuna reazione chimica: la molecola resta intatta, cambia solo il comportamento della fase."
 ],
-"tag": "ibridazione"
+"tag": "diagrammi"
 },
 {
 "id": "C20-10",
-"testo": "La combinazione lineare di un orbitale s con tre orbitali p produce orbitali ibridi di tipo:",
-"opzioni": ["sp³", "sp²", "sp", "p³"],
+"testo": "Il fatto che il sudore raffreddi il corpo si spiega perche':",
+"opzioni": [
+"L'evaporazione e' un processo che assorbe calore, sottraendolo alla pelle",
+"L'acqua e' piu' fredda della pelle",
+"Il sale del sudore abbassa la temperatura",
+"L'aria si ferma sulla pelle bagnata"
+],
 "giusta": 0,
 "perche": [
-"Un s più tre p danno quattro orbitali sp³, quelli che il carbonio usa nel metano.",
-"L'sp² viene da un s più due p: sono tre orbitali, non quattro.",
-"L'sp viene da un s più un solo p: due orbitali, disposti in linea.",
-"Non esiste un ibrido di soli orbitali p: nell'ibridazione entra sempre almeno un orbitale s."
+"Per passare in fase vapore le molecole d'acqua devono rompere le attrazioni che le trattengono: quell'energia la prelevano dalla pelle, che si raffredda. Stesso principio del freddo uscendo dalla doccia e del funzionamento del frigorifero.",
+"Il sudore esce alla temperatura corporea: il raffreddamento arriva dal passaggio di stato, non dalla temperatura iniziale del liquido.",
+"Il sale semmai altera leggermente l'evaporazione: il motore del raffreddamento e' il calore assorbito dal cambio di fase.",
+"L'aria ferma ridurrebbe l'evaporazione e quindi il raffreddamento: infatti il vento amplifica l'effetto."
 ],
-"tag": "ibridazione"
+"tag": "passaggi"
 },
 {
 "id": "C20-11",
-"testo": "Nella molecola di metano CH4, l'atomo di carbonio:",
-"opzioni": ["Ha ibridazione sp³ e forma quattro legami σ equivalenti", "Ha ibridazione sp² e forma tre legami", "Usa direttamente gli orbitali 2s e 2p senza ibridarsi", "Forma due legami σ e due legami π"],
+"testo": "La sublimazione e' il passaggio di stato:",
+"opzioni": [
+"Diretto da solido a vapore, senza passare per il liquido",
+"Da liquido a solido",
+"Da vapore a liquido",
+"Da liquido a vapore"
+],
 "giusta": 0,
 "perche": [
-"I quattro lobi degli ibridi sp³ si sovrappongono agli orbitali s dei quattro idrogeni: quattro legami semplici identici.",
-"L'sp² darebbe tre orbitali ibridi, mentre nel metano i legami C-H osservati sono quattro e tutti uguali.",
-"Senza ibridazione il carbonio ha configurazione [He]2s²2p² e non potrebbe spiegare quattro legami equivalenti: è esattamente il problema che l'ibridazione risolve.",
-"I legami π richiedono orbitali p non ibridati affiancati. Nel metano i legami sono tutti semplici, quindi tutti σ."
+"Il solido salta la fase liquida e passa direttamente in fase vapore: nel diagramma di stato avviene sotto il punto triplo, dove il liquido non e' stabile.",
+"Liquido verso solido e' la solidificazione.",
+"Vapore verso liquido e' la condensazione.",
+"Liquido verso vapore e' l'evaporazione o, alla temperatura giusta, l'ebollizione."
 ],
-"tag": "ibridazione"
+"tag": "passaggi"
 },
 {
 "id": "C20-12",
-"testo": "La grafite è un buon conduttore di elettricità lungo gli strati perché:",
-"opzioni": ["Il carbonio è ibridato sp² e gli elettroni p sono delocalizzati sullo strato", "Il carbonio è ibridato sp³ come nel diamante", "Contiene ioni liberi di muoversi", "Gli strati sono tenuti insieme da legami covalenti forti"],
+"testo": "Quando due fasi della stessa sostanza coesistono in equilibrio:",
+"opzioni": [
+"Il passaggio di stato continua nei due sensi, ma le quantita' relative delle fasi restano costanti",
+"Ogni trasformazione si e' fermata del tutto",
+"Una fase si trasforma rapidamente nell'altra",
+"Le due fasi si mescolano in una sola"
+],
 "giusta": 0,
 "perche": [
-"Restano orbitali p non ibridati che si espandono su tutto lo strato di anelli esagonali: gli elettroni si muovono liberamente lì dentro.",
-"L'sp³ è il diamante, dove ogni carbonio è legato ad altri quattro: proprio per questo il diamante è durissimo ma non conduce.",
-"Nella grafite non ci sono ioni: è carbonio puro, e la conduzione è dovuta agli elettroni delocalizzati.",
-"Gli strati sono tenuti insieme da deboli forze di dispersione, ed è per questo che la grafite sfalda e lascia il segno sulla carta."
+"E' un equilibrio dinamico: molecole passano continuamente da una fase all'altra in pareggio, e nessuna fase si trasforma spontaneamente nell'altra. Fuori equilibrio, invece, il sistema evolve verso la fase stabile, come il ghiaccio che fonde a temperatura ambiente.",
+"A livello molecolare il traffico non si ferma mai: si compensa.",
+"La trasformazione netta di una fase nell'altra e' cio' che accade fuori dall'equilibrio.",
+"Restano fasi distinte, separate da superfici limite ben definite."
 ],
-"tag": "ibridazione"
-},
-{
-"id": "C20-13",
-"testo": "Se la differenza di elettronegatività Δχ fra due atomi è maggiore di 2, il legame è:",
-"opzioni": ["Ionico", "Covalente puro", "Covalente polare", "Metallico"],
-"giusta": 0,
-"perche": [
-"Oltre 2 la differenza è tale che gli elettroni non sono più condivisi ma trasferiti: si formano cationi e anioni.",
-"Il covalente puro (omopolare) richiede atomi con la stessa χ, cioè Δχ praticamente nulla.",
-"Il carattere intermedio, cioè il covalente polare, corrisponde a Δχ compresa fra 1 e 2.",
-"Il legame metallico si forma fra elementi entrambi poco elettronegativi, dove la differenza è piccola, non grande."
-],
-"tag": "polarita"
-},
-{
-"id": "C20-14",
-"testo": "Il momento di dipolo di una molecola si calcola come:",
-"opzioni": ["M = q · r", "M = q / r", "M = q + r", "M = q · r²"],
-"giusta": 0,
-"perche": [
-"È il prodotto della carica per la distanza fra i baricentri delle cariche positive e negative. Cresce sia aumentando la carica sia allontanandola.",
-"Il rapporto darebbe un momento più grande per cariche più vicine: l'opposto del comportamento reale.",
-"Una somma fra una carica e una distanza non ha senso dimensionale: sono grandezze diverse.",
-"L'esponente al quadrato non compare: la dipendenza dalla distanza è lineare."
-],
-"tag": "polarita"
-},
-{
-"id": "C20-15",
-"testo": "Nei solidi ionici, il numero di coordinazione:",
-"opzioni": ["Indica quanti ioni di carica opposta circondano uno ione, e vale 3, 4, 6 o 8", "È sempre uguale a 6", "Coincide con la carica dello ione", "Indica il numero di legami covalenti formati"],
-"giusta": 0,
-"perche": [
-"Dipende dalle dimensioni relative degli ioni: ioni più grandi ne possono ospitare attorno un numero maggiore.",
-"Sei è uno dei valori possibili, quello del cloruro di sodio, ma non è l'unico.",
-"La carica dello ione e il numero di vicini sono due cose indipendenti: nel fluoruro di calcio il calcio è +2 ma i vicini sono otto.",
-"Nel solido ionico non ci sono legami covalenti: gli ioni sono tenuti insieme da attrazione elettrostatica in tutte le direzioni."
-],
-"tag": "ionico"
-},
-{
-"id": "C20-16",
-"testo": "Nel modello del legame metallico, gli elettroni di valenza:",
-"opzioni": ["Sono delocalizzati sull'intero reticolo di ioni positivi", "Restano localizzati fra coppie di atomi vicini", "Vengono ceduti definitivamente agli atomi vicini", "Non partecipano al legame"],
-"giusta": 0,
-"perche": [
-"Gli ioni positivi occupano posizioni precise in una struttura ordinata e sono immersi in una nuvola elettronica comune: da qui conducibilità elettrica, conducibilità termica ed effetto fotoelettrico.",
-"La localizzazione fra due atomi è la caratteristica del legame covalente, non di quello metallico.",
-"La cessione definitiva a un altro atomo descrive il legame ionico, dove si formano cationi e anioni distinti.",
-"Sono proprio loro a formare il legame: la loro grande mobilità è ciò che tiene insieme il metallo."
-],
-"tag": "metallico"
-},
-{
-"id": "C20-17",
-"testo": "Le forze di London (o di Van der Waals) sono dovute a:",
-"opzioni": ["Dipoli istantanei che inducono dipoli nelle particelle vicine", "Cariche parziali permanenti delle molecole polari", "Trasferimento di elettroni fra molecole", "Condivisione di coppie elettroniche fra molecole"],
-"giusta": 0,
-"perche": [
-"Il movimento continuo degli elettroni rende la densità elettronica momentaneamente asimmetrica: il dipolo istantaneo ne induce uno nella particella vicina. Per questo anche i gas nobili si possono liquefare.",
-"I dipoli permanenti danno le attrazioni dipolo-dipolo, che sono un'altra cosa: le forze di London agiscono anche fra molecole non polari.",
-"Il trasferimento di elettroni è il legame ionico, che è un legame forte fra atomi, non un'interazione fra molecole.",
-"La condivisione di coppie è il legame covalente. Le forze intermolecolari sono molto più deboli e non condividono elettroni."
-],
-"tag": "intermolecolari"
-},
-{
-"id": "C20-18",
-"testo": "Il legame a idrogeno si osserva quando l'idrogeno è legato covalentemente a:",
-"opzioni": ["Fluoro, ossigeno o azoto", "Carbonio, silicio o zolfo", "Un qualsiasi metallo", "Un altro atomo di idrogeno"],
-"giusta": 0,
-"perche": [
-"Sono atomi piccoli e molto elettronegativi: il legame è fortemente polare e la carica all'estremo del dipolo risulta molto concentrata. Ne risultano attrazioni circa cinque volte più forti delle normali dipolo-dipolo.",
-"Il carbonio non è abbastanza elettronegativo; silicio e zolfo sono anche troppo grandi perché la carica si concentri.",
-"Con i metalli l'idrogeno forma idruri, non legami a idrogeno: manca la forte elettronegatività dell'altro atomo.",
-"Due idrogeni hanno la stessa elettronegatività: il legame è apolare e non c'è nessun dipolo da attrarre."
-],
-"tag": "intermolecolari"
+"tag": "fasi"
 }
 ]
 }
