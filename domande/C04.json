@@ -1,0 +1,203 @@
+{
+"id": "C04",
+"titolo": "Legami chimici e ibridazione",
+"gruppo": "2. Struttura della materia",
+"origine": "dispensa",
+"domande": [
+{
+"id": "C04-1",
+"testo": "Alla formazione di un legame chimico partecipano:",
+"opzioni": ["Solo gli elettroni di valenza", "Tutti gli elettroni dell'atomo", "Gli elettroni dei livelli piu' interni", "I protoni del nucleo"],
+"giusta": 0,
+"perche": [
+"Il legame coinvolge esclusivamente gli elettroni del livello piu' esterno, quelli oltre la configurazione del gas nobile che precede l'atomo.",
+"Gli elettroni interni sono troppo stabili e vicini al nucleo: la formazione del legame non li tocca.",
+"E' l'esatto contrario: i livelli interni restano intatti, a reagire e' la periferia dell'atomo.",
+"I protoni restano nel nucleo e definiscono l'identita' dell'elemento: se cambiassero loro sarebbe una reazione nucleare, non chimica."
+],
+"tag": "legami"
+},
+{
+"id": "C04-2",
+"testo": "Il tipo di legame che si forma tra due atomi dipende principalmente da:",
+"opzioni": ["La differenza di elettronegativita' tra gli atomi", "La massa atomica degli elementi", "La temperatura a cui avviene la reazione", "Il numero di neutroni nei nuclei"],
+"giusta": 0,
+"perche": [
+"E' la bussola dei legami: elettronegativita' simile da' covalente, molto diversa da' ionico, entrambe basse da' metallico.",
+"La massa non c'entra: idrogeno e cloro hanno masse lontanissime ma formano un normale legame covalente polare.",
+"La temperatura influenza velocita' ed equilibrio delle reazioni, non la natura del legame che si forma.",
+"I neutroni cambiano l'isotopo, non il comportamento chimico: gli isotopi di un elemento formano gli stessi legami."
+],
+"tag": "legami"
+},
+{
+"id": "C04-3",
+"testo": "Il legame covalente consiste in:",
+"opzioni": ["La condivisione di una o piu' coppie di elettroni tra due atomi", "Il trasferimento completo di elettroni da un atomo all'altro", "L'attrazione elettrostatica tra ioni di carica opposta", "Elettroni liberi di muoversi su tutto il reticolo"],
+"giusta": 0,
+"perche": [
+"I due atomi mettono in comune elettroni spaiati, che vanno a occupare l'orbitale di legame nato dalla sovrapposizione dei due orbitali atomici. Non si formano ioni.",
+"Il trasferimento completo e' il legame ionico: li' un atomo cede e l'altro acquista.",
+"L'attrazione tra cationi e anioni descrive il legame ionico, quello tipico dei sali.",
+"Gli elettroni delocalizzati sull'intero reticolo sono il modello del legame metallico."
+],
+"tag": "covalente"
+},
+{
+"id": "C04-4",
+"testo": "La lunghezza di legame in una molecola biatomica e':",
+"opzioni": ["La distanza media tra i nuclei dei due atomi legati", "La somma dei raggi dei due orbitali", "La distanza a cui l'energia del sistema e' massima", "Il diametro della nuvola elettronica"],
+"giusta": 0,
+"perche": [
+"I nuclei si assestano alla distanza in cui attrazione e repulsione si bilanciano e l'energia complessiva e' minima: quella distanza media e' la lunghezza di legame.",
+"Non e' una somma geometrica: gli orbitali si compenetrano nella zona di sovrapposizione, quindi la distanza e' minore.",
+"E' il contrario: alla lunghezza di legame l'energia e' al minimo. Avvicinando ancora i nuclei l'energia sale bruscamente per la repulsione.",
+"La nuvola elettronica si estende ben oltre i nuclei: la lunghezza di legame si misura da nucleo a nucleo."
+],
+"tag": "covalente"
+},
+{
+"id": "C04-5",
+"testo": "Rispetto al legame sigma, il legame pi greco:",
+"opzioni": ["E' piu' debole, perche' la sovrapposizione avviene fuori dall'asse che unisce i nuclei", "E' piu' forte, perche' coinvolge piu' elettroni", "Ha la stessa energia", "Ha simmetria cilindrica attorno all'asse internucleare"],
+"giusta": 0,
+"perche": [
+"Nel pi greco gli orbitali si sovrappongono lateralmente, sopra e sotto l'asse: la sovrapposizione e' minore e i suoi elettroni sono piu' reattivi, come si vede in chimica organica.",
+"Coinvolge una coppia di elettroni come il sigma: e' la geometria della sovrapposizione a renderlo piu' debole, non il numero di elettroni.",
+"Se avessero la stessa energia, un doppio legame varrebbe esattamente il doppio di uno semplice: non e' cosi', il secondo legame aggiunge meno del primo.",
+"La simmetria cilindrica e' la firma del legame sigma, non del pi greco."
+],
+"tag": "covalente"
+},
+{
+"id": "C04-6",
+"testo": "L'ibridazione sp3 nasce dalla combinazione di:",
+"opzioni": ["Un orbitale s e tre orbitali p, che danno quattro orbitali ibridi equivalenti", "Un orbitale s e due orbitali p", "Tre orbitali s e un orbitale p", "Quattro orbitali p"],
+"giusta": 0,
+"perche": [
+"La regola e' contabile: n orbitali atomici mescolati danno sempre n orbitali ibridi equivalenti. Uno piu' tre fa quattro.",
+"Un s piu' due p e' l'ibridazione sp2, quella della grafite: produce tre ibridi, non quattro.",
+"In un livello c'e' un solo orbitale s: la sigla sp3 si legge 'una parte di s, tre di p'.",
+"Senza il contributo dell'orbitale s non c'e' ibridazione di tipo sp: la sigla dice proprio quali orbitali entrano nel mescolamento."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C04-7",
+"testo": "Nel metano CH4 il carbonio forma quattro legami C-H identici perche':",
+"opzioni": ["E' ibridato sp3: quattro orbitali equivalenti danno quattro legami sigma uguali", "Nella configurazione fondamentale ha gia' quattro elettroni spaiati", "L'idrogeno modifica gli orbitali del carbonio", "Usa anche gli elettroni interni del livello 1s"],
+"giusta": 0,
+"perche": [
+"La configurazione [He] 2s2 2p2 da sola non spiega quattro legami uguali: il rimescolamento in quattro ibridi sp3 equivalenti si'.",
+"Nella configurazione fondamentale gli elettroni spaiati sono solo due, nei p. E' proprio questa contraddizione con i fatti che l'ibridazione risolve.",
+"L'ibridazione e' un rimescolamento degli orbitali del carbonio stesso: l'idrogeno si limita a sovrapporre il suo orbitale 1s.",
+"Gli elettroni 1s del carbonio sono interni e non partecipano ai legami: lavorano solo gli elettroni di valenza."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C04-8",
+"testo": "Diamante e grafite sono entrambi carbonio puro, ma:",
+"opzioni": ["Il diamante e' sp3 con quattro legami equivalenti, la grafite sp2 a strati con elettroni delocalizzati", "Il diamante e' sp2 e la grafite sp3", "Differiscono per il numero di protoni", "La grafite e' piu' dura perche' ha piu' legami"],
+"giusta": 0,
+"perche": [
+"Nel diamante ogni carbonio ne lega altri quattro in una rete rigida in tutte le direzioni: da qui la durezza. Nella grafite gli strati esagonali conducono elettricita' grazie agli elettroni delocalizzati, e tra loro sono tenuti solo da deboli forze di dispersione.",
+"E' invertito: sp3 tetraedrico per il diamante, sp2 planare per la grafite.",
+"Stesso elemento, stesso numero atomico: a cambiare e' la disposizione dei legami, non l'atomo.",
+"E' il contrario: la rete tridimensionale rende il diamante durissimo, mentre la grafite si sfalda a strati. E' per questo che la matita scrive."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C04-9",
+"testo": "In un legame covalente polare, la coppia di elettroni di legame:",
+"opzioni": ["E' spostata verso l'atomo piu' elettronegativo", "E' condivisa in modo perfettamente uguale", "Si trasferisce del tutto sull'atomo piu' elettronegativo", "E' spostata verso l'atomo piu' grande"],
+"giusta": 0,
+"perche": [
+"L'atomo con elettronegativita' maggiore tira la coppia verso di se': nascono cariche parziali e la molecola diventa un dipolo, con un suo momento di dipolo.",
+"La condivisione perfettamente uguale e' il covalente omopolare o puro, tra atomi con la stessa elettronegativita'.",
+"Il trasferimento completo e' il caso limite del legame ionico, quando la differenza di elettronegativita' e' molto elevata.",
+"Conta l'elettronegativita', non la taglia: il fluoro e' piccolo eppure e' il piu' avido di elettroni della tavola."
+],
+"tag": "polarita"
+},
+{
+"id": "C04-10",
+"testo": "Se la differenza di elettronegativita' tra due atomi e' maggiore di 2, il legame e' considerato:",
+"opzioni": ["Ionico", "Covalente puro", "Metallico", "A idrogeno"],
+"giusta": 0,
+"perche": [
+"Sopra 2 si e' al caso limite: l'atomo piu' elettronegativo strappa gli elettroni e si formano ioni. Sotto 1 il legame e' covalente, tra 1 e 2 ha carattere intermedio.",
+"Il covalente puro richiede differenza nulla o quasi: atomi uguali o con elettronegativita' molto simile.",
+"Il legame metallico si forma tra elementi tutti poco elettronegativi, non tra uno che cede e uno che strappa.",
+"Il legame a idrogeno non e' un legame tra atomi dentro la molecola: e' un'attrazione debole tra molecole diverse."
+],
+"tag": "polarita"
+},
+{
+"id": "C04-11",
+"testo": "Una molecola simmetrica con legami polari, come la CO2:",
+"opzioni": ["E' complessivamente apolare, perche' i dipoli dei legami si annullano", "E' sempre polare, visto che i suoi legami sono polari", "Non puo' esistere", "Porta una carica netta"],
+"giusta": 0,
+"perche": [
+"I due dipoli C-O sono uguali e opposti: il baricentro delle cariche positive coincide con quello delle negative e la molecola non e' un dipolo. Come una mischia in parita': tanta spinta da entrambi i lati, ma il pacchetto non si muove.",
+"Polarita' dei legami e polarita' della molecola sono cose diverse: decide la geometria, che puo' far annullare i dipoli tra loro.",
+"Esiste eccome: l'anidride carbonica e' l'esempio classico di molecola apolare con legami polari.",
+"Le cariche sono solo parziali e si compensano: la molecola resta elettricamente neutra."
+],
+"tag": "polarita"
+},
+{
+"id": "C04-12",
+"testo": "Il legame ionico e' per natura:",
+"opzioni": ["Un'attrazione elettrostatica tra ioni di carica opposta", "Una condivisione di coppie di elettroni", "Una sovrapposizione di orbitali atomici", "Un'attrazione tra dipoli istantanei"],
+"giusta": 0,
+"perche": [
+"E' un'interazione coulombiana tra cationi e anioni, nata da cessione e acquisto di elettroni. I composti ionici sono i sali: NaCl, KBr, CaCl2.",
+"La condivisione e' il meccanismo del legame covalente: nel legame ionico gli elettroni cambiano proprietario.",
+"La sovrapposizione di orbitali e' il linguaggio della teoria del legame di valenza, che descrive il covalente.",
+"I dipoli istantanei descrivono le forze di London, attrazioni deboli tra molecole: tutt'altra scala di energia."
+],
+"tag": "ionico"
+},
+{
+"id": "C04-13",
+"testo": "Il modello del legame metallico descrive il metallo come:",
+"opzioni": ["Ioni positivi ordinati immersi in una nuvola di elettroni delocalizzati", "Molecole biatomiche impacchettate nel solido", "Cationi e anioni alternati in un reticolo", "Atomi neutri tenuti insieme dalle forze di London"],
+"giusta": 0,
+"perche": [
+"Gli ioni tengono la posizione nel reticolo mentre gli elettroni di valenza girano liberi su tutto il metallo, come il pallone che viaggia veloce tra giocatori che mantengono lo schieramento. Questa mobilita' spiega conducibilita' elettrica e termica ed effetto fotoelettrico.",
+"Un metallo allo stato elementare non e' fatto di molecole discrete: il legame e' collettivo, esteso all'intero reticolo.",
+"Cationi e anioni alternati descrivono i solidi ionici come NaCl: in un metallo puro non ci sono anioni.",
+"Le forze di London tengono insieme molecole apolari e gas nobili condensati: troppo deboli per spiegare un metallo."
+],
+"tag": "metallico"
+},
+{
+"id": "C04-14",
+"testo": "Il legame a idrogeno si forma quando l'idrogeno e' legato covalentemente a:",
+"opzioni": ["Fluoro, ossigeno o azoto", "Un qualsiasi altro atomo", "Carbonio", "Un metallo alcalino"],
+"giusta": 0,
+"perche": [
+"Servono atomi piccoli e molto elettronegativi: il legame diventa fortemente polare e la carica, concentrata su atomi minuscoli, attira con forza il dipolo vicino. Ne esce un'attrazione circa cinque volte piu' forte del normale dipolo-dipolo.",
+"Con la maggior parte degli atomi la polarita' non basta: serve la combinazione rara di alta elettronegativita' e piccole dimensioni.",
+"Il legame C-H e' quasi apolare: infatti il metano bolle a -162 gradi C, mentre l'acqua arriva a 100 proprio perche' vaporizzarla richiede energia extra per rompere i legami a idrogeno.",
+"Con i metalli l'idrogeno forma composti di tutt'altra natura: il legame a idrogeno vive tra molecole che contengono H-F, H-O o H-N."
+],
+"tag": "intermolecolari"
+},
+{
+"id": "C04-15",
+"testo": "Le forze di London sono attrazioni tra:",
+"opzioni": ["Dipoli istantanei e dipoli indotti, presenti anche tra molecole apolari", "Dipoli permanenti di molecole polari", "Ioni di carica opposta", "Il nucleo e gli elettroni dello stesso atomo"],
+"giusta": 0,
+"perche": [
+"Il moto continuo degli elettroni rende per un istante asimmetrica la nuvola elettronica: quel dipolo momentaneo ne induce uno nella molecola accanto. E' cosi' che perfino i gas nobili riescono a condensare. Sono piu' intense se la nuvola elettronica e' grande e deformabile e se la molecola ha molti atomi.",
+"L'attrazione tra dipoli permanenti e' l'interazione dipolo-dipolo delle molecole polari come HCl, che vale circa l'1% di un legame covalente.",
+"L'attrazione tra ioni e' il legame ionico: un legame forte, non una forza intermolecolare debole.",
+"L'attrazione nucleo-elettroni esiste dentro ogni atomo, ma non e' una forza tra molecole."
+],
+"tag": "intermolecolari"
+}
+]
+}
