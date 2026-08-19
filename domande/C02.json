@@ -1,0 +1,164 @@
+{
+"id": "C02",
+"titolo": "Nomenclatura dei composti inorganici",
+"gruppo": "1. Fondamenti",
+"origine": "seed",
+"domande": [
+{
+"id": "C02-1",
+"testo": "Come si chiama Fe2O3 nella nomenclatura tradizionale?",
+"opzioni": ["Ossido ferrico", "Ossido ferroso", "Anidride ferrica", "Triossido di ferro"],
+"giusta": 0,
+"perche": [
+"Il ferro qui ha n.o. +3, il piu' alto dei suoi due: quindi suffisso -ico. Il n.o. si ricava dall'ossigeno: 3 x (-2) = -6, diviso 2 ferri fa +3.",
+"Ferroso sarebbe il n.o. +2, cioe' FeO. Il suffisso -oso indica sempre il numero di ossidazione minore.",
+"'Anidride' si usa solo per gli ossidi dei non metalli. Il ferro e' un metallo, quindi ossido basico.",
+"E' un nome IUPAC plausibile ma incompleto: la forma corretta e' triossido di diferro. La domanda chiedeva la tradizionale."
+],
+"tag": "ossidi"
+},
+{
+"id": "C02-2",
+"testo": "SO3 nella nomenclatura tradizionale e':",
+"opzioni": ["Anidride solforica", "Anidride solforosa", "Ossido solforico", "Acido solforico"],
+"giusta": 0,
+"perche": [
+"Lo zolfo ha n.o. +6, il maggiore tra +4 e +6: suffisso -ico. Essendo un non metallo, l'ossido si chiama anidride.",
+"Solforosa e' SO2, dove lo zolfo sta a +4. Un ossigeno in meno cambia il suffisso.",
+"'Ossido' e' riservato ai metalli nella nomenclatura tradizionale. Per i non metalli si dice anidride.",
+"L'acido solforico e' H2SO4: si ottiene proprio da SO3 + H2O. L'anidride e' il composto senza idrogeno."
+],
+"tag": "ossidi"
+},
+{
+"id": "C02-3",
+"testo": "La formula dell'idrossido di calcio e':",
+"opzioni": ["Ca(OH)2", "CaOH", "Ca2OH", "Ca(OH)3"],
+"giusta": 0,
+"perche": [
+"Il calcio e' +2 e lo ione idrossido e' OH- : servono due OH per bilanciare, con le parentesi perche' il gruppo si ripete.",
+"Cosi' la carica non torna: +2 contro -1. Serve un secondo idrossido.",
+"Metterebbe due calci (+4) contro un OH (-1): sbilanciato e con gli indici invertiti.",
+"Tre OH danno -3: sarebbe il caso di un metallo trivalente come l'alluminio, non del calcio."
+],
+"tag": "idrossidi"
+},
+{
+"id": "C02-4",
+"testo": "HCl in soluzione acquosa si chiama:",
+"opzioni": ["Acido cloridrico", "Acido clorico", "Acido ipocloroso", "Cloruro di idrogeno acido"],
+"giusta": 0,
+"perche": [
+"E' un idracido: idrogeno + non metallo, senza ossigeno. I nomi degli idracidi finiscono sempre in -idrico.",
+"L'acido clorico e' HClO3, un ossiacido: contiene ossigeno. Il suffisso -ico senza -idr- segnala la presenza di ossigeno.",
+"L'acido ipocloroso e' HClO. Il prefisso ipo- indica il n.o. piu' basso tra quattro possibili.",
+"HCl allo stato gassoso si chiama cloruro di idrogeno, ma in acqua il nome e' acido cloridrico."
+],
+"tag": "acidi"
+},
+{
+"id": "C02-5",
+"testo": "Il sale che deriva dall'acido solforico H2SO4 prende il suffisso:",
+"opzioni": ["-ato, quindi solfato", "-ito, quindi solfito", "-uro, quindi solfuro", "-oso, quindi solfoso"],
+"giusta": 0,
+"perche": [
+"La regola e' fissa: acido in -ico da' sale in -ato. Solforico produce solfato (SO4 2-).",
+"-ito viene da -oso: il solfito SO3 2- deriva dall'acido solforoso H2SO3, con un ossigeno in meno.",
+"-uro viene dagli idracidi: il solfuro S2- deriva dall'acido solfidrico H2S, senza ossigeno.",
+"-oso e' un suffisso da acido, non da sale. I sali non lo usano mai."
+],
+"tag": "sali"
+},
+{
+"id": "C02-6",
+"testo": "Quale sale deriva dall'acido nitroso?",
+"opzioni": ["Nitrito", "Nitrato", "Nitruro", "Azoturo"],
+"giusta": 0,
+"perche": [
+"Acido nitroso HNO2 (azoto +3) da' lo ione nitrito NO2-. Il passaggio -oso to -ito e' automatico.",
+"Il nitrato NO3- viene dall'acido nitrico HNO3, dove l'azoto e' +5.",
+"Il nitruro N3- e' lo ione dell'azoto senza ossigeno, come nel nitruro di litio Li3N.",
+"L'azoturo e' lo ione N3-, un caso particolare che non c'entra con gli ossiacidi."
+],
+"tag": "sali"
+},
+{
+"id": "C02-7",
+"testo": "La formula del solfato di alluminio e':",
+"opzioni": ["Al2(SO4)3", "Al(SO4)2", "Al3(SO4)2", "AlSO4"],
+"giusta": 0,
+"perche": [
+"Alluminio +3 e solfato -2: si incrociano le cariche, due alluminio e tre solfati, totale +6 e -6.",
+"Darebbe +3 contro -4: la somma non fa zero. E' l'incrocio fatto al contrario.",
+"Indici invertiti: +9 contro -4. Chi sbaglia qui ha incrociato le cariche nel verso sbagliato.",
+"Un alluminio (+3) con un solfato (-2) lascia una carica scoperta: il composto sarebbe uno ione, non un sale neutro."
+],
+"tag": "sali"
+},
+{
+"id": "C02-8",
+"testo": "CuO si chiama, nella nomenclatura tradizionale:",
+"opzioni": ["Ossido rameico", "Ossido rameoso", "Ossido di rame", "Anidride rameica"],
+"giusta": 0,
+"perche": [
+"L'ossigeno e' -2, quindi il rame e' +2: il maggiore dei suoi due n.o. (+1 e +2), quindi -ico.",
+"Rameoso e' il rame +1, cioe' Cu2O: servono due rami per un ossigeno.",
+"E' il nome IUPAC senza indicazione del n.o., che pero' e' ambiguo proprio perche' il rame ne ha due. La forma corretta e' ossido di rame(II).",
+"Il rame e' un metallo: gli ossidi dei metalli non si chiamano mai anidridi."
+],
+"tag": "ossidi"
+},
+{
+"id": "C02-9",
+"testo": "NaHCO3 e':",
+"opzioni": ["Un sale acido, idrogenocarbonato di sodio", "Un sale neutro, carbonato di sodio", "Un idrossido", "Un ossiacido"],
+"giusta": 0,
+"perche": [
+"L'acido carbonico H2CO3 ha ceduto un solo idrogeno su due: resta un idrogeno acido, e il prefisso idrogeno- (o bi-) lo segnala.",
+"Il carbonato di sodio e' Na2CO3, senza idrogeni: li' la sostituzione e' completa.",
+"Non c'e' nessun gruppo OH legato a un metallo: c'e' un anione poliatomico che contiene idrogeno, cosa diversa.",
+"Gli ossiacidi hanno solo idrogeno come catione. Qui c'e' un metallo, quindi e' un sale."
+],
+"tag": "sali"
+},
+{
+"id": "C02-10",
+"testo": "Lo ione perclorato ha formula:",
+"opzioni": ["ClO4-", "ClO3-", "ClO2-", "ClO-"],
+"giusta": 0,
+"perche": [
+"Il prefisso per- indica il n.o. massimo del cloro, +7: deriva dall'acido perclorico HClO4.",
+"ClO3- e' il clorato, da acido clorico, cloro +5. Manca un ossigeno rispetto al perclorato.",
+"ClO2- e' il clorito, da acido cloroso, cloro +3.",
+"ClO- e' l'ipoclorito, da acido ipocloroso, cloro +1: il piu' basso della serie. E' quello della candeggina."
+],
+"tag": "sali"
+},
+{
+"id": "C02-11",
+"testo": "FeCl3 si chiama:",
+"opzioni": ["Cloruro ferrico", "Cloruro ferroso", "Clorato ferrico", "Triclorato di ferro"],
+"giusta": 0,
+"perche": [
+"Tre cloruri a -1 fanno -3, quindi il ferro e' +3: n.o. maggiore, suffisso -ico. Senza ossigeno il sale finisce in -uro.",
+"Ferroso sarebbe FeCl2, con il ferro a +2. Contare i cloro dice subito quale dei due e'.",
+"Il clorato contiene ossigeno (ClO3-): il clorato ferrico sarebbe Fe(ClO3)3, tutt'altro composto.",
+"Non esiste questa forma: -ato richiede l'ossigeno, che qui non c'e'."
+],
+"tag": "sali"
+},
+{
+"id": "C02-12",
+"testo": "Un ossido basico piu' acqua da' origine a:",
+"opzioni": ["Un idrossido", "Un ossiacido", "Un idracido", "Un sale"],
+"giusta": 0,
+"perche": [
+"Ossido di un metallo + acqua produce un idrossido: CaO + H2O da' Ca(OH)2. E' la via basica.",
+"L'ossiacido viene dall'anidride, cioe' dall'ossido di un non metallo: SO3 + H2O da' H2SO4. E' la via acida, speculare.",
+"Gli idracidi non contengono ossigeno e non si formano per idratazione: si ottengono direttamente da idrogeno e non metallo.",
+"Il sale nasce dall'incontro tra un acido e un idrossido, non dall'acqua."
+],
+"tag": "reazioni"
+}
+]
+}

@@ -1,0 +1,191 @@
+{
+"id": "C13",
+"titolo": "Tipi di reazione e rapporti ponderali",
+"gruppo": "3. Composti e reazioni",
+"origine": "dispensa",
+"fonti": [
+"RappPond_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C13-1",
+"testo": "Una reazione ionica di doppio scambio, come AgNO3 + NaCl, avviene effettivamente solo se:",
+"opzioni": [
+"Uno dei prodotti abbandona la soluzione, come precipitato insolubile o gas",
+"Le due soluzioni hanno lo stesso colore",
+"Tutti i prodotti restano disciolti",
+"La temperatura supera i 100 gradi C"
+],
+"giusta": 0,
+"perche": [
+"Qui si forma AgCl, un solido bianco insolubile che precipita: sottrarre ioni alla soluzione e' il motore della reazione. Vale anche per i gas che sfuggono, come l'ammoniaca.",
+"Il colore e' un dettaglio estetico: cio' che conta e' il destino dei prodotti.",
+"Se tutto resta disciolto gli ioni continuano a nuotare mescolati e non e' successo niente di chimicamente nuovo.",
+"La temperatura non e' il criterio: queste reazioni corrono anche a freddo, purche' un prodotto esca di scena."
+],
+"tag": "reazioni"
+},
+{
+"id": "C13-2",
+"testo": "Lo zinco metallico immerso in una soluzione di solfato di rame libera rame e forma solfato di zinco. E' una reazione di:",
+"opzioni": [
+"Sostituzione: lo zinco prende il posto del rame nel composto",
+"Sintesi tra due elementi",
+"Decomposizione del sale",
+"Neutralizzazione acido-base"
+],
+"giusta": 0,
+"perche": [
+"Un elemento scalza l'altro dal suo composto: e' lo schema della sostituzione, come il cambio in mischia dove chi entra prende esattamente il posto di chi esce. Il rame liberato, insolubile, si deposita.",
+"La sintesi combina sostanze semplici in una piu' complessa: qui il sale esiste gia' e cambia solo il metallo.",
+"Nella decomposizione una sostanza si spezza in piu' sostanze semplici: qui nessuno si spezza, si scambia.",
+"Non ci sono acidi ne' basi in gioco: c'e' un metallo che ne sposta un altro."
+],
+"tag": "reazioni"
+},
+{
+"id": "C13-3",
+"testo": "Una reazione di combinazione (o sintesi) e' quella in cui:",
+"opzioni": [
+"Due o piu' sostanze si uniscono per formarne una piu' complessa",
+"Una sostanza si divide in due piu' semplici",
+"Un elemento sostituisce un altro",
+"Non si forma alcun prodotto"
+],
+"giusta": 0,
+"perche": [
+"Idrogeno e ossigeno che si combinano in acqua e' l'esempio classico: da piu' ingredienti, un solo piatto piu' complesso.",
+"La scissione in sostanze semplici e' la decomposizione, la categoria opposta.",
+"Lo scambio di posto definisce la sostituzione.",
+"Ogni reazione produce qualcosa: qui il prodotto e' uno e piu' complesso dei reagenti."
+],
+"tag": "tipi"
+},
+{
+"id": "C13-4",
+"testo": "Una reazione di decomposizione (o analisi) e':",
+"opzioni": [
+"La scissione di una sostanza complessa in due o piu' sostanze piu' semplici",
+"L'unione di due elementi",
+"Una reazione che avviene solo al buio",
+"Una reazione tra due sali"
+],
+"giusta": 0,
+"perche": [
+"L'acqua che si decompone in idrogeno e ossigeno rovescia esattamente la sintesi: e' l'altra faccia della stessa medaglia.",
+"L'unione e' la sintesi: qui si va nella direzione dello smontaggio.",
+"La luce non definisce la categoria: molte decomposizioni avvengono col calore o l'elettricita'.",
+"Due sali che si scambiano ioni fanno un doppio scambio, non una decomposizione."
+],
+"tag": "tipi"
+},
+{
+"id": "C13-5",
+"testo": "La reazione 2 HgO che da' 2 Hg + O2 e' un esempio di:",
+"opzioni": [
+"Decomposizione",
+"Sintesi",
+"Sostituzione",
+"Doppio scambio"
+],
+"giusta": 0,
+"perche": [
+"Un composto solo si spezza in due sostanze piu' semplici, il metallo e l'ossigeno: schema da manuale della decomposizione.",
+"La sintesi correrebbe al contrario, da mercurio e ossigeno verso l'ossido.",
+"Nella sostituzione un elemento scalza un altro da un composto: qui non c'e' nessun terzo incomodo.",
+"Il doppio scambio richiede due composti che si scambiano partner: qui il reagente e' uno."
+],
+"tag": "tipi"
+},
+{
+"id": "C13-6",
+"testo": "Nelle reazioni ioniche, a differenza delle altre categorie:",
+"opzioni": [
+"Non c'e' trasferimento di elettroni: gli ioni gia' presenti si combinano tra loro",
+"Gli elettroni passano da un atomo all'altro",
+"Servono temperature altissime",
+"Si formano sempre gas"
+],
+"giusta": 0,
+"perche": [
+"Gli ioni nuotano gia' in soluzione con le loro cariche: si limitano a incontrarsi e formare un prodotto che esce di scena. Nelle altre categorie gli elettroni si ridistribuiscono o si trasferiscono.",
+"Il trasferimento di elettroni e' proprio cio' che qui manca.",
+"Avvengono comodamente a temperatura ambiente in soluzione acquosa.",
+"Il prodotto che si allontana puo' essere un gas oppure un precipitato solido."
+],
+"tag": "tipi"
+},
+{
+"id": "C13-7",
+"testo": "Mescolando cloruro di sodio e nitrato d'argento in acqua, gli ioni sodio e nitrato:",
+"opzioni": [
+"Restano in soluzione come ioni spettatori",
+"Formano il precipitato bianco",
+"Si trasformano in gas",
+"Scompaiono dalla soluzione"
+],
+"giusta": 0,
+"perche": [
+"Il precipitato bianco e' il cloruro d'argento: sodio e nitrato assistono senza partecipare, e si recuperano come nitrato di sodio facendo evaporare l'acqua.",
+"A precipitare sono argento e cloruro, la coppia insolubile.",
+"Nessun gas in questa reazione: il prodotto che esce e' un solido.",
+"Restano dove sono: la soluzione finale e' di fatto nitrato di sodio disciolto."
+],
+"tag": "ioniche"
+},
+{
+"id": "C13-8",
+"testo": "Dopo una reazione di doppio scambio in acqua, il sale rimasto disciolto si puo' recuperare:",
+"opzioni": [
+"Facendo evaporare l'acqua",
+"Filtrando la soluzione",
+"Aggiungendo altro sale",
+"Non si puo' recuperare"
+],
+"giusta": 0,
+"perche": [
+"Via l'acqua, restano i cristalli: l'evaporazione e' la tecnica per riprendersi il sale solubile, come il nitrato di sodio dell'esempio classico.",
+"Il filtro trattiene solo il precipitato insolubile: cio' che e' disciolto lo attraversa.",
+"Aggiungere sale aumenta il disciolto, non lo recupera.",
+"Si recupera eccome: la dissoluzione e' un processo fisico reversibile."
+],
+"tag": "ioniche"
+},
+{
+"id": "C13-9",
+"testo": "Nelle reazioni di sintesi, decomposizione e sostituzione, a differenza delle ioniche:",
+"opzioni": [
+"C'e' una diversa distribuzione degli elettroni condivisi o un loro trasferimento tra atomi",
+"Non succede nulla agli elettroni",
+"Gli atomi si trasformano in altri elementi",
+"Serve sempre un catalizzatore"
+],
+"giusta": 0,
+"perche": [
+"E' il criterio che separa le famiglie: nelle prime tre gli elettroni cambiano padrone o distribuzione, nelle ioniche gli ioni si combinano senza scambi elettronici.",
+"Gli elettroni sono i protagonisti: legami che si rompono e si formano sono ridistribuzioni elettroniche.",
+"Gli elementi conservano l'identita': la trasmutazione appartiene alla fisica nucleare, non alla chimica.",
+"Il catalizzatore e' un'opzione, mai un requisito di categoria."
+],
+"tag": "tipi"
+},
+{
+"id": "C13-10",
+"testo": "La classificazione elementare delle reazioni chimiche prevede quattro categorie:",
+"opzioni": [
+"Combinazione, decomposizione, sostituzione e reazioni ioniche",
+"Veloci, lente, calde e fredde",
+"Solide, liquide, gassose e miste",
+"Utili, inutili, dirette e inverse"
+],
+"giusta": 0,
+"perche": [
+"E' lo schema proposto: sintesi che unisce, analisi che smonta, sostituzione che scambia un elemento, ioniche che combinano ioni in soluzione. Nessuna classificazione e' perfetta, ma questa copre i casi comuni.",
+"Velocita' e temperatura descrivono le condizioni, non il tipo di trasformazione.",
+"Lo stato fisico dei reagenti non definisce la categoria della reazione.",
+"L'utilita' e' negli occhi di chi guarda: la chimica classifica per meccanismo."
+],
+"tag": "tipi"
+}
+]
+}

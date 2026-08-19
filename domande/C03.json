@@ -1,0 +1,138 @@
+{
+"id": "C03",
+"titolo": "Mole, stechiometria e soluzioni",
+"gruppo": "1. Fondamenti",
+"origine": "seed",
+"domande": [
+{
+"id": "C03-1",
+"testo": "Una mole di qualsiasi sostanza contiene:",
+"opzioni": ["6,022 x 10^23 particelle", "6,022 x 10^23 grammi", "22,4 particelle", "Un numero di particelle che dipende dalla sostanza"],
+"giusta": 0,
+"perche": [
+"E' il numero di Avogadro: la mole e' una quantita' di particelle, come la dozzina e' un numero di uova.",
+"Avogadro conta particelle, non grammi. I grammi di una mole cambiano da sostanza a sostanza: sono la massa molare.",
+"22,4 e' il volume in litri di una mole di gas a condizioni normali, non un numero di particelle.",
+"Il numero di particelle e' sempre lo stesso: e' esattamente il punto della mole. Cambia la massa, non il conteggio."
+],
+"tag": "mole"
+},
+{
+"id": "C03-2",
+"testo": "La massa molare dell'acqua H2O e' circa:",
+"opzioni": ["18 g/mol", "10 g/mol", "16 g/mol", "36 g/mol"],
+"giusta": 0,
+"perche": [
+"Due idrogeni da 1 piu' un ossigeno da 16: 2 + 16 = 18 g/mol.",
+"Sarebbe la somma dei soli numeri atomici (1+1+8), non delle masse.",
+"E' la massa del solo ossigeno: mancano i due idrogeni.",
+"36 e' la massa di due molecole d'acqua, cioe' due moli. Errore tipico di chi raddoppia tutto invece dei soli idrogeni."
+],
+"tag": "mole"
+},
+{
+"id": "C03-3",
+"testo": "Quante moli ci sono in 36 g di acqua?",
+"opzioni": ["2 moli", "0,5 moli", "36 moli", "18 moli"],
+"giusta": 0,
+"perche": [
+"n = m/M = 36/18 = 2. La formula da usare quando si passa da grammi a moli e' sempre questa.",
+"E' il risultato del calcolo invertito, 18/36. Se i grammi superano la massa molare, le moli sono piu' di una: un controllo veloce.",
+"Confonde i grammi con le moli. I grammi sono massa, le moli sono un conteggio.",
+"18 e' la massa molare, non il risultato. E' il numero da usare per dividere, non la risposta."
+],
+"tag": "mole"
+},
+{
+"id": "C03-4",
+"testo": "In una reazione, il reagente limitante e':",
+"opzioni": ["Quello che si consuma per primo e ferma la reazione", "Quello presente in massa minore", "Quello con la massa molare piu' bassa", "Quello che resta alla fine"],
+"giusta": 0,
+"perche": [
+"E' il collo di bottiglia: quando finisce, la reazione si ferma, e il prodotto massimo si calcola da lui. Come il pane in un panino: se hai dieci fette e venti hamburger, fai dieci panini.",
+"Non e' questione di grammi ma di moli rapportate ai coefficienti. Un reagente puo' pesare meno ed essere comunque in eccesso.",
+"La massa molare da sola non dice nulla: conta il rapporto tra moli disponibili e moli richieste dall'equazione.",
+"Quello che avanza e' il reagente in eccesso, l'opposto del limitante."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C03-5",
+"testo": "Nella combustione C3H8 + O2 to CO2 + H2O, il coefficiente dell'ossigeno bilanciato e':",
+"opzioni": ["5", "3", "4", "7"],
+"giusta": 0,
+"perche": [
+"Bilanciata: C3H8 + 5 O2 to 3 CO2 + 4 H2O. A destra ci sono 6 + 4 = 10 atomi di ossigeno, quindi 5 molecole di O2.",
+"3 e' il coefficiente della CO2, non dell'ossigeno. Viene dai tre carboni del propano.",
+"4 e' il coefficiente dell'acqua, dagli otto idrogeni divisi due.",
+"7 sarebbe corretto per il butano C4H10 (dopo aver raddoppiato), non per il propano."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C03-6",
+"testo": "Il bilanciamento di un'equazione chimica si basa su:",
+"opzioni": ["La conservazione degli atomi di ogni elemento", "La conservazione del numero di molecole", "L'uguaglianza dei coefficienti", "La conservazione del volume"],
+"giusta": 0,
+"perche": [
+"Gli atomi non si creano ne' si distruggono: si ricombinano. Per questo si contano elemento per elemento a destra e a sinistra.",
+"Il numero di molecole cambia quasi sempre: nella sintesi dell'ammoniaca da quattro molecole se ne ottengono due.",
+"I coefficienti sono quasi sempre diversi tra loro: sono proprio la risposta del bilanciamento, non un vincolo.",
+"Il volume non si conserva, specialmente nelle reazioni tra gas dove il numero di moli cambia."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C03-7",
+"testo": "La resa percentuale di una reazione si calcola come:",
+"opzioni": ["(resa reale / resa teorica) x 100", "(resa teorica / resa reale) x 100", "(prodotto / reagente) x 100", "(moli prodotte / moli totali) x 100"],
+"giusta": 0,
+"perche": [
+"Si confronta quello che si e' ottenuto davvero con il massimo calcolato dalla stechiometria. Il risultato e' sempre minore o uguale a 100%.",
+"Invertito: darebbe valori sopra il 100%, che non hanno senso fisico.",
+"Il rapporto prodotto su reagente non e' una resa: dipende dalle masse molari e non e' confrontabile.",
+"Le moli totali non entrano nel calcolo: il riferimento e' la resa teorica del limitante."
+],
+"tag": "stechiometria"
+},
+{
+"id": "C03-8",
+"testo": "La molarita' di una soluzione e' definita come:",
+"opzioni": ["Moli di soluto per litro di soluzione", "Moli di soluto per litro di solvente", "Grammi di soluto per litro di soluzione", "Moli di soluto per chilogrammo di solvente"],
+"giusta": 0,
+"perche": [
+"M = n/V, con il volume della soluzione finale. E' l'unita' piu' usata nei calcoli di laboratorio.",
+"Il volume di riferimento e' quello finale della soluzione, non quello del solvente aggiunto: sciogliendo un solido il volume cambia.",
+"I grammi per litro sono una concentrazione in massa, utile ma diversa: per avere la molarita' vanno prima convertiti in moli.",
+"Quella e' la molalita', che usa la massa del solvente. Si usa quando serve indipendenza dalla temperatura."
+],
+"tag": "soluzioni"
+},
+{
+"id": "C03-9",
+"testo": "Una mole di gas ideale a 0 gradi C e 1 atm occupa:",
+"opzioni": ["22,4 litri", "1 litro", "18 litri", "Un volume che dipende dal gas"],
+"giusta": 0,
+"perche": [
+"E' il volume molare a condizioni normali, che si ricava da PV = nRT. Vale per qualsiasi gas ideale.",
+"Un litro d'acqua liquida sono circa 55 moli: i gas sono enormemente meno densi.",
+"18 e' la massa molare dell'acqua in g/mol, non un volume. Confusione tra due grandezze diverse.",
+"Per i gas ideali il volume molare non dipende dal gas: e' proprio il contenuto del principio di Avogadro."
+],
+"tag": "gas"
+},
+{
+"id": "C03-10",
+"testo": "Per preparare 500 mL di soluzione 0,2 M di NaCl (M = 58,5 g/mol) servono:",
+"opzioni": ["5,85 g di NaCl", "11,7 g di NaCl", "58,5 g di NaCl", "0,1 g di NaCl"],
+"giusta": 0,
+"perche": [
+"n = M x V = 0,2 x 0,5 = 0,1 mol; massa = 0,1 x 58,5 = 5,85 g.",
+"11,7 g corrispondono a 0,2 mol: e' il risultato se si dimentica di moltiplicare per il mezzo litro.",
+"58,5 g sono una mole intera: sarebbe una soluzione 2 M in mezzo litro, dieci volte piu' concentrata.",
+"0,1 sono le moli, non i grammi. Manca l'ultimo passaggio, la moltiplicazione per la massa molare."
+],
+"tag": "soluzioni"
+}
+]
+}

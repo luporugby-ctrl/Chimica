@@ -1,0 +1,227 @@
+{
+"id": "C07",
+"titolo": "Teoria atomica moderna",
+"gruppo": "2. Struttura della materia",
+"origine": "dispensa",
+"fonti": [
+"TeoAtoModer_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C07-1",
+"testo": "Nell'esperimento della lamina d'oro, Rutherford concluse che l'atomo ha un nucleo perche':",
+"opzioni": [
+"Una piccola parte delle particelle alfa veniva deviata o rimbalzava indietro",
+"Tutte le particelle alfa attraversavano la lamina indisturbate",
+"La lamina si scaldava",
+"Le particelle alfa si fermavano tutte nella lamina"
+],
+"giusta": 0,
+"perche": [
+"Se la carica positiva fosse stata diffusa come nel modello di Thomson, nessuna alfa sarebbe rimbalzata: quei rari rimbalzi rivelano una carica positiva concentrata in un punto piccolissimo e massiccio, il nucleo.",
+"Il passaggio indisturbato di quasi tutte le alfa era la previsione di Thomson: fu la minoranza deviata a smentirlo.",
+"Il riscaldamento non distingue i modelli: l'informazione stava nella traiettoria delle particelle.",
+"La maggior parte passava attraverso: l'atomo e' in gran parte spazio vuoto, con la massa concentrata nel nucleo."
+],
+"tag": "modelli"
+},
+{
+"id": "C07-2",
+"testo": "Il limite fisico del modello planetario dell'atomo e' che:",
+"opzioni": [
+"Un elettrone in orbita, essendo carica accelerata, dovrebbe irradiare energia e cadere sul nucleo",
+"Gli elettroni non hanno carica",
+"Il nucleo e' troppo leggero per attrarre gli elettroni",
+"Le orbite ellittiche sono impossibili in natura"
+],
+"giusta": 0,
+"perche": [
+"Per l'elettromagnetismo classico una carica in moto circolare emette radiazione: perdendo energia, l'elettrone dovrebbe spiraleggiare sul nucleo e l'atomo collassare. Ma gli atomi sono stabili: serviva una fisica nuova.",
+"L'elettrone ha carica negativa ben definita: e' proprio questa a creare il problema dell'irraggiamento.",
+"Il nucleo contiene quasi tutta la massa dell'atomo ed esercita un'attrazione elettrostatica fortissima.",
+"Le orbite ellittiche esistono eccome, i pianeti le percorrono: il problema e' elettromagnetico, non geometrico."
+],
+"tag": "modelli"
+},
+{
+"id": "C07-3",
+"testo": "Il numero di massa A di un atomo e' pari a:",
+"opzioni": [
+"La somma di protoni e neutroni del nucleo",
+"Il numero dei soli protoni",
+"La somma di protoni ed elettroni",
+"La massa in grammi dell'atomo"
+],
+"giusta": 0,
+"perche": [
+"A = Z + N conta i nucleoni. Il cloro-35 ha Z = 17, quindi 35 - 17 = 18 neutroni: il conto da saper fare al volo.",
+"I soli protoni danno il numero atomico Z, quello che identifica chimicamente l'elemento.",
+"Gli elettroni pesano circa 1840 volte meno di un nucleone: non entrano nel numero di massa.",
+"A e' un conteggio adimensionale di particelle, non una massa in grammi: quelle sono dell'ordine di 10 alla -24 g."
+],
+"tag": "nucleo"
+},
+{
+"id": "C07-4",
+"testo": "L'unita' di massa atomica (uma) e' definita come:",
+"opzioni": [
+"Un dodicesimo della massa dell'atomo di carbonio-12",
+"La massa di un atomo di idrogeno",
+"La massa di un protone esatta",
+"Un grammo diviso il numero degli elementi"
+],
+"giusta": 0,
+"perche": [
+"E' la convenzione attuale: 1 uma, o Dalton, vale 1,6605 x 10^-27 kg. Serve una scala relativa perche' le masse assolute degli atomi sono numeri scomodissimi.",
+"L'idrogeno pesa circa 1 uma ma la definizione ufficiale si appoggia al carbonio-12, non all'idrogeno.",
+"Il protone pesa circa 1,0073 uma: vicino a 1, ma non e' lui il riferimento della scala.",
+"Nessuna divisione del genere: la scala nasce da un isotopo di riferimento, il carbonio-12."
+],
+"tag": "nucleo"
+},
+{
+"id": "C07-5",
+"testo": "Secondo i postulati di Dalton, gli atomi di uno stesso elemento:",
+"opzioni": [
+"Sono tutti uguali tra loro, con la stessa massa",
+"Hanno masse diverse a seconda del composto",
+"Si distruggono nelle reazioni",
+"Non esistono"
+],
+"giusta": 0,
+"perche": [
+"E' il secondo postulato: stessa specie chimica, atomi identici. Oggi sappiamo degli isotopi, ma il modello di Dalton fondo' la teoria atomica moderna.",
+"La massa e' una proprieta' dell'atomo, non del composto in cui si trova: e' cosi' che Dalton spiegava le proporzioni fisse.",
+"Il terzo postulato dice l'opposto: indivisibili e indistruttibili, nelle reazioni si riarrangiano soltanto.",
+"L'esistenza degli atomi e' la premessa dell'intera teoria."
+],
+"tag": "dalton"
+},
+{
+"id": "C07-6",
+"testo": "La teoria di Dalton spiegava due leggi gia' note ai suoi tempi:",
+"opzioni": [
+"Le proporzioni definite e la conservazione della massa",
+"La legge di Boyle e la legge di Henry",
+"La legge di Hess e la legge di Raoult",
+"La legge di Avogadro e la legge di Dalton sui gas"
+],
+"giusta": 0,
+"perche": [
+"Se gli atomi sono indistruttibili e si combinano in rapporti fissi di numeri interi, la composizione costante dei composti e la massa che si conserva discendono naturalmente.",
+"Boyle e Henry riguardano i gas e le soluzioni: non erano il bersaglio della teoria atomica.",
+"Hess e Raoult arrivano dopo, con la termodinamica e le soluzioni.",
+"L'omonima legge sulle pressioni parziali e' un altro capitolo della fisica dei gas."
+],
+"tag": "dalton"
+},
+{
+"id": "C07-7",
+"testo": "Thomson concluse che i raggi catodici sono elettroni perche':",
+"opzioni": [
+"Erano particelle negative identiche qualunque fosse il materiale del catodo",
+"Partivano dall'anodo positivo",
+"Non venivano deviati da alcun campo",
+"Erano visibili a occhio nudo"
+],
+"giusta": 0,
+"perche": [
+"Deviati dai campi come cariche negative e sempre uguali a se' stessi, indipendenti dal metallo di partenza: dovevano essere un costituente universale della materia.",
+"Partono dal catodo, l'elettrodo negativo: e' l'origine del loro nome.",
+"La deviazione nei campi elettrici era proprio la prova della loro carica.",
+"Si rivelano solo con uno schermo fluorescente: sono invisibili di per se'."
+],
+"tag": "modelli"
+},
+{
+"id": "C07-8",
+"testo": "Il modello atomico di Thomson (plum pudding) descriveva l'atomo come:",
+"opzioni": [
+"Una sfera di carica positiva uniforme con gli elettroni immersi dentro",
+"Un nucleo centrale con elettroni in orbita",
+"Un cubo di cariche alternate",
+"Una particella indivisibile senza struttura"
+],
+"giusta": 0,
+"perche": [
+"Il 'panettone' di carica positiva con gli elettroni come canditi: giustificava neutralita' e stabilita' dell'atomo, prima che Rutherford lo smontasse con la lamina d'oro.",
+"Il nucleo centrale arriva dopo, proprio dall'esperimento che confuto' Thomson.",
+"Nessun modello storico prevedeva geometrie cubiche di cariche alternate.",
+"L'atomo senza struttura era l'idea di Dalton: Thomson gli aveva gia' trovato dentro gli elettroni."
+],
+"tag": "modelli"
+},
+{
+"id": "C07-9",
+"testo": "Rispetto a protoni e neutroni, l'elettrone ha una massa:",
+"opzioni": [
+"Circa 1840 volte minore",
+"Circa uguale",
+"Circa 1840 volte maggiore",
+"Esattamente doppia"
+],
+"giusta": 0,
+"perche": [
+"Protone e neutrone pesano quasi uguale, circa 1 uma ciascuno; l'elettrone e' il peso piuma della squadra e infatti non entra nel numero di massa.",
+"L'uguaglianza vale tra protone e neutrone, non con l'elettrone.",
+"Il rapporto e' capovolto: sono i nucleoni a dominare la massa dell'atomo.",
+"Nessun rapporto semplice del genere: la sproporzione e' di tre ordini di grandezza."
+],
+"tag": "particelle"
+},
+{
+"id": "C07-10",
+"testo": "Le dimensioni tipiche di un atomo sono dell'ordine di:",
+"opzioni": [
+"1-5 angstrom, cioe' 10^-10 m, con un nucleo decine di migliaia di volte piu' piccolo",
+"1 millimetro",
+"10^-10 m per il nucleo e 1 cm per l'atomo",
+"Uguali a quelle del nucleo"
+],
+"giusta": 0,
+"perche": [
+"L'angstrom, 10^-10 m, e' l'unita' comoda per gli atomi; il nucleo sta sui 10^-12 - 10^-13 cm: l'atomo e' quasi tutto spazio vuoto occupato dagli elettroni.",
+"Un millimetro contiene milioni di atomi in fila: scala sbagliata di sei ordini di grandezza.",
+"I valori sono scambiati e gonfiati: e' l'atomo a misurare 10^-10 m.",
+"Se coincidessero, le particelle alfa di Rutherford non sarebbero mai passate attraverso la lamina."
+],
+"tag": "particelle"
+},
+{
+"id": "C07-11",
+"testo": "Un catione e' un atomo che:",
+"opzioni": [
+"Ha ceduto uno o piu' elettroni e ha carica netta positiva",
+"Ha acquistato elettroni",
+"Ha perso protoni",
+"Ha piu' neutroni del normale"
+],
+"giusta": 0,
+"perche": [
+"Meno elettroni della dotazione neutra: il bilancio delle cariche pende sul positivo. L'anione e' il caso opposto, con elettroni in piu' e carica negativa.",
+"L'acquisto di elettroni genera l'anione, lo ione negativo.",
+"I protoni non si toccano nei processi chimici: cambierebbe l'elemento stesso.",
+"I neutroni distinguono gli isotopi, non gli ioni: sono neutri e non spostano la carica."
+],
+"tag": "ioni"
+},
+{
+"id": "C07-12",
+"testo": "Due isotopi dello stesso elemento differiscono per:",
+"opzioni": [
+"Il numero di neutroni, e quindi il numero di massa A",
+"Il numero di protoni",
+"Il numero di elettroni dell'atomo neutro",
+"La carica del nucleo"
+],
+"giusta": 0,
+"perche": [
+"Stesso Z, diverso A: la differenza sta tutta nei neutroni. Si indicano scrivendo il numero di massa, come carbonio-12 e carbonio-14.",
+"Cambiare i protoni significa cambiare elemento: il numero atomico e' la carta d'identita' chimica.",
+"Da neutri hanno gli stessi elettroni, pari a Z: il comportamento chimico infatti e' identico.",
+"La carica del nucleo e' data dai protoni, uguali per definizione negli isotopi."
+],
+"tag": "isotopi"
+}
+]
+}

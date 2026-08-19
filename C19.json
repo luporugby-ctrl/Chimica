@@ -1,0 +1,227 @@
+{
+"id": "C19",
+"titolo": "Leggi dei gas",
+"gruppo": "4. Stati della materia",
+"origine": "dispensa",
+"fonti": [
+"LegGas_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C19-1",
+"testo": "Nel modello del gas ideale le molecole sono considerate:",
+"opzioni": [
+"Punti con massa ma senza volume, senza forze reciproche, con urti elastici",
+"Sfere rigide che si attraggono fortemente",
+"Ferme e ordinate nello spazio",
+"Particelle che si respingono sempre"
+],
+"giusta": 0,
+"perche": [
+"I tre postulati del modello: volume proprio trascurabile, nessuna attrazione o repulsione, moto continuo e casuale con urti elastici tra loro e con le pareti.",
+"Le attrazioni forti sono proprio cio' che il modello trascura: quando contano, il gas devia dall'idealita' e puo' liquefare.",
+"Il moto continuo e disordinato e' l'essenza del gas: particelle ferme e ordinate descrivono un solido cristallino.",
+"Ne' attrazione ne' repulsione: le particelle si ignorano tra un urto e l'altro."
+],
+"tag": "gas"
+},
+{
+"id": "C19-2",
+"testo": "La legge di Boyle afferma che, a temperatura costante:",
+"opzioni": [
+"Il volume e' inversamente proporzionale alla pressione: PV = costante",
+"Il volume e' direttamente proporzionale alla pressione",
+"La pressione non influenza il volume",
+"Il prodotto PT resta costante"
+],
+"giusta": 0,
+"perche": [
+"Comprimere dimezza il volume raddoppiando la pressione: sul grafico P-V l'isoterma e' un ramo di iperbole equilatera con gli assi come asintoti.",
+"La proporzionalita' diretta direbbe che schiacciando il gas questo si espande: contro ogni esperienza con una siringa tappata.",
+"La pressione e' proprio la leva che comanda il volume, a T fissata.",
+"Il prodotto costante e' PV: la temperatura in Boyle e' bloccata per ipotesi."
+],
+"tag": "gas"
+},
+{
+"id": "C19-3",
+"testo": "Lo zero della scala Kelvin (-273,15 gradi C) corrisponde alla temperatura a cui:",
+"opzioni": [
+"Il volume di un gas ideale si annullerebbe",
+"L'acqua congela",
+"Tutti i gas diventano liquidi",
+"La pressione atmosferica e' zero"
+],
+"giusta": 0,
+"perche": [
+"Le rette della legge di Charles-Gay Lussac, prolungate, intersecano tutte l'asse delle temperature a -273,15 gradi C: Kelvin ne fece lo zero assoluto. L'ampiezza del kelvin e' identica a quella del grado Celsius.",
+"L'acqua congela a 0 gradi C, cioe' 273,15 K: e' l'origine della scala Celsius, non della Kelvin.",
+"I gas reali liquefano a temperature diverse tra loro, ben sopra lo zero assoluto: il volume nullo e' un'estrapolazione del modello ideale.",
+"La pressione atmosferica e' una proprieta' dell'aria intorno a noi, non della scala di temperatura."
+],
+"tag": "gas"
+},
+{
+"id": "C19-4",
+"testo": "A volume e quantita' di gas costanti, la seconda legge di Gay-Lussac dice che la pressione:",
+"opzioni": [
+"E' direttamente proporzionale alla temperatura assoluta",
+"E' inversamente proporzionale alla temperatura",
+"Non dipende dalla temperatura",
+"Dipende solo dalla natura del gas"
+],
+"giusta": 0,
+"perche": [
+"Scaldare un recipiente chiuso fa salire la pressione in proporzione ai kelvin: le molecole picchiano sulle pareti piu' spesso e piu' forte. E' il motivo per cui una bomboletta spray non va lasciata al sole.",
+"L'inversa proporzionalita' con la pressione riguarda il volume nella legge di Boyle, non questa.",
+"Dipende eccome: e' l'intera legge, P su T costante.",
+"Per un gas ideale la natura chimica non entra: contano moli, volume e temperatura."
+],
+"tag": "gas"
+},
+{
+"id": "C19-5",
+"testo": "La legge di Avogadro afferma che volumi uguali di gas diversi, a uguale T e P:",
+"opzioni": [
+"Contengono lo stesso numero di molecole",
+"Hanno la stessa massa",
+"Hanno la stessa densita'",
+"Contengono lo stesso numero di atomi"
+],
+"giusta": 0,
+"perche": [
+"E' il ponte tra volume e quantita': V proporzionale a n. Ne segue che a TPS una mole di qualsiasi gas ideale occupa 22,4 L, il volume molare.",
+"Stesse molecole in numero, masse diverse: un litro di idrogeno pesa molto meno di un litro di anidride carbonica.",
+"Se la massa cambia a parita' di volume, cambia anche la densita': e' cosi' che si confrontano i gas.",
+"Molecole, non atomi: una molecola di O2 porta due atomi, una di He uno solo."
+],
+"tag": "gas"
+},
+{
+"id": "C19-6",
+"testo": "Quale pressione esercitano 2,0 mol di gas ideale a 300 K in un volume di 24,6 L? (R = 0,0821 L atm/(mol K))",
+"opzioni": [
+"2,0 atm",
+"1,0 atm",
+"0,50 atm",
+"4,1 atm"
+],
+"giusta": 0,
+"perche": [
+"P = nRT/V = 2,0 x 0,0821 x 300 / 24,6 = 2,0 atm. Con l'equazione di stato, noti tre parametri il quarto e' determinato.",
+"1,0 atm verrebbe con una sola mole: qui le moli sono due e la pressione raddoppia.",
+"0,50 atm e' il risultato con il rapporto rovesciato: controllare sempre chi sta al numeratore.",
+"4,1 atm arriverebbe dimenticando di dividere per il volume completo: errore di calcolo, non di formula."
+],
+"tag": "gas"
+},
+{
+"id": "C19-7",
+"testo": "Usando R = 0,0821, le unita' corrette per l'equazione PV = nRT sono:",
+"opzioni": [
+"P in atm, V in litri, T in kelvin",
+"P in atm, V in litri, T in gradi C",
+"P in pascal, V in metri cubi, T in gradi C",
+"Qualsiasi unita', il risultato non cambia"
+],
+"giusta": 0,
+"perche": [
+"Quel valore di R vale L atm su mol K: pressioni in atmosfere, volumi in litri e temperature rigorosamente assolute. Con 8,314 J/(mol K) si lavora invece in unita' SI.",
+"I gradi Celsius sono l'errore piu' pagato agli esami: a 0 gradi C la formula con T = 0 darebbe volume nullo, assurdo. Si converte sempre in kelvin.",
+"Pascal e metri cubi vanno con l'altro valore di R, e comunque mai con i gradi Celsius.",
+"Le unita' devono essere coerenti con R: mescolarle cambia il risultato anche di ordini di grandezza."
+],
+"tag": "gas"
+},
+{
+"id": "C19-8",
+"testo": "Secondo la legge di Dalton, in una miscela di gas ideali la pressione totale e':",
+"opzioni": [
+"La somma delle pressioni parziali dei componenti",
+"La pressione del gas piu' abbondante",
+"La media delle pressioni parziali",
+"Il prodotto delle pressioni parziali"
+],
+"giusta": 0,
+"perche": [
+"Ogni gas preme come se fosse da solo nel volume: la pressione parziale. La totale e' la loro somma, e la parziale di ciascuno vale la totale per la sua frazione molare.",
+"Il piu' abbondante contribuisce di piu', ma anche gli altri spingono: si somma tutto.",
+"La media abbasserebbe il conto: le pressioni parziali si accumulano, non si mediano.",
+"Il prodotto non ha senso dimensionale: darebbe atmosfere al quadrato."
+],
+"tag": "gas"
+},
+{
+"id": "C19-9",
+"testo": "A parita' di temperatura, le molecole di un gas con massa molare minore si muovono in media:",
+"opzioni": [
+"Piu' velocemente",
+"Piu' lentamente",
+"Alla stessa velocita' di qualsiasi gas",
+"Non si muovono affatto"
+],
+"giusta": 0,
+"perche": [
+"L'energia cinetica media dipende solo dalla temperatura: a pari energia, chi pesa meno corre di piu'. L'idrogeno sfreccia, l'anidride carbonica arranca, come l'ala veloce e il pilone lanciati con la stessa spinta.",
+"Piu' lento e' il destino delle molecole pesanti: la velocita' quadratica media cala al crescere di M.",
+"La velocita' uguale varrebbe solo a masse uguali: cio' che e' uguale a pari T e' l'energia cinetica media.",
+"Il moto e' incessante a qualunque temperatura sopra lo zero assoluto."
+],
+"tag": "cinetica-gas"
+},
+{
+"id": "C19-10",
+"testo": "Un gas reale devia dal comportamento ideale soprattutto:",
+"opzioni": [
+"A basse temperature e alte pressioni",
+"Ad alte temperature e basse pressioni",
+"Solo se e' un gas nobile",
+"Mai: tutti i gas sono ideali"
+],
+"giusta": 0,
+"perche": [
+"Compresso e freddo, il gas ha molecole vicine e lente: le attrazioni intermolecolari e il volume proprio delle molecole non sono piu' trascurabili. La manifestazione estrema e' la liquefazione.",
+"Caldo e rarefatto e' proprio il regime in cui il modello ideale funziona meglio: distanze grandi e urti energici.",
+"I gas nobili sono semmai tra i piu' vicini all'idealita', avendo interazioni debolissime.",
+"Nessun gas e' perfettamente ideale: il modello e' un'approssimazione, ottima solo in certe condizioni."
+],
+"tag": "gas-reali"
+},
+{
+"id": "C19-11",
+"testo": "Nell'equazione di Van der Waals, il covolume b rappresenta:",
+"opzioni": [
+"Il volume fisico occupato da una mole di molecole, sottratto al volume disponibile",
+"La pressione aggiuntiva del gas",
+"Il numero di urti al secondo",
+"La temperatura di ebollizione"
+],
+"giusta": 0,
+"perche": [
+"Le molecole non sono punti: il volume davvero accessibile al gas e' V meno nb. L'altra correzione riguarda la pressione, ridotta dalle attrazioni tra molecole.",
+"La pressione viene corretta da un termine separato, legato alle forze attrattive che frenano gli urti sulle pareti.",
+"La frequenza degli urti entra nella spiegazione cinetica, ma b e' un volume, non un conteggio.",
+"L'ebollizione riguarda i passaggi di stato: b e' un parametro geometrico delle molecole."
+],
+"tag": "gas-reali"
+},
+{
+"id": "C19-12",
+"testo": "Secondo la legge di Charles-Gay Lussac, per ogni grado centigrado di aumento della temperatura un gas a pressione costante:",
+"opzioni": [
+"Aumenta il volume di 1/273,15 del volume che possiede a 0 gradi C",
+"Raddoppia il volume",
+"Aumenta il volume dell'1% del volume iniziale qualunque esso sia",
+"Non cambia volume"
+],
+"giusta": 0,
+"perche": [
+"L'incremento e' una frazione fissa del volume a 0 gradi C: e' proprio questa regolarita' che, estrapolata, porta al volume nullo a -273,15 gradi C e alla scala assoluta di Kelvin.",
+"Il raddoppio per grado farebbe esplodere qualsiasi palloncino al primo raggio di sole.",
+"La frazione e' riferita al volume a 0 gradi C, non al volume corrente, e vale 1/273,15, non 1/100.",
+"Il volume cambia eccome: e' l'essenza della legge isobara."
+],
+"tag": "gas"
+}
+]
+}

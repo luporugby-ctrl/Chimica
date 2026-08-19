@@ -1,0 +1,227 @@
+{
+"id": "C16",
+"titolo": "Reazioni redox",
+"gruppo": "3. Composti e reazioni",
+"origine": "dispensa",
+"fonti": [
+"ReazRedox_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C16-1",
+"testo": "Una reazione di ossido-riduzione si riconosce perche':",
+"opzioni": [
+"Alcuni elementi cambiano numero di ossidazione, con scambio di elettroni",
+"Si sviluppa sempre un gas",
+"Cambia il colore della soluzione",
+"Compare sempre l'ossigeno tra i reagenti"
+],
+"giusta": 0,
+"perche": [
+"Il criterio e' uno solo: assegnare i numeri di ossidazione a tutti gli elementi e verificare se qualcuno varia. Se variano, elettroni sono passati di mano.",
+"Molte redox non producono gas, e molte reazioni con gas non sono redox: non e' un criterio.",
+"Il colore puo' cambiare per mille motivi: indizio scenografico, non prova.",
+"Il nome inganna: l'ossigeno non e' necessario. Anche Cl2 che strappa elettroni allo iodio e' una redox in piena regola."
+],
+"tag": "redox"
+},
+{
+"id": "C16-2",
+"testo": "Nell'ossidazione, la specie chimica:",
+"opzioni": [
+"Perde elettroni e il suo numero di ossidazione aumenta",
+"Acquista elettroni e il suo numero di ossidazione diminuisce",
+"Perde protoni",
+"Non cambia numero di ossidazione"
+],
+"giusta": 0,
+"perche": [
+"Cedere elettroni, che sono cariche negative, lascia l'elemento piu' 'positivo': il numero di ossidazione sale. Nella coppia opposta, la riduzione, il numero scende.",
+"Acquisto di elettroni e numero che scende descrivono la riduzione, il processo complementare.",
+"Il passaggio di protoni e' il territorio delle reazioni acido-base, che non sono redox.",
+"La variazione del numero di ossidazione e' la definizione stessa di ossidazione: senza variazione, niente redox."
+],
+"tag": "redox"
+},
+{
+"id": "C16-3",
+"testo": "L'agente ossidante in una redox e' la specie che:",
+"opzioni": [
+"Acquista elettroni e quindi si riduce",
+"Perde elettroni e quindi si ossida",
+"Resta invariata",
+"Fornisce protoni all'ambiente"
+],
+"giusta": 0,
+"perche": [
+"L'ossidante fa ossidare l'altro prendendosi i suoi elettroni: nel farlo, lui si riduce. I nomi descrivono l'effetto sull'avversario, non su se stessi, come il placcatore che ferma l'avanzata altrui finendo a terra pure lui.",
+"Chi perde elettroni e' il riducente: si ossida lui per ridurre l'altro.",
+"Se una specie resta invariata fa da spettatore, non da protagonista della redox.",
+"I protoni riguardano gli acidi: l'ossidante lavora con gli elettroni."
+],
+"tag": "redox"
+},
+{
+"id": "C16-4",
+"testo": "Il principio cardine del bilanciamento di una redox e':",
+"opzioni": [
+"Gli elettroni ceduti dalla specie che si ossida devono uguagliare quelli acquistati da quella che si riduce",
+"I coefficienti devono essere tutti uguali",
+"La massa dei prodotti deve superare quella dei reagenti",
+"Gli atomi di ossigeno si eliminano dalla reazione"
+],
+"giusta": 0,
+"perche": [
+"Gli elettroni non si creano ne' spariscono: il conto di chi cede e chi incassa deve chiudere in pareggio. E' per questo che si moltiplicano le semireazioni in modo incrociato.",
+"I coefficienti risultano quasi sempre diversi tra loro: sono la soluzione del bilanciamento, non un vincolo.",
+"La massa si conserva esattamente: e' una delle verifiche finali insieme al bilancio delle cariche.",
+"L'ossigeno si bilancia, non si elimina: con molecole d'acqua nel metodo delle semireazioni."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C16-5",
+"testo": "Nel metodo delle semireazioni in ambiente acido, l'ossigeno e l'idrogeno si bilanciano rispettivamente con:",
+"opzioni": [
+"Molecole di H2O e ioni H+",
+"Ioni OH- e molecole di H2O",
+"Elettroni e protoni",
+"Molecole di O2 e H2"
+],
+"giusta": 0,
+"perche": [
+"La sequenza in ambiente acido e': prima gli elementi diversi da O e H, poi l'ossigeno con H2O, poi gli idrogeni con H+, infine le cariche con gli elettroni.",
+"Gli ioni OH- sono lo strumento dell'ambiente basico: in ambiente acido non si usano.",
+"Gli elettroni pareggiano le cariche, ultimo passaggio: non servono a contare atomi di ossigeno.",
+"O2 e H2 come molecole libere non entrano nel bilanciamento: si lavora con acqua e ioni."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C16-6",
+"testo": "Nella semireazione di riduzione MnO4- + 5e- che porta a Mn2+, il manganese:",
+"opzioni": [
+"Passa da +7 a +2 acquistando 5 elettroni",
+"Passa da +2 a +7 cedendo 5 elettroni",
+"Passa da +4 a -1",
+"Non cambia numero di ossidazione"
+],
+"giusta": 0,
+"perche": [
+"Nel permanganato il manganese sta a +7 (la somma con quattro ossigeni a -2 deve dare -1); arrivando a +2 la discesa e' di 5 unita', cioe' 5 elettroni acquistati. In ambiente acido servono poi 8 H+ e si formano 4 H2O.",
+"Il verso e' quello opposto: qui il numero scende, e' una riduzione, e gli elettroni compaiono tra i reagenti.",
+"Il +4 e' il manganese di MnO2, altra specie: nel permanganato il conto porta a +7.",
+"La variazione c'e' ed e' il motore della semireazione: 5 unita' esatte."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C16-7",
+"testo": "In ambiente basico, le cariche delle semireazioni si bilanciano usando:",
+"opzioni": [
+"Ioni OH-",
+"Ioni H+",
+"Solo elettroni",
+"Molecole di sale"
+],
+"giusta": 0,
+"perche": [
+"In soluzione basica gli H+ liberi praticamente non esistono: si pareggia con OH- e, dove serve, con molecole d'acqua per gli atomi di ossigeno e idrogeno.",
+"Gli H+ appartengono all'ambiente acido: usarli in ambiente basico e' l'errore classico del compito.",
+"Gli elettroni chiudono il bilancio delle cariche in entrambi gli ambienti, ma da soli non sistemano ossigeni e idrogeni.",
+"I sali eventualmente presenti sono spettatori: il bilanciamento usa le specie dell'acqua."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C16-8",
+"testo": "Una reazione di disproporzionamento (dismutazione) e' quella in cui:",
+"opzioni": [
+"La stessa specie si ossida in parte e in parte si riduce",
+"Due specie diverse si scambiano elettroni",
+"Non avviene alcun trasferimento di elettroni",
+"Un acido reagisce con una base"
+],
+"giusta": 0,
+"perche": [
+"Una parte della specie sale di numero di ossidazione e un'altra parte scende: la sostanza fa da ossidante e riducente di se stessa. Il bilanciamento segue le regole di ogni redox: elettroni ceduti uguali a quelli acquistati.",
+"Lo scambio tra due specie diverse e' la redox ordinaria: qui il protagonista e' uno solo, sdoppiato nei due ruoli.",
+"Il trasferimento di elettroni c'e' eccome: avviene all'interno della stessa specie chimica.",
+"Acido piu' base e' una neutralizzazione: i numeri di ossidazione restano fermi."
+],
+"tag": "redox"
+},
+{
+"id": "C16-9",
+"testo": "Le reazioni acido-base, rispetto alle redox:",
+"opzioni": [
+"Non comportano variazioni dei numeri di ossidazione",
+"Scambiano piu' elettroni delle redox",
+"Sono un tipo particolare di redox",
+"Avvengono solo allo stato gassoso"
+],
+"giusta": 0,
+"perche": [
+"Acido-base e reazioni di spostamento appartengono alla famiglia senza trasferimento di elettroni: si spostano protoni o ioni, ma ogni elemento conserva il suo numero di ossidazione.",
+"Non ne scambiano affatto: e' proprio l'assenza di scambio elettronico a definirle.",
+"Sono la categoria alternativa, non un sottoinsieme: la spartizione si fa proprio sulla variazione dei numeri di ossidazione.",
+"Avvengono per lo piu' in soluzione acquosa: lo stato fisico non e' il criterio distintivo."
+],
+"tag": "redox"
+},
+{
+"id": "C16-10",
+"testo": "Nella reazione NaClO3 + 3 Na2SO3 che da' NaCl + 3 Na2SO4, l'agente ossidante e':",
+"opzioni": [
+"NaClO3, perche' il cloro si riduce da +5 a -1",
+"Na2SO3, perche' lo zolfo aumenta il numero di ossidazione",
+"NaCl, perche' contiene cloro",
+"Il sodio, che cambia carica"
+],
+"giusta": 0,
+"perche": [
+"Il cloro scende di 6 unita' incassando 6 elettroni per atomo: chi acquista elettroni e' l'ossidante. Lo zolfo sale da +4 a +6 cedendone 2, per questo servono tre solfiti per ogni clorato.",
+"Na2SO3 e' il riducente: lo zolfo si ossida da +4 a +6 cedendo elettroni.",
+"NaCl e' il prodotto della riduzione, il punto di arrivo del cloro: il ruolo di ossidante spetta al reagente di partenza.",
+"Il sodio resta +1 dall'inizio alla fine: e' uno ione spettatore."
+],
+"tag": "bilanciamento"
+},
+{
+"id": "C16-11",
+"testo": "L'agente riducente in una redox e' la specie che:",
+"opzioni": [
+"Cede elettroni e quindi si ossida",
+"Acquista elettroni",
+"Resta a numero di ossidazione invariato",
+"Neutralizza gli acidi"
+],
+"giusta": 0,
+"perche": [
+"Il riducente riduce l'altro regalandogli elettroni: nel farlo, il suo numero di ossidazione sale. Nomi e ruoli sono sempre incrociati: chi riduce si ossida, chi ossida si riduce.",
+"Chi acquista elettroni e' l'ossidante, la controparte.",
+"Senza variazione del numero di ossidazione la specie e' spettatrice, non protagonista.",
+"La neutralizzazione e' territorio acido-base, dove gli elettroni non si trasferiscono."
+],
+"tag": "redox"
+},
+{
+"id": "C16-12",
+"testo": "Nel metodo della variazione del numero di ossidazione, i coefficienti delle specie che si ossidano e si riducono vanno scelti in modo che:",
+"opzioni": [
+"Gli elettroni perduti dall'una siano uguali a quelli guadagnati dall'altra, poi si bilancia il resto a vista",
+"Tutti i coefficienti risultino uguali a 1",
+"L'ossigeno sia sempre bilanciato per primo",
+"La reazione contenga sempre acqua"
+],
+"giusta": 0,
+"perche": [
+"E' il cuore del metodo: prima si pareggia lo scambio elettronico incrociando le variazioni, poi si contano gli altri atomi e si aggiustano i coefficienti rimanenti, semplificando gli eventuali fattori comuni.",
+"I coefficienti finali sono quasi sempre diversi tra loro: escono dal pareggio elettronico.",
+"L'ossigeno si sistema dopo, nel bilanciamento a vista degli altri atomi.",
+"L'acqua compare solo quando serve, tipicamente nel metodo delle semireazioni in ambiente acido o basico."
+],
+"tag": "bilanciamento"
+}
+]
+}

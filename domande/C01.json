@@ -1,0 +1,164 @@
+{
+"id": "C01",
+"titolo": "Tavola periodica e struttura atomica",
+"gruppo": "1. Fondamenti",
+"origine": "seed",
+"domande": [
+{
+"id": "C01-1",
+"testo": "Il numero atomico Z di un elemento indica:",
+"opzioni": ["Il numero di protoni nel nucleo", "Il numero di neutroni nel nucleo", "La somma di protoni e neutroni", "Il numero di elettroni di valenza"],
+"giusta": 0,
+"perche": [
+"Z e' per definizione il numero di protoni, ed e' cio' che identifica l'elemento: cambia Z, cambia elemento.",
+"I neutroni non sono fissi per un elemento: variano tra gli isotopi, che pero' restano lo stesso elemento.",
+"Protoni + neutroni e' il numero di massa A, non Z. Confondere A con Z e' l'errore piu' frequente.",
+"Gli elettroni di valenza sono solo quelli dell'ultimo livello: per il ferro sono 2, non 26."
+],
+"tag": "atomo"
+},
+{
+"id": "C01-2",
+"testo": "Due elementi dello stesso gruppo hanno in comune:",
+"opzioni": ["Il numero di elettroni di valenza", "Lo stesso numero di livelli energetici", "La stessa massa atomica", "Lo stesso numero di neutroni"],
+"giusta": 0,
+"perche": [
+"E' il motivo per cui il gruppo esiste: stessi elettroni esterni, quindi comportamento chimico simile. Na e K reagiscono entrambi violentemente con l'acqua.",
+"Il numero di livelli e' dato dal periodo (la riga), non dal gruppo (la colonna).",
+"Le masse crescono lungo il gruppo: Li 6,94 e Cs 132,9 sono nello stesso gruppo.",
+"Il numero di neutroni non ha alcun legame con la posizione nella tavola."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-3",
+"testo": "A quale elemento corrisponde la configurazione [Ne] 3s2 3p4?",
+"opzioni": ["Zolfo", "Silicio", "Ossigeno", "Cloro"],
+"giusta": 0,
+"perche": [
+"Ne vale 10 elettroni, piu' 2 + 4 fa 16: Z = 16 e' lo zolfo. Sei elettroni esterni, quindi gruppo 16.",
+"Il silicio e' 3s2 3p2: quattro elettroni esterni, gruppo 14.",
+"L'ossigeno ha gli stessi elettroni esterni (gruppo 16) ma sul secondo livello: [He] 2s2 2p4.",
+"Il cloro ha un elettrone p in piu': [Ne] 3s2 3p5."
+],
+"tag": "configurazione"
+},
+{
+"id": "C01-4",
+"testo": "Percorrendo un periodo da sinistra a destra, il raggio atomico:",
+"opzioni": ["Diminuisce", "Aumenta", "Resta costante", "Prima aumenta poi diminuisce"],
+"giusta": 0,
+"perche": [
+"Aumentano i protoni ma gli elettroni si aggiungono sullo stesso livello: il nucleo tira di piu' e la nuvola si contrae.",
+"Aumenta lungo il gruppo (scendendo), perche' li' si aggiungono livelli nuovi. E' la direzione opposta.",
+"Il raggio cambia in modo regolare: e' proprio una delle proprieta' periodiche.",
+"L'andamento nel periodo e' monotono decrescente, senza inversioni."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-5",
+"testo": "Qual e' l'elemento piu' elettronegativo della tavola?",
+"opzioni": ["Fluoro", "Ossigeno", "Cloro", "Elio"],
+"giusta": 0,
+"perche": [
+"Il fluoro ha 3,98 sulla scala di Pauling: e' il massimo assoluto, il riferimento della scala.",
+"L'ossigeno e' secondo con 3,44: alto, ma non il massimo.",
+"Il cloro sta a 3,16: e' sotto il fluoro nel gruppo, e l'elettronegativita' scende scendendo.",
+"L'elio non ha elettronegativita' definita: e' un gas nobile, non forma legami in condizioni normali."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-6",
+"testo": "Gli elementi del gruppo 17 (alogeni) presentano tipicamente numero di ossidazione:",
+"opzioni": ["-1 nei composti con i metalli", "+1 sempre", "-2 nei composti con i metalli", "0 in tutti i composti"],
+"giusta": 0,
+"perche": [
+"Hanno 7 elettroni esterni: ne prendono uno per completare l'ottetto, quindi -1. Nel NaCl il cloro e' -1.",
+"Gli alogeni possono avere n.o. positivi con l'ossigeno (HClO4 ha Cl +7), ma non e' il caso tipico ne' 'sempre'.",
+"-2 e' tipico del gruppo 16 (ossigeno, zolfo), che di elettroni ne deve prendere due.",
+"Il n.o. zero e' quello dell'elemento libero, per esempio Cl2, non dei composti."
+],
+"tag": "ossidazione"
+},
+{
+"id": "C01-7",
+"testo": "I metalli di transizione occupano:",
+"opzioni": ["Il blocco d, gruppi da 3 a 12", "Il blocco p, gruppi da 13 a 18", "Il blocco s, gruppi 1 e 2", "Solo le due righe staccate in fondo"],
+"giusta": 0,
+"perche": [
+"Riempiono gli orbitali d: il blocco centrale della tavola, dieci colonne perche' gli orbitali d ospitano dieci elettroni.",
+"Il blocco p contiene non metalli, semimetalli e alcuni metalli come alluminio e piombo, non i metalli di transizione.",
+"Il blocco s sono alcalini e alcalino-terrosi: metalli, ma non 'di transizione'.",
+"Le due righe staccate sono lantanidi e attinidi, il blocco f, spesso detti transizione interna."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-8",
+"testo": "La configurazione elettronica del calcio (Z = 20) e':",
+"opzioni": ["[Ar] 4s2", "[Ar] 3d2", "[Ne] 3s2 3p6", "[Ar] 4s1 3d1"],
+"giusta": 0,
+"perche": [
+"Dopo l'argon (18) i due elettroni entrano in 4s, che ha energia piu' bassa del 3d: da qui i due elettroni esterni e il n.o. +2.",
+"Il 3d si riempie dopo il 4s: e' proprio l'inversione tipica del quarto periodo. Il calcio non ha elettroni d.",
+"Quella e' la configurazione dell'argon stesso, Z = 18.",
+"Non c'e' motivo di spaiare: 4s si riempie prima completamente. Le eccezioni riguardano cromo e rame, non il calcio."
+],
+"tag": "configurazione"
+},
+{
+"id": "C01-9",
+"testo": "L'energia di prima ionizzazione, scendendo lungo un gruppo:",
+"opzioni": ["Diminuisce, perche' l'elettrone esterno e' piu' lontano e schermato", "Aumenta, perche' cresce il numero di protoni", "Resta costante entro il gruppo", "Diminuisce solo nei non metalli"],
+"giusta": 0,
+"perche": [
+"Piu' livelli significa elettrone esterno piu' distante e schermato dai gusci interni: strapparlo costa meno. Per questo il cesio e' piu' reattivo del litio.",
+"I protoni aumentano, ma l'effetto della distanza e della schermatura e' piu' forte e vince.",
+"E' una proprieta' periodica: varia in modo regolare sia nei gruppi sia nei periodi.",
+"L'andamento vale per tutti i gruppi, metalli e non metalli."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-10",
+"testo": "Due isotopi dello stesso elemento differiscono per:",
+"opzioni": ["Il numero di neutroni", "Il numero di protoni", "Il numero di elettroni di valenza", "Il comportamento chimico"],
+"giusta": 0,
+"perche": [
+"Stesso Z, diverso numero di massa: cambia solo il conto dei neutroni. Carbonio-12 e carbonio-14 hanno 6 protoni entrambi.",
+"Se cambiassero i protoni sarebbero elementi diversi, non isotopi.",
+"Gli elettroni di valenza dipendono da Z, che negli isotopi e' identico.",
+"Proprio perche' gli elettroni sono gli stessi, gli isotopi si comportano chimicamente allo stesso modo: cambia la massa, non la chimica."
+],
+"tag": "atomo"
+},
+{
+"id": "C01-11",
+"testo": "Perche' i gas nobili sono poco reattivi?",
+"opzioni": ["Hanno il livello esterno completo", "Hanno massa atomica molto elevata", "Sono tutti radioattivi", "Hanno elettronegativita' nulla"],
+"giusta": 0,
+"perche": [
+"Ottetto completo (o due elettroni per l'elio): non hanno nulla da guadagnare cedendo o acquistando elettroni. E' la configurazione che tutti gli altri elementi inseguono.",
+"L'elio ha massa 4, tra le piu' basse della tavola, ed e' comunque inerte.",
+"Solo il radon e' radioattivo; elio, neon e argon non lo sono.",
+"L'elettronegativita' non e' definita per i piu' leggeri, ma per lo xeno vale 2,6: non e' zero, e infatti lo xeno qualche composto lo forma."
+],
+"tag": "periodicita"
+},
+{
+"id": "C01-12",
+"testo": "La massa atomica riportata sulla tavola periodica e':",
+"opzioni": ["La media pesata delle masse degli isotopi naturali", "La massa dell'isotopo piu' stabile", "La somma di protoni e neutroni", "La massa in grammi di un atomo"],
+"giusta": 0,
+"perche": [
+"E' pesata sull'abbondanza naturale: per questo il cloro vale 35,45, tra il cloro-35 e il cloro-37 che sono i due isotopi reali.",
+"Per gli elementi artificiali si usa l'isotopo piu' stabile, ma per i naturali no: e' una media.",
+"Quello e' il numero di massa A, sempre intero. La massa atomica ha i decimali proprio perche' e' una media.",
+"La massa di un singolo atomo in grammi e' dell'ordine di 10^-23: il valore in tavola e' in unita' di massa atomica, ed e' anche la massa in grammi di una mole."
+],
+"tag": "mole"
+}
+]
+}

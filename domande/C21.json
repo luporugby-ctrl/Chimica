@@ -1,0 +1,190 @@
+{
+"id": "C21",
+"titolo": "Formule minime e molecolari",
+"gruppo": "3. Calcoli e stechiometria",
+"origine": "CalcFormMin_Mercatorum.pdf",
+"domande": [
+{
+"id": "C21-1",
+"testo": "La formula minima (o empirica) di un composto indica:",
+"opzioni": ["Il rapporto più semplice fra il numero di atomi dei diversi elementi", "Il numero effettivo di atomi presenti in una molecola", "La massa di una mole del composto", "La percentuale in massa di ciascun elemento"],
+"giusta": 0,
+"perche": [
+"Si limita a dare il rapporto numerico di combinazione, espresso con i numeri interi più piccoli possibile.",
+"Il numero effettivo di atomi per molecola è dato dalla formula molecolare, che è un multiplo intero della minima.",
+"La massa di una mole è la massa molare: si calcola dalla formula, ma non è la formula.",
+"Le percentuali sono il dato di partenza dell'analisi: la formula minima è il risultato dell'elaborazione."
+],
+"tag": "formule"
+},
+{
+"id": "C21-2",
+"testo": "Il primo passaggio per ricavare la formula minima dalle percentuali è:",
+"opzioni": ["Dividere ogni percentuale per la massa atomica dell'elemento", "Dividere ogni percentuale per 100", "Sommare tutte le percentuali", "Moltiplicare ogni percentuale per la massa atomica"],
+"giusta": 0,
+"perche": [
+"Serve a convertire le proporzioni di massa in proporzioni di moli, cioè in numero di atomi: è il passaggio che rende confrontabili elementi con masse diverse.",
+"Dividere per 100 cambia solo la scala e lascia le proporzioni di massa: non porta alle moli.",
+"La somma delle percentuali fa 100 e non aggiunge informazione.",
+"Moltiplicare va nella direzione sbagliata: allontana dal numero di moli invece di avvicinarcisi."
+],
+"tag": "formule"
+},
+{
+"id": "C21-3",
+"testo": "Ottenute le moli di ciascun elemento, il passaggio successivo è:",
+"opzioni": ["Dividere tutti i valori per il più piccolo di essi", "Dividere tutti i valori per il più grande di essi", "Sommare i valori e dividere per il numero di elementi", "Arrotondare direttamente i valori all'intero più vicino"],
+"giusta": 0,
+"perche": [
+"Dividendo per il più piccolo, quell'elemento diventa 1 e gli altri si esprimono in rapporto a lui: da lì escono gli indici.",
+"Dividendo per il più grande si otterrebbero valori tutti minori di 1, non utilizzabili come indici.",
+"La media non ha significato: servono i rapporti, non un valore medio.",
+"Arrotondare prima di dividere fa perdere completamente i rapporti fra gli elementi."
+],
+"tag": "formule"
+},
+{
+"id": "C21-4",
+"testo": "Dopo la divisione si ottengono i valori 1; 1,023; 3,518. Come si procede?",
+"opzioni": ["Si moltiplicano tutti i valori per 2, il più piccolo intero che li rende interi", "Si arrotonda 3,518 a 4 e si scrive la formula", "Si scarta il valore 3,518 perché non è approssimabile", "Si divide di nuovo tutto per 1,023"],
+"giusta": 0,
+"perche": [
+"1,023 si approssima a 1 senza errore apprezzabile, ma 3,518 no: moltiplicando tutto per 2 si ottengono 2, 2 e 7, cioè la formula del bicromato di potassio.",
+"3,518 è troppo lontano da 4 per essere arrotondato: l'errore sarebbe superiore a quello sperimentale ammissibile.",
+"Nessun valore si scarta: tutti gli elementi trovati fanno parte del composto.",
+"Dividere ancora non cambia il problema, perché i rapporti restano gli stessi."
+],
+"tag": "formule"
+},
+{
+"id": "C21-5",
+"testo": "Un composto contiene 40,0% di C, 6,7% di H e 53,3% di O. La sua formula minima è:",
+"opzioni": ["CH2O", "C2H4O2", "CH4O", "C2H6O"],
+"giusta": 0,
+"perche": [
+"40/12 = 3,33; 6,7/1 = 6,7; 53,3/16 = 3,33. Dividendo per 3,33 si ottiene 1 : 2 : 1.",
+"È la formula molecolare dell'acido acetico, cioè il doppio della minima: la minima usa sempre i numeri interi più piccoli.",
+"Il rapporto fra carbonio e idrogeno sarebbe 1 : 4, mentre dai dati esce 1 : 2.",
+"Non torna nessun rapporto: contiene due carboni e un solo ossigeno, mentre qui carbonio e ossigeno sono in rapporto 1 : 1."
+],
+"tag": "formule"
+},
+{
+"id": "C21-6",
+"testo": "La formula molecolare rispetto alla formula minima:",
+"opzioni": ["È un suo multiplo intero, ricavabile conoscendo la massa molecolare", "È sempre identica alla formula minima", "Si ricava dalle sole percentuali degli elementi", "È sempre esattamente il doppio"],
+"giusta": 0,
+"perche": [
+"Se la minima è CaHbOc, la molecolare è CnaHnbOnc con n intero maggiore o uguale a 1: per trovare n serve la massa molecolare.",
+"Coincidono solo quando n vale 1, come nell'acqua. Nel benzene la minima è CH e la molecolare C6H6.",
+"Le sole percentuali non bastano: danno i rapporti, non il numero assoluto di atomi. Serve un dato in più.",
+"Il fattore può valere 1, 2, 6 o qualsiasi intero: dipende dalla massa molecolare."
+],
+"tag": "formule"
+},
+{
+"id": "C21-7",
+"testo": "Un composto ha formula minima CH2O e massa molecolare 180 u. La formula molecolare è:",
+"opzioni": ["C6H12O6", "C2H4O2", "CH2O", "C3H6O3"],
+"giusta": 0,
+"perche": [
+"La massa della formula minima è 12 + 2 + 16 = 30. Dividendo 180 per 30 si ottiene n = 6.",
+"Corrisponde a n = 2, cioè massa 60: sarebbe l'acido acetico, non un composto da 180.",
+"Sarebbe n = 1, con massa 30: molto lontano da 180.",
+"Corrisponde a n = 3, cioè massa 90: metà del valore richiesto. È l'errore di chi divide 180 per 60."
+],
+"tag": "formule"
+},
+{
+"id": "C21-8",
+"testo": "Per calcolare la percentuale in massa di un elemento a partire dalla formula molecolare si divide:",
+"opzioni": ["La massa di quell'elemento in una mole per la massa molare, per 100", "La massa molare per la massa dell'elemento, per 100", "Il numero di atomi dell'elemento per il numero totale di atomi, per 100", "La massa atomica dell'elemento per 100"],
+"giusta": 0,
+"perche": [
+"In una mole di C2H6S ci sono 32,064 g di zolfo su 62,134 g totali: il rapporto per 100 dà 51,6%.",
+"Il rapporto invertito darebbe valori maggiori di 100, che non hanno senso come percentuale in massa.",
+"Quello darebbe la percentuale in numero di atomi, non in massa: gli atomi pesano diversamente fra loro.",
+"La massa atomica da sola non dice nulla senza il confronto con la massa dell'intera molecola."
+],
+"tag": "formule"
+},
+{
+"id": "C21-9",
+"testo": "Nella scrittura di una formula chimica, il pedice 1:",
+"opzioni": ["Viene sempre omesso per convenzione", "Va sempre scritto esplicitamente", "Si scrive solo per i non metalli", "Indica che l'elemento è assente"],
+"giusta": 0,
+"perche": [
+"Per questo la formula dell'acqua si scrive H2O e non H2O1: due atomi di idrogeno e uno di ossigeno.",
+"Scriverlo non è errato dal punto di vista del significato, ma non è la scrittura convenzionale.",
+"La convenzione vale per tutti gli elementi, senza distinzione.",
+"Un elemento assente non compare affatto nella formula. Il pedice 1 significa un atomo presente."
+],
+"tag": "formule"
+},
+{
+"id": "C21-10",
+"testo": "Per i composti ionici come MgCl2, la formula rappresenta:",
+"opzioni": ["L'unità formula, cioè il rapporto di combinazione fra gli ioni", "Una molecola realmente esistente", "Il numero di coordinazione del catione", "La massa in grammi del composto"],
+"giusta": 0,
+"perche": [
+"I composti ionici non danno molecole discrete: sono reticoli, e la formula indica soltanto in che rapporto magnesio e cloro si combinano.",
+"Le molecole come unità realmente esistenti si trovano nei composti covalenti, per esempio nella CO2.",
+"Il numero di coordinazione riguarda quanti ioni circondano uno ione nel reticolo, ed è un'altra grandezza.",
+"La formula non esprime una massa: da essa si calcola la massa molare, ma non la contiene."
+],
+"tag": "formule"
+},
+{
+"id": "C21-11",
+"testo": "Il simbolo Zn, oltre a indicare l'elemento zinco, rappresenta anche:",
+"opzioni": ["Un singolo atomo oppure una mole, cioè 65,37 g di zinco", "Soltanto una mole, mai un singolo atomo", "Il numero atomico dello zinco", "Un grammo di zinco"],
+"giusta": 0,
+"perche": [
+"I simboli hanno un significato sia qualitativo, il tipo di sostanza, sia quantitativo: un atomo o una mole di atomi.",
+"Vale per entrambi i livelli, microscopico e macroscopico: è proprio questo il doppio significato della simbologia chimica.",
+"Il numero atomico è 30 e non è contenuto nel simbolo: va letto sulla tavola periodica.",
+"Un grammo è una quantità arbitraria e non ha alcun legame con il simbolo dell'elemento."
+],
+"tag": "formule"
+},
+{
+"id": "C21-12",
+"testo": "L'analisi qualitativa di un campione serve a determinare:",
+"opzioni": ["Quali elementi sono presenti nel composto", "In che quantità è presente ciascun elemento", "La massa molecolare del composto", "La formula molecolare"],
+"giusta": 0,
+"perche": [
+"È il primo passaggio: si stabilisce quali specie chimiche semplici ci sono, prima di misurarne le quantità.",
+"Le quantità si ricavano con l'analisi quantitativa, che viene dopo ed è un procedimento diverso.",
+"La massa molecolare richiede metodi separati e serve poi a passare dalla formula minima alla molecolare.",
+"La formula molecolare è il punto di arrivo di tutta la procedura, non l'esito di una singola analisi."
+],
+"tag": "formule"
+},
+{
+"id": "C21-13",
+"testo": "L'analisi della cisteina dà i rapporti molari C 3,05 : H 7,12 : N 1 : O 2,07 : S 1,024. La formula minima è:",
+"opzioni": ["C3H7NO2S", "C3H7NO2S2", "C6H14N2O4S2", "CHNOS"],
+"giusta": 0,
+"perche": [
+"I valori si approssimano senza errore apprezzabile a 3, 7, 1, 2 e 1: sono già praticamente interi, quindi gli indici si leggono direttamente.",
+"Il rapporto dello zolfo è 1,024, che si approssima a 1 e non a 2: raddoppiarlo non è giustificato da nessun dato.",
+"È il doppio di tutti gli indici. La formula minima usa sempre i numeri interi più piccoli possibile.",
+"Ridurre tutto a 1 cancella i rapporti trovati: i valori 3, 7 e 2 sono significativi e vanno mantenuti."
+],
+"tag": "formule"
+},
+{
+"id": "C21-14",
+"testo": "Perché nella determinazione della formula minima si parte spesso da 100 g di composto?",
+"opzioni": ["Perché così le percentuali diventano direttamente grammi", "Perché 100 g corrispondono sempre a una mole", "Perché è la quantità minima analizzabile in laboratorio", "Perché la massa molare è sempre inferiore a 100"],
+"giusta": 0,
+"perche": [
+"Se il composto è al 55,81% di carbonio, in 100 g ci sono esattamente 55,81 g di carbonio: il numero si legge senza calcoli.",
+"Una mole pesa quanto la massa molare, che cambia da composto a composto: nessun legame con i 100 g.",
+"Le analisi si fanno su quantità molto minori: i 100 g sono una scelta di comodo nel calcolo, non un vincolo pratico.",
+"Moltissimi composti hanno massa molare ben superiore a 100 g/mol, a partire dal glucosio."
+],
+"tag": "formule"
+}
+]
+}

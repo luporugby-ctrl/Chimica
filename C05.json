@@ -1,0 +1,245 @@
+{
+"id": "C05",
+"titolo": "Materia, proprieta' e misura",
+"gruppo": "2. Struttura della materia",
+"origine": "dispensa",
+"fonti": [
+"MatProComp_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C05-1",
+"testo": "Una sostanza pura e' un tipo di materia che:",
+"opzioni": [
+"Non puo' essere separata in altre sostanze con processi fisici",
+"Contiene sempre un solo elemento",
+"E' sempre allo stato solido",
+"Ha composizione variabile a seconda dell'origine"
+],
+"giusta": 0,
+"perche": [
+"E' la definizione: composizione determinata e costante, proprieta' sempre uguali indipendentemente dalla provenienza. Per dividerla servono reazioni chimiche, non filtri o distillazioni.",
+"Anche i composti sono sostanze pure: l'acqua contiene due elementi ma e' una sostanza a tutti gli effetti.",
+"Lo stato fisico non c'entra: ossigeno gassoso, acqua liquida e ferro solido sono tutte sostanze pure.",
+"E' l'esatto contrario: la composizione fissa e' proprio cio' che distingue una sostanza da una miscela."
+],
+"tag": "materia"
+},
+{
+"id": "C05-2",
+"testo": "Una miscela omogenea si distingue da una eterogenea perche':",
+"opzioni": [
+"E' uniforme in ogni sua parte e costituisce un'unica fase",
+"Contiene una sola sostanza",
+"Non puo' essere separata nei suoi componenti",
+"E' sempre liquida"
+],
+"giusta": 0,
+"perche": [
+"L'omogenea, detta anche soluzione, e' un sistema monofasico. L'eterogenea ha piu' fasi distinte, separate da superfici limite dette interfacce.",
+"Se contenesse una sola sostanza non sarebbe una miscela: le miscele hanno per definizione due o piu' componenti.",
+"Ogni miscela, omogenea o no, si separa per via fisica: e' cio' che la distingue da un composto.",
+"L'aria e' una miscela omogenea gassosa, l'ottone una solida: lo stato fisico non decide l'omogeneita'."
+],
+"tag": "materia"
+},
+{
+"id": "C05-3",
+"testo": "Un elemento e' una sostanza che:",
+"opzioni": [
+"Non puo' essere decomposta in sostanze piu' semplici da nessuna reazione chimica",
+"Si separa nei suoi componenti per distillazione",
+"E' formata da due o piu' tipi di atomi",
+"Esiste solo allo stato gassoso"
+],
+"giusta": 0,
+"perche": [
+"E' il mattone di base: un solo tipo di atomo, nessuna reazione lo semplifica. Ad oggi se ne conoscono 118.",
+"La distillazione e' un processo fisico e separa le miscele: su una sostanza pura non ha alcun effetto sulla composizione.",
+"Due o piu' elementi legati chimicamente formano un composto, non un elemento.",
+"Gli elementi esistono in tutti gli stati: il ferro e' solido, il mercurio liquido, il cloro gassoso."
+],
+"tag": "materia"
+},
+{
+"id": "C05-4",
+"testo": "La legge delle proporzioni definite afferma che:",
+"opzioni": [
+"Gli elementi di un composto si combinano sempre secondo un rapporto fisso e costante",
+"Ogni composto contiene elementi in parti uguali",
+"Le proporzioni dipendono da come e' stato preparato il composto",
+"La massa dei prodotti e' uguale a quella dei reagenti"
+],
+"giusta": 0,
+"perche": [
+"In un composto puro le percentuali degli elementi sono fisse, qualunque sia l'origine: l'acqua e' sempre lo stesso rapporto di idrogeno e ossigeno, che venga dal rubinetto o da un ghiacciaio.",
+"Il rapporto e' costante ma quasi mai uno a uno in massa: nell'acqua l'ossigeno pesa circa otto volte l'idrogeno.",
+"E' proprio cio' che la legge nega: la composizione di un composto non dipende dalla sua storia.",
+"Quella e' la legge di conservazione della massa, un'altra legge fondamentale."
+],
+"tag": "materia"
+},
+{
+"id": "C05-5",
+"testo": "Una proprieta' fisica di una sostanza e' una caratteristica che:",
+"opzioni": [
+"Si osserva o si misura senza alterarne la composizione chimica",
+"Descrive la sua tendenza a trasformarsi in altre sostanze",
+"Si manifesta solo durante una reazione",
+"Dipende sempre dalla quantita' di campione"
+],
+"giusta": 0,
+"perche": [
+"Colore, densita', punto di fusione, durezza: si misurano lasciando la sostanza quella che e'. L'evaporazione dell'acqua e' una trasformazione fisica, cambia la forma ma non la composizione.",
+"La tendenza a mutarsi in altre sostanze definisce le proprieta' chimiche, come l'infiammabilita'.",
+"Se serve una reazione per osservarla, la proprieta' e' chimica per definizione.",
+"Molte proprieta' fisiche, come densita' e temperatura di fusione, sono intensive: non dipendono dalla quantita'."
+],
+"tag": "proprieta"
+},
+{
+"id": "C05-6",
+"testo": "Densita' e temperatura di fusione permettono di identificare una sostanza perche' sono proprieta':",
+"opzioni": [
+"Intensive: non dipendono dalla quantita' di campione",
+"Estensive: crescono con la quantita' di campione",
+"Chimiche: si misurano solo reagendo",
+"Approssimative: cambiano da campione a campione"
+],
+"giusta": 0,
+"perche": [
+"Un cucchiaio o una pentola di olio hanno la stessa densita': la proprieta' intensiva e' la carta d'identita' della sostanza, come il sapore di un brodo che non dipende da quanto ne assaggi.",
+"Massa e volume sono estensive: raddoppiando il campione raddoppiano, quindi non identificano nulla.",
+"Sono proprieta' fisiche: si misurano senza trasformare la sostanza.",
+"Su una sostanza pura sono costanti e riproducibili: e' proprio questo che le rende utili per identificarla."
+],
+"tag": "proprieta"
+},
+{
+"id": "C05-7",
+"testo": "Un blocchetto di metallo ha massa 27 g e volume 10 cm3. La sua densita' e':",
+"opzioni": [
+"2,7 g/cm3",
+"270 g/cm3",
+"0,37 g/cm3",
+"37 g/cm3"
+],
+"giusta": 0,
+"perche": [
+"d = massa/volume = 27/10 = 2,7 g/cm3: e' il valore tipico dell'alluminio. Per i solidi l'unita' e' g/cm3, per i liquidi g/mL, per i gas g/L.",
+"270 viene dal moltiplicare invece che dividere: la densita' e' massa PER unita' di volume, quindi si divide.",
+"0,37 e' il rapporto invertito, volume su massa: un solido metallico con densita' minore dell'acqua dovrebbe galleggiare, controllo rapido che qualcosa non torna.",
+"37 nasce da un errore di conto: 27 diviso 10 sposta la virgola di un posto, non aggiunge cifre."
+],
+"tag": "proprieta"
+},
+{
+"id": "C05-8",
+"testo": "La differenza tra massa e peso e' che:",
+"opzioni": [
+"La massa e' una quantita' di materia, il peso e' la forza di gravita' che agisce su di essa",
+"Sono la stessa grandezza con unita' diverse",
+"Il peso e' costante ovunque, la massa cambia",
+"La massa esiste solo sulla Terra"
+],
+"giusta": 0,
+"perche": [
+"Un astronauta nello spazio puo' non avere peso, ma non puo' non avere massa: la massa resta, la forza di gravita' che la tira puo' mancare.",
+"Sono concetti diversi: una e' una proprieta' del corpo, l'altro dipende anche dall'accelerazione di gravita' del posto.",
+"E' l'esatto contrario: la massa e' invariante, il peso cambia con la gravita' locale.",
+"La massa e' ovunque: e' il peso a dipendere dal campo gravitazionale in cui il corpo si trova."
+],
+"tag": "misura"
+},
+{
+"id": "C05-9",
+"testo": "Quante cifre significative ha il numero 0,0080?",
+"opzioni": [
+"2",
+"4",
+"3",
+"1"
+],
+"giusta": 0,
+"perche": [
+"Gli zeri a sinistra servono solo a posizionare la virgola e non contano; lo zero finale dopo l'8 invece si', perche' dichiara la precisione della misura: restano 8 e 0, due cifre.",
+"Quattro sarebbe contare anche i due zeri iniziali, che sono solo segnaposto.",
+"Tre verrebbe includendo uno dei due zeri iniziali: nessuno dei due e' significativo.",
+"Una sola ignorerebbe lo zero finale, che invece e' significativo: 0,0080 e' una misura piu' precisa di 0,008."
+],
+"tag": "misura"
+},
+{
+"id": "C05-10",
+"testo": "Il risultato della somma 27,8 + 3,175 + 42,24 espresso correttamente e':",
+"opzioni": [
+"73,2",
+"73,215",
+"73,22",
+"73"
+],
+"giusta": 0,
+"perche": [
+"In addizione e sottrazione comandano le cifre decimali: il dato meno preciso e' 27,8 con un solo decimale, quindi il risultato si arrotonda a un decimale.",
+"73,215 e' il valore grezzo della calcolatrice: dichiara una precisione che il dato 27,8 non possiede.",
+"Due decimali andrebbero bene se il dato meno preciso ne avesse due: qui ne ha uno solo.",
+"Arrotondare all'intero butta via precisione reale: la regola chiede un decimale, non zero."
+],
+"tag": "misura"
+},
+{
+"id": "C05-11",
+"testo": "La differenza tra precisione e accuratezza di una misura e':",
+"opzioni": [
+"La precisione indica l'accordo tra misure ripetute, l'accuratezza la vicinanza al valore reale",
+"Sono sinonimi",
+"L'accuratezza indica l'accordo tra le misure ripetute",
+"La precisione dipende solo dall'errore umano"
+],
+"giusta": 0,
+"perche": [
+"Come tirare in porta: cinque calci tutti nello stesso angolo sbagliato sono precisi ma non accurati; centrare l'incrocio giusto e' l'accuratezza.",
+"Non sono sinonimi: una serie di misure puo' essere molto ripetibile e comunque lontana dal valore vero, per esempio con uno strumento starato.",
+"E' la definizione scambiata: l'accordo tra misure ripetute si chiama precisione.",
+"L'errore puo' essere strumentale o umano, e riguarda entrambe: la distinzione precisione-accuratezza non dipende dalla fonte dell'errore."
+],
+"tag": "misura"
+},
+{
+"id": "C05-12",
+"testo": "Tra i tre stati di aggregazione, l'unico comprimibile e':",
+"opzioni": [
+"Il gas, che non ha ne' volume ne' forma propria",
+"Il solido",
+"Il liquido",
+"Tutti e tre allo stesso modo"
+],
+"giusta": 0,
+"perche": [
+"Il gas si adatta al volume e alla forma del recipiente e si lascia comprimere: tra le sue particelle c'e' spazio vuoto in abbondanza.",
+"Il solido ha volume e forma propri ed e' incomprimibile: le particelle sono gia' a contatto.",
+"Il liquido prende la forma del recipiente ma conserva il volume: incomprimibile anche lui.",
+"Solo il gas si comprime in modo apprezzabile: e' il criterio che lo distingue nella tabella degli stati."
+],
+"tag": "materia"
+},
+{
+"id": "C05-13",
+"testo": "La differenza di scrittura tra Co e CO e' che:",
+"opzioni": [
+"Co e' l'elemento cobalto, CO la molecola di monossido di carbonio",
+"Sono due modi di scrivere il carbonio",
+"Co e' un composto e CO un elemento",
+"Non c'e' alcuna differenza"
+],
+"giusta": 0,
+"perche": [
+"La seconda lettera di un simbolo e' sempre minuscola: la maiuscola interna segnala due elementi distinti, C e O, legati in una molecola.",
+"Il carbonio si scrive C: la 'o' minuscola trasforma il simbolo in cobalto.",
+"E' l'esatto contrario: la minuscola indica l'elemento singolo, le due maiuscole il composto.",
+"La differenza e' sostanziale: un metallo da una parte, un gas tossico dall'altra."
+],
+"tag": "materia"
+}
+]
+}

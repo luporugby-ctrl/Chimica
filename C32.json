@@ -1,0 +1,227 @@
+{
+"id": "C32",
+"titolo": "pH di acidi e basi forti",
+"gruppo": "8. Acidi e basi",
+"origine": "dispensa",
+"fonti": [
+"CalSolAciBaFo_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C32-1",
+"testo": "In una soluzione acquosa di un acido forte come HCl o HNO3, la concentrazione di H3O+ e':",
+"opzioni": [
+"Praticamente uguale alla concentrazione iniziale dell'acido, perche' la dissociazione e' completa",
+"Sempre la meta' della concentrazione dell'acido",
+"Trascurabile",
+"Uguale a quella degli ioni OH-"
+],
+"giusta": 0,
+"perche": [
+"L'acido forte si dissocia al cento per cento: ogni molecola di HCl consegna il suo protone all'acqua, e il contributo dell'autoionizzazione dell'acqua e' quasi sempre trascurabile.",
+"Nessun dimezzamento: la stechiometria della dissociazione e' uno a uno per gli acidi monoprotici.",
+"Trascurabile e' semmai il contributo dell'acqua: l'acido domina la scena.",
+"L'uguaglianza con OH- descrive la neutralita': in soluzione acida gli H3O+ prevalgono di gran lunga."
+],
+"tag": "forti"
+},
+{
+"id": "C32-2",
+"testo": "Il pH di una soluzione 0,010 M di HCl e':",
+"opzioni": [
+"2,0",
+"1,0",
+"12,0",
+"0,010"
+],
+"giusta": 0,
+"perche": [
+"Acido forte: [H3O+] = 0,010 = 1,0 x 10^-2 M, e pH = -log(1,0 x 10^-2) = 2,0. Con le potenze di dieci il pH si legge dall'esponente.",
+"1,0 corrisponderebbe a una soluzione dieci volte piu' concentrata, 0,10 M.",
+"12,0 e' il pH di una base con quella concentrazione: il segno dell'esponente e' stato gestito male.",
+"0,010 e' la concentrazione, non il pH: manca il passaggio del logaritmo."
+],
+"tag": "forti"
+},
+{
+"id": "C32-3",
+"testo": "Se una soluzione di acido forte ha pH 3,0, la concentrazione di H3O+ e':",
+"opzioni": [
+"1,0 x 10^-3 M",
+"3,0 M",
+"1,0 x 10^-11 M",
+"0,30 M"
+],
+"giusta": 0,
+"perche": [
+"Percorso inverso: [H3O+] = 10 elevato a meno pH = 10^-3 M. Per un acido forte monoprotico questa e' anche la concentrazione dell'acido.",
+"3,0 M confonde il pH con la molarita': il pH e' un esponente cambiato di segno.",
+"10^-11 sarebbe la concentrazione di OH- in quella soluzione, il complemento rispetto a Kw.",
+"0,30 non discende da nessuna operazione corretta sul pH: la scala e' logaritmica."
+],
+"tag": "forti"
+},
+{
+"id": "C32-4",
+"testo": "Il prodotto ionico dell'acqua Kw = [H3O+] x [OH-] a 25 gradi C vale:",
+"opzioni": [
+"1,0 x 10^-14",
+"1,0 x 10^-7",
+"7,0",
+"14,0"
+],
+"giusta": 0,
+"perche": [
+"E' la costante dell'autoionizzazione dell'acqua: il prodotto delle due concentrazioni vale sempre 10^-14, in qualsiasi soluzione acquosa. Nota una delle due, l'altra si ricava per divisione.",
+"10^-7 e' la concentrazione di ciascuno ione nell'acqua pura e neutra: il prodotto delle due fa 10^-14.",
+"7,0 e' il pH neutro, non il valore di Kw.",
+"14,0 e' la somma di pH e pOH, che discende da Kw prendendo i logaritmi."
+],
+"tag": "acqua"
+},
+{
+"id": "C32-5",
+"testo": "Il pH di una soluzione 0,010 M di NaOH (base forte) e':",
+"opzioni": [
+"12,0",
+"2,0",
+"10,0",
+"7,0"
+],
+"giusta": 0,
+"perche": [
+"Base forte tutta dissociata: [OH-] = 10^-2, quindi pOH = 2,0 e pH = 14,0 - 2,0 = 12,0. In alternativa: [H3O+] = Kw/[OH-] = 10^-12.",
+"2,0 e' il pOH, oppure il pH che avrebbe un acido a quella concentrazione: il finale della scala e' quello opposto.",
+"10,0 sbaglierebbe di due unita': l'esponente di [OH-] va sottratto da 14 per intero.",
+"7,0 e' la neutralita': una base 0,010 M ne e' lontanissima."
+],
+"tag": "forti"
+},
+{
+"id": "C32-6",
+"testo": "In una soluzione di Ba(OH)2 (base forte) di concentrazione C, la concentrazione di ioni OH- e':",
+"opzioni": [
+"2 x C, perche' ogni unita' libera due ioni ossidrile",
+"C",
+"C/2",
+"Kw x C"
+],
+"giusta": 0,
+"perche": [
+"La dissociazione da' Ba2+ piu' 2 OH-: la stechiometria raddoppia gli ossidrili. Dimenticare il fattore due e' l'errore tipico con gli idrossidi dei metalli del secondo gruppo.",
+"C varrebbe per una base con un solo OH nella formula, come NaOH o KOH.",
+"C/2 divide dove bisognerebbe moltiplicare: il verso della stechiometria e' l'opposto.",
+"Kw serve dopo, per passare da OH- a H3O+: non per contare gli ioni della dissociazione."
+],
+"tag": "forti"
+},
+{
+"id": "C32-7",
+"testo": "A parita' di concentrazione 0,10 M, una soluzione di HCl rispetto a una di acido acetico ha:",
+"opzioni": [
+"pH piu' basso, perche' l'acido forte libera tutti i suoi protoni",
+"pH piu' alto",
+"Lo stesso pH",
+"pH esattamente doppio"
+],
+"giusta": 0,
+"perche": [
+"HCl 0,10 M da' pH 1,0; l'acetico, dissociato per circa l'1%, si ferma verso 2,9: stessa etichetta di concentrazione, acidita' effettiva molto diversa. La forza dell'acido conta quanto la quantita'.",
+"Il pH piu' alto spetta all'acido debole, che trattiene la maggior parte dei suoi protoni.",
+"Lo stesso pH richiederebbe la stessa frazione dissociata: e' proprio cio' che distingue forte e debole.",
+"Il pH e' logaritmico: i rapporti tra pH non seguono proporzioni semplici tra concentrazioni dissociate."
+],
+"tag": "confronti"
+},
+{
+"id": "C32-8",
+"testo": "Il pH di una soluzione e' definito come:",
+"opzioni": [
+"Il logaritmo decimale, cambiato di segno, della concentrazione di H3O+",
+"La concentrazione di H3O+ in mol/L",
+"Il logaritmo della concentrazione di OH-",
+"La temperatura della soluzione"
+],
+"giusta": 0,
+"perche": [
+"pH = -log[H3O+]: una scala logaritmica comprime concentrazioni che spaziano su quattordici ordini di grandezza in numeri maneggevoli.",
+"La concentrazione e' l'argomento del logaritmo, non il pH stesso.",
+"Il logaritmo cambiato di segno degli OH- definisce il pOH, il gemello basico.",
+"La temperatura influenza Kw ma non entra nella definizione di pH."
+],
+"tag": "definizioni"
+},
+{
+"id": "C32-9",
+"testo": "L'autoionizzazione dell'acqua e' l'equilibrio:",
+"opzioni": [
+"2 H2O in equilibrio con H3O+ + OH-",
+"H2O che si decompone in H2 e O2",
+"H2O in equilibrio con 2 H+ + O2-",
+"L'acqua non si ionizza mai"
+],
+"giusta": 0,
+"perche": [
+"Due molecole d'acqua si scambiano un protone: una diventa idronio, l'altra ossidrile. L'equilibrio esiste anche nell'acqua purissima ed e' governato dal prodotto ionico Kw.",
+"La decomposizione in idrogeno e ossigeno e' una reazione redox, tutt'altra cosa.",
+"Lo ione O2- libero non esiste in acqua: il protone passa intero da una molecola all'altra.",
+"Si ionizza pochissimo, ma sempre: 10^-7 mol/L di ciascuno ione a 25 gradi nell'acqua pura."
+],
+"tag": "acqua"
+},
+{
+"id": "C32-10",
+"testo": "Nel calcolo del pH di un acido forte, gli H3O+ prodotti dall'autoionizzazione dell'acqua:",
+"opzioni": [
+"Si trascurano, perche' irrilevanti rispetto a quelli dell'acido",
+"Vanno sempre sommati con precisione",
+"Sono gli unici da considerare",
+"Annullano quelli dell'acido"
+],
+"giusta": 0,
+"perche": [
+"L'acido domina: 10^-2 mol/L dall'acido contro meno di 10^-7 dall'acqua, per giunta soppressa dall'equilibrio. L'approssimazione salta solo per soluzioni estremamente diluite.",
+"La somma precisa cambierebbe il risultato oltre la settima cifra: fatica inutile.",
+"Considerare solo l'acqua significherebbe ignorare l'acido, il protagonista.",
+"Gli ioni si sommano, non si elidono: sono la stessa specie chimica."
+],
+"tag": "forti"
+},
+{
+"id": "C32-11",
+"testo": "Una soluzione di KOH ha pH 13,0: la concentrazione della base e':",
+"opzioni": [
+"0,10 M",
+"13 M",
+"1,0 x 10^-13 M",
+"0,013 M"
+],
+"giusta": 0,
+"perche": [
+"pOH = 14,0 - 13,0 = 1,0, quindi [OH-] = 0,10 M; essendo KOH una base forte completamente dissociata, quella e' anche la concentrazione della base.",
+"13 M confonde il pH con la molarita'.",
+"10^-13 e' la concentrazione degli H3O+, la specie in minoranza in ambiente basico.",
+"0,013 non discende da nessun passaggio corretto sulla scala logaritmica."
+],
+"tag": "forti"
+},
+{
+"id": "C32-12",
+"testo": "A 25 gradi C, la scala del pH funziona cosi':",
+"opzioni": [
+"pH minore di 7 acido, uguale a 7 neutro, maggiore di 7 basico",
+"pH maggiore di 7 acido",
+"pH uguale a 0 neutro",
+"Il pH puo' valere solo 7"
+],
+"giusta": 0,
+"perche": [
+"A pH 7 le concentrazioni di H3O+ e OH- si equivalgono a 10^-7: sotto comanda l'idronio (acido), sopra l'ossidrile (basico).",
+"Sopra 7 la soluzione e' basica: la scala cresce verso l'alcalinita'.",
+"pH 0 corrisponde a un acido forte 1 M: il massimo dell'acidita' ordinaria, non la neutralita'.",
+"La scala corre con continuita': il 7 e' solo il punto di pareggio."
+],
+"tag": "definizioni"
+}
+]
+}

@@ -1,0 +1,242 @@
+{
+"id": "C20",
+"titolo": "Legami chimici e ibridazione",
+"gruppo": "2. Struttura della materia",
+"origine": "LegChimEibrid_Mercatorum.pdf",
+"domande": [
+{
+"id": "C20-1",
+"testo": "Alla formazione di un legame chimico contribuiscono:",
+"opzioni": ["Esclusivamente gli elettroni di valenza", "Tutti gli elettroni dell'atomo", "I protoni e i neutroni del nucleo", "Solo gli elettroni dei livelli interni"],
+"giusta": 0,
+"perche": [
+"Sono gli elettroni in eccesso rispetto alla configurazione del gas nobile che precede l'atomo: gli unici disponibili a essere ceduti, acquistati o condivisi.",
+"Gli elettroni interni sono schermati e trattenuti dal nucleo: restano fuori dal gioco del legame.",
+"Il nucleo non partecipa al legame chimico. Se cambiassero i protoni cambierebbe l'elemento stesso.",
+"È l'esatto contrario: sono quelli esterni, non quelli interni, a formare i legami."
+],
+"tag": "legami"
+},
+{
+"id": "C20-2",
+"testo": "La capacità di un atomo di cedere, acquistare o compartecipare elettroni è misurata da:",
+"opzioni": ["L'elettronegatività (χ)", "Il numero atomico", "La massa atomica", "Il numero di coordinazione"],
+"giusta": 0,
+"perche": [
+"È proprio la grandezza che stabilisce quale tipo di legame si formerà: χ simili danno covalente, χ molto diverse danno ionico.",
+"Il numero atomico dice quanti protoni ci sono, non quanto l'atomo attira gli elettroni di legame.",
+"La massa non ha alcun rapporto con la tendenza a cedere o acquistare elettroni.",
+"Il numero di coordinazione riguarda quanti ioni circondano uno ione in un solido, e viene dopo la formazione del legame."
+],
+"tag": "legami"
+},
+{
+"id": "C20-3",
+"testo": "Perché si formi una molecola è necessario che:",
+"opzioni": ["La molecola sia più stabile degli elementi che la costituiscono", "La molecola sia meno stabile degli atomi isolati", "I due atomi abbiano la stessa massa", "I due atomi abbiano la stessa elettronegatività"],
+"giusta": 0,
+"perche": [
+"L'energia dei due atomi legati deve essere minore di quando sono separati a distanza infinita: è la condizione che rende il legame conveniente.",
+"Se fosse meno stabile la molecola si romperebbe da sola: il sistema andrebbe verso l'energia più bassa, cioè gli atomi separati.",
+"La massa non entra nella condizione di stabilità.",
+"Elettronegatività uguali danno un legame covalente puro, ma il legame si forma anche fra atomi con χ diverse."
+],
+"tag": "legami"
+},
+{
+"id": "C20-4",
+"testo": "In una molecola biatomica, la lunghezza di legame è:",
+"opzioni": ["La distanza media fra i nuclei dei due atomi legati", "La somma dei due raggi atomici", "La distanza fra gli elettroni condivisi", "L'estensione della nube elettronica"],
+"giusta": 0,
+"perche": [
+"È la distanza a cui l'energia potenziale è minima: il punto in cui attrazione e repulsione si pareggiano.",
+"I raggi atomici cambiano quando gli atomi si legano: sommarli dà un valore che non corrisponde alla distanza reale.",
+"Gli elettroni condivisi non hanno una posizione fissa: occupano una regione di alta densità fra i nuclei.",
+"La nube elettronica è una regione di probabilità, non ha un confine netto da cui misurare."
+],
+"tag": "legami"
+},
+{
+"id": "C20-5",
+"testo": "Per distanze internucleari molto piccole, l'energia potenziale del sistema:",
+"opzioni": ["Aumenta bruscamente, perché prevalgono le forze repulsive", "Continua a diminuire fino a zero", "Resta costante al valore minimo", "Diventa nulla come a distanza infinita"],
+"giusta": 0,
+"perche": [
+"A distanze molto piccole vincono le repulsioni elettrone-elettrone e nucleo-nucleo: è il ramo che sale a picco nel grafico.",
+"L'energia diminuisce solo fino alla distanza di legame: oltre quel punto risale.",
+"Il minimo si trova alla distanza di legame, non a distanze inferiori.",
+"L'energia vale zero a distanza infinita, dove le forze di interazione sono nulle: la situazione opposta."
+],
+"tag": "legami"
+},
+{
+"id": "C20-6",
+"testo": "L'energia di dissociazione del legame corrisponde:",
+"opzioni": ["Alla profondità della buca di energia potenziale", "Alla distanza di legame", "All'energia degli atomi separati", "Al momento di dipolo della molecola"],
+"giusta": 0,
+"perche": [
+"È l'energia che bisogna fornire per riportare i due atomi dal minimo fino a distanza infinita, dove l'energia vale zero.",
+"La distanza di legame è la posizione del minimo sull'asse orizzontale, non la sua profondità.",
+"L'energia degli atomi separati è lo zero di riferimento: è il punto di arrivo, non la differenza.",
+"Il momento di dipolo riguarda la separazione delle cariche, non l'energia del legame."
+],
+"tag": "legami"
+},
+{
+"id": "C20-7",
+"testo": "Per formare un legame covalente è necessario che nel livello più esterno ci sia:",
+"opzioni": ["Un orbitale atomico occupato da un solo elettrone (spaiato)", "Un orbitale completamente pieno", "Un orbitale completamente vuoto", "Una carica netta positiva o negativa"],
+"giusta": 0,
+"perche": [
+"Il legame covalente nasce dalla sovrapposizione di due orbitali contenenti ciascuno un elettrone spaiato, che formano un unico orbitale di legame.",
+"Un orbitale pieno ha già la sua coppia: non ha nulla da condividere.",
+"Un orbitale vuoto non porta elettroni al legame covalente ordinario.",
+"La formazione di ioni caratterizza il legame ionico, non il covalente: nel covalente gli ioni non si formano."
+],
+"tag": "covalente"
+},
+{
+"id": "C20-8",
+"testo": "Il legame π si distingue dal legame σ perché:",
+"opzioni": ["La sovrapposizione avviene fuori dall'asse internucleare ed è più debole", "Ha simmetria cilindrica attorno all'asse internucleare", "È sempre più forte del legame σ", "Si forma solo fra orbitali di tipo s"],
+"giusta": 0,
+"perche": [
+"I nuclei sono meno schermati e la sovrapposizione è minore: il legame π è più debole e i suoi elettroni sono più reattivi.",
+"La simmetria cilindrica attorno all'asse è la caratteristica del legame σ, non del π.",
+"È il contrario: il π è il più debole dei due, ed è quello che si rompe per primo nelle reazioni.",
+"I legami fra due orbitali s sono di tipo σ. Il π nasce da orbitali p affiancati."
+],
+"tag": "covalente"
+},
+{
+"id": "C20-9",
+"testo": "Nell'ibridazione, il numero di orbitali ibridi che si ottengono è:",
+"opzioni": ["Pari al numero di orbitali atomici di partenza", "Sempre quattro", "Sempre uno in meno di quelli di partenza", "Pari al numero di legami che l'atomo deve formare"],
+"giusta": 0,
+"perche": [
+"È una combinazione lineare: n orbitali atomici danno n orbitali ibridi equivalenti. Da s + 2p si ottengono tre orbitali sp².",
+"Quattro è il caso specifico dell'sp³. Con sp² sono tre, con sp sono due.",
+"Il numero si conserva esattamente: nessun orbitale sparisce nel rimescolamento.",
+"È vero che spesso coincide, ma la regola è sul numero di orbitali combinati, non sui legami: l'ammoniaca è sp³ pur formando tre legami."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C20-10",
+"testo": "La combinazione lineare di un orbitale s con tre orbitali p produce orbitali ibridi di tipo:",
+"opzioni": ["sp³", "sp²", "sp", "p³"],
+"giusta": 0,
+"perche": [
+"Un s più tre p danno quattro orbitali sp³, quelli che il carbonio usa nel metano.",
+"L'sp² viene da un s più due p: sono tre orbitali, non quattro.",
+"L'sp viene da un s più un solo p: due orbitali, disposti in linea.",
+"Non esiste un ibrido di soli orbitali p: nell'ibridazione entra sempre almeno un orbitale s."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C20-11",
+"testo": "Nella molecola di metano CH4, l'atomo di carbonio:",
+"opzioni": ["Ha ibridazione sp³ e forma quattro legami σ equivalenti", "Ha ibridazione sp² e forma tre legami", "Usa direttamente gli orbitali 2s e 2p senza ibridarsi", "Forma due legami σ e due legami π"],
+"giusta": 0,
+"perche": [
+"I quattro lobi degli ibridi sp³ si sovrappongono agli orbitali s dei quattro idrogeni: quattro legami semplici identici.",
+"L'sp² darebbe tre orbitali ibridi, mentre nel metano i legami C-H osservati sono quattro e tutti uguali.",
+"Senza ibridazione il carbonio ha configurazione [He]2s²2p² e non potrebbe spiegare quattro legami equivalenti: è esattamente il problema che l'ibridazione risolve.",
+"I legami π richiedono orbitali p non ibridati affiancati. Nel metano i legami sono tutti semplici, quindi tutti σ."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C20-12",
+"testo": "La grafite è un buon conduttore di elettricità lungo gli strati perché:",
+"opzioni": ["Il carbonio è ibridato sp² e gli elettroni p sono delocalizzati sullo strato", "Il carbonio è ibridato sp³ come nel diamante", "Contiene ioni liberi di muoversi", "Gli strati sono tenuti insieme da legami covalenti forti"],
+"giusta": 0,
+"perche": [
+"Restano orbitali p non ibridati che si espandono su tutto lo strato di anelli esagonali: gli elettroni si muovono liberamente lì dentro.",
+"L'sp³ è il diamante, dove ogni carbonio è legato ad altri quattro: proprio per questo il diamante è durissimo ma non conduce.",
+"Nella grafite non ci sono ioni: è carbonio puro, e la conduzione è dovuta agli elettroni delocalizzati.",
+"Gli strati sono tenuti insieme da deboli forze di dispersione, ed è per questo che la grafite sfalda e lascia il segno sulla carta."
+],
+"tag": "ibridazione"
+},
+{
+"id": "C20-13",
+"testo": "Se la differenza di elettronegatività Δχ fra due atomi è maggiore di 2, il legame è:",
+"opzioni": ["Ionico", "Covalente puro", "Covalente polare", "Metallico"],
+"giusta": 0,
+"perche": [
+"Oltre 2 la differenza è tale che gli elettroni non sono più condivisi ma trasferiti: si formano cationi e anioni.",
+"Il covalente puro (omopolare) richiede atomi con la stessa χ, cioè Δχ praticamente nulla.",
+"Il carattere intermedio, cioè il covalente polare, corrisponde a Δχ compresa fra 1 e 2.",
+"Il legame metallico si forma fra elementi entrambi poco elettronegativi, dove la differenza è piccola, non grande."
+],
+"tag": "polarita"
+},
+{
+"id": "C20-14",
+"testo": "Il momento di dipolo di una molecola si calcola come:",
+"opzioni": ["M = q · r", "M = q / r", "M = q + r", "M = q · r²"],
+"giusta": 0,
+"perche": [
+"È il prodotto della carica per la distanza fra i baricentri delle cariche positive e negative. Cresce sia aumentando la carica sia allontanandola.",
+"Il rapporto darebbe un momento più grande per cariche più vicine: l'opposto del comportamento reale.",
+"Una somma fra una carica e una distanza non ha senso dimensionale: sono grandezze diverse.",
+"L'esponente al quadrato non compare: la dipendenza dalla distanza è lineare."
+],
+"tag": "polarita"
+},
+{
+"id": "C20-15",
+"testo": "Nei solidi ionici, il numero di coordinazione:",
+"opzioni": ["Indica quanti ioni di carica opposta circondano uno ione, e vale 3, 4, 6 o 8", "È sempre uguale a 6", "Coincide con la carica dello ione", "Indica il numero di legami covalenti formati"],
+"giusta": 0,
+"perche": [
+"Dipende dalle dimensioni relative degli ioni: ioni più grandi ne possono ospitare attorno un numero maggiore.",
+"Sei è uno dei valori possibili, quello del cloruro di sodio, ma non è l'unico.",
+"La carica dello ione e il numero di vicini sono due cose indipendenti: nel fluoruro di calcio il calcio è +2 ma i vicini sono otto.",
+"Nel solido ionico non ci sono legami covalenti: gli ioni sono tenuti insieme da attrazione elettrostatica in tutte le direzioni."
+],
+"tag": "ionico"
+},
+{
+"id": "C20-16",
+"testo": "Nel modello del legame metallico, gli elettroni di valenza:",
+"opzioni": ["Sono delocalizzati sull'intero reticolo di ioni positivi", "Restano localizzati fra coppie di atomi vicini", "Vengono ceduti definitivamente agli atomi vicini", "Non partecipano al legame"],
+"giusta": 0,
+"perche": [
+"Gli ioni positivi occupano posizioni precise in una struttura ordinata e sono immersi in una nuvola elettronica comune: da qui conducibilità elettrica, conducibilità termica ed effetto fotoelettrico.",
+"La localizzazione fra due atomi è la caratteristica del legame covalente, non di quello metallico.",
+"La cessione definitiva a un altro atomo descrive il legame ionico, dove si formano cationi e anioni distinti.",
+"Sono proprio loro a formare il legame: la loro grande mobilità è ciò che tiene insieme il metallo."
+],
+"tag": "metallico"
+},
+{
+"id": "C20-17",
+"testo": "Le forze di London (o di Van der Waals) sono dovute a:",
+"opzioni": ["Dipoli istantanei che inducono dipoli nelle particelle vicine", "Cariche parziali permanenti delle molecole polari", "Trasferimento di elettroni fra molecole", "Condivisione di coppie elettroniche fra molecole"],
+"giusta": 0,
+"perche": [
+"Il movimento continuo degli elettroni rende la densità elettronica momentaneamente asimmetrica: il dipolo istantaneo ne induce uno nella particella vicina. Per questo anche i gas nobili si possono liquefare.",
+"I dipoli permanenti danno le attrazioni dipolo-dipolo, che sono un'altra cosa: le forze di London agiscono anche fra molecole non polari.",
+"Il trasferimento di elettroni è il legame ionico, che è un legame forte fra atomi, non un'interazione fra molecole.",
+"La condivisione di coppie è il legame covalente. Le forze intermolecolari sono molto più deboli e non condividono elettroni."
+],
+"tag": "intermolecolari"
+},
+{
+"id": "C20-18",
+"testo": "Il legame a idrogeno si osserva quando l'idrogeno è legato covalentemente a:",
+"opzioni": ["Fluoro, ossigeno o azoto", "Carbonio, silicio o zolfo", "Un qualsiasi metallo", "Un altro atomo di idrogeno"],
+"giusta": 0,
+"perche": [
+"Sono atomi piccoli e molto elettronegativi: il legame è fortemente polare e la carica all'estremo del dipolo risulta molto concentrata. Ne risultano attrazioni circa cinque volte più forti delle normali dipolo-dipolo.",
+"Il carbonio non è abbastanza elettronegativo; silicio e zolfo sono anche troppo grandi perché la carica si concentri.",
+"Con i metalli l'idrogeno forma idruri, non legami a idrogeno: manca la forte elettronegatività dell'altro atomo.",
+"Due idrogeni hanno la stessa elettronegatività: il legame è apolare e non c'è nessun dipolo da attrarre."
+],
+"tag": "intermolecolari"
+}
+]
+}

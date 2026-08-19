@@ -1,0 +1,203 @@
+{
+"id": "C23",
+"titolo": "pH di acidi e basi deboli",
+"gruppo": "4. Acidi, basi e pH",
+"origine": "CalSolAciBaDe_Mercatorum.pdf",
+"domande": [
+{
+"id": "C23-1",
+"testo": "In una soluzione di acido debole HA, la concentrazione di ioni idronio:",
+"opzioni": ["È minore della concentrazione iniziale dell'acido, perché si instaura un equilibrio", "È uguale alla concentrazione iniziale dell'acido", "È maggiore della concentrazione iniziale dell'acido", "Non dipende dalla concentrazione dell'acido"],
+"giusta": 0,
+"perche": [
+"Solo una frazione delle molecole cede il protone: l'equilibrio si ferma prima del completamento, quindi il pH è più alto di quello di un acido forte pari concentrato.",
+"L'uguaglianza vale per gli acidi forti, dove tutte le molecole si deprotonano.",
+"Non si possono produrre più ioni idronio delle molecole di acido disponibili.",
+"Dipende eccome: raddoppiando la concentrazione iniziale aumentano anche gli ioni idronio, seppure non proporzionalmente."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-2",
+"testo": "La costante di acidità di un acido debole HA è definita come:",
+"opzioni": ["Il rapporto fra il prodotto delle concentrazioni dei prodotti e quella di HA all'equilibrio", "Il rapporto fra la concentrazione di HA e quella dei prodotti", "La concentrazione di ioni idronio all'equilibrio", "La percentuale di molecole deprotonate"],
+"giusta": 0,
+"perche": [
+"Al numeratore stanno ione idronio e base coniugata, al denominatore l'acido indissociato: è la forma generale della costante di equilibrio applicata alla deprotonazione.",
+"Il rapporto invertito darebbe una costante che cresce quando l'acido è più debole: il contrario del significato voluto.",
+"Gli ioni idronio compaiono nell'espressione, ma la costante è un rapporto, non una concentrazione.",
+"La percentuale di deprotonazione dipende sia dalla costante sia dalla concentrazione: sono due grandezze distinte."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-3",
+"testo": "Nell'impostare la tabella di equilibrio, alla concentrazione iniziale dell'acido si sottrae x. Il termine x rappresenta:",
+"opzioni": ["Le moli per litro di acido che si deprotonano", "La costante di acidità", "Il pH della soluzione", "Il volume della soluzione"],
+"giusta": 0,
+"perche": [
+"È la variazione di concentrazione: la stessa quantità che l'acido perde compare come ioni idronio e come base coniugata, per la stechiometria uno a uno.",
+"La costante è un dato noto del problema; x è l'incognita da determinare.",
+"Il pH si calcola alla fine, dopo aver trovato x: è il logaritmo negativo di x.",
+"Il volume non entra nella tabella: tutte le quantità sono già espresse come concentrazioni."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-4",
+"testo": "L'approssimazione che consente di sostituire la concentrazione iniziale meno x con la sola concentrazione iniziale è lecita quando:",
+"opzioni": ["La concentrazione iniziale è almeno cento volte maggiore della costante di acidità", "La concentrazione iniziale è minore della costante di acidità", "Il pH risulta maggiore di 7", "L'acido è forte"],
+"giusta": 0,
+"perche": [
+"Con due ordini di grandezza di differenza, x risulta trascurabile rispetto alla concentrazione iniziale e l'errore introdotto resta sotto il cinque per cento.",
+"In quel caso x sarebbe confrontabile con la concentrazione iniziale e l'approssimazione crollerebbe.",
+"Un pH maggiore di 6 segnala semmai che va considerata l'autoprotolisi dell'acqua: è un problema diverso e ulteriore.",
+"Per gli acidi forti non c'è alcun equilibrio da approssimare: la dissociazione è completa."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-5",
+"testo": "Adottata l'approssimazione, la concentrazione di ioni idronio di un acido debole si calcola come:",
+"opzioni": ["La radice quadrata del prodotto fra costante di acidità e concentrazione iniziale", "Il prodotto fra costante di acidità e concentrazione iniziale", "Il rapporto fra costante di acidità e concentrazione iniziale", "La costante di acidità stessa"],
+"giusta": 0,
+"perche": [
+"L'espressione approssimata è x al quadrato diviso la concentrazione iniziale: risolvendo per x compare la radice quadrata.",
+"Dimenticare la radice porta a valori enormemente più piccoli e a un pH sbagliato di diverse unità.",
+"Il rapporto non deriva da alcun passaggio dell'equazione di equilibrio.",
+"La costante da sola non è una concentrazione: va combinata con quella iniziale dell'acido."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-6",
+"testo": "Il pH di una soluzione 1,00 M di acido acetico, con costante di acidità 1,8 × 10⁻⁵, è circa:",
+"opzioni": ["2,4", "4,7", "0,0", "5,0"],
+"giusta": 0,
+"perche": [
+"La radice del prodotto fra 1,00 e 1,8 × 10⁻⁵ dà 4,2 × 10⁻³ M di ioni idronio, il cui logaritmo negativo vale 2,4.",
+"4,7 è il pKa dell'acido acetico, cioè il logaritmo negativo della costante: coincide con il pH solo in una soluzione tampone equimolare.",
+"Sarebbe il pH di un acido forte 1 M: l'acido acetico è debole e il suo pH è più alto.",
+"È il risultato di chi prende il logaritmo della costante senza estrarre prima la radice."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-7",
+"testo": "La percentuale di deprotonazione di un acido debole si calcola come:",
+"opzioni": ["Concentrazione di ioni idronio diviso concentrazione iniziale, per 100", "Concentrazione iniziale diviso ioni idronio, per 100", "Costante di acidità per 100", "pH diviso 14, per 100"],
+"giusta": 0,
+"perche": [
+"Poiché ogni molecola deprotonata dà un ione idronio, il loro numero misura direttamente quante molecole hanno reagito rispetto a quelle di partenza.",
+"Il rapporto invertito darebbe percentuali molto maggiori di 100, prive di senso.",
+"La costante da sola non basta: la stessa costante dà percentuali diverse a concentrazioni diverse.",
+"Il pH è una scala logaritmica: dividerlo per 14 non produce alcuna percentuale significativa."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-8",
+"testo": "Una piccola percentuale di deprotonazione indica che:",
+"opzioni": ["L'acido è molto debole", "L'acido è molto forte", "La soluzione è basica", "La concentrazione iniziale è alta"],
+"giusta": 0,
+"perche": [
+"Poche molecole hanno ceduto il protone: è esattamente ciò che significa essere un acido debole, e corrisponde a una costante di acidità piccola.",
+"Un acido forte si deprotona al cento per cento.",
+"La soluzione resta comunque acida, con pH minore di 7: solo meno acida di quanto sarebbe con un acido forte.",
+"La percentuale di deprotonazione dipende dalla concentrazione, ma in senso inverso: diluendo, la percentuale aumenta."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-9",
+"testo": "Per una base debole B in acqua, l'equilibrio produce:",
+"opzioni": ["L'acido coniugato e ioni ossidrile", "Ioni idronio e la base coniugata", "Solo ioni ossidrile", "Nessuno ione: la base resta indissociata"],
+"giusta": 0,
+"perche": [
+"La base strappa un protone all'acqua: si forma il suo acido coniugato e restano ioni ossidrile, da cui il carattere basico della soluzione.",
+"Ioni idronio e base coniugata sono i prodotti della deprotonazione di un acido, non della protonazione di una base.",
+"Gli ioni ossidrile non compaiono da soli: si formano insieme all'acido coniugato, in rapporto uno a uno.",
+"L'equilibrio si instaura eccome, anche se spostato verso i reagenti: è ciò che rende la base debole ma non inerte."
+],
+"tag": "basi-deboli"
+},
+{
+"id": "C23-10",
+"testo": "Nel calcolo del pH di una base debole, dopo aver trovato la concentrazione di ioni ossidrile si procede:",
+"opzioni": ["Calcolando il pOH e ricavando il pH come 14 meno il pOH", "Applicando direttamente il logaritmo negativo per ottenere il pH", "Moltiplicando per la costante di basicità", "Sommando 7 al pOH"],
+"giusta": 0,
+"perche": [
+"La radice del prodotto fra costante di basicità e concentrazione dà gli ioni ossidrile; da lì il pOH, e la somma di pH e pOH vale 14 a 25 gradi.",
+"Applicare il logaritmo agli ossidrili dà il pOH, non il pH: manca l'ultimo passaggio.",
+"La costante è già stata usata per trovare gli ossidrili: rimoltiplicarla non ha senso.",
+"Il valore da usare è 14, non 7: sommare 7 darebbe un risultato sbagliato di sette unità."
+],
+"tag": "basi-deboli"
+},
+{
+"id": "C23-11",
+"testo": "Il pH di una soluzione 0,20 M di metilammina, con costante di basicità 3,6 × 10⁻⁴, è circa:",
+"opzioni": ["11,93", "2,07", "8,50", "7,00"],
+"giusta": 0,
+"perche": [
+"Gli ossidrili valgono 8,5 × 10⁻³ M, quindi il pOH è 2,07 e il pH risulta 14 meno 2,07.",
+"2,07 è il pOH: fermarsi lì e chiamarlo pH è l'errore più frequente su questi esercizi, e trasforma una base in un acido.",
+"Non corrisponde a nessun passaggio del calcolo: la metilammina è una base e dà un pH nettamente maggiore di 7.",
+"Il pH neutro varrebbe per l'acqua pura: una base debole lo sposta comunque verso l'alto."
+],
+"tag": "basi-deboli"
+},
+{
+"id": "C23-12",
+"testo": "Il pH di una soluzione 6,87 × 10⁻² M di ammoniaca, con costante di basicità 1,8 × 10⁻⁵, è circa:",
+"opzioni": ["11,05", "2,95", "9,10", "12,86"],
+"giusta": 0,
+"perche": [
+"La radice del prodotto dà ossidrili pari a 1,11 × 10⁻³ M, quindi pOH 2,95 e pH 11,05.",
+"È il pOH: va ancora sottratto a 14 per arrivare al pH.",
+"Sarebbe il risultato dimenticando di estrarre la radice quadrata nel calcolo degli ossidrili.",
+"Corrisponderebbe a una base molto più concentrata o molto più forte: l'ammoniaca è una base debole."
+],
+"tag": "basi-deboli"
+},
+{
+"id": "C23-13",
+"testo": "Lo ione ammonio in soluzione acquosa si comporta come:",
+"opzioni": ["Un acido debole, cedendo un protone all'acqua", "Una base debole, acquistando un protone", "Un sale neutro", "Un acido forte"],
+"giusta": 0,
+"perche": [
+"È l'acido coniugato dell'ammoniaca: cede un protone e libera ioni idronio, rendendo acida la soluzione. Con costante 5,5 × 10⁻¹⁰ una soluzione 0,15 M ha pH circa 5.",
+"L'ammoniaca è la base; il suo acido coniugato non può comportarsi anch'esso da base.",
+"Le soluzioni di sali di ammonio sono acide, non neutre: è l'effetto dell'idrolisi del catione.",
+"La costante è dell'ordine di 10⁻¹⁰, quindi l'acido è debolissimo: la dissociazione è minima."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-14",
+"testo": "Se al termine del calcolo la percentuale di deprotonazione supera il cinque per cento:",
+"opzioni": ["L'approssimazione non è valida e serve risolvere l'equazione di secondo grado", "Il risultato è comunque accettabile", "Bisogna raddoppiare il valore trovato", "L'acido va considerato forte"],
+"giusta": 0,
+"perche": [
+"Oltre quella soglia la quantità sottratta alla concentrazione iniziale non è più trascurabile: va risolta l'espressione esatta della costante in funzione di x.",
+"L'errore diventa sensibile e si ripercuote sul pH: accettarlo significa riportare un valore sbagliato.",
+"Nessuna correzione a occhio è ammessa: o l'approssimazione regge, o si risolve l'equazione completa.",
+"Un acido resta debole indipendentemente dalla percentuale calcolata: cambia solo il metodo di risoluzione."
+],
+"tag": "acidi-deboli"
+},
+{
+"id": "C23-15",
+"testo": "Il pKa di un acido debole si ottiene:",
+"opzioni": ["Come logaritmo negativo della costante di acidità", "Come logaritmo della costante di acidità", "Sottraendo la costante di acidità da 14", "Come radice quadrata della costante di acidità"],
+"giusta": 0,
+"perche": [
+"È la stessa trasformazione che porta dalla concentrazione al pH: da una costante di 1,4 × 10⁻⁴ si ricava un pKa di 3,85.",
+"Senza il segno meno il valore risulterebbe negativo, dato che le costanti degli acidi deboli sono minori di 1.",
+"La relazione con 14 lega pH e pOH, non riguarda la costante di acidità.",
+"La radice quadrata compare nel calcolo degli ioni idronio, non in quello del pKa."
+],
+"tag": "acidi-deboli"
+}
+]
+}

@@ -1,0 +1,227 @@
+{
+"id": "C27",
+"titolo": "Equilibrio chimico e azione di massa",
+"gruppo": "7. Equilibrio chimico",
+"origine": "dispensa",
+"fonti": [
+"EquChim_Mercatorum.pdf"
+],
+"domande": [
+{
+"id": "C27-1",
+"testo": "Un sistema chimico e' all'equilibrio quando:",
+"opzioni": [
+"La velocita' della reazione diretta uguaglia quella della reazione inversa",
+"Tutte le reazioni si sono fermate",
+"I reagenti sono esauriti",
+"Le concentrazioni di reagenti e prodotti sono uguali tra loro"
+],
+"giusta": 0,
+"perche": [
+"L'equilibrio e' dinamico: le due reazioni continuano alla stessa velocita', e per questo le concentrazioni appaiono costanti. Come i cambi continui in campo che lasciano invariato il numero di giocatori.",
+"Niente si ferma: a livello molecolare il traffico nei due sensi resta intenso, semplicemente si compensa.",
+"All'equilibrio convivono reagenti e prodotti: la trasformazione completa e' un caso limite, non la regola.",
+"Costanti non significa uguali: il rapporto all'equilibrio dipende dalla K, e puo' essere sbilanciatissimo."
+],
+"tag": "equilibrio"
+},
+{
+"id": "C27-2",
+"testo": "La doppia freccia in un'equazione chimica indica che:",
+"opzioni": [
+"La reazione e' reversibile: diretta e inversa avvengono contemporaneamente",
+"La reazione avviene due volte",
+"Servono due catalizzatori",
+"La reazione e' molto veloce"
+],
+"giusta": 0,
+"perche": [
+"Da sinistra a destra e da destra a sinistra, insieme: i prodotti si formano e ricostituiscono i reagenti in misura non trascurabile. La freccia singola descrive invece reazioni praticamente complete in un solo verso.",
+"Non e' una ripetizione: sono due processi opposti e simultanei.",
+"I catalizzatori non compaiono nella scrittura delle frecce: la reversibilita' e' una proprieta' della reazione.",
+"La doppia freccia parla di direzioni, non di velocita': un equilibrio puo' stabilirsi lentamente o in fretta."
+],
+"tag": "equilibrio"
+},
+{
+"id": "C27-3",
+"testo": "Per la reazione aA + bB in equilibrio con cC + dD, la legge di azione di massa scrive Kc come:",
+"opzioni": [
+"Il prodotto delle concentrazioni dei prodotti su quello dei reagenti, ciascuna elevata al proprio coefficiente",
+"La somma delle concentrazioni dei prodotti meno quella dei reagenti",
+"Il rapporto tra le masse di prodotti e reagenti",
+"Il prodotto di tutte le concentrazioni"
+],
+"giusta": 0,
+"perche": [
+"Kc uguale a C elevato c per D elevato d, diviso A elevato a per B elevato b: prodotti sopra, reagenti sotto, esponenti uguali ai coefficienti stechiometrici. A temperatura costante il quoziente e' costante.",
+"Somme e differenze non compaiono: la legge lavora con prodotti e quozienti di concentrazioni.",
+"Il nome inganna: 'azione di massa' e' storico, ma nella formula entrano le concentrazioni molari, non le masse.",
+"Senza dividere per i reagenti non si distingue equilibrio da non equilibrio: il rapporto e' l'essenza."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-4",
+"testo": "Dal punto di vista cinetico, la costante di equilibrio Kc corrisponde a:",
+"opzioni": [
+"Il rapporto tra la costante di velocita' diretta e quella inversa",
+"La somma delle due costanti di velocita'",
+"La velocita' della reazione all'equilibrio",
+"L'energia di attivazione della reazione"
+],
+"giusta": 0,
+"perche": [
+"Imponendo velocita' diretta uguale a inversa, kd per le concentrazioni dei reagenti uguaglia ki per quelle dei prodotti: riordinando, il rapporto delle concentrazioni vale kd/ki, cioe' Kc.",
+"La somma non compare mai: e' il rapporto a generare la costante di equilibrio.",
+"All'equilibrio le due velocita' sono uguali ma non nulle: Kc pero' e' un rapporto di concentrazioni, non una velocita'.",
+"L'energia di attivazione governa quanto in fretta si arriva all'equilibrio, non dove l'equilibrio si trova."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-5",
+"testo": "Una costante di equilibrio Kc molto grande indica che all'equilibrio:",
+"opzioni": [
+"La reazione e' fortemente spostata verso i prodotti",
+"La reazione e' fortemente spostata verso i reagenti",
+"La reazione e' molto veloce",
+"Non c'e' reazione"
+],
+"giusta": 0,
+"perche": [
+"Numeratore grande, denominatore piccolo: prodotti abbondanti, reagenti residui scarsi. Al limite di K enormi si omette la doppia freccia e si scrive la reazione come completa.",
+"Lo spostamento verso i reagenti corrisponde a K piccola: prodotti scarsi all'equilibrio.",
+"K non parla di tempi: una reazione con K gigantesca puo' essere lentissima senza catalizzatore.",
+"La reazione avviene eccome: e' quasi tutta convertita in prodotti."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-6",
+"testo": "Moltiplicando per 2 tutti i coefficienti di una reazione all'equilibrio, la costante di equilibrio:",
+"opzioni": [
+"Cambia: diventa il quadrato di quella originale",
+"Resta identica",
+"Raddoppia",
+"Si dimezza"
+],
+"giusta": 0,
+"perche": [
+"I coefficienti diventano esponenti nella legge di azione di massa: raddoppiarli eleva tutto al quadrato. La stechiometria non cambia, ma il valore numerico della K si': va sempre dichiarata la forma dell'equazione a cui la K si riferisce.",
+"L'identita' varrebbe se i coefficienti fossero semplici etichette: invece agiscono da esponenti.",
+"Il raddoppio confonde esponenti e fattori: la K originale viene elevata alla seconda, non moltiplicata per due.",
+"Il dimezzamento corrisponderebbe semmai alla radice, cioe' a dividere i coefficienti per due."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-7",
+"testo": "La velocita' di reazione riferita a un reagente si scrive con il segno meno perche':",
+"opzioni": [
+"La concentrazione del reagente diminuisce nel tempo, e la velocita' deve risultare positiva",
+"I reagenti hanno carica negativa",
+"La reazione va all'indietro",
+"E' un errore storico di notazione"
+],
+"giusta": 0,
+"perche": [
+"La variazione della concentrazione dei reagenti e' negativa: il segno meno davanti la ribalta, cosi' la velocita', in mol/L al secondo, esce positiva.",
+"La carica elettrica non c'entra con la convenzione dei segni cinetica.",
+"Il segno riguarda la scomparsa dei reagenti nella reazione diretta, non la direzione inversa.",
+"E' una scelta coerente, non un errore: velocita' positive per processi che avanzano."
+],
+"tag": "velocita"
+},
+{
+"id": "C27-8",
+"testo": "La legge di azione di massa nella forma con le concentrazioni vale per sistemi:",
+"opzioni": [
+"Omogenei, in fase gassosa o in soluzione, a temperatura costante",
+"Solo solidi",
+"Solo a pressione zero",
+"Qualunque, senza condizioni"
+],
+"giusta": 0,
+"perche": [
+"La formulazione della dispensa e' precisa: sistema omogeneo, gas o soluzione, e temperatura costante. Per gli equilibri eterogenei le specie condensate escono dall'espressione.",
+"Un sistema di soli solidi non e' il campo di applicazione della legge nella forma con le concentrazioni.",
+"La pressione non deve essere nulla: deve semmai essere definita la temperatura.",
+"Le condizioni contano: fase omogenea e T costante sono parte dell'enunciato."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-9",
+"testo": "Per i sistemi gassosi, Kc e Kp sono legate tra loro attraverso:",
+"opzioni": [
+"L'equazione di stato dei gas PV = nRT",
+"La legge di Coulomb",
+"Il principio di Pauli",
+"La legge di Hess"
+],
+"giusta": 0,
+"perche": [
+"La pressione parziale di ogni gas e' proporzionale alla sua concentrazione tramite p = (n/V)RT: sostituendo nella Kp si arriva alla relazione con la Kc.",
+"Coulomb governa le forze tra cariche, non gli equilibri gassosi.",
+"Pauli riguarda gli elettroni negli orbitali: un altro mondo.",
+"Hess somma entalpie di reazione: utile in termochimica, non qui."
+],
+"tag": "costanti"
+},
+{
+"id": "C27-10",
+"testo": "Per I2 + H2 in equilibrio con 2 HI si parte da 1,0 mol di ciascun reagente in 1,0 L; all'equilibrio restano 0,20 mol di I2. La Kc vale:",
+"opzioni": [
+"64",
+"8,0",
+"16",
+"0,016"
+],
+"giusta": 0,
+"perche": [
+"Reagito: 0,80 mol di I2 e di H2, che formano 1,6 mol di HI. Kc = (1,6)^2 / (0,20 x 0,20) = 2,56/0,04 = 64. La tabella iniziale-variazione-equilibrio tiene in ordine i conti.",
+"8,0 e' la radice del risultato: l'HI va elevato al quadrato, come impone il suo coefficiente.",
+"16 dimentica un fattore quattro nei conti del denominatore.",
+"0,016 e' il quoziente capovolto: reagenti sopra e prodotti sotto."
+],
+"tag": "calcoli"
+},
+{
+"id": "C27-11",
+"testo": "Nella tabella di equilibrio per I2 + H2 in equilibrio con 2 HI, se lo iodio diminuisce di x, l'HI:",
+"opzioni": [
+"Aumenta di 2x, come impone il coefficiente 2",
+"Aumenta di x",
+"Diminuisce di x",
+"Resta invariato"
+],
+"giusta": 0,
+"perche": [
+"Le variazioni seguono i coefficienti stechiometrici: ogni molecola di iodio consumata ne produce due di ioduro di idrogeno.",
+"L'aumento di x varrebbe con coefficiente 1: qui il rapporto e' uno a due.",
+"L'HI e' il prodotto: mentre i reagenti calano, lui cresce.",
+"Se restasse fermo non ci sarebbe reazione: le variazioni sono legate tra loro."
+],
+"tag": "calcoli"
+},
+{
+"id": "C27-12",
+"testo": "Per il processo elementare A + B che da' C + D, la velocita' della reazione diretta si scrive:",
+"opzioni": [
+"v = k x [A] x [B]",
+"v = k x ([A] + [B])",
+"v = k / ([A] x [B])",
+"v = [C] x [D]"
+],
+"giusta": 0,
+"perche": [
+"Per un processo elementare la legge cinetica segue la stechiometria: il prodotto delle concentrazioni dei reagenti per la costante di velocita'. Imponendo velocita' diretta uguale a inversa nasce la costante di equilibrio.",
+"Le concentrazioni si moltiplicano: la somma non descrive la probabilita' dell'incontro tra A e B.",
+"Il rapporto inverso direbbe che concentrare rallenta: contro ogni evidenza.",
+"I prodotti governano la reazione inversa, non la diretta."
+],
+"tag": "velocita"
+}
+]
+}

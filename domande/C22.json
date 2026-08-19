@@ -1,0 +1,177 @@
+{
+"id": "C22",
+"titolo": "pH di acidi e basi forti",
+"gruppo": "4. Acidi, basi e pH",
+"origine": "CalSolAciBaFo_Mercatorum.pdf",
+"domande": [
+{
+"id": "C22-1",
+"testo": "Un acido forte come HCl in soluzione acquosa:",
+"opzioni": ["Si dissocia completamente", "Si dissocia solo in minima parte", "Non si dissocia affatto", "Si dissocia solo se riscaldato"],
+"giusta": 0,
+"perche": [
+"La reazione va a completamento e si scrive con una freccia singola: tutte le molecole cedono il protone all'acqua.",
+"La dissociazione parziale, con equilibrio e freccia doppia, è ciò che caratterizza gli acidi deboli.",
+"Se non si dissociasse non sarebbe un acido: non libererebbe ioni idronio.",
+"La temperatura non c'entra: la dissociazione completa avviene già a temperatura ambiente."
+],
+"tag": "acidi-forti"
+},
+{
+"id": "C22-2",
+"testo": "Per un acido forte monoprotico, la concentrazione di ioni idronio in soluzione:",
+"opzioni": ["È uguale alla concentrazione iniziale dell'acido", "È la metà della concentrazione iniziale", "Va calcolata dalla costante di acidità", "È sempre 10 alla meno sette"],
+"giusta": 0,
+"perche": [
+"Ogni molecola cede esattamente un protone e tutte lo cedono: il conto è immediato, senza equilibri da risolvere.",
+"Non c'è nessun fattore un mezzo: la corrispondenza fra molecole di acido e ioni idronio è uno a uno.",
+"La costante di acidità serve per gli acidi deboli. Per i forti la dissociazione è totale e la costante non occorre.",
+"Quello è il valore nell'acqua pura neutra a 25 gradi, non in una soluzione acida."
+],
+"tag": "acidi-forti"
+},
+{
+"id": "C22-3",
+"testo": "Il pH di una soluzione si calcola come:",
+"opzioni": ["pH uguale a meno il logaritmo della concentrazione di ioni idronio", "pH uguale al logaritmo della concentrazione di ioni idronio", "pH uguale alla concentrazione di ioni idronio", "pH uguale a meno il logaritmo della concentrazione di ioni ossidrile"],
+"giusta": 0,
+"perche": [
+"Il segno meno serve a rendere positivo il risultato, dato che le concentrazioni in gioco sono numeri molto minori di 1.",
+"Senza il segno meno il pH delle soluzioni acide risulterebbe negativo: è l'errore di segno più comune.",
+"Il pH è una scala logaritmica proprio per comprimere concentrazioni che spaziano su quattordici ordini di grandezza.",
+"Quella espressione definisce il pOH, che è una grandezza diversa e complementare al pH."
+],
+"tag": "ph"
+},
+{
+"id": "C22-4",
+"testo": "Il pH di una soluzione 8,62 × 10⁻¹ M di acido perclorico è circa:",
+"opzioni": ["0,06", "1,06", "8,62", "13,94"],
+"giusta": 0,
+"perche": [
+"L'acido perclorico è forte, quindi la concentrazione di ioni idronio vale 0,862 M. Il logaritmo di 0,862 è quasi zero, e il pH risulta 0,0645.",
+"Sarebbe il risultato se la concentrazione fosse dieci volte minore. Attenzione all'esponente meno uno.",
+"Confonde la concentrazione con il pH: sono due grandezze diverse, legate dal logaritmo.",
+"Quello sarebbe un pH fortemente basico: impossibile per una soluzione di acido perclorico."
+],
+"tag": "acidi-forti"
+},
+{
+"id": "C22-5",
+"testo": "Conoscendo il pH, la concentrazione di ioni idronio si ricava come:",
+"opzioni": ["10 elevato a meno pH", "10 elevato a pH", "pH diviso 10", "il logaritmo del pH"],
+"giusta": 0,
+"perche": [
+"È l'operazione inversa del logaritmo: da pH 3,25 si ottiene una concentrazione di 5,6 × 10⁻⁴ M.",
+"Senza il segno meno si otterrebbero concentrazioni enormemente maggiori di 1, prive di senso fisico.",
+"Una divisione non inverte un logaritmo: serve l'elevamento a potenza.",
+"Applicare di nuovo il logaritmo allontana dal risultato invece di riportare alla concentrazione."
+],
+"tag": "ph"
+},
+{
+"id": "C22-6",
+"testo": "Il prodotto ionico dell'acqua a 25 gradi vale:",
+"opzioni": ["1,00 × 10⁻¹⁴", "1,00 × 10⁻⁷", "1,00 × 10⁻¹", "14"],
+"giusta": 0,
+"perche": [
+"È il prodotto fra le concentrazioni di ioni idronio e ossidrile, costante in qualsiasi soluzione acquosa a quella temperatura.",
+"Quello è il valore della singola concentrazione di ioni idronio nell'acqua pura, cioè la radice del prodotto ionico.",
+"Un valore così alto corrisponderebbe a una soluzione molto concentrata, non all'acqua.",
+"14 è la somma di pH e pOH, cioè il logaritmo negativo del prodotto ionico, non il prodotto stesso."
+],
+"tag": "ph"
+},
+{
+"id": "C22-7",
+"testo": "Per una base forte come NaOH, il pH si ricava:",
+"opzioni": ["Calcolando la concentrazione di ioni idronio dal prodotto ionico dell'acqua", "Applicando direttamente il logaritmo alla concentrazione della base", "Con la costante di basicità della soda", "Sottraendo la concentrazione della base da 14"],
+"giusta": 0,
+"perche": [
+"La soda dissociandosi dà ioni ossidrile: da questi, dividendo il prodotto ionico, si ottengono gli ioni idronio e quindi il pH.",
+"Il logaritmo applicato direttamente alla concentrazione della base darebbe il pOH, non il pH.",
+"La costante di basicità serve per le basi deboli, dove la dissociazione è parziale.",
+"La relazione fra pH e pOH è una somma che fa 14, ma riguarda i logaritmi, non le concentrazioni."
+],
+"tag": "basi-forti"
+},
+{
+"id": "C22-8",
+"testo": "Una soluzione 4,44 × 10⁻² M di NaOH ha pH:",
+"opzioni": ["12,65", "1,35", "7,00", "4,44"],
+"giusta": 0,
+"perche": [
+"Gli ioni idronio valgono 10⁻¹⁴ diviso 4,44 × 10⁻², cioè 2,25 × 10⁻¹³, e il pH risulta 12,648.",
+"1,35 è il pOH, non il pH: sono complementari, la loro somma fa 14. Confonderli è l'errore più frequente su questo calcolo.",
+"Il pH neutro varrebbe per l'acqua pura, non per una soluzione di soda.",
+"Confonde la concentrazione con il pH: non c'è alcuna coincidenza numerica fra le due."
+],
+"tag": "basi-forti"
+},
+{
+"id": "C22-9",
+"testo": "Nella dissociazione di Ba(OH)2, ogni mole di composto libera:",
+"opzioni": ["Due moli di ioni ossidrile", "Una mole di ioni ossidrile", "Tre moli di ioni ossidrile", "Una mole di ioni idronio"],
+"giusta": 0,
+"perche": [
+"La formula contiene due gruppi ossidrile: la concentrazione di ioni ossidrile è quindi il doppio di quella del composto.",
+"Una sola mole varrebbe per una base monoprotica come NaOH o KOH. Dimenticare il fattore due è l'errore classico su questo esercizio.",
+"Il bario è bivalente e ha due ossidrili, non tre: quello sarebbe il caso di un metallo trivalente.",
+"Gli idrossidi liberano ioni ossidrile, non idronio: sono basi, non acidi."
+],
+"tag": "basi-forti"
+},
+{
+"id": "C22-10",
+"testo": "Una soluzione 1,34 × 10⁻² M di Ba(OH)2 ha pH circa:",
+"opzioni": ["12,43", "12,13", "1,87", "2,17"],
+"giusta": 0,
+"perche": [
+"Gli ossidrili sono il doppio, cioè 2,68 × 10⁻², da cui ioni idronio pari a 3,73 × 10⁻¹³ e pH 12,428.",
+"È il risultato che si ottiene dimenticando di raddoppiare gli ossidrili: circa tre decimi di unità in meno.",
+"Corrisponde al pOH, non al pH. La somma dei due deve fare 14.",
+"È il pOH calcolato senza raddoppiare: doppio errore, di grandezza e di grandezza calcolata."
+],
+"tag": "basi-forti"
+},
+{
+"id": "C22-11",
+"testo": "Nel calcolo del pH di un acido forte, il contributo dell'autodissociazione dell'acqua:",
+"opzioni": ["Si trascura, perché è molto minore di quello dell'acido", "Va sempre sommato al contributo dell'acido", "È il contributo dominante", "Rende impossibile il calcolo"],
+"giusta": 0,
+"perche": [
+"L'acqua pura fornisce ioni idronio dell'ordine di 10⁻⁷ M: una quantità irrilevante rispetto a quella di un acido forte in concentrazione normale.",
+"Diventa rilevante solo per soluzioni estremamente diluite, dove le due sorgenti sono confrontabili.",
+"È vero l'opposto: è l'acido a dominare, di parecchi ordini di grandezza.",
+"Il calcolo si fa senza difficoltà proprio grazie a questa semplificazione."
+],
+"tag": "ph"
+},
+{
+"id": "C22-12",
+"testo": "Da 50,7 mL di HCl concentrato al 37,00% in peso con densità 1,190 g/mL si ricavano:",
+"opzioni": ["60,3 g di soluzione, di cui 22,3 g di HCl", "50,7 g di soluzione, di cui 18,8 g di HCl", "60,3 g di HCl puro", "37,0 g di HCl"],
+"giusta": 0,
+"perche": [
+"Il volume per la densità dà la massa della soluzione: 50,7 × 1,190 = 60,3 g. Di questi, il 37% è acido, cioè 22,3 g.",
+"Confonde millilitri e grammi: senza moltiplicare per la densità la massa non si ottiene.",
+"60,3 g è la massa dell'intera soluzione, acqua compresa. Solo una frazione è acido cloridrico.",
+"Il 37,00 è una percentuale, non una massa in grammi: va applicato alla massa realmente presente."
+],
+"tag": "acidi-forti"
+},
+{
+"id": "C22-13",
+"testo": "Portando 0,612 moli di HCl a un volume finale di un litro, il pH della soluzione è:",
+"opzioni": ["0,213", "0,612", "1,000", "13,79"],
+"giusta": 0,
+"perche": [
+"La concentrazione è 0,612 M e, essendo l'acido forte, coincide con gli ioni idronio: meno il logaritmo di 0,612 dà 0,213.",
+"È la concentrazione, non il pH: mancano il logaritmo e il cambio di segno.",
+"Un pH pari a 1 corrisponderebbe a una concentrazione di 0,1 M, sei volte inferiore.",
+"È il pOH corrispondente. Per un acido forte concentrato il pH deve essere molto basso, non molto alto."
+],
+"tag": "acidi-forti"
+}
+]
+}
