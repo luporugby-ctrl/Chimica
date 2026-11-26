@@ -126,10 +126,14 @@ Serve **solo** al pulsante «Spiegami meglio» sotto una domanda: chiede al mode
 aggiungere qualcosa che le spiegazioni scritte non dicono già, opzionalmente con una
 analogia da cucina o rugby. La chiave resta in `localStorage`, nel browser.
 
-| Provider | Chiave | Note |
-|---|---|---|
-| Google Gemini | https://aistudio.google.com/apikey | ha un piano gratuito |
-| Anthropic Claude | https://console.anthropic.com/settings/keys | a consumo |
+L'app usa solo Google Gemini, con modelli disponibili nel piano gratuito. La chiave si crea
+su https://aistudio.google.com/apikey. **Non collegare un account di fatturazione al progetto
+della chiave**: è la condizione per restare sul piano gratuito, che ha limiti di utilizzo.
+Fuori da Spazio Economico Europeo, Svizzera e Regno Unito, nel piano gratuito Google può usare
+richieste e risposte per migliorare i propri prodotti
+([termini](https://ai.google.dev/gemini-api/terms)).
+
+La stessa chiave, esportata come `AI_API_KEY`, serve allo script che genera le domande.
 
 ## Aprire l'app in locale
 
