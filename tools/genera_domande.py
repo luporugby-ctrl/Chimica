@@ -27,10 +27,7 @@ import unicodedata
 import urllib.error
 import urllib.request
 
-MODELLI = {
-    "gemini": "gemini-flash-latest",
-    "anthropic": "claude-sonnet-5",
-}
+MODELLO = "gemini-3.8-flash"  # disponibile nel piano gratuito
 
 PAUSA = 2.0            # secondi tra una dispensa e l'altra
 MAX_CARATTERI = 90000  # taglio di sicurezza sul testo di una dispensa
@@ -122,7 +119,7 @@ def estrai_testo(percorso):
 def chiama_gemini(chiave, modello, testo, n):
     corpo = {
         "contents": [{"parts": [{"text": PROMPT.format(n=n) + "\n\n---\n\n" + testo}]}],
-        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 8192},
+        "generationConfig": {"maxOutputTokens": 32768},
     }
     url = ("https://generativelanguage.googleapis.com/v1beta/models/"
            f"{modello}:generateContent")
@@ -133,23 +130,6 @@ def chiama_gemini(chiave, modello, testo, n):
         d = json.load(r)
     return "".join(p.get("text", "")
                    for p in d["candidates"][0]["content"]["parts"])
-
-
-def chiama_anthropic(chiave, modello, testo, n):
-    corpo = {
-        "model": modello,
-        "max_tokens": 8000,
-        "temperature": 0.4,
-        "messages": [{"role": "user",
-                      "content": PROMPT.format(n=n) + "\n\n---\n\n" + testo}],
-    }
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=json.dumps(corpo).encode(),
-        headers={"Content-Type": "application/json", "x-api-key": chiave,
-                 "anthropic-version": "2023-06-01"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        d = json.load(r)
-    return "".join(b.get("text", "") for b in d["content"] if b.get("type") == "text")
 
 
 def estrai_json(grezzo):
@@ -232,8 +212,7 @@ def aggiungi_voce(indice, id_arg, titolo, gruppo):
 def main():
     ap = argparse.ArgumentParser(description="Genera la banca domande dalle dispense.")
     ap.add_argument("cartella", help="cartella con i PDF delle dispense")
-    ap.add_argument("--provider", choices=["gemini", "anthropic"], default="gemini")
-    ap.add_argument("--modello", default=None)
+    ap.add_argument("--modello", default=MODELLO)
     ap.add_argument("--domande", type=int, default=15,
                     help="quante domande per dispensa (default 15)")
     ap.add_argument("--prova", action="store_true",
@@ -271,7 +250,6 @@ def main():
     chiave = os.environ.get("AI_API_KEY", "")
     if not args.prova and not chiave:
         sys.exit("Manca AI_API_KEY. Esporta la chiave e rilancia.")
-    modello = args.modello or MODELLI[args.provider]
 
     for nome in pdf:
         percorso = os.path.join(args.cartella, nome)
@@ -297,9 +275,7 @@ def main():
             usati.add(id_arg)
 
         try:
-            grezzo = (chiama_gemini(chiave, modello, testo, args.domande)
-                      if args.provider == "gemini"
-                      else chiama_anthropic(chiave, modello, testo, args.domande))
+            grezzo = chiama_gemini(chiave, args.modello, testo, args.domande)
             banca = estrai_json(grezzo)
         except urllib.error.HTTPError as e:
             print(f"         il servizio ha risposto {e.code}: {e.read()[:200]}\n")
